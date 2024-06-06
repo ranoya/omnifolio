@@ -1,0 +1,13 @@
+<svg width="280" height="150" viewBox="0 0 280 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3.5" y="3.5" width="256" height="143" stroke="white" stroke-width="7"/>
+<rect width="249" height="53" transform="translate(7 6)" fill="white" fill-opacity="0.5"/>
+<rect x="-1" y="-1" width="79.6066" height="14.0321" transform="translate(148.746 111)" stroke="white" stroke-width="2" stroke-dasharray="6 3"/>
+<rect width="77.6066" height="12.0321" transform="translate(148.746 91)" fill="white" fill-opacity="0.5"/>
+<rect width="77.6066" height="12.0321" transform="translate(34.4922 91)" fill="white" fill-opacity="0.5"/>
+<rect width="77.6066" height="12.0321" transform="translate(34.4922 111.053)" fill="white" fill-opacity="0.5"/>
+<circle cx="17" cy="17" r="17" transform="translate(34 41)" fill="white"/>
+<path d="M0 42.5863C0 55.795 16.5 65 34 65C51.5 65 64.5 48.4424 64.5 34.5C64.5 20.5576 57.5 0 31.5 0C10.7 0 3.5 13.5863 3 17.5" transform="translate(213 75.5)" stroke="white" stroke-width="5"/>
+<line y1="-2.5" x2="21" y2="-2.5" transform="translate(218 95) rotate(-90)" stroke="white" stroke-width="5"/>
+<line y1="-2.5" x2="18" y2="-2.5" transform="translate(218 95)" stroke="white" stroke-width="5"/>
+<circle cx="10.5" cy="10.5" r="10.5" transform="translate(202 106)" fill="white"/>
+</svg>
