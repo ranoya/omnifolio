@@ -1,0 +1,209 @@
+<svg width="952" height="480" viewBox="0 0 952 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" y="5" width="209" height="293" rx="10" transform="translate(92 110)" stroke="white" stroke-width="10"/>
+<rect width="177.938" height="80.7172" transform="translate(111.909 132.352)" fill="white"/>
+<rect width="62.2159" height="52.1557" transform="translate(113.153 220.521)" fill="white"/>
+<rect width="107.011" height="116.73" transform="translate(182.835 220.521)" fill="white"/>
+<rect width="177.938" height="47.1885" transform="translate(111.909 344.701)" fill="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H218Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM218.707 -0.292893C219.098 -0.683418 219.098 -1.31658 218.707 -1.70711L212.343 -8.07107C211.953 -8.46159 211.319 -8.46159 210.929 -8.07107C210.538 -7.68054 210.538 -7.04738 210.929 -6.65685L216.586 -1L210.929 4.65685C210.538 5.04738 210.538 5.68054 210.929 6.07107C211.319 6.46159 211.953 6.46159 212.343 6.07107L218.707 -0.292893ZM1 0H218V-2H1V0Z" transform="translate(92 73)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(92 58) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(311 59) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H177Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM177.707 -0.292893C178.098 -0.683418 178.098 -1.31658 177.707 -1.70711L171.343 -8.07107C170.953 -8.46159 170.319 -8.46159 169.929 -8.07107C169.538 -7.68054 169.538 -7.04738 169.929 -6.65685L175.586 -1L169.929 4.65685C169.538 5.04738 169.538 5.68054 169.929 6.07107C170.319 6.46159 170.953 6.46159 171.343 6.07107L177.707 -0.292893ZM1 0H177V-2H1V0Z" transform="translate(449 74)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(449 59) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(627 60) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(637 74)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(637 59) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(659 60) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(419 74)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(419 59) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 60) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H204Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM204.707 -0.292893C205.098 -0.683418 205.098 -1.31658 204.707 -1.70711L198.343 -8.07107C197.953 -8.46159 197.319 -8.46159 196.929 -8.07107C196.538 -7.68054 196.538 -7.04738 196.929 -6.65685L202.586 -1L196.929 4.65685C196.538 5.04738 196.538 5.68054 196.929 6.07107C197.319 6.46159 197.953 6.46159 198.343 6.07107L204.707 -0.292893ZM1 0H204V-2H1V0Z" transform="translate(716 75)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(716 60) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(921 61) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H61Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM61.7071 -0.292893C62.0976 -0.683418 62.0976 -1.31658 61.7071 -1.70711L55.3431 -8.07107C54.9526 -8.46159 54.3195 -8.46159 53.9289 -8.07107C53.5384 -7.68054 53.5384 -7.04738 53.9289 -6.65685L59.5858 -1L53.9289 4.65685C53.5384 5.04738 53.5384 5.68054 53.9289 6.07107C54.3195 6.46159 54.9526 6.46159 55.3431 6.07107L61.7071 -0.292893ZM1 0H61V-2H1V0Z" transform="translate(716 207)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(716 192) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(778 193) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H106Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM106.707 -0.292893C107.098 -0.683418 107.098 -1.31658 106.707 -1.70711L100.343 -8.07107C99.9526 -8.46159 99.3195 -8.46159 98.9289 -8.07107C98.5384 -7.68054 98.5384 -7.04738 98.9289 -6.65685L104.586 -1L98.9289 4.65685C98.5384 5.04738 98.5384 5.68054 98.9289 6.07107C99.3195 6.46159 99.9526 6.46159 100.343 6.07107L106.707 -0.292893ZM1 0H106V-2H1V0Z" transform="translate(814 207)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(814 192) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(921 193) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(929 75)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(929 60) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(951 61) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(785 207)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(785 192) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(807 193) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(686 75)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(686 60) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(708 61) rotate(90)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H19Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM19.7071 -0.292893C20.0976 -0.683418 20.0976 -1.31658 19.7071 -1.70711L13.3431 -8.07107C12.9526 -8.46159 12.3195 -8.46159 11.9289 -8.07107C11.5384 -7.68054 11.5384 -7.04738 11.9289 -6.65685L17.5858 -1L11.9289 4.65685C11.5384 5.04738 11.5384 5.68054 11.9289 6.07107C12.3195 6.46159 12.9526 6.46159 13.3431 6.07107L19.7071 -0.292893ZM1 0H19V-2H1V0Z" transform="translate(426 105) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 105) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(440 125) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H80Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM80.7071 -0.292893C81.0976 -0.683418 81.0976 -1.31658 80.7071 -1.70711L74.3431 -8.07107C73.9526 -8.46159 73.3195 -8.46159 72.9289 -8.07107C72.5384 -7.68054 72.5384 -7.04738 72.9289 -6.65685L78.5858 -1L72.9289 4.65685C72.5384 5.04738 72.5384 5.68054 72.9289 6.07107C73.3195 6.46159 73.9526 6.46159 74.3431 6.07107L80.7071 -0.292893ZM1 0H80V-2H1V0Z" transform="translate(427 132) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(442 132) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 213) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(427 221) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(442 221) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 243) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H19Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM19.7071 -0.292893C20.0976 -0.683418 20.0976 -1.31658 19.7071 -1.70711L13.3431 -8.07107C12.9526 -8.46159 12.3195 -8.46159 11.9289 -8.07107C11.5384 -7.68054 11.5384 -7.04738 11.9289 -6.65685L17.5858 -1L11.9289 4.65685C11.5384 5.04738 11.5384 5.68054 11.9289 6.07107C12.3195 6.46159 12.9526 6.46159 13.3431 6.07107L19.7071 -0.292893ZM1 0H19V-2H1V0Z" transform="translate(694 223) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(709 223) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(708 243) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H51Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM51.7071 -0.292893C52.0976 -0.683418 52.0976 -1.31658 51.7071 -1.70711L45.3431 -8.07107C44.9526 -8.46159 44.3195 -8.46159 43.9289 -8.07107C43.5384 -7.68054 43.5384 -7.04738 43.9289 -6.65685L49.5858 -1L43.9289 4.65685C43.5384 5.04738 43.5384 5.68054 43.9289 6.07107C44.3195 6.46159 44.9526 6.46159 45.3431 6.07107L51.7071 -0.292893ZM1 0H51V-2H1V0Z" transform="translate(694 250) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(709 250) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(708 302) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H116Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM116.707 -0.292893C117.098 -0.683418 117.098 -1.31658 116.707 -1.70711L110.343 -8.07107C109.953 -8.46159 109.319 -8.46159 108.929 -8.07107C108.538 -7.68054 108.538 -7.04738 108.929 -6.65685L114.586 -1L108.929 4.65685C108.538 5.04738 108.538 5.68054 108.929 6.07107C109.319 6.46159 109.953 6.46159 110.343 6.07107L116.707 -0.292893ZM1 0H116V-2H1V0Z" transform="translate(658 250) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(673 250) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(672 367) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(694 309) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(709 309) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(708 331) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(657 374) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(672 374) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(671 396) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H19Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM19.7071 -0.292893C20.0976 -0.683418 20.0976 -1.31658 19.7071 -1.70711L13.3431 -8.07107C12.9526 -8.46159 12.3195 -8.46159 11.9289 -8.07107C11.5384 -7.68054 11.5384 -7.04738 11.9289 -6.65685L17.5858 -1L11.9289 4.65685C11.5384 5.04738 11.5384 5.68054 11.9289 6.07107C12.3195 6.46159 12.9526 6.46159 13.3431 6.07107L19.7071 -0.292893ZM1 0H19V-2H1V0Z" transform="translate(426 374) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 374) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(440 394) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H47Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM47.7071 -0.292893C48.0976 -0.683418 48.0976 -1.31658 47.7071 -1.70711L41.3431 -8.07107C40.9526 -8.46159 40.3195 -8.46159 39.9289 -8.07107C39.5384 -7.68054 39.5384 -7.04738 39.9289 -6.65685L45.5858 -1L39.9289 4.65685C39.5384 5.04738 39.5384 5.68054 39.9289 6.07107C40.3195 6.46159 40.9526 6.46159 41.3431 6.07107L47.7071 -0.292893ZM1 0H47V-2H1V0Z" transform="translate(427 401) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(442 401) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 449) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H21Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM21.7071 -0.292893C22.0976 -0.683418 22.0976 -1.31658 21.7071 -1.70711L15.3431 -8.07107C14.9526 -8.46159 14.3195 -8.46159 13.9289 -8.07107C13.5384 -7.68054 13.5384 -7.04738 13.9289 -6.65685L19.5858 -1L13.9289 4.65685C13.5384 5.04738 13.5384 5.68054 13.9289 6.07107C14.3195 6.46159 14.9526 6.46159 15.3431 6.07107L21.7071 -0.292893ZM1 0H21V-2H1V0Z" transform="translate(427 457) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(442 457) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(441 479) rotate(-180)" stroke="white"/>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0" fill="black">
+<rect fill="white" width="0" height="0"/>
+<path d="M1 -1H301Z"/>
+</mask>
+<path d="M0.292893 -1.70711C-0.0976311 -1.31658 -0.0976311 -0.683418 0.292893 -0.292893L6.65685 6.07107C7.04738 6.46159 7.68054 6.46159 8.07107 6.07107C8.46159 5.68054 8.46159 5.04738 8.07107 4.65685L2.41421 -1L8.07107 -6.65685C8.46159 -7.04738 8.46159 -7.68054 8.07107 -8.07107C7.68054 -8.46159 7.04738 -8.46159 6.65685 -8.07107L0.292893 -1.70711ZM301.707 -0.292893C302.098 -0.683418 302.098 -1.31658 301.707 -1.70711L295.343 -8.07107C294.953 -8.46159 294.319 -8.46159 293.929 -8.07107C293.538 -7.68054 293.538 -7.04738 293.929 -6.65685L299.586 -1L293.929 4.65685C293.538 5.04738 293.538 5.68054 293.929 6.07107C294.319 6.46159 294.953 6.46159 295.343 6.07107L301.707 -0.292893ZM1 0H301V-2H1V0Z" transform="translate(66 111) rotate(90)" fill="white" mask="url(#)"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(81 111) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="28" y2="-0.5" transform="translate(80 413) rotate(-180)" stroke="white"/>
+<line y1="-0.5" x2="223" y2="-0.5" transform="translate(450 244)" stroke="white" stroke-dasharray="15 8"/>
+<line y1="-0.5" x2="177" y2="-0.5" transform="translate(450 375)" stroke="white" stroke-dasharray="15 8"/>
+<rect width="30" height="15" transform="translate(175 45)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(211 45)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(0 250)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(36 250)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(508 45)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(544 45)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(794 45)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(830 45)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(449 107)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(485 107)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(453 377)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(489 377)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(450 460)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(486 460)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(175 45)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(211 45)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(354 164)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(390 164)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(450 224)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(486 224)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(590 300)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(626 300)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(683 377)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(719 377)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(719 312)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(755 312)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(590 268)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(626 268)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(723 172)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(759 172)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(842 172)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(878 172)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(422 53) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(422 17) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(640 53) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(640 17) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(690 53) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(690 17) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(932 53) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(932 17) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="30" height="15" transform="translate(789 287) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<rect width="17" height="15" transform="translate(789 251) rotate(-90)" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M107.011 0H0V116.729H107.011V0ZM59 7H49V9H53V18H55V9H59V7ZM65 22H43V44H65V22ZM70 34H79V38H81V28H79V32H70V34ZM39 34H30V38H28V28H30V32H39V34ZM49 58H53V49H55V58H59V60H49V58Z" transform="translate(814 250)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62.2159 0H0V52.1558H62.2159V0ZM39 7H29V9H33V18H35V9H39V7ZM45 22H23V44H45V22ZM10 34H19V32H10V28H8V38H10V34Z" transform="translate(716 250)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M177.938 0H0V47.1885H177.938V0ZM100 5H78V27H100V5ZM105 17H114V21H116V11H114V15H105V17ZM74 17H65V21H63V11H65V15H74V17ZM94 41H90V32H88V41H84V43H94V41Z" transform="translate(449 402)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M177.938 0H0V80.7172H177.938V0ZM84 18H94V20H90V29H88V20H84V18ZM100 33H78V55H100V33ZM105 45H114V49H116V39H114V43H105V45ZM74 45H65V49H63V39H65V43H74V45Z" transform="translate(449 132)" fill="white"/>
+</svg>
