@@ -1,0 +1,37 @@
+<svg width="185" height="269" viewBox="0 0 185 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>reced-event</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2552 283)">
+<g id="reced-event">
+<g id="Rectangle 7">
+<use xlink:href="#path0_fill" transform="translate(2552 -246)" fill="#FFFFFF"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(2552 -246)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(2552 -246)"/>
+</g>
+</g>
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(2594 -283)"/>
+</g>
+</g>
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(2598 -127)"/>
+</g>
+</g>
+<g id="Ellipse 2">
+<use xlink:href="#path4_fill" transform="translate(2629 -82)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 185 0L 185 232L 0 232L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -4L -4 -4L -4 0L 0 0ZM 185 0L 189 0L 189 -4L 185 -4L 185 0ZM 185 232L 185 236L 189 236L 189 232L 185 232ZM 0 232L -4 232L -4 236L 0 236L 0 232ZM 0 4L 185 4L 185 -4L 0 -4L 0 4ZM 181 0L 181 232L 189 232L 189 0L 181 0ZM 185 228L 0 228L 0 236L 185 236L 185 228ZM 4 232L 4 0L -4 0L -4 232L 4 232Z"/>
+<path id="path2_fill" d="M 29.1429 0L 0 29.0383L 21.8571 29.0383L 21.8571 80.0556L 36.4286 80.0556L 36.4286 29.0383L 58.2857 29.0383L 29.1429 0ZM 80.1429 101.962L 80.1429 50.9444L 65.5714 50.9444L 65.5714 101.962L 43.7143 101.962L 72.8571 131L 102 101.962L 80.1429 101.962Z"/>
+<path id="path3_fill" d="M 93 21.8182L 85.8423 14.5967L 67.7702 32.7785L 74.9279 40C 74.9279 40 92.4416 21.9718 93 21.8182ZM 51.5764 0L 41.4236 0L 41.4236 25.6082L 51.5764 25.6082L 51.5764 0ZM 18.0721 40L 25.2298 32.7785L 7.20852 14.5455L 0 21.8182C 0.558406 21.9718 18.0721 40 18.0721 40Z"/>
+<path id="path4_fill" d="M 31 15.5C 31 24.0604 24.0604 31 15.5 31C 6.93959 31 0 24.0604 0 15.5C 0 6.93959 6.93959 0 15.5 0C 24.0604 0 31 6.93959 31 15.5Z"/>
+</defs>
+</svg>

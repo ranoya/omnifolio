@@ -1,0 +1,108 @@
+<svg width="185" height="232" viewBox="0 0 185 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3104 246)">
+<g id="Component">
+<g id="Rectangle 7">
+<use xlink:href="#path0_fill" transform="translate(3104 -246)" fill="#FFFFFF"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(3104 -246)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(3104 -246)"/>
+</g>
+</g>
+<g id="Component">
+<g id="Line 12">
+<use xlink:href="#path2_stroke" transform="translate(3131 -79)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path3_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3185 -120)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path3_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3185 -182)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path4_stroke" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 3185 -182)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path5_stroke" transform="matrix(-1.83697e-16 -1 1 -1.83697e-16 3149 -127)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path6_stroke" transform="matrix(-1.83697e-16 -1 1 -1.83697e-16 3222 -127)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path7_stroke" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 3252 -165)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path8_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3252 -165)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path9_stroke" transform="matrix(1 -2.44929e-16 2.44929e-16 1 3201 -101)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path10_stroke" transform="matrix(1 -2.44929e-16 2.44929e-16 1 3162 -101)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path11_stroke" transform="matrix(1 -2.44929e-16 2.44929e-16 1 3162 -57)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path11_stroke" transform="matrix(1 -2.44929e-16 2.44929e-16 1 3172 -195)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path12_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3162 -205)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path13_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3162 -161)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path14_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3232 -79)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path15_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3232 -104)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path16_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3232 -158)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path17_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3232 -195)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path18_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3162 -101)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path18_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 3162 -74)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path19_stroke" transform="translate(3149 -127)"/>
+</g>
+<g id="Line 12">
+<use xlink:href="#path20_stroke" transform="translate(3167 -127)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 185 0L 185 232L 0 232L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -4L -4 -4L -4 0L 0 0ZM 185 0L 189 0L 189 -4L 185 -4L 185 0ZM 185 232L 185 236L 189 236L 189 232L 185 232ZM 0 232L -4 232L -4 236L 0 236L 0 232ZM 0 4L 185 4L 185 -4L 0 -4L 0 4ZM 181 0L 181 232L 189 232L 189 0L 181 0ZM 185 228L 0 228L 0 236L 185 236L 185 228ZM 4 232L 4 0L -4 0L -4 232L 4 232Z"/>
+<path id="path2_stroke" d="M 0 0L 54 0L 54 -10L 0 -10L 0 0Z"/>
+<path id="path3_stroke" d="M 0 0L 41 0L 41 -10L 0 -10L 0 0Z"/>
+<path id="path4_stroke" d="M 0 0L 36 0L 36 -10L 0 -10L 0 0Z"/>
+<path id="path5_stroke" d="M 0 0L 55 0L 55 -10L 0 -10L 0 0Z"/>
+<path id="path6_stroke" d="M 0 0L 38 0L 38 -10L 0 -10L 0 0Z"/>
+<path id="path7_stroke" d="M 0 0L 30 0L 30 -10L 0 -10L 0 0Z"/>
+<path id="path8_stroke" d="M 0 0L 64 0L 64 -10L 0 -10L 0 0Z"/>
+<path id="path9_stroke" d="M 0 0L 51 0L 51 -10L 0 -10L 0 0Z"/>
+<path id="path10_stroke" d="M 0 0L 17 0L 17 -10L 0 -10L 0 0Z"/>
+<path id="path11_stroke" d="M 0 0L 70 0L 70 -10L 0 -10L 0 0Z"/>
+<path id="path12_stroke" d="M 0 0L 19 0L 19 -10L 0 -10L 0 0Z"/>
+<path id="path13_stroke" d="M 0 0L 12 0L 12 -10L 0 -10L 0 0Z"/>
+<path id="path14_stroke" d="M 0 0L 22 0L 22 -10L 0 -10L 0 0Z"/>
+<path id="path15_stroke" d="M 0 0L 2.8 0L 2.8 -10L 0 -10L 0 0ZM 6.53333 0L 12.1333 0L 12.1333 -10L 6.53333 -10L 6.53333 0ZM 15.8667 0L 21.4667 0L 21.4667 -10L 15.8667 -10L 15.8667 0ZM 25.2 0L 28 0L 28 -10L 25.2 -10L 25.2 0Z"/>
+<path id="path16_stroke" d="M 0 0L 3 0L 3 -10L 0 -10L 0 0ZM 7 0L 13 0L 13 -10L 7 -10L 7 0ZM 17 0L 23 0L 23 -10L 17 -10L 17 0ZM 27 0L 33 0L 33 -10L 27 -10L 27 0ZM 37 0L 43 0L 43 -10L 37 -10L 37 0ZM 47 0L 50 0L 50 -10L 47 -10L 47 0Z"/>
+<path id="path17_stroke" d="M 0 0L 3.4 0L 3.4 -10L 0 -10L 0 0ZM 7.93333 0L 14.7333 0L 14.7333 -10L 7.93333 -10L 7.93333 0ZM 19.2667 0L 26.0667 0L 26.0667 -10L 19.2667 -10L 19.2667 0ZM 30.6 0L 34 0L 34 -10L 30.6 -10L 30.6 0Z"/>
+<path id="path18_stroke" d="M 0 0L 7 0L 7 -10L 0 -10L 0 0Z"/>
+<path id="path19_stroke" d="M 0 0L 18 0L 18 -10L 0 -10L 0 0Z"/>
+<path id="path20_stroke" d="M 0 0L 3.26667 0L 3.26667 -10L 0 -10L 0 0ZM 6.53333 0L 13.0667 0L 13.0667 -10L 6.53333 -10L 6.53333 0ZM 16.3333 0L 22.8667 0L 22.8667 -10L 16.3333 -10L 16.3333 0ZM 26.1333 0L 32.6667 0L 32.6667 -10L 26.1333 -10L 26.1333 0ZM 35.9333 0L 42.4667 0L 42.4667 -10L 35.9333 -10L 35.9333 0ZM 45.7333 0L 49 0L 49 -10L 45.7333 -10L 45.7333 0Z"/>
+</defs>
+</svg>
