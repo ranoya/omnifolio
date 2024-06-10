@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        background-color: black;
+        padding: 0;
+        margin: 0;
+
+        overflow: hidden;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.js"></script>
+
+    <script>
+      const rescale = function ([a, b], [c, d]) {
+        return function (e) {
+          return ((e - a) / (b - a)) * (d - c) + c;
+        };
+      };
+
+      let sx = "";
+      let sy = "";
+
+      function setup() {
+        createCanvas(windowWidth, windowHeight);
+
+        colorMode(HSB, 20, 5, 16);
+        background(0, 0, 0);
+
+        sx = rescale([0, 320], [0, windowWidth]);
+        sy = rescale([0, 240], [0, windowHeight]);
+      }
+
+      let tempo = 101;
+
+      function draw() {
+        let x = random(sx(300));
+        let y = random(sy(200));
+        let w = random(sx(280) - x) + sx(40);
+        let h = random(sy(200) - y) + sy(40);
+
+        tempo++;
+
+        if (tempo > 50) {
+          tempo = 0;
+
+          fill(int(random(16)), 5, 14);
+          noStroke();
+          rect(x, y, w, h);
+        }
+      }
+
+      function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
+        sx = rescale([0, 160], [0, windowWidth]);
+        sy = rescale([0, 120], [0, windowHeight]);
+        background(0);
+        tempo = 101;
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        background-color: black;
+        padding: 0;
+        margin: 0;
+
+        overflow: hidden;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.js"></script>
+
+    <script>
+      const rescale = function ([a, b], [c, d]) {
+        return function (e) {
+          return ((e - a) / (b - a)) * (d - c) + c;
+        };
+      };
+
+      let sx = "";
+      let sy = "";
+
+      const plotline = function (x1, y1, x2, y2) {
+        let numSquares = int(dist(x1, y1, x2, y2) / sx(1) + 3);
+
+        // Desenha a linha com quadrados
+        for (let i = 0; i < numSquares; i++) {
+          let t = i / (numSquares - 1); // Interpolação linear
+
+          let x = lerp(x1, x2, t);
+
+          let y = lerp(y1, y2, t);
+
+          rect(x, y, sx(1), sx(1));
+        }
+      };
+
+      function setup() {
+        createCanvas(windowWidth, windowHeight);
+        sx = rescale([0, 160], [0, windowWidth]);
+        sy = rescale([0, 120], [0, windowHeight]);
+
+        colorMode(RGB);
+        background("#11519b");
+        noStroke();
+        fill("#99d7ff");
+        noSmooth();
+      }
+
+      let x = 0;
+      let y = 0;
+
+      function draw() {
+        plotline(sx(x), 0, sx(160), sx(int(y)));
+
+        plotline(sx(160 - x), sx(120), 0, sx(120 - int(y)));
+
+        if (x < 160) {
+          x = x + 2;
+
+          y = y + 240 / 160;
+        }
+      }
+
+      function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
+        sx = rescale([0, 160], [0, windowWidth]);
+        sy = rescale([0, 120], [0, windowHeight]);
+        background("#11519b");
+        x = 0;
+        y = 0;
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>
