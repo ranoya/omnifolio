@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MachakFull(Ie,other){
+//Copyright © 1999 m.milicevic machakjoe@netscape.net jjooee@tip.nl
+x=screen.availWidth;
+y=screen.availHeight;
+target = parseFloat(navigator.appVersion.substring(navigator.appVersion.indexOf('.')-1,navigator.appVersion.length));
+if((navigator.appVersion.indexOf("Mac")!=-1) &&(navigator.userAgent.indexOf("MSIE")!=-1) &&(parseInt(navigator.appVersion)==4))
+window.open(other,"sub",'scrollbars=yes');
+if (target >= 4){
+	if (navigator.appName=="Netscape"){
+    var MachakFull=window.open(other,"MachakFull",'scrollbars=yes','width='+x+',height='+y+',top=0,left=0');
+	MachakFull.moveTo(0,0);
+	MachakFull.resizeTo(x,y);}
+if (navigator.appName=="Microsoft Internet Explorer")
+	window.open(Ie,"MachakFull","fullscreen=yes");
+	}
+	else window.open(other,"sub",'scrollbars=yes');
+	}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" onLoad="MachakFull('r2.htm','r2.htm');javascript:self.close()">
+</body>
+</html>
