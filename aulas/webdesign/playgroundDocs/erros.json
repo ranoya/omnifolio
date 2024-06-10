@@ -1,0 +1,40 @@
+[ 
+	{
+		"cordefundo": "white",
+		"cordefrente": "#79BCE0",
+		"logourl": "https://www.ranoya.com/Assets/Logotipos/aulawebdesign-bluegreyvazado.svg",
+		"nextrefdoc": "CSS",
+		"nextrefdocurl": "introCSS.php?theme=html&elementos=css",
+		"tamanho": 360
+	}, 
+	{	
+		"capitulo": "EXERCÍCIOS COM TAGS (SEM HIGHLIGHT)",
+		"topico": "Identificação de erros de estrutura",
+		"url": "err-ordemtags.php"
+	}, 
+	{	
+		"capitulo": "EXERCÍCIOS COM TAGS (SEM HIGHLIGHT)",
+		"topico": "Identificação de erros em atributos",
+		"url": "err-proptags.php"
+	}, 
+	{	
+		"capitulo": "EXERCÍCIOS COM TAGS (COM HIGHLIGHT)",
+		"topico": "Identificação de erros de estrutura",
+		"url": "errlint-ordemtags.php"
+	},
+	{	
+		"capitulo": "EXERCÍCIOS COM TAGS (COM HIGHLIGHT)",
+		"topico": "Identificação de erros em atributos",
+		"url": "errlint-proptags.php"
+	}, 
+	{	
+		"capitulo": "SOLUÇÕES PARA EXERCÍCIOS COM TAGS",
+		"topico": "Solução de erros de estrutura",
+		"url": "errsol-ordemtags.php"
+	}, 
+	{	
+		"capitulo": "SOLUÇÕES PARA EXERCÍCIOS COM TAGS",
+		"topico": "Solução de erros em atributos",
+		"url": "errsol-proptags.php"
+	}
+]

@@ -1,0 +1,213 @@
+:root {
+
+  --cor-destaque: #291632;
+  --cor-texto: white;
+  --cor-neutroleve: rgb(126, 124, 103);
+  --cor-fundo: #ff9900;
+
+}
+
+
+/* tipografia -------------------------------------------------------- */
+
+/* cssreset.com ------------------------------------------------------ */
+* {}
+
+/* base -------------------------------------------------------------- */
+.logocolor {
+
+  fill: white;
+
+}
+
+body {
+  background-color: #ff9900;
+  color: white;
+}
+
+#lupa {
+  fill: white;
+}
+
+nav {
+  background-color: #ff9900;
+}
+
+#mobile {}
+
+#navblock {}
+
+.listalinha {
+
+  padding-bottom: 10px;
+
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: #ff9900;
+}
+
+.filtroativo {
+  background-color: #291632;
+  color: #ff9900;
+
+}
+
+.filtroinativo {
+  background-color: transparent;
+  color: #7c0084;
+}
+
+#navblock a {
+  color: white;
+}
+
+#navblock a:hover {
+  background-color: white;
+  color: #ff9900;
+}
+
+.marcacao {
+  background-color: transparent;
+}
+
+.marcacao:hover {
+  background-color: transparent;
+}
+
+/* estrutura --------------------------------------------------------- */
+
+#heading {
+  background-color: transparent;
+  color: #666666;
+}
+
+.secao {
+  background-color: transparent;
+}
+
+.bloco-conteudo {}
+
+#rodape {
+  background-color: transparent;
+  color: #400043;
+
+}
+
+#rodape .bloco-conteudo {
+  background-color: transparent;
+  color: #400043;
+
+}
+
+#rodape .bloco-conteudo svg {
+  fill: white;
+
+}
+
+#rodape .bloco-conteudo h6 {
+  color: white;
+
+}
+
+#ranoyalogo {}
+
+#carregando {}
+
+.loadingimage {}
+
+.videogrid {}
+
+#sumario {}
+
+.sumariolink {
+  background-color: #bfbfbf;
+  color: white;
+
+}
+
+.sumariolink:hover {
+  background-color: #f44292;
+
+}
+
+.halfblock {}
+
+
+/* tipografia --------------------------------------------------------- */
+
+h1 {}
+
+h6 {}
+
+.separador {}
+
+.littlegap {}
+
+.doublegap {}
+
+.triplegap {}
+
+.listalinha {}
+
+.mytags {}
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  background-color: #666666;
+
+
+}
+
+#gototop:hover {
+  background-color: #bc7624;
+
+}
+
+#gotobottom {
+  background-color: #666666;
+
+}
+
+#gotobottom:hover {
+  background-color: #bc7624;
+
+}
+
+#foot-portfolio {}
+
+#foot-portfolio:hover {}
+
+#foot-linkedin {}
+
+#foot-linkedin:hover {}
+
+#foot-facebook {}
+
+#foot-facebook:hover {}
+
+#foot-github {}
+
+#foot-github:hover {}
+
+#foot-twitter {}
+
+#foot-twitter:hover {}
+
+#foot-googleplus {}
+
+#foot-googleplus:hover {}
+
+.buttom-agenda {}
+
+.buttom-agenda:hover {}
+
+#botaosair {}
+
+#botaosair:hover {}

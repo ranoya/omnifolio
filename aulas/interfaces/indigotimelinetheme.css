@@ -1,0 +1,44 @@
+:root {
+  --timeline-text-over: #544ddf !important;
+}
+
+@media screen and (max-width: 649px) {
+  #loslinks {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #sliding1,
+  #sliding2,
+  #sliding3,
+  #frontslide {
+    height: calc(100vh - 150px);
+  }
+
+  #sliding1 iframe,
+  #sliding2 iframe,
+  #sliding3 iframe,
+  #frontslide iframe {
+    height: calc(100vh - 154px) !important;
+  }
+
+  #slider {
+    height: 60px;
+    top: calc(100vh - 85px);
+  }
+}
+
+#paginacao {
+  bottom: 60px;
+}
+
+.bloquinho.small {
+  width: 3px;
+  height: 1px;
+  border-radius: 3px;
+}
+
+.navmenu .small {
+  padding-top: 2px;
+}

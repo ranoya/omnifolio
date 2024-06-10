@@ -1,0 +1,439 @@
+<script type="text/javascript">
+	/* -- Google Analytics ---------------------------------------------------- */
+
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-61225449-1', 'auto');
+	ga('send', 'pageview');
+
+	/* ---------------------------------------------------- Google Analytics -- */
+</script>
+
+<!DOCTYPE html>
+<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-montserrat theme-color-white-blue">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="pinterest" content="nopin" />
+	<meta name="pinterest" content="nohover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Design orientado a experiência e sentido * PPGDesign</title>
+	<meta name="generator" content="slides.com" />
+	<meta name="description"
+		content="Material de apoio da disciplina de Design Orientado à Experiência do Programa de Pós-Graduação em Design da Universidade Federal de Pernambuco">
+	<meta name="author" content="Prof. Dr. Guilherme Ranoya">
+	<meta name="keywords" content="design, experiência, projeto, emoção">
+	<meta property="og:url" content="https://www.ranoya.com/aulas/interfaces/index.html">
+	<meta property="og:title" content="Design de Interfaces * UFPE">
+	<meta property="og:description"
+		content="Material de apoio da disciplina de Design Orientado à Experiência do Programa de Pós-Graduação em Design da Universidade Federal de Pernambuco">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="600">
+	<meta property="og:site_name" content="ranoya.com">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/uxcover.jpg" />
+	<meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/uxcover.jpg">
+	<link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/uxcover.jpg" />
+
+	<link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/uxFavicon.png">
+	<link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/douxFavicon57.png" />
+	<link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/douxFavicon57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/douxFavicon72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/douxFavicon114.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/douxFavicon144.png" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#a59b04">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#a59b04">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#a59b04">
+
+	<style>
+		#menuconteudo::-webkit-scrollbar {
+			width: 6px;
+			background-color: transparent;
+			-webkit-border-radius: 100px;
+		}
+
+		#menuconteudo::-webkit-scrollbar:hover {
+			background-color: transparent;
+		}
+
+		#menuconteudo::-webkit-scrollbar-thumb:vertical {
+			background-color: #ffffff55;
+			-webkit-border-radius: 100px;
+		}
+
+		#menuconteudo::-webkit-scrollbar-thumb:vertical:hover {
+			background-color: #ffffff99
+		}
+
+		#menuconteudo::-webkit-scrollbar-thumb:vertical:active {
+			background-color: #ffffffaa;
+		}
+
+		html {
+
+			background-color: #958B57;
+
+		}
+
+		.menubutton {
+
+			width: 30px;
+			height: 30px;
+			position: fixed;
+			z-index: 100;
+			top: 35px;
+			right: 30px;
+			background-color: #958B57;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+			border-radius: 15px;
+
+		}
+
+		.menubutton:hover {
+
+			background-color: grey;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+
+		}
+
+		h3 {
+
+			font-family: Helvetica, Arial, sans-serif;
+			color: #caff65;
+			font-size: 1.8vh;
+			padding: 0;
+			margin: 0;
+			margin-bottom: 1.2vh;
+
+
+		}
+
+		nav {
+
+			width: 335px;
+			position: fixed;
+			z-index: 99;
+			top: 100px;
+			right: -375px;
+			background-color: #958B57;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 1.4vh;
+			color: white;
+			padding-top: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 70px;
+			vertical-align: middle;
+			height: calc(100% - 190px);
+			overflow-y: hidden;
+			border-top-left-radius: 20px;
+
+		}
+
+		#menuconteudo {
+
+			overflow-y: scroll;
+			height: calc(100% - 50px);
+			width: 325px;
+			padding-right: 15px;
+			margin-top: 20px;
+			margin-left: -20px;
+			padding-left: 20px;
+		}
+
+		nav a {
+
+			font-size: 2.2vh;
+			padding-left: 8px;
+			padding-right: 8px;
+			margin-left: -8px;
+			padding-top: 0.7vh;
+			padding-bottom: 0.7vh;
+			text-decoration: none;
+			color: white;
+			display: block;
+			margin-bottom: 0px;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+
+		}
+
+		nav a:hover {
+
+			background-color: white;
+			color: #958B57;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+
+		}
+
+		* {
+			-webkit-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
+		}
+
+		@media (max-width: 640px) {
+
+			.menubutton {
+
+				background-color: grey;
+
+			}
+
+			#menuconteudo {
+				width: 100%;
+				padding-right: 20px;
+			}
+
+			nav {
+
+				width: calc(100% - 40px);
+				right: calc(-40px - 100%);
+				font-size: 1.8vh;
+
+			}
+
+			nav a {
+
+				width: calc(100% - 21px);
+				font-size: 2.8vh;
+				padding-left: 13px;
+				padding-right: 8px;
+				margin-left: 0;
+				padding-top: 1.5vh;
+				padding-bottom: 1.5vh;
+				text-decoration: none;
+				color: white;
+				display: block;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				-webkit-transition: all 0.4s ease-in;
+				transition: all 0.4s ease-in;
+				background-color: rgba(255, 255, 255, 0.2);
+				border-radius: 18px;
+
+			}
+
+		}
+	</style>
+
+</head>
+
+<body style="padding: 0 0 0 0; margin: 0 0 0 0; overflow-y: hidden; overflow-x: hidden;">
+
+	<a href="javascript: menu();" class="menubutton"><img
+			src="https://www.ranoya.com/Assets/WebsiteIcons/hamburguer-white.svg" style="width: 100%;"></a>
+
+	<nav id="menu">
+		<h3>SUMÁRIO</h3><br>
+
+		<div id="menuconteudo">
+
+			<br>APRESENTAÇÃO<br>
+			<a href="javascript:sumario('capa');">CAPA</a>
+			<a href="javascript:sumario('explicainicio');">O QUE É ESTE MATERIAL</a>
+			<a href="javascript:sumario('pesquisa');">PESQUISA</a>
+			<a href="javascript:sumario('resultados');">ARTIGOS PRODUZIDOS</a>
+
+			<br><br>PROJETAR A EXPERIÊNCIA<br>
+			<a href="javascript:sumario('core');">LEITURAS ESSENCIAIS</a>
+			<a href="javascript:sumario('userexperiencexexperiencedesign');">USER EXPERIENCE X EXPERIENCE DESIGN</a>
+			<a href="javascript:sumario('memoriaesentido');">MEMÓRIA, SIGNIFICAÇÃO E SENTIDO</a>
+			<a href="javascript:sumario('mdaplus');">MDA+</a>
+			<a href="javascript:sumario('alteridade');">EXPERIÊNCIA E ALTERIDADE</a>
+			<a href="javascript:sumario('emotionanddesign');">DESIGN E EMOÇÃO</a>
+			<a href="javascript:sumario('menu');">FACES DA EXPERIÊNCIA</a>
+			<a href="javascript:sumario('sensemakers');">CONSTRUÇÃO DO SENTIDO</a>
+			<a href="javascript:sumario('emotionaldesign');">DESIGN EMOCIONAL</a>
+			<a href="javascript:sumario('ephemeral');">ARTEFATOS EFÊMEROS</a>
+			<a href="javascript:sumario('hcd');">ARTEFATOS HUMANIZADOS</a>
+			<a href="javascript:sumario('games');">OS JOGOS E O JOGAR</a>
+
+			<br><br>CONSTRUÇÃO DO SENTIDO<br>
+			<a href="javascript:sumario('diagramacomm');">DIAGRAMA DA COMUNICAÇÃO</a>
+			<a href="javascript:sumario('conhecimento');">EXPERIÊNCIA E CONHECIMENTO</a>
+			<a href="javascript:sumario('antropologiadt');">OBSERVAR COMO UM ANTROPÓLOGO</a>
+			<a href="javascript:sumario('laraia');">COMO OPERA A CULTURA</a>
+			<a href="javascript:sumario('codificardecodificar');">CODIFICAÇÃO <-> DECODIFICAÇÃO</a>
+			<a href="javascript:sumario('eco1');">UNIVERSO DOS SINAIS</a>
+			<a href="javascript:sumario('eco2');">UNIVERSO DO SENTIDO</a>
+			<a href="javascript:sumario('mauromartinbarbero');">ESTUDOS DE RECEPÇÃO</a>
+			<a href="javascript:sumario('arqsentido');">A ARQUITETURA DO SENTIDO</a>
+			<a href="javascript:sumario('thesensemakers');">SENSEMAKERS</a>
+			<a href="javascript:sumario('projetoparafazersentido');">FAZENDO COISAS FAZEREM SENTIDO</a>
+			<a href="javascript:sumario('cityasinterface');">THE CITY AS INTERFACE (ESPAÇO PAROQUIAL, PROTOCOLO,
+				PROGRAMA, PLATAFORMA)</a>
+			<a href="javascript:sumario('coghci');">HCI + QUESTÕES COGNITIVAS</a>
+			<a href="javascript:sumario('ecologiainterfaces');">MÍDIA E INTERFACES</a>
+			<a href="javascript:sumario('questsubjetividade');">SUBJETIVIDADE</a>
+			<a href="javascript:sumario('nikolasrose');">INVENTANDO NOSSOS EUS</a>
+			<a href="javascript:sumario('dissolucaohumano');">A DISSOLUÇÃO DO HUMANO</a>
+			<a href="javascript:sumario('designdiscurso');">DESIGN COMO PRODUÇÃO DISCURSIVA</a>
+			<a href="javascript:sumario('analisedodiscursoorlandi');">ANÁLISE DO DISCURSO</a>
+			<a href="javascript:sumario('discursoedesign');">DESIGN = DISCURSO?</a>
+			<a href="javascript:sumario('contextoecenario');">CENÁRIO E CONTEXTO</a>
+			<a href="javascript:sumario('efeitosdodiscurso');">EFEITOS DO DISCURSO</a>
+
+			<br><br>DESIGN EMOCIONAL<br>
+			<a href="javascript:sumario('vwfuntheory');">FUN "THEORY"</a>
+			<a href="javascript:sumario('emocaosemexplicacao');">A IDEIA DE QUE EMOÇÃO NÃO SE EXPLICA</a>
+			<a href="javascript:sumario('naofuncional');">DESIGN NÃO-FUNCIONAL</a>
+			<a href="javascript:sumario('painelemocional');">PAINEL DE DESIGN NÃO-FUNCIONAL</a>
+			<a href="javascript:sumario('neuroestetica');">A ARTE E O CÉREBRO</a>
+
+			<br><br>ARTEFATOS EFÊMEROS<br>
+			<a href="javascript:sumario('void');">O DESIGN DO VAZIO</a>
+			<a href="javascript:sumario('flashmob');">O QUE O FLASHMOB NOS ENSINA SOBRE A EXPERIÊNCIA</a>
+			<a href="javascript:sumario('filosofiadoflow');">O FLOW NO TAOISMO</a>
+			<a href="javascript:sumario('painelefemero');">PAINEL DE DESIGN EFÊMERO</a>
+			<a href="javascript:sumario('alexander');">A QUALIDADE SEM NOME</a>
+			<a href="javascript:sumario('imaterial');">EXPERIÊNCIA E DESMATERIALIZAÇÃO</a>
+
+			<br><br>ARTEFATOS HUMANIZADOS<br>
+			<a href="javascript:sumario('distorcaoux');">DISTORÇÕES SOBRE EXPERIÊNCIA</a>
+			<a href="javascript:sumario('atencaofragmentada');">SOBRECARGA, DESATENÇÃO E IMPACIÊNCIA - A EXPERIÊNCIA
+				FRAGMENTADA</a>
+			<a href="javascript:sumario('atencao');">ATENÇÃO, OU ENERGIA COGNITIVA</a>
+			<a href="javascript:sumario('hassenzahlmomentos');">PROJETANDO MOMENTOS DE PRAZER E SIGNIFICAÇÃO: DESIGN DE
+				EXPERIÊNCIA E FELICIDADE</a>
+			<a href="javascript:sumario('necessidadespsique');">NECESSIDADES PSICOLÓGICAS</a>
+			<a href="javascript:sumario('identidade');">IDENTIDADE</a>
+			<a href="javascript:sumario('stuarthall');">A IDENTIDADE CULTURAL NA PÓS-MODERNIDADE</a>
+
+			<br><br>OS JOGOS E O JOGAR<br>
+			<a href="javascript:sumario('semanticadiversao');">A SEMÂNTICA DO DIVERTIDO</a>
+			<a href="javascript:sumario('joyful');">DIVERSÃO E CONTEXTO</a>
+			<a href="javascript:sumario('flowitself');">FLOW: ENTRE O PRAZER E A DIVERSÃO</a>
+			<a href="javascript:sumario('getserious');">DIFERENÇAS ENTRE O SÉRIO E O AUSTERO</a>
+			<a href="javascript:sumario('definicaojogo');">O QUE É UM JOGO / JOGAR</a>
+			<a href="javascript:sumario('playvswork');">A FALSA DIALÉTICA DO "WORK X PLAY"</a>
+			<a href="javascript:sumario('playfulnes');">O ESTADO DE ESPÍRITO DO JOGADOR</a>
+
+			<br><br>CONHECIMENTO VERNACULAR<br>
+			<a href="javascript:sumario('vernaculo');">SENSO COMUM</a>
+			<a href="javascript:sumario('refexperiencia');">REFERÊNCIAS EM EXPERIÊNCIA</a>
+			<a href="javascript:sumario('refemocao');">REFERÊNCIAS EM EMOÇÃO</a>
+			<a href="javascript:sumario('uxtrends');">PESQUISA UX TRENDS</a>
+			<a href="javascript:sumario('panoramaux');">PESQUISA PANORAMA UX</a>
+
+			<br><br>REFERÊNCIAS<br>
+			<a href="javascript:sumario('bibliografia');">BIBLIOGRAFIA</a>
+
+		</div>
+
+	</nav>
+
+	<iframe id="placehold" frameborder=0 style="position: fixed; left: 0; width: 100%; height: calc(100% + 34px);"
+		scrolling="no"></iframe>
+
+	<script>
+		var s = [
+			"https://slides.com/ranoya/doux/embed"
+		];
+
+		document.getElementById("placehold").src = s[0] + "#/capa";
+
+		var menuOpen = false;
+
+		function menu() {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				menuOpen = true;
+				document.getElementById("menu").style.right = "0";
+				if (mobile > 640) {
+					//document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+			} else {
+
+				menuOpen = false;
+				if (mobile > 640) {
+					document.getElementById("menu").style.right = "-375px";
+				} else {
+					document.getElementById("menu").style.right = "calc(-40px - 100%)";
+					document.getElementById("placehold").style.left = "0";
+				}
+				//document.getElementById("placehold").style.left = "0";
+
+			}
+
+		}
+
+		window.onresize = function (event) {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				if (mobile > 640) {
+					document.getElementById("menu").style.right = "-375px";
+				} else {
+					document.getElementById("menu").style.right = "calc(-40px - 100%)";
+					document.getElementById("placehold").style.left = "0";
+				}
+
+
+			} else {
+
+				document.getElementById("menu").style.right = "0";
+				if (mobile > 640) {
+					//document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+				menu();
+
+			}
+
+		};
+
+		function sumario(place, slide) {
+			if (!slide) {
+
+				slide = 0;
+
+			}
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			//alterna para versão mobile, se for acessado de um
+			/*
+			
+			 if (mobile<=640 && slide > 1) {
+				slide++;
+			}
+
+			*/
+
+			document.getElementById("placehold").src = s[slide] + "#/" + place;
+			menu();
+		}
+	</script>
+</body>
+
+</html>

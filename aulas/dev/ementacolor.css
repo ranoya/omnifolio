@@ -1,0 +1,64 @@
+body {
+  color: #777777;
+  background-color: transparent;
+}
+
+nav a {
+  color: white;
+  background-color: #999999;
+}
+
+nav a:hover {
+  background-color: #FA8400;
+}
+
+#botaosair:hover {
+  background-color: #FA8400;
+}
+
+h2, h1 , .tempo {
+  color: #FA8400;
+}
+
+h3 {
+  color: #F29610;
+}
+
+.links {
+  border-bottom-color: #F29610;
+}
+
+.links:hover {
+  border-bottom-color: #F29610;
+  background-color: #F29610;
+  color: white;
+}
+
+.linkdelicado {
+  border-bottom-color: #CCCCCC;
+  
+}
+
+.linkdelicado:hover {
+  border-bottom-color: #FA8400;
+  
+}
+
+.listatitulo {
+  border-bottom-color: #CCCCCC;
+  
+}
+
+.listatitulo:hover {
+  border-bottom-color: #FA8400;
+  
+}
+
+.sublinhado {
+  background-color: #F29610;
+  color: white;
+}
+
+td {
+  border-color: #CCCCCC;
+}

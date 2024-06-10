@@ -1,0 +1,223 @@
+/* tipografia -------------------------------------------------------- */
+
+:root {
+  --primary-color: #FF1499;
+  --secondary-color: grey;
+  --invert-color: white;
+
+}
+
+/* cssreset.com ------------------------------------------------------ */
+* {}
+
+/* base -------------------------------------------------------------- */
+.logocolor {
+
+  fill: #FF4C9C;
+
+}
+
+body {
+  background-color: transparent;
+  color: #FF1499;
+}
+
+nav {
+  background-color: white;
+}
+
+#mobile {}
+
+#navblock {}
+
+.listalinha {
+
+  padding-bottom: 20px;
+
+}
+
+a {
+  color: grey;
+}
+
+a:hover {
+  background-color: #FF1499;
+  color: white;
+}
+
+.vidogridthumblink {
+  border-color: transparent;
+
+}
+
+.vidogridthumblink:hover {
+  border-color: pink;
+}
+
+a.imagebk {
+  border-color: pink;
+}
+
+a.imagebk:hover {
+  border-color: #FF1499;
+}
+
+
+.filtroativo {
+  background-color: #d8d8d8;
+  color: white;
+
+}
+
+.filtroinativo {
+  background-color: transparent;
+  color: #bababa;
+}
+
+#navblock a {
+  color: grey;
+}
+
+#navblock a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.marcacao {
+  background-color: transparent;
+}
+
+.marcacao:hover {
+  background-color: transparent;
+}
+
+/* estrutura --------------------------------------------------------- */
+
+#heading {
+  background-color: transparent;
+  color: #cf3a32;
+}
+
+.secao {
+  background-color: transparent;
+}
+
+.bloco-conteudo {}
+
+#rodape {
+  background-color: transparent;
+  color: grey;
+
+}
+
+#rodape .bloco-conteudo {
+  background-color: transparent;
+  color: grey;
+
+}
+
+#rodape .bloco-conteudo svg {
+  fill: grey;
+
+}
+
+#rodape .bloco-conteudo h6 {
+  color: grey;
+
+}
+
+#ranoyalogo {}
+
+#carregando {}
+
+.loadingimage {}
+
+.videogrid {}
+
+#sumario {}
+
+.sumariolink {
+  background-color: #bfbfbf;
+  color: white;
+
+}
+
+.sumariolink:hover {
+  background-color: #f44292;
+
+}
+
+.halfblock {}
+
+
+/* tipografia --------------------------------------------------------- */
+
+h1 {}
+
+h6 {}
+
+.separador {}
+
+.littlegap {}
+
+.doublegap {}
+
+.triplegap {}
+
+.listalinha {}
+
+.mytags {}
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  background-color: #bfbfbf;
+
+}
+
+#gototop:hover {
+  background-color: #f44292;
+
+}
+
+#gotobottom {
+  background-color: #bfbfbf;
+
+}
+
+#gotobottom:hover {
+  background-color: #f44292;
+
+}
+
+#foot-portfolio {}
+
+#foot-portfolio:hover {}
+
+#foot-linkedin {}
+
+#foot-linkedin:hover {}
+
+#foot-facebook {}
+
+#foot-facebook:hover {}
+
+#foot-github {}
+
+#foot-github:hover {}
+
+#foot-twitter {}
+
+#foot-twitter:hover {}
+
+#foot-googleplus {}
+
+#foot-googleplus:hover {}
+
+.buttom-agenda {}
+
+.buttom-agenda:hover {}
+
+#botaosair {}
+
+#botaosair:hover {}

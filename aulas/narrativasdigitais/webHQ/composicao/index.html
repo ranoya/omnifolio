@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>Web HQ * Requadro Adaptativo</title>
+  <meta name="generator" content="artesanal" />
+  <meta name="description" content="Requadros adaptativos para HQ Web">
+  <meta name="keywords" content="editorial digital, artefatos narrativos, interação, informação, disciplina">
+  <meta name="author" content="Guilherme Ranoya">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link REL="SHORTCUT ICON" HREF="https://www.ranoya.com/favicon.ico">
+  <link rel="image_src" type="image/jpeg" href="https://narrativas.ranoya.com/cover.jpg" />
+  <meta property="og:image" content="https://narrativas.ranoya.com/cover.jpg" />
+  <meta property="og:image:width" content="1145" />
+  <meta property="og:image:height" content="601" />
+  <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="white">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="white">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+<style>
+
+* {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background-repeat: no-repeat;
+}
+
+
+body {
+
+	margin: 17px 10px 10px 10px;
+
+}
+
+div {
+
+	border: solid 3px black;
+	margin: 6px 6px 6px 6px;
+
+}
+
+.ancoracentrotopo {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/sauron.svg');
+	background-position: center top;
+	background-size: cover;
+
+
+}
+
+.ancoracentroesquerda {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/sauron.svg');
+	background-position: center left;
+	background-size: cover;
+	
+
+}
+
+.ancoracentrodireita {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/sauron.svg');
+	background-position: right center;
+	background-size: cover;
+
+}
+
+.ancoracentrofundo {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/sauron.svg');
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.ancoracentrocentro {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/sauron.svg');
+	background-position: center center;
+	background-size: cover;
+
+}
+
+.ancoraesquerdatopo {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/sauron.svg');
+	background-position: top left;
+	background-size: cover;
+
+}
+
+.ancoraesquerdafundo {
+
+	background-image: url('https://assets.ranoya.com/textos-ilustracoes/desertocena.svg');
+	background-position: bottom left;
+	background-size: cover;
+
+}
+
+
+.largefull {
+
+	width: calc(100% - 21px);
+	height: 300px;
+	clear: both;
+}
+
+.third {
+
+	width: calc(33.33% - 19px);
+	height: 160px;
+	float: left;
+	margin-bottom: 12px;
+
+}
+
+.thin23 {
+
+	width: calc(66.66% - 19px);
+	height: 600px;
+	float: left;
+
+}
+
+.thin13 {
+
+	width: calc(33.33% - 19px);
+	height: 600px;
+	float: left;
+
+}
+
+.sobrepoe {
+
+	width: calc(100% - 21px);
+	height: 400px;
+	overflow: hidden;
+	clear: both;
+
+}
+
+
+.sobrepoemleft {
+
+	min-width: 370px;
+	border: none 0 transparent;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	top: 0;
+	z-index: 2;
+
+}
+
+.sobrepoemright {
+
+	min-width: 370px;
+	border: none 0 transparent;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	top: -820px;
+	z-index: 4;
+
+}
+
+.sobrepoemcenter {
+
+	min-width: 370px;
+	border: none 0 transparent;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	top: -410px;
+	z-index: 3;
+
+}
+
+.balaodetexto {
+
+	background-image: url("https://assets.ranoya.com/Diagramas/textbaloon.svg");
+	background-size: 200px 120px;
+	background-position: top left;
+	width: 200px;
+	height: 120px;
+	position: relative;
+	z-index: 5;
+
+	top: 230px;
+	left: 17%;
+	border: none 0 transparent;
+}
+
+.seccoes1 {
+
+	background-image: url("https://assets.ranoya.com/textos-ilustracoes/seccoes1.svg");
+	background-size: 400px 400px;
+	background-position: top left;
+
+}
+
+.seccoes2 {
+
+	background-image: url("https://assets.ranoya.com/textos-ilustracoes/seccoes2.svg");
+	background-size: 400px 400px;
+	background-position: top center;
+
+}
+
+.seccoes3 {
+
+	background-image: url("https://assets.ranoya.com/textos-ilustracoes/seccoes3.svg");
+	background-size: 400px 400px;
+	background-position: top right;
+
+}
+
+
+.deserto1 {
+
+	background-image: url("https://assets.ranoya.com/textos-ilustracoes/deserto1.svg");
+	background-size: 1000px 400px;
+	background-position: top right;
+
+}
+
+.deserto2 {
+
+	background-image: url("https://assets.ranoya.com/textos-ilustracoes/deserto2.svg");
+	background-size: 1000px 400px;
+	background-position: top center;
+
+}
+
+.deserto3 {
+
+	background-image: url("https://assets.ranoya.com/textos-ilustracoes/deserto3.svg");
+	background-size: 100% 400px;
+	background-position: top left;
+	max-width: 1000px;
+	min-width: 600px;
+
+}
+
+.cubosimples {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/centrofocalnoguides.svg');
+	background-position: center left;
+	background-size: cover;
+
+}
+
+.cuboguide {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/centrofocal.svg');
+	background-position: top left;
+	background-size: cover;
+
+}
+
+.tiposdeextensao {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/extensoes.svg');
+	background-position: top left;
+	background-size: contain;
+
+}
+
+
+h1, h2, h3 {
+
+	clear: both;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+p {
+
+	clear: both;
+	margin-left: 6px;
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+	<p style="width: 100%;"><img src="https://assets.ranoya.com/Diagramas/redimensioneH.svg" style="width: calc(100% - 20px);"></p>
+	<h1><br><br><br><br>Composição de imagem para Web HQ</h1>
+
+	<h3>Toda imagem conta com um centro focal e uma parcela de informação excedente. Para web, além do ponto focal e do excedente, é necessário pensar em qual direção esse excedente se extende, para que seja possível construir essa extensão.</h3>
+
+	<div class="largefull cubosimples" style="border: none 0 transparent; height: 240px;"></div>
+	<div class="thin23 cuboguide" style="border: none 0 transparent; height: 22vw;"></div>
+	<div class="thin13 tiposdeextensao" style="border: none 0 transparent; height: 39.3vw;"></div>
+
+
+
+
+
+
+	<h1>Composições com dimensionamento variável</h1>
+
+	<h3>A imagem em uma HQ é construída em função da composição relativa à página e seu requadro. No caso da web, estas dimensões variam, e a composição precisa ser pensada como algo dinâmico. As duas imagens abaixo estão ancoradas no centro do eixo horizontal e vertical. Quando a dimensão do requadro fica maior que a própria imagem, ela redimensiona mantendo o centro fixo.</h3>
+	
+	<div class="ancoracentrocentro thin13"></div>
+	<div class="ancoracentrocentro thin23"></div>
+
+	<h3><br>Já a imagem abaixo está ancorada a esquerda no eixo horizontal, e para baixo no eixo vertical. Quando ela redimensiona, o excedente que fica para cima e para a direita (o céu e a lua) podem aparecer ou desaparecer.</h3>
+	<div class="largefull ancoraesquerdafundo"></div>
+
+	<h1><br><br><br><br>Sobreposição de planos</h1>
+	<h3>Nas imagens abaixo, utilizamos a sobreposição de planos e imagens com fundo transparente. No primeiro exemplo, as imagens estão ancoradas à esquerda, no centro e à direita, e na medida que o navegador se estreita, a sobreposição produz um efeito de esconder o apresentar informação. A composição, logicamente, foi pensada para produzir este efeito.</h3>
+	<div class="sobrepoem" style="overflow-y: hidden; height: 400px;">
+		 <div class="sobrepoemleft seccoes1"></div>
+		 <div class="sobrepoemcenter seccoes2"></div>
+		 <div class="sobrepoemright seccoes3"></div>
+
+	</div>
+
+	<h3><br>Neste segundo exemplo, utilizamos um recurso extra: a redução nos dois eixos de uma das camadas, de forma com que produzisse também um efeito de zoom no centro focal (o "personagem").</h3>
+	<div class="sobrepoem" style="overflow-y: hidden; height: 400px;">
+		 <div class="sobrepoemleft deserto1"></div>
+		 <div class="sobrepoemcenter deserto2" style="top: -400px;"></div>
+		 <div class="sobrepoemright deserto3" style="top: -800px;"></div>
+	</div>
+
+
+	<h1><br><br><br><br>Balões de texto com sobreposição de plano</h1>
+	<h3>Balões de texto podem ser colocados em uma HQ na web através da sobreposição de imagens, de forma a preservar a imagem original inteira e ser posicionado dinamicamente conforme a composição sofre variação pelas dimensões do navegador.</h3>
+
+	<div class="balaodetexto" style="boder: none 0 transparent;"></div>
+	<div class="ancoracentrofundo thin13"></div>
+	<div class="ancoracentrocentro thin23"></div>
+	
+
+
+</body>
+
+
+
+</html>

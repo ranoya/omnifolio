@@ -1,0 +1,55 @@
+
+<link rel="stylesheet" type="text/css" href="../../books/public/referenceDocs.css">
+
+
+<script src="https://www.ranoya.com/Assets/JSLibs/AutoAce/multiAce.js"></script>
+
+<script src="../../books/public/referenceDocs.js"></script>
+<script>
+
+  Predata_editor_1 = "<styl" + "e>body, html { margin: 0; padding: 0; }</sty" + "le>" + "<canvas id='pjs' " + "style='outline: none;'>" + " </canvas><scri"+ "pt src='https://www.ranoya.com/public/dev/processing.min.js'></sc" + "ript><scrip" + "t type='application/processing' data-processing-target='pjs'>" + "size(320,600); background(#ffffff);";
+
+
+  Postdata_editor_1 = "fill(#cccccc); textSize(18); fill(#ac2ac6); text('a = ' + a, 40,20); text('b = ' + b, 40,40); text('y = ' + y, 40,60); text('r = ' + r, 40,80); text('c = ' + c, 40, 100); text('g = ' + g, 40, 120); text('s = ' + s, 40, 140); text('p = ' + p, 40, 160); text('n = ' + n, 40, 180); text('k[0] = ' + k[0], 40, 220); text('k[3] = ' + k[3], 40, 240); text('t[0] = ' + t[0], 40, 260); text('t[2] = ' + t[2], 40, 280); text('t[3] = ' + t[3], 40, 300); text('t[4] = ' + t[4], 40, 320); text('w[0] = ' + w[0], 40, 340); text('w[1] = ' + w[1], 40, 360); text('w[2] = ' + w[2], 40, 380); text('w[3] = ' + w[3], 40, 400); text('w[4] = ' + w[4], 40, 420);" + "</scr" + "ipt>";
+
+</script>
+
+<br><br>
+
+<div class="diagramahalf" style="height: 600px;">
+<iframe id="View_editor_1" style="height: 600px; border: 0 transparent none;"></iframe>
+</div>
+
+<div class="diagramahalf firstblock">
+<pre class='editor codefull' data-name='editor_1' id='editor_1' data-linguagem="java" data-acetheme="tomorrow">
+
+int a = 10;
+int b = 5;
+float y = 3.5;
+float r = random(50);
+boolean c = false;
+boolean g = true;
+String s = "palavra";
+String p = "junta";
+String n = "3";
+
+int[] k = new int(5);
+k=[5,10,20,25,80];
+
+String t = new String(5);
+t=["Gulherme", "Rodrigo", "Helena"];
+
+t[3] = t[0]+t[1];
+t[4] = t[0] + 1;
+
+float[] w = new float[10];
+
+w[0] = a++;
+w[1] = b + 2;
+w[2] = y - 10;
+w[3] = (w[1] + w[2]) + (w[0] - 20);
+w[4] = parseInt(g);
+
+
+</pre>
+</div>

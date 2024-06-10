@@ -1,0 +1,21 @@
+[{
+        "topico": "pinaesthetic",
+        "label": "ARTE"
+
+    },
+    {
+        "topico": "pingraphik",
+        "label": "GRÁFICO"
+
+    },
+    {
+        "topico": "pineditorial",
+        "label": "EDITORIAL"
+
+    },
+    {
+        "topico": "ontphysical",
+        "label": "TECNOLOGIA"
+    }
+
+]

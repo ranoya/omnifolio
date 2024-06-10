@@ -1,0 +1,22 @@
+[
+	{	
+		"topico": "pinpoetica",
+		"label": "TECNOLOGIAS CRIATIVAS"
+
+	},
+	{	
+		"topico": "pingenerativo",
+		"label": "ARTE GENERATIVA"
+
+	},
+	{	
+		"topico": "pindataviz",
+		"label": "INFORGRAFIA"
+
+	},
+	{	
+		"topico": "pininteracao",
+		"label": "INTERFACES & INTERAÇÃO"
+
+	}
+]

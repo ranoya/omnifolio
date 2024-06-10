@@ -1,0 +1,10 @@
+:root {
+
+    --text-color: #777777;
+    --highlight-color: #958B57;
+    --invert-color: white;
+    --darker-color: #c9bf04cf;
+    --other-color: #a09f8ccf;
+    --neutral-color: #cccccc;
+    --darker-neutral: grey;
+}

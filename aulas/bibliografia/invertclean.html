@@ -1,0 +1,124 @@
+<!--
+        
+
+
+https://www.ranoya.com/AssetsManager/Bibliografia/dark.html?cat=bibliografia&load=total&render=lista&from=0&to=30&filter=method,design
+now,cultura,design,estetica,experiencia,interacao,interface,jogos,linguagem,metodologia,midia,web,publico,meusartigos,auladd,aulawd,auladg,digicorp,pesquisa,bancas,orientandos
+
+
+
+-->
+      
+      
+<!DOCTYPE html>
+<html>
+<head> 
+<base target="_blank">   
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script type='text/javascript' src="https://www.ranoya.com/AssetsManager/js/ams.js"></script>  
+<script>
+  function borda() {
+
+  if ($.parametros('borda')) {
+
+    borda = $.parametros('borda') + "px;";
+    document.write("<style>body { padding: " + borda + " }</style>");
+
+  }
+
+}
+</script>
+
+<style>
+  
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body {
+  
+  margin-bottom: 15px;
+  
+  
+}
+
+.listalinha {
+  
+  clear:both;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  
+}
+
+.listatitulo {
+  
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 32px;
+  text-decoration: none;
+  padding: 5px 15px 7px 15px;
+  border-radius: 4px;
+  margin: 7px 10px 15px 0;
+  width: auto; 
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  
+}
+
+.listatitulo:hover {
+
+  background-color: white;
+  color: #FF0085;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  
+}
+
+@media (max-width: 620px) {
+
+html, body {
+  border: 0 0 0 0;
+}
+
+.listalinha {
+  
+  clear:both;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  
+}
+
+.listatitulo {
+  
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 14px;
+  text-decoration: none;
+  padding: 3px 8px 4px 8px;
+  border-radius: 2px;
+  margin: 3px 6px 8px 0;
+  width: auto; 
+
+  
+}
+
+
+
+
+
+}
+
+  
+</style>
+</head>
+
+<body>
+    <script>borda();</script>    
+    <div id="minharesposta">&nbsp;</div>
+    <div id="carregando" style="width:100%; clear: both; text-align: center;"><img src="https://www.ranoya.com/AssetsManager/elements/whiteloading.gif" style="width: 120px;"/></div>
+        
+</body>
+    
+</html>

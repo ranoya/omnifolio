@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+
+    background-color: #47192d;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+
+    background-color: #47192d;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 50px;
+
+}
+
+h1 {
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+
+}
+
+.faqpergunta {
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    display: block;
+    margin-bottom: 0;
+    padding: 0;
+
+
+}
+
+.faqresposta {
+    margin-top: 0;
+    color: #e0a7c3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 40px;
+
+}
+
+
+
+@media (max-width: 650px) {
+
+
+h1 {
+
+    font-size: 22px;
+}
+
+.faqpergunta {
+
+    font-size: 16px;
+
+
+}
+
+.faqresposta {
+
+    font-size: 12px;
+
+
+    
+}
+
+
+
+}

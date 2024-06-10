@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<script>
+
+ handler = "";
+ mX = "";
+ mY = "";
+ document.addEventListener("mousedown", function(evt) { fazalgo(evt,'teste'); });
+ document.addEventListener("mouseup", function(evt) { naofazalgo(evt, 'teste'); });
+ document.addEventListener("mousemove", function(evt) { mX = evt.pageX; mY = evt.pageY; });
+
+
+function naofazalgo() {
+
+	clearInterval(handler);
+}
+
+function fazalgo(evt,who) {
+
+	handler = setInterval( function() { dragit(evt,who); } , 10);
+
+}
+
+function dragit(evt,who) {
+
+	let xpto = document.getElementById(who);
+	re = xpto.getBoundingClientRect();
+	
+
+	center = re.right - ((re.right - re.left) / 2);
+	centerY = re.bottom - ((re.bottom - re.top) / 2);
+
+
+	newwidth = (mX - center - 11) * 2;
+	newheight = (mY - centerY - 11) * 2;
+	if (newwidth < 200) { newwidth = 200; }
+	if (newheight < 200) { newheight = 200; }
+	newleft = "calc(50vw - " + (newwidth / 2) + "px)";
+	newtop = "calc(50vh - " + (newheight / 2) + "px)";
+
+	if (newwidth > 200) {
+		document.getElementById('quad').style.left = (mX - 7) + "px";
+	} else {
+		document.getElementById('quad').style.left = (center + 102) + "px";
+	}
+
+	if (newheight > 200) {
+		document.getElementById('quad').style.top = (mY - 7) + "px";
+	} else {
+		document.getElementById('quad').style.top = (centerY + 102) + "px";
+	}
+
+	
+
+	xpto.style.width = newwidth + "px";
+	xpto.style.left = newleft;
+	xpto.style.height = newheight + "px";
+	xpto.style.top = newtop;
+
+
+}
+</script>
+</head>
+
+<body>
+
+	<div id="teste" style="position: fixed; top:calc(50vh - 170px); left: calc(50vw - 170px); width: 340px; height: 340px; border: 1px dashed cyan; padding: 10px;">
+		<div id="conteudo" style="position: relative; margin-left: auto; margin-right: auto; width: 100%; min-width: 100px; height: 100%; min-height: 100px; background-color: transparent; overflow: hidden;">
+			
+			<div style="border: 10px solid white; width: calc(70% - 30px); height: 120px; float: right;">
+			</div>
+
+			<div style="border: 10px solid white; width: calc(30% - 20px); height: 120px; float: left;">
+			</div>
+
+			<div style="border: 10px solid white; width: calc(100% - 20px); height: 170px; margin-top: 10px; float: left; clear: both;">
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="quad" style="position: fixed; width: 10px; height: 10px; top: calc(50vh + 185px); left: calc(50vw + 185px); border: 2px solid cyan;"></div>
+
+</body>
+
+</html>

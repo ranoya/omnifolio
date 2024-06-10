@@ -1,0 +1,9 @@
+<div id="observablehq-codigo-1d5e9e46"></div>
+
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@ranoya/desenvolvimentohtml1.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "codigo") return new Inspector(document.querySelector("#observablehq-codigo-1d5e9e46"));
+});
+</script>

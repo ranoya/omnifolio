@@ -1,0 +1,22 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+
+<script type="module">
+    import makegraph from "./makegraph.js";
+
+    let arquivo = "https://designgenerativo.ranoya.com/dialogo/getlinguagens.php";
+
+
+    let xpto = makegraph({
+    'json': arquivo,
+    'el': 'meugraph',
+    'hue': 10,
+    'huestep': 30,
+    'alpha': 10
+    });
+
+</script>
+
+
+<div id="meugraph" style="width: 100%; height: 600px;">
+
+</div>

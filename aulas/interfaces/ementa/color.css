@@ -1,0 +1,18 @@
+:root {
+
+    --text-color: #777777;
+    --highlight-color: #5F56E3;
+    --invert-color: white;
+    --darker-color: #5F56E3;
+    --other-color: #989abb;
+    --neutral-color: #cccccc;
+    --darker-neutral: grey;
+
+    --bg-color: #5F56E3;
+    --neutral-grey: #999999;
+    --iconhighlight: #9895f7;
+    --cont-foregroundcolor: #633438;
+    --fore-color: #5653b4;
+    --highlight-normal: #50036c;
+
+}

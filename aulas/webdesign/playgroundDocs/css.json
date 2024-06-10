@@ -1,0 +1,274 @@
+[{
+		"cordefundo": "white",
+		"cordefrente": "#79BCE0",
+		"logourl": "https://www.ranoya.com/Assets/Logotipos/csscode.svg",
+		"nextrefdoc": "HTML",
+		"nextrefdocurl": "introHTML.php?theme=html&elementos=html",
+		"tamanho": 200
+	},
+	{
+		"capitulo": "INTRODUÇÃO",
+		"topico": "Apresentação",
+		"url": "introCSS.php"
+	},
+	{
+		"capitulo": "INTRODUÇÃO",
+		"topico": "Solicitações",
+		"url": "solicitacoes.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Sintaxe",
+		"url": "sintaxecss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Aplicação e seletores",
+		"url": "seletorescss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Registro de cores",
+		"url": "corescss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Unidades / Medidas",
+		"url": "unidadescss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Box Model",
+		"url": "boxmodel.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "bottom",
+		"url": "css-bottom.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "clear",
+		"url": "css-clear.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "display",
+		"url": "css-display.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "float",
+		"url": "css-float.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "left",
+		"url": "css-left.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "position",
+		"url": "css-position.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "right",
+		"url": "css-right.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "top",
+		"url": "css-top.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "z-index",
+		"url": "css-z-index.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border",
+		"url": "css-border.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom",
+		"url": "css-border-bottom.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom-color",
+		"url": "css-border-bottom-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom-style",
+		"url": "css-border-bottom-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom-width",
+		"url": "css-border-bottom-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-color",
+		"url": "css-border-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left",
+		"url": "css-border-left.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left-color",
+		"url": "css-border-left-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left-style",
+		"url": "css-border-left-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left-width",
+		"url": "css-border-left-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right",
+		"url": "css-border-right.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right-color",
+		"url": "css-border-right-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right-style",
+		"url": "css-border-right-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right-width",
+		"url": "css-border-right-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-style",
+		"url": "css-border-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top",
+		"url": "css-border-top.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top-color",
+		"url": "css-border-top-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top-style",
+		"url": "css-border-top-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top-width",
+		"url": "css-border-top-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-width",
+		"url": "css-border-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "display",
+		"url": "css-display.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "height",
+		"url": "css-height.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin",
+		"url": "css-margin.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-bottom",
+		"url": "css-margin-bottom.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-left",
+		"url": "css-margin-left.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-right",
+		"url": "css-margin-right.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-top",
+		"url": "css-margin-top.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding",
+		"url": "css-padding.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-bottom",
+		"url": "css-padding-bottom.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-left",
+		"url": "css-padding-left.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-right",
+		"url": "css-padding-right.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-top",
+		"url": "css-padding-top.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "width",
+		"url": "css-width.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "diretriz @import",
+		"url": "css-import.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "diretriz @font-face",
+		"url": "css-font-face.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "diretriz @media",
+		"url": "css-media.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "funções do CSS",
+		"url": "funcoescss.php"
+	}
+]

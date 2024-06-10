@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>Guilherme Ranoya, PhD</title>
+        <meta name="generator" content="artesanal" />
+        <meta name="description" content="Exercícios">
+        <meta name="keywords" content="aulas, atividades, submissão, exercícios">
+        <meta name="author" content="Guilherme Ranoya">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link REL="SHORTCUT ICON" HREF="http://www.ranoya.com/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<style>
+
+        * {
+            	margin: 0;
+            	padding: 0;
+            	outline: none;
+        }
+
+
+html, body {
+            
+                background: #ff2f54;
+                color: white;
+                width: 100%;
+                height: 100%;
+                -webkit-font-smoothing: antialiased;
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 22px;
+                line-height: 38px;
+        }
+
+
+a {
+
+                color: white;
+                width: 100%;
+                height: 100%;
+                -webkit-font-smoothing: antialiased;
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 22px;
+                line-height: 38px;
+                text-decoration: none;
+                padding: 8px 12px 8px 12px;
+}
+
+a:hover {
+
+
+                color: #ff758c;
+                background-color: white;
+                width: 100%;
+                height: 100%;
+                -webkit-font-smoothing: antialiased;
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 22px;
+                line-height: 38px;
+                text-decoration: none;
+                padding: 8px 12px 8px 12px;
+                border-radius: .3em;
+                
+                
+
+}
+
+
+p, #cabecalho p {
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 32px;
+                
+
+
+}
+
+h1 {
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 32px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                line-height: 23px;
+                margin-top: 5px;
+}
+
+h3 {
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 12px;
+                line-height: 16px;
+                margin-top: 10px;
+                margin-bottom: 2px;
+}
+
+h4 {
+
+                font-family: Arial;
+                font-weight: 100;
+                font-size: 16px;
+                line-height: 20px;
+                color: #ff758c;
+                margin-top: 57px;
+}
+ 
+#wrap {
+                max-width: 920px;
+                min-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+}
+
+#cabecalho {
+
+                display: block-inline;
+                padding-top: 40px;
+                padding-bottom: 0px;
+
+
+}
+
+textarea {
+
+                margin-top: 15px;
+
+}
+
+                
+.fieldchecked {
+                border: 0 solid;  
+                box-shadow: 0 0 0;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: .1em;
+                width: 100%;
+                height: 40px;
+                font-size: 21px;
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: white;
+                color: #ff758c;
+        }
+        
+.fieldnotchecked {
+                border: 0 solid;  
+                box-shadow: 0 0 0;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                margin-bottom: 12px;
+                border-radius: .3em;
+                width: 100%;
+                height: 40px;
+                font-size: 21px;
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: #ff758c;
+                color: white;
+                
+        }
+
+
+
+
+.messageoriginal {
+ 
+                border: 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: 0 solid; 
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: .3em;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 30px;
+                font-size: 21px;
+                float: left;
+                border-color: transparent;  
+                box-shadow: 0 0 0 transparent;
+                background-color: #ff758c;
+                color: white
+            
+            
+        }
+
+.messagenotchecked {
+            
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: transparent;
+                color: white;
+                border: transparent 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: white dotted 1px;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: 0;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 140px;
+                font-size: 21px;
+                float: left;
+
+        }
+
+.messagechecked {
+            
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: white;
+                color: #ff758c;
+                border: transparent 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: transparent 0 solid;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: .1em;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 37px;
+                font-size: 21px;
+                float: left;
+
+        } 
+
+.messagenotcheckedB {
+            
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: transparent;
+                color: white;
+                border: transparent 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: white dotted 1px;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: 0;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 37px;
+                font-size: 21px;
+                float: left;
+
+        }
+
+.messagecheckedB {
+            
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: white;
+                color: #ff758c;
+                border: transparent 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: transparent 0 solid;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: .1em;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 30px;
+                font-size: 21px;
+                float: left;
+
+        } 
+
+
+.messagenotcheckedC {
+            
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: transparent;
+                color: white;
+                border: transparent 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: white dotted 1px;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: 0;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 220px;
+                font-size: 21px;
+                float: left;
+
+        }
+
+.messagecheckedC {
+            
+                border-color: transparent;  
+                box-shadow: transparent;
+                background-color: white;
+                color: #ff758c;
+                border: transparent 0 solid;  
+                box-shadow: 0 0 0;
+                border-bottom: transparent 0 solid;
+                -webkit-font-smoothing: antialiased;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                border-radius: .1em;
+                padding-top: 8px;
+                padding-left: 13px;
+                padding-right: 13px;
+                padding-bottom: 5px;
+                overflow: hidden;
+                width: 97%;
+                height: 190px;
+                font-size: 21px;
+                float: left;
+
+        } 
+
+
+
+        /* ------------------------------------------------------- Formularios */        
+
+
+
+
+</style>
+
+
+
+<script type='text/javascript'>
+
+    $(document).ready(function() {
+    
+    
+    
+    $("#nossosnomes").focus(function() {
+           
+    $('#nossosnomes').addClass('messagenotchecked').removeClass('messagechecked').removeClass('messageoriginal');
+        
+    })
+
+
+    $("#documentotitulo").focus(function() {
+           
+    $('#documentotitulo').addClass('messagenotcheckedB').removeClass('messagecheckedB').removeClass('messageoriginal');
+        
+    })
+
+    $("#documentoreferencia").focus(function() {
+           
+    $('#documentoreferencia').addClass('messagenotcheckedC').removeClass('messagecheckedC').removeClass('messageoriginal');
+        
+    })
+    
+    
+    
+    
+    $("#nossosnomes").blur(function() {
+            if ($("#nossosnomes").val() !== "") {
+                
+                $('#nossosnomes').addClass('messagechecked').removeClass('messagenotchecked').removeClass('messageoriginal');
+                changeMessage();
+                
+            } else {
+
+                $('#nossosnomes').addClass('messageoriginal').removeClass('messagechecked').removeClass('messagenotchecked');
+                changeMessage();
+                
+            }
+    });
+
+
+
+    $("#documentotitulo").blur(function() {
+            if ($("#documentotitulo").val() !== "") {
+                
+                $('#documentotitulo').addClass('messagecheckedB').removeClass('messagenotcheckedB').removeClass('messageoriginal');
+                changeMessage();
+                
+            } else {
+
+                $('#documentotitulo').addClass('messageoriginal').removeClass('messagecheckedB').removeClass('messagenotcheckedB');
+                changeMessage();
+                
+            }
+    });
+    
+    
+    
+    $("#documentoreferencia").blur(function() {
+            if ($("#documentoreferencia").val() !== "") {
+                
+                $('#documentoreferencia').addClass('messagecheckedC').removeClass('messagenotcheckedC').removeClass('messageoriginal');
+                changeMessage();
+                
+            } else {
+
+                $('#documentoreferencia').addClass('messageoriginal').removeClass('messagecheckedC').removeClass('messagenotcheckedC');
+                changeMessage();
+                
+            }
+    });    
+
+
+
+    });
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="wrap">
+<div id="cabecalho">
+<img src="http://www.ranoya.com/profileR/assets/paragraph-left.svg" style="width: 130px; height: 130px; float: right; margin-bottom: 20px;" /> 
+    <h3>PROF. DR. GUILHERME RANOYA</h3>
+    <h1>RELATÓRIO / ATIVIDADE</h1>
+</div>
+
+
+
+
+<form id="myForm">
+
+    <div style="width: 82%; padding-top: 0; margin-top: 0;">
+    <textarea name="myName" placeholder=" " class="messageoriginal" id="nossosnomes"></textarea>
+    <h3>NOME(S) DO(S) ALUNO(S)</h3>
+    </div>
+    
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 120px;">
+                <h3>PERÍODO LETIVO</h3>
+                <select name="periodo"  class="fieldnotchecked" id="meuperiodo">
+                <option value="Matutino">Manhã</option>
+                <option value="Noturno">Noite</option>
+                </select>
+            </td>
+            <td>     
+                <h3>CURSO</h3>
+                <select name="curso" class="fieldnotchecked" id="meucurso">
+                <option value="DIGICORP">Pós-graduação em Comunicação Digital - Digicorp/USP</option>
+                <option value="POS-DE">Pós-graduação em Design Editorial Senac</option>
+                <option value="PP">Propaganda & Publicidade Senac</option>
+                <option value="DG">Design Gráfico Senac</option>
+                <option value="DD">Design Digital Senac</option>    
+                </select>   
+
+                
+            </td>
+            </tr>
+    </table>
+
+                <h3>DISCIPLINA</h3>
+                <select name="disciplina" class="fieldnotchecked" id="minhadisciplina">
+                <option value="Interfaces Digitais">Interfaces Digitais: Design, Estética e Interações</option>
+                <option value="Novas Mídias">Novas Mídias</option>
+                <option value="Linguagem">Teorias da Linguagem</option>
+                <option value="Comunicação">Teorias da Comunicação</option>
+                <option value="Midia">Teoria das Mídias</option>
+                <option value="Multimidia">Direção de Arte - Multimídia</option>
+                <option value="Mídias Móveis">Direção de Arte - Mídias Móveis</option>
+                <option value="Projeto4">Projeto Integrador 4</option>
+                <option value="Identidade Corporativa">Criação e Produção - Identidade Corporativa</option>
+                </select>
+
+    
+    <br />
+
+    
+
+    
+
+    
+    
+
+    
+    
+    <textarea name="docName" placeholder=" " class="messageoriginal" id="documentotitulo"></textarea>
+    <h3>TÍTULO DO DOCUMENTO SUBMETIDO</h3>
+    
+    
+    <textarea name="docRef" placeholder=" " class="messageoriginal" id="documentoreferencia"></textarea>
+    <h3>ASSUNTO/REFERÊNCIA/DESCRIÇÃO DO DOCUMENTO</h3>
+    
+    <br /><br />
+    <input type="file" name="myFile" id="uploadbuttom">
+    
+    <input type="submit" value="Upload File"  
+           onclick="if ($('#nossosnomes').val() !== '' && $('#documentotitulo').val() !== '' && $('#documentoreferencia').val() !== '') { this.value='Uploading..';
+                    google.script.run.withSuccessHandler(fileUploaded)
+                    .uploadFiles(this.parentNode);
+                    return false;}">
+</form>
+
+<div id="output"></div>
+
+<script>
+    function fileUploaded(status) {
+        document.getElementById('myForm').style.display = 'none';
+        document.getElementById('output').innerHTML = status;
+    }
+</script>
+
+</div>
+
+</body>
+
+</html>

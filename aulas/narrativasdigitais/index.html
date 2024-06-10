@@ -1,0 +1,615 @@
+<script type="text/javascript">
+	/* -- Google Analytics ---------------------------------------------------- */
+
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-61225449-1', 'auto');
+	ga('send', 'pageview');
+
+	/* ---------------------------------------------------- Google Analytics -- */
+</script>
+
+<!DOCTYPE html>
+<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-opensans theme-color-white-blue">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="pinterest" content="nopin" />
+	<meta name="pinterest" content="nohover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Editorial, HQ & Artefatos Narrativos Digitais * UFPE</title>
+	<meta name="generator" content="slides.com" />
+	<meta name="description" content="Material de apoio da disciplina de Editorial, HQ & Artefatos Narrativos Digitais da Universidade Federal de
+		Pernambuco">
+	<meta name="author" content="Prof. Dr. Guilherme Ranoya">
+	<meta name="keywords" content="editorial, narrativa, hq, livros">
+	<meta property="og:url" content="https://www.ranoya.com/aulas/interfaces/index.html">
+	<meta property="og:title" content="Design de Interfaces * UFPE">
+	<meta property="og:description" content="Material de apoio da disciplina de Editorial, HQ & Artefatos Narrativos Digitais da Universidade Federal de
+		Pernambuco">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="600">
+	<meta property="og:site_name" content="ranoya.com">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/And600.jpg" />
+	<meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/And600.jpg">
+	<link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/And600.jpg" />
+
+	<link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/And16.png">
+	<link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/And57.png" />
+	<link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/And57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/And72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/And114.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/And144.png" />
+
+	<meta name="theme-color" content="#0dc2f2">
+	<meta name="msapplication-navbutton-color" content="#0dc2f2">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0dc2f2">
+	<link rel="stylesheet" type="text/css" href="https://www.projetao.com.br/style/CIncolor.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900&display=swap');
+
+		* {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		html {
+
+			overscroll-behavior: none;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #0dc2f2;
+
+
+		}
+
+		#logosmall {
+			width: 75px;
+			height: 60px;
+			padding: 30px;
+			padding-left: 15px;
+		}
+
+		#conteudo {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			transition: margin-left 0.4s ease-out;
+			left: 0;
+			margin-bottom: 30px;
+			clear: both;
+		}
+
+		#invisibleblocsA {
+			clear: both;
+			width: calc(100% - 120px);
+			margin-left: 120px;
+			height: 120px;
+			float: left;
+		}
+
+		#invisibleblocsB {
+			clear: both;
+			width: 120px;
+			height: 120px;
+			float: right;
+		}
+
+		#molduratitle {
+			margin-top: -240px;
+			height: 240px;
+			width: calc(100% - 120px);
+		}
+
+		#visibleblocsA {
+			clear: both;
+			float: left;
+			width: 120px;
+			height: 120px;
+		}
+
+		#visibleblocsB {
+			clear: both;
+			float: left;
+			width: calc(100% - 15px);
+			height: 120px;
+			padding-right: 15px;
+		}
+
+		#bigblock {
+			width: 100%;
+			background-size: cover;
+			background-position: center center;
+			min-height: 360px;
+			height: 480px;
+			clear: both;
+			min-width: 361px;
+			margin-top: -120px;
+		}
+
+		.bigtitle {
+			display: block;
+			font-weight: 800;
+			display: block;
+			margin-top: 18px;
+			font-size: 32px;
+			line-height: 36px;
+			margin-left: 15px;
+			clear: both;
+			text-decoration: none;
+			transition: all 0.3s ease-out;
+		}
+
+		.bigtitle .blocktext1 {
+			font-size: 11px;
+		}
+
+		.bigtitle .blocktext2 {
+			display: none;
+		}
+
+
+		.qrlink {
+			display: none;
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: contain;
+		}
+
+		.quicklink {
+			display: none;
+		}
+
+		.singleblock {
+			width: 125px;
+			height: 125px;
+			float: left;
+			background-size: cover;
+			background-position: center center;
+			font-size: 12px;
+		}
+
+		.singleblock a {
+			width: calc(100% - 30px);
+			height: calc(100% - 30px);
+			padding: 15px;
+			display: block;
+			text-decoration: none;
+			font-weight: 800;
+			transition: all 0.3s ease-out;
+		}
+
+		.singleblock a:hover {
+			margin: 10px;
+			width: calc(100% - 30px);
+			height: calc(100% - 30px);
+			padding: 5px;
+			transition: all 0.3s ease-out;
+		}
+
+		.toolblock {
+			width: 125px;
+			height: 125px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			font-size: 10px;
+			float: left;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		.toolblock a {
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			padding: 10px;
+			display: block;
+			text-decoration: none;
+			font-weight: 800;
+			transition: all 0.3s ease-out;
+		}
+
+		.toolblock a:hover {
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			padding: 5px;
+			margin: 5px;
+			transition: all 0.3s ease-out;
+		}
+
+		.double {
+			width: 250px;
+		}
+
+		.triple {
+			width: 375px;
+		}
+
+		.superdouble {
+			width: 250px;
+			height: 250px;
+		}
+
+		.quad {
+			width: 375px;
+			height: 375px;
+		}
+
+		.right {
+			float: right;
+		}
+
+
+
+		.blocktext1 {
+			display: block;
+			font-weight: 300;
+			clear: both;
+			line-height: 18px;
+			font-size: 12px;
+		}
+
+		.blocktext2 {
+			display: none;
+		}
+
+		.quad .blocktext2,
+		.superdouble .blocktext2 {
+			display: block;
+			font-size: 12px;
+			line-height: 15px;
+			font-weight: 400;
+			margin-top: 35px;
+		}
+
+		.toolblock .blocktext1 {
+			font-size: 13px;
+			line-height: 15px;
+		}
+
+		.toolblock .blocktext2 {
+			display: none;
+			margin-top: 12px;
+			font-size: 11px;
+			line-height: 12px;
+		}
+
+		.menubutton {
+			width: 30px;
+			height: 30px;
+			position: fixed;
+			z-index: 100;
+			top: 20px;
+			right: 30px;
+			background-color: #3e8dab;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+		}
+
+		.menubutton:hover {
+			background-color: #bb4550;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+		}
+
+
+		#navpresentation {
+			background-color: #0dc2f2;
+			width: 375px;
+			height: calc(100vh + 34px);
+			position: fixed;
+			z-index: 99;
+			top: 0;
+			right: -375px;
+			font-family: Helvetica, Arial, sans-serif;
+			overflow-y: scroll;
+			padding-bottom: 34px;
+		}
+
+
+
+		* {
+			-webkit-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
+		}
+
+		@media (max-width: 640px) {
+			.menubutton {
+				background-color: grey;
+			}
+	</style>
+
+</head>
+
+<body style="padding: 0 0 0 0; margin: 0 0 0 0; overflow-y: hidden; overflow-x: hidden;">
+
+	<a href="javascript: menu();" class="menubutton"><img
+			src="https://www.ranoya.com/Assets/WebsiteIcons/hamburguer-white.svg" style="width: 100%;"></a>
+
+	<nav id="navpresentation">
+		<!-- background-image: url("https://www.ranoya.com/Assets/editorial/carson3.jpg"); 
+	https://media.wnyc.org/i/800/0/l/85/1/tree_of_codes.jpg
+ 
+	Carson 2: https://www.ranoya.com/Assets/screenshots/bangkok1C01.jpg 
+	Carson 3: https://www.ranoya.com/Assets/editorial/carson3.jpg
+	-->
+		<div id='bigblock' style='background-position: right top; background-size: auto; background-image:
+			url(https://www.ranoya.com/Assets/screenshots/bangkok1C01.jpg);'>
+			<div id='invisibleblocsA'></div>
+
+			<svg id="logosmall" viewBox="0 0 1184 1184" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect width="1184" height="1184" fill="#FFFFFF" />
+				<g id="aulaand-seriouscin">
+					<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+						d="M1184 0H0V1184H1184V0ZM210 756V228L570 436V956L210 756ZM674 418H602V490H674V418ZM702 418H774V490H702V418ZM874 328H802V400H874V328ZM902 238H974V310H902V238ZM674 508H602V580H674V508ZM702 508H774V580H702V508ZM874 418H802V490H874V418ZM902 328H974V400H902V328ZM674 598H602V670H674V598ZM702 598H774V670H702V598ZM874 508H802V580H874V508ZM902 418H974V490H902V418ZM674 688H602V760H674V688ZM702 688H774V760H702V688ZM874 598H802V670H874V598ZM902 508H974V580H902V508ZM674 778H602V850H674V778ZM702 778H774V850H702V778ZM874 688H802V760H874V688ZM902 598H974V670H902V598ZM674 868H602V940H674V868ZM702 868H774V940H702V868ZM874 778H802V850H874V778ZM902 688H974V760H902V688Z"
+						fill="#1B4159" class="iconforeground" />
+				</g>
+			</svg>
+
+
+
+
+			<div id='invisibleblocsB'></div>
+		</div>
+
+		<div id='molduratitle'>
+			<div id='visibleblocsA'></div>
+			<div id='visibleblocsB'>
+				<p class='bigtitle'>Introdução da disciplina
+					<span class='blocktext1'>Começando do começo</span>
+					<span class='blocktext2'></span></p>
+			</div>
+		</div>
+
+		<div>
+
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tflippedclassroom.png);'>
+				<a href="javascript:sumario('programa');">Documentos da Disciplina
+
+					<span class='blocktext1'>Programa, calendário, etc.</span>
+					<span class='blocktext2'>Ementa, calendário, acesso aos recursos institucionais, etc.</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/tRanoya.png);'>
+				<a target="_blank" href="https://www.projetao.com.br/generator/?embed=plain&g=CIn&dun=Ranoya&">Professor
+
+					<span class='blocktext1'>Quem é seu professor</span>
+					<span class='blocktext2'>Mais informações sobre o professor</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tempatia.png);'>
+				<a href="javascript:sumario('universos');">Experimentação
+
+					<span class='blocktext1'>Campo de projeto</span>
+					<span class='blocktext2'>O cenário editorial e campos correlatos</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/fGrupos.png);'>
+				<a href="javascript:sumario('contexto');">Contexto
+
+					<span class='blocktext1'>Virando o jogo</span>
+					<span class='blocktext2'>Um campo necessitando de reinvenção</span>
+				</a>
+			</div>
+
+
+
+
+			<!-- singleblock superdouble right' 
+				singleblock quad 
+				singleblock triple -->
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>A questão da experiência
+						<span class='blocktext1'>Interface ruim, ou falta significação?</span>
+						<span class='blocktext2'></span></p>
+				</div>
+			</div>
+
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.ranoya.com/Assets/screenshots/ss110701.jpg);'>
+				<a href="javascript:sumario('experienciasimbolica');">Experiência Simbólica
+
+					<span class='blocktext1'>A interação com os sentidos</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.ranoya.com/Assets/screenshots/newbook3.jpg);'>
+				<a href="javascript:sumario('experienciavisual');">Experiência Visual
+
+					<span class='blocktext1'>A interação com a imagem</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+			<div class='singleblock triple' style='background-image:
+				url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/49b60c87059533.5dacd262b112f.png);'>
+				<a href="javascript:sumario('experienciasonora');">E o que mais?
+
+					<span class='blocktext1'>Tudo que costumamos ignorar</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Mídia e narrativas
+						<span class='blocktext1'>Fromatos midiáticos</span>
+						<span class='blocktext2'></span></p>
+				</div>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://i.pinimg.com/originals/94/29/ea/9429ea537fa5961198075bd3665b21c7.jpg);'>
+				<a href="javascript:sumario('heroes');">Heróis
+
+					<span class='blocktext1'>Exemplos de dar inveja</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://i.pinimg.com/564x/b6/71/f6/b671f6e281d914fa65d2cd1f3a9518e1.jpg);'>
+				<a href="javascript:sumario('narrativas');">Construção narrativa
+
+					<span class='blocktext1'>Traduções intersemióticas</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+			<div class='singleblock triple' style='background-image:
+				url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/fb94e485004315.5d6ec39b383f6.png);'>
+				<a href="javascript:sumario('oschunks');">Mídia fragmentada
+
+					<span class='blocktext1'>Chunks: narrativa fracionada</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tlinguagem.png);'>
+				<a href="javascript:sumario('formatos');">Expressão
+
+					<span class='blocktext1'>Linguagens e formatos</span>
+					<span class='blocktext2'></span>
+				</a>
+			</div>
+
+
+
+
+
+
+
+			<div style="display: inline-block; height: 90px; width: 100%;">&nbsp;</div>
+
+
+
+
+
+		</div>
+
+
+
+	</nav>
+
+	<iframe id="placehold" frameborder=0 style="position: fixed; left: 0; width: 100%; height: calc(100% + 34px);"
+		scrolling="no"></iframe>
+
+	<script>
+		var slide = 0;
+
+		var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+		if (mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) {
+			slide = 0;
+		}
+
+		var s = [
+			"https://slides.com/ranoya/narrativasprojeto/embed",
+		];
+
+		document.getElementById("placehold").src = s[slide] + "#/capa";
+
+		var menuOpen = false;
+
+		function menu() {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				menuOpen = true;
+
+				if (mobile > 375) {
+					document.getElementById("navpresentation").style.right = "0";
+					document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(100% - 375px)";
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+			} else {
+
+				menuOpen = false;
+				if (mobile > 375) {
+					document.getElementById("navpresentation").style.right = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-25px - 100%)";
+				}
+				document.getElementById("placehold").style.left = "0";
+
+			}
+
+		}
+
+		window.onresize = function (event) {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				if (mobile > 375) {
+					document.getElementById("navpresentation").style.right = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-25px - 100%)";
+				}
+				document.getElementById("placehold").style.left = "0";
+
+			} else {
+
+				document.getElementById("navpresentation").style.right = "0";
+				if (mobile > 375) {
+					document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+			}
+
+		};
+
+		function sumario(place) {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			document.getElementById("placehold").src = s[slide] + "#/" + place;
+			menu();
+		}
+	</script>
+</body>
+
+</html>

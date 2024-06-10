@@ -1,0 +1,853 @@
+<!--
+
+
+    filtra=  -> termos de filtragem base
+    limita= -> número máximo de itens exibidos (aleatórios)
+    contentonly=  -> apaga menus
+    theme=  -> tema 
+    titulo= -> Nome do board
+    subtitulo= -> Subtitulo para o board
+    menu= -> json com opções de menu
+
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BIBLIOGRAFIA</title>
+    <meta property='og:title' content='BIBLIOGRAFIA * RANOYA.COM'>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="generator" content="artesanal" />
+    <meta name="description" content="Referências bibliográficas do Prof. Dr. Guilherme Ranoya">
+    <meta property="og:description" content="Referências bibliográficas do Prof. Dr. Guilherme Ranoya">
+    <meta name="keywords"
+        content="UX, User Experience, IA, Arquitetura de Informação, IxD, Design de Interação, Mídia Digital, Wearable Computing, Physical Computing, Pesquisa">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/bibliografia600.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/bibliografia600.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/bibliografia600.jpg" />
+
+    <link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/bibliografia16.png">
+    <link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/bibliografia57.png" />
+    <link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/bibliografia57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/bibliografia72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/bibliografia114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/bibliografia144.png" />
+
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+
+    <script>
+        // FUNÇÃO URL GET
+        // urlGet('xpto'); www.site.com/?xpto=teste
+        // let data = $_GET['xpto']; www.site.com/?xpto=teste
+
+        $_GET = [];
+        (function () {
+            corte = window.location.href.toString().indexOf('?');
+            if (corte > 0) {
+                argumento = window.location.href.toString().substring(corte + 1);
+                argumentos = argumento.split('&');
+                for (arg in argumentos) {
+                    let argCorte = argumentos[arg].indexOf('=');
+                    $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[arg].substring(argCorte + 1);
+                }
+            }
+        })();
+
+        let extraidata = function (dt) {
+            let patt = /(\d\d\d\d)/i;
+
+            let hoje = dt.getFullYear();
+
+            return hoje;
+        }
+
+        let extraianos = function (valor) {
+            let patt = /(.*)(\d\d\d\d)(.*)-?(.*)(\d\d\d\d)(.*)/i;
+            let pattB = /(.*)(últimos 5 anos)(.*)/i;
+
+            let arr = valor.match(patt);
+            let arrB = valor.match(pattB);
+
+            let maior = 5000;
+            let menor = 0;
+            let texto = "";
+
+            if (arr != null && arrB == null) {
+                if (parseInt(arr[2]) >= parseInt(arr[5])) {
+                    maior = parseInt(arr[2]);
+                    menor = parseInt(arr[5]);
+                } else {
+                    maior = parseInt(arr[5]);
+                    menor = parseInt(arr[2]);
+                }
+                texto = arr[1] + " " + arr[6];
+            }
+
+            if (arr == null && arrB != null) {
+                let hoje = new Date();
+                let anohoje = extraidata(hoje);
+                menor = anohoje - 5;
+                maior = anohoje;
+                texto = arrB[1] + " " + arrB[3];
+            }
+
+            if (arr == null && arrB == null) {
+                menor = 0;
+                maior = 5000;
+                texto = valor;
+            }
+
+            return {
+                inicia: menor,
+                finaliza: maior,
+                resto: texto
+            };
+        }
+
+        let containtime = function (arr, crit, init, end) {
+            let conta = 0;
+
+            let x = {};
+            for (let i = 0; i < arr.length; i++) {
+                if (parseInt(arr[i][crit]) >= init && parseInt(arr[i][crit]) <= end) {
+                    conta++;
+                }
+            }
+            return conta;
+        }
+
+        let dadounico = function (arr, crit) {
+            let quantidade = taxos(arr, crit);
+
+            if (quantidade.length == 1) {
+                return quantidade[0];
+            } else {
+                return false;
+            }
+        }
+
+        let allbywithtime = function (arr, crit, val, timecrit, init, end) {
+            let registros = [];
+            let count = 0;
+
+            for (let k = 0; k < arr.length; k++) {
+                if (arr[k][crit] == val && parseInt(init) <= parseInt(arr[k][timecrit]) &&
+                    parseInt(end) >= parseInt(arr[k][timecrit])
+                ) {
+                    registros[count] = k;
+                    count++;
+                }
+            }
+
+            return registros;
+        }
+
+        let listabibliografica = function (arr, filtrossemfiltro) {
+            let filtros = naomostra(filtrossemfiltro, "");
+            let limites = extraianos(filtrossemfiltro);
+            let htmlcode = "";
+            let tipologias = [];
+
+            let anos = [];
+
+            htmlcode +=
+                "<p class='sumario'><b>" +
+                containtime(arr, "ano", limites.inicia, limites.finaliza) +
+                " </b> obra(s) ";
+
+            if (filtros != "") {
+                let tipos = taxos(arr, "tipologia");
+
+                for (let i = 0; i < tipos.length; i++) {
+                    if (allbywithtime(arr, "tipologia", tipos[i], "ano",
+                            limites.inicia, limites.finaliza).length > 0) {
+                        htmlcode +=
+                            "<div class='tituloano' style='width: 100%; border-bottom: 1px solid var(--cor-medium, grey); margin-bottom: 8px;'>" +
+                            tipos[i] +
+                            ": " +
+                            allbywithtime(
+                                arr,
+                                "tipologia",
+                                tipos[i],
+                                "ano",
+                                limites.inicia,
+                                limites.finaliza
+                            ).length +
+                            "</div>";
+                    }
+
+                    for (let k = 0; k < arr.length; k++) {
+                        if (arr[k].tipologia == tipos[i] && parseInt(arr[k].ano) >=
+                            limites.inicia &&
+                            parseInt(arr[k].ano) <= limites.finaliza) {
+                            htmlcode += "<a target='_blank' class='obra' href='" +
+                                arr[k].link + "'>" + arr[k].titulo + "</a>";
+                            if (typeof arr[k].orientador != "undefined" &&
+                                arr[k].orientador != "") {
+                                htmlcode += "<span class='dadosorientador'>Orientador(a): " +
+                                    arr[k].orientador + "</span>";
+                            }
+                            htmlcode += "</a>";
+                        }
+                    }
+                    htmlcode += "<br>";
+                }
+            } else {
+                for (let a = arr.length - 1; a > 0; a--) {
+                    anos[arr[a].ano] = true;
+                }
+
+                let anosdecrescente = [];
+
+                let iv = Object.keys(anos).length - 1;
+                for (let n = 0; n < Object.keys(anos).length; n++) {
+                    anosdecrescente[iv] = Object.keys(anos)[n];
+                    iv--;
+                }
+                for (let aa = 0; aa < anosdecrescente.length; aa++) {
+                    htmlcode
+                        +=
+                        "<br><div class='tituloano' style='width: 100%; border-bottom: 1px solid var(--cor-medium, grey); margin-bottom: 8px;'>" +
+                        anosdecrescente[aa] + "</div>";
+                    for (let z = 0; z < arr.length; z++) {
+                        if (
+                            anosdecrescente[aa] == arr[z].ano && parseInt(arr[z].ano) >= limites.inicia &&
+                            parseInt(arr[z].ano) <= limites.finaliza) {
+                            htmlcode
+                                += "<a target='_blank' class='obra' href='" + arr[z].link + "'>" + arr[z].titulo +
+                                "</a>";
+                        }
+                    }
+                }
+            }
+            return htmlcode;
+        }
+
+        let naomostra = function (dados, nada) {
+            let retorno = "";
+
+            let limites = extraianos(dados);
+
+            if (limites.inicia == "0" && limites.finaliza == "5000") {
+                retorno = dados;
+            } else {
+                retorno = limites.resto;
+            }
+
+            return retorno;
+        }
+
+        let taxos = function (arr, crit) {
+            let tipologias = [];
+
+            for (let n = 0; n < arr.length; n++) {
+                if (typeof arr[n][crit] != "undefined" && arr[n][crit] != "") {
+                    tipologias[arr[n][crit]] = true;
+                }
+            }
+            let tipos = Object.keys(tipologias);
+            return tipos;
+        }
+    </script>
+
+    <script type="text/javascript" src="https://www.ranoya.com/Assets/JSLibs/DataT/basics.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;900&display=swap');
+
+
+        :root {
+
+            --cor-bg: white;
+
+            --cor-borda: white;
+            --cor-hightlight: #620384;
+            --artefato-hightlight: pink;
+            --cor-outline: #44444433;
+            --cor-medium: grey;
+            --cor-titulo: #f44292;
+
+            --quadro-gap: 20px;
+            --lista-gap: 10px;
+            --outrline-size: 1px;
+            --borda-size: 8px;
+
+        }
+
+
+        body {
+            background-color: var(--cor-bg, white);
+            margin: 30px 40px 50px 30px;
+            font-family: 'Prompt', sans-serif;
+            overscroll-behavior: none;
+        }
+
+        #logo {
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+
+            z-index: 1000;
+            background-color: var(--cor-bg, white);
+        }
+
+        #logo path {
+            fill: var(--cor-titulo, #f44292);
+        }
+
+        nav {
+            background-color: var(--cor-bg, white);
+            width: 100%;
+            height: auto;
+            margin-left: -30px;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            padding: 30px 40px 20px 30px;
+        }
+
+        #titulo {
+            position: sticky;
+            top: -150px;
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        h1 {
+
+            font-size: 108px;
+            line-height: 70px;
+            color: var(--cor-hightlight);
+            font-weight: bolder;
+            color: var(--cor-titulo, #ff0368);
+            text-align: right;
+        }
+
+        .subtitulo {
+            font-size: 32px;
+            line-height: 32px;
+            color: var(--cor-medium, grey);
+            text-align: right;
+            display: block;
+            font-weight: bolder;
+            margin: 0;
+            padding: 0;
+            margin-bottom: -70px;
+            margin-top: 115px;
+        }
+
+        #midsection {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--lista-gap, 20px) 0;
+        }
+
+        .obra {
+            color: var(--cor-medium, grey);
+            text-decoration: none;
+            padding: 4px 8px 4px 8px;
+            margin: -4px -8px -4px -8px;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .obra:hover {
+            background-color: var(--cor-hightlight, #620384);
+            color: var(--cor-bg, white);
+        }
+
+        .tituloano {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: lighter;
+            color: var(--cor-titulo, #f44292);
+        }
+
+        .dadosorientador {
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: -6px;
+            color: var(--artefato-hightlight, pink);
+            margin-bottom: 10px;
+        }
+
+        .sumario {
+            color: var(--cor-hightlight, #620384);
+        }
+
+
+        #fullinput {
+            position: fixed;
+            z-index: 10;
+            right: 30px;
+            top: -116px;
+
+            width: 300px;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 1px 10px;
+            border: 1px solid var(--artefato-hightlight, pink);
+            color: var(--cor-medium, grey);
+            outline: none;
+
+        }
+
+        .custommenu {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 26px;
+            height: 26px;
+            border: 3px solid var(--cor-bg, white);
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: var(--cor-medium, grey);
+            cursor: pointer;
+            margin-right: 6px;
+            color: var(--cor-bg, white);
+            text-decoration: none;
+        }
+
+        .custommenu:hover {
+            background-color: var(--cor-hightlight, pink);
+            border: 3px solid var(--cor-hightlight, pink);
+        }
+
+        #qualmenu {
+            line-height: 28px;
+            font-size: 12px;
+            height: 28px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            margin-top: 8px;
+            outline: none;
+            color: var(--cor-medium, grey);
+            background-color: transparent;
+        }
+
+        #rodape {
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 80px;
+            color: var(--cor-medium, grey);
+        }
+
+        #rodape span {
+            font-size: 10px;
+            line-height: 13px;
+            display: inline-block;
+            font-weight: lighter;
+            margin-top: 1px;
+        }
+
+        #rodape svg {
+            width: 60px;
+            height: 60px;
+        }
+
+        #rodape svg path {
+            fill: var(--cor-medium, grey);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <svg id="logo" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="logocolor" fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.02136 0C8.01028 0.0563449 8.00448 0.114548 8.00448 0.174057L8 7.34443L11.1333 5.99998L14.2667 7.34443V0.174057C14.2667 0.114548 14.2608 0.0563449 14.2496 0H16V16H0V0H8.02136Z" />
+    </svg>
+
+
+    <div id="titulo">
+        <br>
+        <br>
+        <span class='subtitulo' id='subt'>livros e textos<br></span>
+        <h1>Biblioteca</h1>
+    </div>
+
+    <nav id="navblock">
+        <div id="menutags"></div>
+        <select id="qualmenu" onchange="javascript:mudamenu();">
+            <option value="https://opensheet.elk.sh/1qXCwwsiNdZnqlvNzLxol-ZGRTEH7fQfRsK2SWpNIuM4/Menu_Original">Design
+            </option>
+
+            <option value="https://opensheet.elk.sh/1QWQrECPFgbz3KdSniFKyAhq8z1Ms1U3eb8aS6RTTLzk/Arte">Arte
+            </option>
+        </select>
+        <input type="text" id="fullinput">
+        <input type="hidden" id="selectfilter">
+        <input type="hidden" id="masterfilter">
+    </nav>
+
+    <br><br><br>
+    <div id="midsection"></div>
+
+
+
+
+
+    <!-- RODAPÉ ------------------------------- -->
+    <div id="rodape">
+
+        <svg viewBox="0 0 719 719" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="width: 30px; height: 30px; float: left; vertical-align: top; margin-right: 10px;">
+            <g id="ranoya.com-regexredux-truewhite">
+                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M719 0H0V719H719V0ZM230.686 183.844H337.371L230.686 535.31H124L230.686 183.844ZM383.351 183.844H381.782L275.097 535.31H381.782L435.91 356.992L490.037 535.31H596.723L490.037 183.844H488.468H383.351Z" />
+            </g>
+        </svg>
+
+        <span>COPYRIGHT &copy; 2014<br>PROF. DR. GUILHERME RANOYA</span>
+
+    </div>
+    <!-- RODAPÉ ------------------------------- -->
+
+
+</body>
+
+
+<script>
+    document.onscroll = function () {
+
+        //console.log(document.documentElement.scrollTop);
+
+        let t = document.getElementsByTagName("h1")[0].getBoundingClientRect().height;
+
+        document.getElementById("navblock").style.minHeight = ((140 * (70 / t)) + 30) + "px";
+        console.log(t + " " + (140 * (t / 340)));
+
+        document.getElementById("titulo").style.top = (-1.5 * t) + "px";
+
+        if (document.documentElement.scrollTop > (t + 120)) {
+
+            document.getElementById("logo").style.position = "absolute";
+
+            document.getElementById("logo").style.top = (t + 160) + "px";
+
+
+        } else {
+            document.getElementById("logo").style.position = "fixed";
+
+            document.getElementById("logo").style.top = "30px";
+
+        }
+    }
+
+
+    let limite = 5000;
+    let randomiza = false;
+
+    if (typeof $_GET['theme'] != "undefined") {
+        localStorage.setItem('tema', $_GET['theme']);
+    } else {
+        if (localStorage.getItem('tema') == "" || typeof localStorage.getItem('tema') == "undefined" || localStorage
+            .getItem('tema') == null) {
+            localStorage.setItem('tema', 'default');
+        }
+    }
+
+    if (typeof $_GET['limita'] != "undefined" && $_GET['limita'] != null && $_GET['limita'] != "") {
+        limite = $_GET['limita'];
+
+        if (limite != 0) {
+            randomiza = true;
+        }
+        // console.log("TESTE = " + randomiza + " " + limite);
+    }
+
+    if (typeof $_GET['titulo'] != "undefined" && $_GET['titulo'] != null && $_GET['titulo'] != "") {
+        document.getElementsByTagName("h1")[0].innerHTML = decodeURI($_GET['titulo']);
+    }
+
+    if (typeof $_GET['subtitulo'] != "undefined" && $_GET['subtitulo'] != null && $_GET['subtitulo'] != "") {
+        document.getElementById("subt").innerHTML = decodeURI($_GET['subtitulo']) + "<br>";
+    }
+
+    let t = document.getElementsByTagName("h1")[0].getBoundingClientRect().height;
+    document.getElementById("navblock").style.minHeight = ((140 * (70 / t)) + 30) + "px";
+
+
+    if (localStorage.getItem('tema') != "" && typeof localStorage.getItem('tema') != "undefined") {
+        let tag = document.createElement("link");
+        tag.setAttribute("rel", "stylesheet");
+        tag.setAttribute("type", "text/css");
+        tag.setAttribute("href", "../pinboard/" + localStorage.getItem('tema') + "color.css");
+        document.getElementsByTagName("head")[0].appendChild(tag);
+    }
+
+    let corbodybg = getComputedStyle(document.documentElement)
+        .getPropertyValue('--cor-bg')
+
+    let colortagAll = document.createElement("meta");
+    colortagAll.setAttribute("name", "theme-color");
+    colortagAll.setAttribute("content", corbodybg);
+
+    let colortagWin = document.createElement("meta");
+    colortagWin.setAttribute("name", "msapplication-navbutton-color");
+    colortagWin.setAttribute("content", corbodybg);
+
+    let colortagios = document.createElement("meta");
+    colortagios.setAttribute("name", "msapplication-navbutton-color");
+    colortagios.setAttribute("content", corbodybg);
+
+    document.getElementsByTagName("head")[0].appendChild(colortagAll);
+    document.getElementsByTagName("head")[0].appendChild(colortagWin);
+    document.getElementsByTagName("head")[0].appendChild(colortagios);
+
+    if ($_GET['filtra'] != "" && $_GET['filtra'] != null && typeof $_GET['filtra'] != "undefined") {
+        document.getElementById("masterfilter").value = decodeURI($_GET['filtra']);
+    }
+
+
+    let myTimeout = "";
+
+    if ($_GET['contentonly'] != "true") {
+
+        document.onkeypress = function () {
+
+            document.getElementById("fullinput").style.top = "30px";
+            document.getElementById("fullinput").focus();
+
+            myTimeout = setTimeout(function () {
+                document.getElementById("fullinput").style.top = "-116px";
+            }, 15000);
+
+
+        }
+    } else {
+        document.getElementById("fullinput").style.display = "none";
+        document.getElementById("navblock").style.display = "none";
+
+        document.getElementById("titulo").style.display = "none";
+
+        document.getElementById("rodape").style.display = "none";
+
+        document.getElementById("logo").style.display = "none";
+
+
+
+
+    }
+
+
+    let omdados = [];
+    let getdata = function (arquivojson, el_id) {
+        // Fetch JSON file
+        fetch(arquivojson).then(response => response.json()).then((omdados) => {
+            //Start Omnifilter Event Listener Function
+            startomnifilter(omdados, el_id, processadados);
+            startomnifilter(omdados, "selectfilter", processadados);
+
+        });
+    }
+
+
+    let menu = function (arquivojson) {
+        fetch(arquivojson).then(response => response.json()).then((dados) => {
+
+            let meuhtml = "";
+            for (i = 0; i < dados.length; i++) {
+
+                meuhtml +=
+                    `<a class='custommenu' href='javascript:popfiltro("${dados[i].Filtro}");'>${dados[i].Label}</a>`;
+
+            }
+
+            document.getElementById("menutags").innerHTML = meuhtml;
+        });
+    }
+
+    let popfiltro = function (str) {
+
+        document.getElementById("selectfilter").value = str;
+        document.getElementById("selectfilter").dispatchEvent(new Event('input', {
+            bubbles: true
+        }));
+
+    }
+
+    let mudamenu = function () {
+
+        if ($_GET['menu'] != "" && $_GET['menu'] != null && typeof $_GET['menu'] != "undefined") {
+
+            document.getElementById("qualmenu").style.display = "none";
+            menu($_GET['menu']);
+
+
+        } else {
+            let qual = document.getElementById("qualmenu").value;
+            menu(qual);
+        }
+
+    }
+
+    mudamenu();
+
+
+
+
+
+
+
+
+    // Omnifilter Event Listener Function
+    let startomnifilter = function (losdados, elemento, funcprocessa) {
+        //console.log("Omnifilter: fetch finished");
+        //console.table(losdados);
+
+
+
+        document.getElementById(elemento).addEventListener('input', function (evt) {
+
+            let newomniarray = select(losdados, multipatterncheck_exclude, document
+                .getElementById(
+                    "masterfilter").value + " " + document
+                .getElementById(
+                    "selectfilter").value +
+                " " + this.value);
+            funcprocessa(newomniarray);
+
+        });
+
+
+
+        let newomniarray = select(losdados, multipatterncheck_exclude, document.getElementById(
+            "masterfilter").value);
+        funcprocessa(newomniarray);
+    }
+
+    getdata("https://opensheet.elk.sh/1qXCwwsiNdZnqlvNzLxol-ZGRTEH7fQfRsK2SWpNIuM4/Lista", "fullinput");
+
+
+    let delay = "";
+    let processadados = function (arr) {
+
+        document.getElementById("midsection").innerHTML = "";
+        clearTimeout(delay);
+
+        delay = setTimeout(function () {
+            if ((document.getElementById("fullinput").value == "" && document.getElementById(
+                        "selectfilter")
+                    .value == "") &&
+                (typeof $_GET['limita'] ==
+                    "undefined" ||
+                    $_GET['limita'] == null || $_GET['limita'] == "")) {
+                limite = 5000;
+                randomiza = false;
+            } else {
+                limite = 0;
+            }
+
+            if ((document.getElementById("fullinput").value != "" || document.getElementById(
+                        "selectfilter")
+                    .value !=
+                    "") && (typeof $_GET['limita'] ==
+                    "undefined" ||
+                    $_GET['limita'] == null || $_GET['limita'] == "")) {
+                randomiza = false;
+            }
+
+
+            if (typeof $_GET['limita'] != "undefined" && $_GET['limita'] != null && $_GET['limita'] !=
+                "") {
+                limite = $_GET['limita'];
+
+                if (limite != 0) {
+                    randomiza = false;
+                }
+
+            }
+
+            //console.table(arr);
+            /* processamento antigo
+            let myhtml = "";
+
+            let tamanho = arr.length;
+
+            if (limite != 0 && limite < tamanho) {
+                tamanho = limite;
+            }
+
+
+
+            let i = 0;
+            for (let k = 0; k < tamanho; k++) {
+
+                //console.log(randomiza + " " + limite);
+                if (randomiza) {
+                    i = parseInt(Math.random() * arr.length);
+                } else {
+                    i = k;
+                }
+
+
+                myhtml +=
+                    `<a target='_blank' href='${arr[i].link}' class='textobloco'>${arr[i].titulo}</a>`;
+
+            }
+
+            */
+
+            let myhtml = listabibliografica(arr, document.getElementById("fullinput").value);
+
+            document.getElementById("midsection").innerHTML = myhtml;
+        }, 500);
+
+    }
+
+
+    let videoorwhat = function (original) {
+
+        let url = original;
+        let tipovideo = "none";
+
+        if (url.indexOf("youtu") <= -1 && url.indexOf("vimeo") <= -1) {
+            return original;
+
+        } else {
+            url.match(
+                /(http:|https:|)\/\/(player.|www.|m.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/
+            );
+
+            if (RegExp.$3.indexOf("youtu") > -1) {
+                tipovideo = "youtube";
+
+                return "https://img.youtube.com/vi/" + RegExp.$6 + "/0.jpg";
+
+            }
+
+            /*
+            if (RegExp.$3.indexOf("vimeo") > -1) {
+            tipovideo = "vimeo";
+            }
+
+            */
+
+        }
+    }
+
+    let VideoGridParseURL = function (url) {
+
+    }
+</script>
+
+</html>

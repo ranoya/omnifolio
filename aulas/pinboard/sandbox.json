@@ -1,0 +1,99 @@
+[{
+        "topico": "ontaffective",
+        "label": "AFFECTIVE COMPUTING"
+
+    },
+    {
+        "topico": "ontbiohacking",
+        "label": "BIOHACKING"
+
+    },
+    {
+        "topico": "ontcoding",
+        "label": "CREATIVE CODING"
+    },
+    {
+        "topico": "ontnarrative",
+        "label": "NARRATIVE"
+
+    },
+    {
+        "topico": "ontgames",
+        "label": "GAMES"
+
+    },
+    {
+        "topico": "onthaptic",
+        "label": "HAPTIC INTERFACES"
+
+    },
+    {
+        "topico": "onttangible",
+        "label": "TANGIBLE INTERFACES"
+
+    },
+    {
+        "topico": "ontimagerec",
+        "label": "IMAGE RECGNITION"
+    },
+    {
+        "topico": "ontvideomap",
+        "label": "VIDEO MAPPING"
+
+    },
+    {
+        "topico": "ontinstallation",
+        "label": "INSTALLATION"
+
+    },
+    {
+        "topico": "ontperformance",
+        "label": "PERFORMANCE"
+
+    },
+    {
+        "topico": "ontrobotics",
+        "label": "KINETICS / ROBOTICS"
+
+    },
+    {
+        "topico": "ontphysical",
+        "label": "PHYSICAL COMPUTING"
+
+    },
+    {
+        "topico": "ontwearables",
+        "label": "WEARABLES"
+
+    },
+    {
+        "topico": "ontiot",
+        "label": "INTERNET OF THINGS"
+
+    },
+    {
+        "topico": "ontquantified",
+        "label": "QUANTIFIED SELF"
+
+    },
+    {
+        "topico": "ontvr",
+        "label": "VIRTUAL REALITY"
+
+    },
+    {
+        "topico": "ontar",
+        "label": "AUGMENTED REALITY"
+
+    },
+    {
+        "topico": "ontai",
+        "label": "ARTIFICIAL INTELIGENCE"
+
+    },
+    {
+        "topico": "ontmm",
+        "label": "MULTIMEDIA"
+
+    }
+]

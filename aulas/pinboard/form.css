@@ -1,0 +1,552 @@
+/* tipografia -------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+/* cssreset.com ------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* base -------------------------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+nav {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding-top: 15px;
+
+}
+
+#mobile {
+  display: none;
+  height: 280px;
+}
+
+#navblock {
+  max-width: 1800px;
+  width: 80%;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+
+}
+
+#navblock a {
+  border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+#navblock a:hover {}
+
+.bloco-conteudo a {
+
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 15px 7px 15px;
+  border-radius: 2px;
+  margin-left: -15px;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+
+}
+
+a:hover {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.vidogridthumblink,
+.imagegrid {
+  display: block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: calc(25vw - 20px);
+  margin-left: 10px;
+  height: calc(25vw - 20px);
+  float: left;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+}
+
+a.imagebk {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-style: solid;
+  border-width: 5px;
+}
+
+a.imagebk:hover {}
+
+.thumbitself {
+
+  width: 100%;
+  height: calc(25vw - 30px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+.vidogridthumblink:hover {
+  border-style: solid;
+  border-width: 5px;
+
+}
+
+.filtroativo {}
+
+.filtroinativo {}
+
+
+/* estrutura --------------------------------------------------------- */
+
+.secao {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: -40px;
+}
+
+#losfiltro {
+
+  overflow: hidden;
+  height: 0;
+
+}
+
+.bloco-conteudo {
+  max-width: 1800px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-right: 0;
+}
+
+#rodape {
+  width: 100%;
+  height: 95px;
+  margin-top: 0;
+  margin-bottom: -50px;
+  display: inline-block;
+}
+
+#rodape .bloco-conteudo {
+  max-width: 1800px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+#carregando {
+  text-align: center;
+  float: none;
+  width: 100%;
+  clear: both;
+  display: inline-block;
+
+}
+
+.loadingimage {
+  width: 100px;
+}
+
+.halfblock {
+  width: 49%;
+  float: left;
+  padding-bottom: 12px;
+}
+
+.halfblock table {
+  width: 100%;
+}
+
+
+/* tipografia --------------------------------------------------------- */
+
+.separador {
+  border: 0;
+  width: 30%;
+  height: 20px;
+}
+
+.listalinha {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothetopt_on.svg");
+}
+
+#gototop {
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+
+#gototop:hover {
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothetopt_on.svg");
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+#gotobottom {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothebottomt_on.svg");
+}
+
+#gotobottom {
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+
+#gotobottom:hover {
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothebottomt_on.svg");
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+
+/* quoteboard */
+
+.corpocit {
+  margin-left: 0 !important;
+
+}
+
+#paineldecitacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  font-size: 13px;
+  line-height: 16px;
+  max-width: 1800px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+.quoteancora,
+.quoteancora a {
+  overflow: hidden;
+  width: 0 !important;
+  height: 0 !important;
+  background-color: transparent !important;
+  color: transparent !important;
+}
+
+.quoteancora:hover,
+.quoteancora a:hover {
+  overflow: hidden;
+  width: 0 !important;
+  height: 0 !important;
+  background-color: transparent !important;
+  color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+
+.quotecard {
+  border: 1px solid var(--primary-color, #FF1499);
+  border-radius: 5px;
+  padding: 13px;
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+.quotecard:hover {
+  color: var(--invert-color, white) !important;
+  background-color: var(--primary-color, #FF1499) !important;
+}
+
+.quotetraducao {
+  margin-bottom: 15px;
+}
+
+.quoteobra {
+  margin-top: 15px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.maisoriginal {
+  color: var(--secondary-color, grey);
+}
+
+.quotecard:hover .maisoriginal,
+.quotecard:hover .quotecomentario {
+  color: var(--invert-color, white) !important;
+}
+
+div.quotecard:hover div.quotealltags div.quotetag,
+div.quotecard:hover div.quotealltags div.quotetag {
+  color: var(--invert-color, white) !important;
+  background-color: var(--primary-color, #FF1499) !important;
+}
+
+
+.quotecomentario {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+
+  color: var(--secondary-color, grey);
+}
+
+.quotealltags {
+  width: 100%;
+}
+
+.quotetag {
+  padding: 4px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 30px;
+  background-color: var(--primary-color, #FF1499);
+  color: var(--invert-color, white);
+  float: left;
+  margin-right: 8px;
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+
+/* Scroll Pie */
+
+#scrollpiechart {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 65px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--invert-color, white);
+  border-radius: 35px;
+}
+
+.anchorOff {
+  opacity: 0.3;
+}
+
+.anchorOn {
+  opacity: 1;
+}
+
+
+
+
+/* responsive ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+  .bloco-conteudo {
+    padding-right: 0;
+  }
+
+  #navblock {
+    padding-right: 0;
+  }
+
+  .vidogridthumblink,
+  .imagegrid {
+
+    width: calc(33% - 20px);
+    height: calc(26.1vw - 20px);
+
+  }
+
+  .thumbitself {
+
+    height: calc(25vw - 20px);
+
+  }
+
+  #paineldecitacoes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .halfblock {
+    width: 100%;
+    float: left;
+  }
+
+  .listalinha {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .vidogridthumblink,
+  .imagegrid {
+
+    width: calc(50% - 20px);
+    height: calc(40vw - 20px);
+
+  }
+
+  .thumbitself {
+
+    height: calc(38.4vw - 20px);
+
+  }
+
+
+  h6 {
+
+    font-size: 11px;
+
+  }
+
+}
+
+
+@media screen and (max-width: 540px) {
+
+  body {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+
+  nav#mobile {
+    display: initial;
+    height: 150px;
+
+  }
+
+  nav {
+    display: none;
+
+  }
+
+  #navblock a {
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+  }
+
+  .videogrid {
+    width: 100%;
+  }
+
+  .vidogridthumblink,
+  .imagegrid {
+
+    width: calc(100% - 20px);
+    height: calc(90vw - 20px);
+
+  }
+
+  .thumbitself {
+
+    height: calc(80vw - 30px);
+
+  }
+
+
+  .listatitulo,
+  .listalinha,
+  a.listatitulo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+
+  h6 {
+
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  #paineldecitacoes {
+    grid-template-columns: 1fr;
+  }
+
+  #gototop {
+    right: 20px;
+  }
+
+  #gotobottom {
+    right: 20px;
+  }
+
+  #scrollpiechart {
+    right: 10px;
+  }
+
+}

@@ -1,0 +1,29 @@
+[{
+		"cordefundo": "",
+		"cordefrente": "",
+		"logourl": "https://www.ranoya.com/Assets/Logotipos/auladgen-purplevazado.svg",
+		"nextrefdoc": "",
+		"nextrefdocurl": "",
+		"tamanho": 230
+	},
+	{
+		"capitulo": "LINGUAGEM",
+		"topico": "SVG",
+		"url": "introSVG.php"
+	},
+	{
+		"capitulo": "LINGUAGEM",
+		"topico": "Outras linguagens",
+		"url": "introCodigoCriativo.php"
+	},
+	{
+		"capitulo": "LINGUAGEM",
+		"topico": "Solicitações",
+		"url": "solicitacoes.php"
+	},
+	{
+		"capitulo": "FUNDAMENTOS",
+		"topico": "Introdução",
+		"url": "svgbasics.php"
+	}
+]

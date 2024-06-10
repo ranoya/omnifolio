@@ -1,0 +1,44 @@
+// autor: @ky0ju_art
+
+
+
+int x,y,X,Y,a;
+float vwidth,vheight;
+
+void setup() {
+
+  size(800,800);
+  background(#620384);
+
+frameRate(400);
+
+clear();
+}
+
+
+void draw(){
+
+vwidth = width;
+vheight = height;
+   
+translate(vwidth/2,vheight/2);
+a++;x+=X;y+=Y;
+
+if(a%40==0){
+  X=int(random(-2,2));
+  Y=int(random(-2,2));
+  fill(255);
+  circle(x,y,5);
+}
+
+
+
+
+
+
+stroke(#7E2C75,20);
+noFill();
+rect(0,0,x,y);
+if(a>1600)x=y=a=0;
+
+}

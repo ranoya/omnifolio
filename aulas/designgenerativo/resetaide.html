@@ -1,0 +1,184 @@
+<script type="text/javascript">
+    /* -- Google Analytics ---------------------------------------------------- */
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61225449-1', 'auto');
+    ga('send', 'pageview');
+
+    /* ---------------------------------------------------- Google Analytics -- */
+</script>
+
+<!DOCTYPE html>
+<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-opensans theme-color-black-blue">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>RESETA AMBIENTE</title>
+    <meta name="generator" content="slides.com" />
+    <meta name="description"
+        content="Material de apoio da disciplina de Design Generativo do Bacharelado de Design da Universidade Federal de Pernambuco">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+    <meta name="keywords" content="design generativo, artefatos digitais, design paramétrico, processing, javascript">
+    <meta property="og:url" content="https://www.ranoya.com/aulas/designgenerativo/index.html">
+    <meta property="og:title" content="DESIGN GENERATIVO * EMENTA">
+    <meta property="og:description"
+        content="Material de apoio da disciplina de Design Generativo do Bacharelado de Design da Universidade Federal de Pernambuco">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/dgen600.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/dgen600.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/dgen600o.jpg" />
+
+    <link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/DesigngenerativoFavicon.png">
+    <link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/dgen57.png" />
+    <link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/dgen57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/dgen72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/dgen114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/dgen144.png" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#40124d">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#40124d">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#40124d">
+
+    <style>
+        html,
+        body {
+
+            background-color: #40124d;
+            color: white;
+            margin-left: 80px;
+            margin-top: 120px;
+            font-family: monospace;
+
+        }
+
+        a {
+            text-decoration: none;
+            border: 7px solid white;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            float: left;
+            clear: both;
+            color: white;
+            padding: 10px;
+
+
+        }
+
+        a:hover {
+            color: #40124d;
+            border: 7px solid white;
+            background-color: white;
+        }
+
+        .liga {
+            color: #40124d;
+            border: 7px solid white;
+            background-color: white;
+
+        }
+
+        h1 {
+            color: white;
+            float: left;
+            clear: both;
+            margin-bottom: 30px;
+            font-size: 30px;
+            line-heighy: 40px;
+        }
+    </style>
+
+    <script>
+        function escolhe(link, id) {
+
+            document.getElementById('openprocessing').className = "";
+            document.getElementById('CodeSandboxP5').className = "";
+            document.getElementById('CodeSandboxProcessing').className = "";
+            document.getElementById('onlineP5').className = "";
+
+            localStorage.setItem("ambienteidedgen", link);
+            document.getElementById(id).className = "liga";
+
+        }
+    </script>
+
+</head>
+
+<body style="padding: 0 0 0 0; margin: 0 0 0 0; overflow-y: hidden; overflow-x: hidden;">
+
+    <div style="position: fixed; height: 400px; top:calc(50% - 200px);">
+        <h1>Escolha seu ambiente de produção</h1>
+
+        <a id="openprocessing"
+            href="javascript:escolhe('https://www.openprocessing.org/sketch/create', 'openprocessing');">OpenProcessing
+            (P5/Processing)</a>
+
+        <a id="CodeSandboxProcessing"
+            href="javascript:escolhe('https://codesandbox.io/s/processingjs-zjrgx', 'CodeSandboxProcessing');">CodeSandbox
+            Processing</a>
+
+        <a id="CodeSandboxP5"
+            href="javascript:escolhe('https://codesandbox.io/s/p5template-dt2ek', 'CodeSandboxP5');">CodeSandbox
+            P5</a>
+
+        <a id="onlineP5" href="javascript:escolhe('https://editor.p5js.org/', 'onlineP5');">P5 Editor</a>
+    </div>
+
+    <script>
+        if (localStorage.getItem("ambienteidedgen") == "https://www.openprocessing.org/sketch/create") {
+
+            document.getElementById('openprocessing').className = "liga";
+
+        }
+
+        if (localStorage.getItem("ambienteidedgen") == undefined || localStorage.getItem("ambienteidedgen") == "") {
+
+            document.getElementById('openprocessing').className = "liga";
+
+        }
+
+        if (localStorage.getItem("ambienteidedgen") == "https://codesandbox.io/s/processingjs-zjrgx") {
+
+            document.getElementById('CodeSandboxProcessing').className = "liga";
+
+        }
+
+        if (localStorage.getItem("ambienteidedgen") == "https://codesandbox.io/s/p5template-dt2ek") {
+
+            document.getElementById('CodeSandboxP5').className = "liga";
+
+        }
+
+        if (localStorage.getItem("ambienteidedgen") == "https://editor.p5js.org/") {
+
+            document.getElementById('onlineP5').className = "liga";
+
+        }
+    </script>
+</body>
+
+</html>

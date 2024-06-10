@@ -1,0 +1,223 @@
+/* tipografia -------------------------------------------------------- */
+
+:root {
+  --primary-color: white;
+  --secondary-color: #FF1499;
+  --invert-color: #40124D;
+
+}
+
+/* cssreset.com ------------------------------------------------------ */
+* {}
+
+/* base -------------------------------------------------------------- */
+.logocolor {
+
+  fill: white;
+
+}
+
+body {
+  background-color: #40124D;
+  color: white;
+}
+
+nav {
+  background-color: #40124D;
+}
+
+#mobile {}
+
+#navblock {}
+
+.listalinha {
+
+  padding-bottom: 20px;
+
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: #40124D;
+}
+
+.vidogridthumblink {
+  border-color: transparent;
+
+}
+
+.vidogridthumblink:hover {
+  border-color: #7c0084;
+}
+
+a.imagebk {
+  border-color: #7c0084;
+}
+
+a.imagebk:hover {
+  border-color: white;
+}
+
+
+.filtroativo {
+  background-color: #FF1499;
+  color: white;
+
+}
+
+.filtroinativo {
+  background-color: transparent;
+  color: #7c0084;
+}
+
+#navblock a {
+  color: white;
+}
+
+#navblock a:hover {
+  background-color: white;
+  color: #40124D;
+}
+
+.marcacao {
+  background-color: transparent;
+}
+
+.marcacao:hover {
+  background-color: transparent;
+}
+
+/* estrutura --------------------------------------------------------- */
+
+#heading {
+  background-color: transparent;
+  color: #cf3a32;
+}
+
+.secao {
+  background-color: transparent;
+}
+
+.bloco-conteudo {}
+
+#rodape {
+  background-color: transparent;
+  color: #EC489A;
+
+}
+
+#rodape .bloco-conteudo {
+  background-color: transparent;
+  color: #EC489A;
+
+}
+
+#rodape .bloco-conteudo svg {
+  fill: #EC489A;
+
+}
+
+#rodape .bloco-conteudo h6 {
+  color: #EC489A;
+
+}
+
+#ranoyalogo {}
+
+#carregando {}
+
+.loadingimage {}
+
+.videogrid {}
+
+#sumario {}
+
+.sumariolink {
+  background-color: #bfbfbf;
+  color: white;
+
+}
+
+.sumariolink:hover {
+  background-color: #f44292;
+
+}
+
+.halfblock {}
+
+
+/* tipografia --------------------------------------------------------- */
+
+h1 {}
+
+h6 {}
+
+.separador {}
+
+.littlegap {}
+
+.doublegap {}
+
+.triplegap {}
+
+.listalinha {}
+
+.mytags {}
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  background-color: #40124D;
+
+}
+
+#gototop:hover {
+  background-color: #bfbfbf;
+
+}
+
+#gotobottom {
+  background-color: #40124D;
+
+}
+
+#gotobottom:hover {
+  background-color: #bfbfbf;
+
+}
+
+#foot-portfolio {}
+
+#foot-portfolio:hover {}
+
+#foot-linkedin {}
+
+#foot-linkedin:hover {}
+
+#foot-facebook {}
+
+#foot-facebook:hover {}
+
+#foot-github {}
+
+#foot-github:hover {}
+
+#foot-twitter {}
+
+#foot-twitter:hover {}
+
+#foot-googleplus {}
+
+#foot-googleplus:hover {}
+
+.buttom-agenda {}
+
+.buttom-agenda:hover {}
+
+#botaosair {}
+
+#botaosair:hover {}

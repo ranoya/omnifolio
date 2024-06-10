@@ -1,0 +1,208 @@
+:root {
+
+  --cor-destaque: #989abb;
+  --cor-texto: #ffffff;
+  --cor-neutroleve: #d2d2d2;
+  --cor-fundo: #000cd0;
+
+}
+
+
+/* tipografia -------------------------------------------------------- */
+
+/* cssreset.com ------------------------------------------------------ */
+* {}
+
+/* base -------------------------------------------------------------- */
+.logocolor {
+
+  fill: white;
+
+}
+
+body {
+  background-color: #000cd0;
+  color: white;
+}
+
+nav {
+  background: #000cd0;
+}
+
+#mobile {}
+
+#navblock {}
+
+.listalinha {
+
+  padding-bottom: 20px;
+
+}
+
+a {
+  color: #989abb;
+}
+
+a:hover {
+  background-color: #000cd0;
+  color: white;
+}
+
+.filtroativo {
+  background-color: #575a95;
+  color: white;
+
+}
+
+.filtroinativo {
+  background-color: transparent;
+  color: #535cff;
+}
+
+#navblock a {
+  color: white;
+}
+
+#navblock a:hover {
+  background-color: white;
+  color: #000cd0;
+}
+
+.marcacao {
+  background-color: transparent;
+}
+
+.marcacao:hover {
+  background-color: transparent;
+}
+
+/* estrutura --------------------------------------------------------- */
+
+#heading {
+  background-color: transparent;
+  color: #cf3a32;
+}
+
+.secao {
+  background-color: transparent;
+}
+
+.bloco-conteudo {}
+
+#rodape {
+  background-color: transparent;
+  color: #989abb;
+
+}
+
+#rodape .bloco-conteudo {
+  background-color: transparent;
+  color: #989abb;
+
+}
+
+#rodape .bloco-conteudo svg {
+  fill: #989abb;
+}
+
+#rodape .bloco-conteudo h6 {
+  color: #989abb;
+
+}
+
+#ranoyalogo {}
+
+#carregando {}
+
+.loadingimage {}
+
+.videogrid {}
+
+#sumario {}
+
+.sumariolink {
+  background-color: #989abb;
+  color: white;
+
+}
+
+.sumariolink:hover {
+  background-color: #f44292;
+
+}
+
+.halfblock {}
+
+
+/* tipografia --------------------------------------------------------- */
+
+h1 {}
+
+h6 {}
+
+.separador {}
+
+.littlegap {}
+
+.doublegap {}
+
+.triplegap {}
+
+.listalinha {}
+
+.mytags {}
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  background-color: #000cd0;
+
+
+}
+
+#gototop:hover {
+  background-color: #bfbfbf;
+
+}
+
+#gotobottom {
+  background-color: #000cd0;
+
+}
+
+#gotobottom:hover {
+  background-color: #bfbfbf;
+
+}
+
+#foot-portfolio {}
+
+#foot-portfolio:hover {}
+
+#foot-linkedin {}
+
+#foot-linkedin:hover {}
+
+#foot-facebook {}
+
+#foot-facebook:hover {}
+
+#foot-github {}
+
+#foot-github:hover {}
+
+#foot-twitter {}
+
+#foot-twitter:hover {}
+
+#foot-googleplus {}
+
+#foot-googleplus:hover {}
+
+.buttom-agenda {}
+
+.buttom-agenda:hover {}
+
+#botaosair {}
+
+#botaosair:hover {}

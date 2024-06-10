@@ -1,0 +1,282 @@
+:root {
+
+    --icn-foregroundcolor: #000cd0;
+    --icn-hovercolor: #000cd0;
+    --navtop-backgroundcolor: rgba(255, 255, 255, 0.95);
+    --cont-backgroundcolor: white;
+    --cont-foregroundcolor: #000cd0;
+    --cont-altcolor: #cccccc;
+    --cont-althover: white;
+    --page-backgroundcolor: #000cd0;
+    --menu-backgroundcolor: white;
+    --menuitem-neutrocolor: #cccccc;
+    --menuitem-hovercolor: #000cd0;
+    --rodape-foregroundcolor: #000cd0;
+    --block-pale: #000cd0cc;
+    --neutral-grey: #9b9b9b;
+    --overscroll: #000cd0;
+}
+
+
+
+
+* {}
+
+html {
+    color: var(--rodape-foregroundcolor, red);
+    background-color: var(--overscroll, white);
+}
+
+#navpresentation {
+    background-color: var(--icn-foregroundcolor, red);
+}
+
+body {
+    color: var(--rodape-foregroundcolor, red);
+    background-color: var(--overscroll, white);
+}
+
+#conteudo {
+    background-color: var(--cont-backgroundcolor, white);
+    color: var(--cont-foregroundcolor, #666666);
+}
+
+#midblock {
+    background-color: var(--cont-backgroundcolor, white);
+}
+
+#rodape {
+    background-color: var(--page-backgroundcolor, white);
+    color: var(--rodape-foregroundcolor, red);
+}
+
+#rodapedados .icon {
+    fill: var(--rodape-foregroundcolor, red);
+}
+
+.badges .icon {
+    fill: var(--rodape-foregroundcolor, red);
+}
+
+.link:hover {
+    background-color: var(--cont-altcolor, red);
+}
+
+.simplelink {
+    color: var(--icn-hovercolor, #a80000);
+    border-bottom-color: var(--icn-hovercolor, #a80000);
+}
+
+.simplelink:hover {
+    color: var(--icn-foregroundcolor, red);
+    border-color: var(--icn-foregroundcolor, red);
+}
+
+.texto ol li {
+    border-left-color: var(--rodape-foregroundcolor, #a80000);
+}
+
+a .badges {
+    border-color: var(--cont-foregroundcolor, #666666);
+}
+
+a:hover .badges {
+    background-color: var(--cont-foregroundcolor, #666666);
+}
+
+a .badges .icon {
+    fill: var(--cont-foregroundcolor, #666666);
+}
+
+a .badges:hover .icon {
+    fill: var(--cont-althover, white);
+    background-color: var(--cont-foregroundcolor, #666666);
+    color: var(--cont-althover, white);
+}
+
+a.contato,
+a.grupos,
+a.listatitulo,
+a.links,
+a.speciallink {
+    border-color: var(--cont-foregroundcolor, #666666);
+    color: var(--cont-foregroundcolor, #666666);
+}
+
+a.contato:hover,
+a.grupos:hover,
+a.listatitulo:hover,
+a.links:hover,
+a.speciallink:hover {
+    background-color: var(--cont-foregroundcolor, #666666);
+    color: var(--cont-althover, white);
+}
+
+.imagebk {
+    border-color: var(--icn-hovercolor, #a80000);
+}
+
+.imagebk:hover {
+    border-color: var(--icn-foregroundcolor:, red);
+}
+
+.dica {
+    border-color: var(--cont-foregroundcolor, #666666);
+}
+
+.textillustrationvector {
+    stroke: var(--cont-foregroundcolor, #666666);
+}
+
+.textillustrationfill {
+    fill: var(--cont-foregroundcolor, #666666);
+}
+
+.trabalhos {
+    background-color: var(--cont-foregroundcolor, #666666);
+    color: var(--cont-althover, white);
+}
+
+#upnavframe {
+    background-color: var(--navtop-backgroundcolor, rgba(255, 255, 255, 0.9));
+}
+
+#rightnavframe {
+    background-color: var(--menu-backgroundcolor, white);
+}
+
+
+.iconforeground {
+    fill: var(--icn-foregroundcolor, red);
+}
+
+#menu:hover .iconforeground {
+    fill: var(--icn-hovercolor, #FF7777);
+}
+
+.menuitem {
+    color: var(--menuitem-neutrocolor, #cccccc);
+}
+
+.menuitem:hover {
+    color: var(--menuitem-hovercolor, red);
+}
+
+.bigtitle {
+    color: var(--cont-altcolor, #FF7777);
+}
+
+p.bigtitle {
+    color: var(--cont-althover, white);
+}
+
+a.bigtitle:hover {
+    color: var(--cont-althover, white);
+}
+
+.texto {
+    background-color: var(--cont-backgroundcolor, white);
+    color: var(--cont-foregroundcolor, #666666);
+}
+
+#invisibleblocsA {
+    background-color: var(--menu-backgroundcolor, white);
+}
+
+#invisibleblocsB {
+    background-color: var(--menu-backgroundcolor, white);
+}
+
+#visibleblocsA {
+    background-color: var(--icn-foregroundcolor, red);
+}
+
+#visibleblocsB {
+    background-color: var(--icn-foregroundcolor, red);
+}
+
+.singleblock {
+    background-color: grey;
+}
+
+.singleblock a {
+    background-color: var(--block-pale, rgba(128, 128, 128, 0.8));
+    color: var(--cont-althover, white);
+}
+
+.singleblock a:hover {
+    background-color: var(--menuitem-hovercolor, red);
+    color: var(--cont-althover, white);
+}
+
+.toolblock {
+    background-color: grey;
+}
+
+.toolblock a {
+    background-color: var(--block-pale, rgba(128, 128, 128, 0.8));
+    color: var(--cont-althover, white);
+}
+
+.toolblock a:hover {
+    background-color: var(--menuitem-hovercolor, red);
+    color: var(--cont-althover, white);
+}
+
+.code b {
+    color: var(--menuitem-hovercolor, red);
+}
+
+.livros {
+    color: var(--cont-foregroundcolor, #666666);
+}
+
+.livros:hover {
+    color: var(--menuitem-hovercolor, red);
+}
+
+.smallalumniphoto {
+    background-color: var(--cont-foregroundcolor, #666666);
+}
+
+@media print {
+
+    .singleblock {
+        border-color: var(--neutral-grey, #9B9B9B);
+        color: var(--cont-altcolor, #b20000);
+    }
+
+    .singleblock a {
+        color: var(--cont-altcolor, #b20000);
+    }
+
+    .toolblock {
+        border-color: var(--cont-altcolor, #b20000);
+    }
+
+    .toolblock a {
+        color: var(--cont-altcolor, #b20000);
+    }
+
+    .toolblock a .quicklink {
+        color: var(--neutral-grey, #9B9B9B);
+    }
+
+    .toolblock .blocktext1 {
+        color: var(--cont-altcolor, #b20000);
+    }
+
+    p.bigtitle {
+        color: var(--icn-foregroundcolor, red);
+    }
+
+    .blocktext1 {
+        color: var(--neutral-grey, #9B9B9B);
+    }
+
+    .blocktext2 {
+        color: var(--neutral-grey, #9B9B9B);
+    }
+
+
+}

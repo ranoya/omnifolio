@@ -1,0 +1,178 @@
+<style>
+
+  :root {
+    --tamanhobloco: 30px;
+    --espacol: 4px;
+    --espacob: 0;
+    --bordaitens: 18px;
+    
+  }
+
+  .tabeladotempo {
+    display: grid;
+    width: 100%;
+    /* overflow-x: scroll; */
+    grid-auto-columns: 200px;
+    position: relative;
+  }
+
+  .matriztempoanos {
+    height: 90px;
+    position: sticky;
+    top: 50px;
+    z-index: 20;
+  }
+
+  .matriztempocategorias {
+    position: sticky;
+    left: 20px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .matrizend {
+    height: 40px;
+  }
+
+  .anolead {
+    transform-origin: top left;
+    transform: rotate(-90deg) translate(-83px,5px);
+    color: #888888;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .separa {
+    border-left: 1px solid black;
+  }
+
+  .matrizlinha0 {
+    background-color: #dddddd;
+  }
+
+  .matrizlinha1 {
+    background-color: #eeeeee;
+  }
+
+  .matrizlinhaespecial {
+    background-color: white;
+  }
+
+  .matriztimeline_blococomponente {
+
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 4px 4px;
+    padding: 5px;
+
+    align-items: center;
+
+  }
+
+  .matriztimeline_blococomponente:hover {
+    background-color: #00000022;
+    cursor: pointer;
+  }
+
+  .matriztimeline_imagemcomponente {
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+
+
+  }
+
+  .matriztimeline_textocomponente {
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+  }
+
+  .matriz_espacamento {
+    height: 16px;
+    background-color: transparent;
+  }
+
+  #bigpainel {
+    
+  }
+
+  .nullfield {
+    overflow: hidden;
+    width: 0;
+  }
+
+  .painelsticky {
+    position: sticky !important;
+    right: 0 !important;
+    width: 500px !important;
+    overflow-y: scroll;
+    background-color: black;
+    z-index: 10;
+  }
+
+  .espacodummy {
+
+    background-color: transparent;
+    overflow: hidden;
+    width: 0;
+    display: none;
+  }
+
+  .espacopainelsticky {
+    display: block;
+    width: 500px !important;
+    
+  }
+  
+
+.main-ct {
+  width: 100%;
+  border: 1px solid #000;
+  position:relative;
+}
+
+.like-body {
+  width: 100%;
+  height:1300px;
+}
+
+#entradas {
+  display: grid; 
+  width: 100%; 
+  grid-template-columns: 1fr 1fr;
+  position: sticky;
+  top: 20px;
+  left: 20px;
+}
+</style>
+
+
+
+
+<div id="entradas">
+<div id="observablehq-viewof-eixoy-8e91887e"></div>
+<div id="observablehq-viewof-filtros-8e91887e"></div>
+</div>
+
+<div id="observablehq-codego-8e91887e"></div>
+
+
+
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@ranoya/new-component-timeline-test.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof filtros") return new Inspector(document.querySelector("#observablehq-viewof-filtros-8e91887e"));
+  if (name === "codego") return new Inspector(document.querySelector("#observablehq-codego-8e91887e"));
+  if (name === "viewof eixoy") return new Inspector(document.querySelector("#observablehq-viewof-eixoy-8e91887e"));
+  return ["viz","viewof artefatosfiltrados","seriesidentificadas","generosindenticidos","linguagensidentificadas","tipologias","anos","linhadotempo","newlinhadotempo"].includes(name);
+});
+</script>

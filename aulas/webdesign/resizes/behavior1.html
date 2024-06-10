@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<script>
+
+ handler = "";
+ mX = "";
+ mY = "";
+ document.addEventListener("mousedown", function(evt) { fazalgo(evt,'teste'); });
+ document.addEventListener("mouseup", function(evt) { naofazalgo(evt, 'teste'); });
+ document.addEventListener("mousemove", function(evt) { mX = evt.pageX; mY = evt.pageY; });
+
+
+function naofazalgo() {
+
+	clearInterval(handler);
+}
+
+function fazalgo(evt,who) {
+
+	handler = setInterval( function() { dragit(evt,who); } , 10);
+
+}
+
+function dragit(evt,who) {
+
+	let xpto = document.getElementById(who);
+	re = xpto.getBoundingClientRect();
+	
+	mysizeX = (mX - re.left - 20) + "px";
+	mysizeY = (mY - re.top - 20) + "px";
+
+	xpto.style.width = mysizeX;
+	xpto.style.height = mysizeY;
+
+	document.getElementById('quad').style.left = (mX - re.left + 5) + "px";
+	document.getElementById('quad').style.top = (mY - re.top + 5) + "px";
+
+}
+</script>
+</head>
+
+<body>
+
+	<div id="teste" style="width: 300px; height: 300px; border: 2px dashed cyan; padding: 10px;">
+		<div id="conteudo" style="position: relative; margin-left: auto; margin-right: auto; width: 80%; min-width: 100px; height: 100%; min-height: 100px; background-color: transparent; overflow: hidden;">
+			
+			<div style="border: 10px solid white; width: calc(70% - 50px); height: 30%; float: right;">
+			</div>
+
+			<div style="border: 10px solid white; width: 30%; height: 30%; float: left;">
+			</div>
+
+			<div style="border: 10px solid white; width: calc(100% - 20px); height: calc(70% - 50px); margin-top: 10px; float: left; clear: both;">
+			</div>
+
+
+
+		</div>
+	</div>
+	<div id="quad" style="position: fixed; width: 10px; height: 10px; top: 325px; left: 325px; border: 2px solid cyan; background-color: white;"></div>
+
+</body>
+
+</html>

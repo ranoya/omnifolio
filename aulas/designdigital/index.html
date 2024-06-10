@@ -1,0 +1,1128 @@
+<script type="text/javascript">
+	/* -- Google Analytics ---------------------------------------------------- */
+
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-61225449-1', 'auto');
+	ga('send', 'pageview');
+
+	/* ---------------------------------------------------- Google Analytics -- */
+</script>
+
+<!DOCTYPE html>
+<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-opensans theme-color-white-blue">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="pinterest" content="nopin" />
+	<meta name="pinterest" content="nohover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Design de Serviços * UFPE</title>
+	<meta name="generator" content="slides.com" />
+	<meta name="description"
+		content="Material de apoio da disciplina de Design de Serviços da Universidade Federal de Pernambuco">
+	<meta name="author" content="Prof. Dr. Guilherme Ranoya">
+	<meta name="keywords" content="design de serviços, metodologia de projeto">
+	<meta property="og:url" content="https://www.ranoya.com/aulas/designdigital/index.html">
+	<meta property="og:title" content="Design de Serviços * UFPE">
+	<meta property="og:description"
+		content="Material de apoio da disciplina de Design de Serviços da Universidade Federal de Pernambuco">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="600">
+	<meta property="og:site_name" content="ranoya.com">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/designservicos600.jpg">
+	<meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/designservicos600.jpg">
+	<link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/designservicos600.jpg">
+
+	<link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/designservicos16.png">
+
+	<link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/designservicos57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/designservicos72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/designservicos114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/designservicos144.png">
+
+	<meta name="theme-color" content="#ff9900">
+	<meta name="msapplication-navbutton-color" content="#ff9900">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ff9900">
+	<link rel="stylesheet" type="text/css" href="https://www.projetao.com.br/style/SERVICEDESIGNcolor.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900&display=swap');
+
+		* {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		html {
+
+			overscroll-behavior: none;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #666666;
+
+		}
+
+		#logosmall {
+			width: 75px;
+			height: 60px;
+			padding: 30px;
+			padding-left: 15px;
+		}
+
+		#conteudo {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			transition: margin-left 0.4s ease-out;
+			left: 0;
+			margin-bottom: 30px;
+			clear: both;
+		}
+
+		#invisibleblocsA {
+			clear: both;
+			width: calc(100% - 120px);
+			margin-left: 120px;
+			height: 120px;
+			float: left;
+		}
+
+		#invisibleblocsB {
+			clear: both;
+			width: 120px;
+			height: 120px;
+			float: right;
+		}
+
+		#molduratitle {
+			margin-top: -240px;
+			height: 240px;
+			width: calc(100% - 120px);
+		}
+
+		#visibleblocsA {
+			clear: both;
+			float: left;
+			width: 120px;
+			height: 120px;
+		}
+
+		#visibleblocsB {
+			clear: both;
+			float: left;
+			width: calc(100% - 15px);
+			height: 120px;
+			padding-right: 15px;
+		}
+
+		#bigblock {
+			width: 100%;
+			background-size: cover;
+			background-position: center center;
+			min-height: 360px;
+			height: 480px;
+			clear: both;
+			min-width: 361px;
+			margin-top: -120px;
+		}
+
+		.bigtitle {
+			display: block;
+			font-weight: 800;
+			display: block;
+			margin-top: 18px;
+			font-size: 32px;
+			line-height: 36px;
+			margin-left: 15px;
+			clear: both;
+			text-decoration: none;
+			transition: all 0.3s ease-out;
+		}
+
+		.bigtitle .blocktext1 {
+			font-size: 11px;
+		}
+
+		.bigtitle .blocktext2 {
+			display: none;
+		}
+
+
+		.qrlink {
+			display: none;
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: contain;
+		}
+
+		.quicklink {
+			display: none;
+		}
+
+		.singleblock {
+			width: 125px;
+			height: 125px;
+			float: left;
+			background-size: cover;
+			background-position: center center;
+			font-size: 12px;
+		}
+
+		.singleblock a {
+			width: calc(100% - 30px);
+			height: calc(100% - 30px);
+			padding: 15px;
+			display: block;
+			text-decoration: none;
+			font-weight: 800;
+			transition: all 0.3s ease-out;
+		}
+
+		.singleblock a:hover {
+			margin: 10px;
+			width: calc(100% - 30px);
+			height: calc(100% - 30px);
+			padding: 5px;
+			transition: all 0.3s ease-out;
+		}
+
+		.toolblock {
+			width: 125px;
+			height: 125px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			font-size: 10px;
+			float: left;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		.toolblock a {
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			padding: 10px;
+			display: block;
+			text-decoration: none;
+			font-weight: 800;
+			transition: all 0.3s ease-out;
+		}
+
+		.toolblock a:hover {
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			padding: 5px;
+			margin: 5px;
+			transition: all 0.3s ease-out;
+		}
+
+		.double {
+			width: 250px;
+		}
+
+		.triple {
+			width: 375px;
+		}
+
+		.superdouble {
+			width: 250px;
+			height: 250px;
+		}
+
+		.quad {
+			width: 375px;
+			height: 375px;
+		}
+
+		.right {
+			float: right;
+		}
+
+
+
+		.blocktext1 {
+			display: block;
+			font-weight: 300;
+			clear: both;
+			line-height: 18px;
+			font-size: 12px;
+		}
+
+		.blocktext2 {
+			display: none;
+		}
+
+		.quad .blocktext2,
+		.superdouble .blocktext2 {
+			display: block;
+			font-size: 12px;
+			line-height: 15px;
+			font-weight: 400;
+			margin-top: 35px;
+		}
+
+		.toolblock .blocktext1 {
+			font-size: 13px;
+			line-height: 15px;
+		}
+
+		.toolblock .blocktext2 {
+			display: none;
+			margin-top: 12px;
+			font-size: 11px;
+			line-height: 12px;
+		}
+
+		.menubutton {
+			width: 30px;
+			height: 30px;
+			position: fixed;
+			z-index: 100;
+			top: 20px;
+			right: 30px;
+			background-color: #F98400;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+		}
+
+		.menubutton:hover {
+			background-color: grey;
+			-webkit-transition: all 0.4s ease-in;
+			transition: all 0.4s ease-in;
+		}
+
+
+		#navpresentation {
+			background-color: #666666;
+			width: 375px;
+			height: calc(100vh + 34px);
+			position: fixed;
+			z-index: 99;
+			top: 0;
+			right: -375px;
+			font-family: Helvetica, Arial, sans-serif;
+			overflow-y: scroll;
+			padding-bottom: 34px;
+		}
+
+
+
+		* {
+			-webkit-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
+		}
+
+		@media (max-width: 640px) {
+			.menubutton {
+				background-color: grey;
+			}
+		}
+	</style>
+
+</head>
+
+<body style="padding: 0 0 0 0; margin: 0 0 0 0; overflow-y: hidden; overflow-x: hidden;">
+
+	<a href="javascript: menu();" class="menubutton"><img
+			src="https://www.ranoya.com/Assets/WebsiteIcons/hamburguer-white.svg" style="width: 100%;"></a>
+
+	<nav id="navpresentation">
+
+		<div id='bigblock' style='background-image: url(https://www.ranoya.com/Assets/entregaveis/userflow1.png);'>
+			<div id='invisibleblocsA'></div>
+
+			<svg id="logosmall" viewBox="0 0 1184 1184" fill="none" xmlns="https://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M1184 0H0V1184H1184V0ZM654.595 233.316L378.798 74L103 233.316V551.948L378.798 711.265L654.595 551.948V233.316ZM903.981 708.595L672.352 574.793L440.723 708.595V976.198L672.352 1110L903.981 976.198V708.595ZM885.552 210.473L1082 323.952V550.911L885.552 664.39L689.104 550.911V323.952L885.552 210.473Z"
+					class="iconforeground" fill="#666666" />
+			</svg>
+
+			<div id='invisibleblocsB'></div>
+		</div>
+
+		<div id='molduratitle'>
+			<div id='visibleblocsA'></div>
+			<div id='visibleblocsB'>
+				<p class='bigtitle'>Documentos da Disciplina
+					<span class='blocktext1'>Institucional</span>
+					<span class='blocktext2'></span></p>
+			</div>
+		</div>
+
+		<div>
+
+
+
+			<div class='singleblock superdouble right'
+				style='background-image: url(https://www.projetao.com.br/img/tprograma.png);'>
+				<a href="javascript:sumario('programa');">Programa
+
+					<span class='blocktext1'>Ementa da disciplina</span>
+					<span class='blocktext2'>Seja bem vindo.<br>Aqui você pode ver o que será trabalhado nesta
+						disciplina, e como isso irá acontecer</span>
+				</a>
+			</div>
+
+			<div class='singleblock right' style='background-image: url(https://www.projetao.com.br/img/ogforum.jpg);'>
+				<a href="javascript:sumario('slack');">Comunicação
+
+					<span class='blocktext1'>Forum permanente</span>
+					<span class='blocktext2'>Canal de comunicação entre professores e alunos envolvidos na metodologia
+						Projetão</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tRanoya.png);'>
+				<a href="javascript:sumario('professores');">Professores
+
+					<span class='blocktext1'>Quem são seus professores</span>
+					<span class='blocktext2'>Mais informações sobre os professores</span>
+				</a>
+			</div>
+
+			<div class='singleblock'
+				style='background-image: url(https://www.projetao.com.br/img/fstartupsprojetao.png); background-position: left center;'>
+
+				<a href="javascript:sumario('extensao');">Extensão
+
+					<span class='blocktext1'>Programa de extensão em inovação</span>
+					<span class='blocktext2'>Mais informações sobre o programa de extensão</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock double right'
+				style='background-image: url(https://www.projetao.com.br/img/ogbooks.jpg);'>
+				<a href="javascript:sumario('bibliografia');">Bibliografia
+
+					<span class='blocktext1'>Livros e fontes</span>
+					<span class='blocktext2'>Fontes confiáveis sobre o assunto</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock double right'
+				style='background-image: url(https://www.projetao.com.br/img/ogreference.jpg);'>
+				<a href="javascript:sumario('referencias');">Referências
+
+					<span class='blocktext1'>Notícias</span>
+					<span class='blocktext2'>Fontes não-confiáveis sobre o assunto</span>
+				</a>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Cultura projetual
+						<span class='blocktext1'>O entendimento do que é projetar</span>
+						<span class='blocktext2'>Conjunto de preceitos nos quais a prática se ampara para estabelecer
+							uma abordagem projetual</span></p>
+				</div>
+			</div>
+
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/fGrupos.png);'>
+				<a href="javascript:sumario('oqueeprojetar');">Projetar
+
+					<span class='blocktext1'>O que é projetar?</span>
+					<span class='blocktext2'>Porque estudar sobre o projetar?</span>
+				</a>
+			</div>
+
+			<div class='singleblock'
+				style='background-image: url(https://www.projetao.com.br/img/dDesign.svg); background-size: cover;'>
+				<a href="javascript:sumario('eixos');">Eixos
+
+					<span class='blocktext1'>Eixos do dDesign</span>
+					<span class='blocktext2'>Organização dos estudos de design baseado no trabalho de Gustavo
+						Bonfim</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tArchiculture.jpg);'>
+				<a href="javascript:sumario('archiculture');">Cultura do estúdio
+
+					<span class='blocktext1'>Documentário Archiculture</span>
+					<span class='blocktext2'>A cultura do design studio e o aprendizado sobre o que é projetar</span>
+				</a>
+			</div>
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Trabalho colaborativo
+						<span class='blocktext1'>Como trabalhar em equipe</span>
+						<span class='blocktext2'>Principios e processos sobre como desenvolver projetos
+							colaborativamente</span></p>
+				</div>
+			</div>
+
+
+			<div class='singleblock'
+				style='background-image: url(https://www.projetao.com.br/img/tflippedclassroom.png);'>
+				<a href="javascript:sumario('futurework');">Competências
+
+					<span class='blocktext1'>Formação projetual</span>
+					<span class='blocktext2'>Competências e habilidades necessárias para os profissionais de
+						projeto</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock'
+				style='background-image: url(https://s3.amazonaws.com/media-p.slid.es/uploads/259690/images/1916323/o-WORKAHOLIC-facebook.jpg);'>
+				<a href="javascript:sumario('tripedt');">Princípios
+
+					<span class='blocktext1'>Pilares de Design Thinking</span>
+					<span class='blocktext2'>Os três pilares do trabalho projetual de design thinking</span>
+				</a>
+			</div>
+
+			<div class='singleblock'
+				style='background-image: url(https://s3.amazonaws.com/media-p.slid.es/uploads/259690/images/1920266/office-table-innovation-modular-technology-idea.jpg);'>
+				<a href="javascript:sumario('atuacolaborativo');">Atuação
+
+					<span class='blocktext1'>Trabalhando em grupo</span>
+					<span class='blocktext2'>Princípios de como trabalhar em grupo</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock'
+				style='background-image: url(https://s3.amazonaws.com/media-p.slid.es/uploads/259690/images/1928630/justinblog.jpg);'>
+				<a href="javascript:sumario('oqueeupreciso');">Colaboração
+
+					<span class='blocktext1'>Organizando o trabalho</span>
+					<span class='blocktext2'>O que é necessário para organizar o trabalho colaborativo</span>
+				</a>
+			</div>
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Design e método
+						<span class='blocktext1'>Porque adotar um método</span>
+						<span class='blocktext2'>O que é metodologia de projeto</span></p>
+				</div>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tprototipo.png);'>
+				<a href="javascript:sumario('artexdesign');">Design x arte
+
+					<span class='blocktext1'>Abordagens diferentes</span>
+					<span class='blocktext2'>Diferenciação entre arte e design</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock'
+				style='background-image: url(https://www.projetao.com.br/img/tdesignthinking.svg);'>
+				<a href="javascript:sumario('digital');">Meios digitais
+
+					<span class='blocktext1'>O que design digital</span>
+					<span class='blocktext2'>Os diferentes campos do design</span>
+				</a>
+			</div>
+
+			<div class='singleblock'
+				style='background-image: url(https://www.projetao.com.br/img/tdesignthinking.svg);'>
+				<a href="javascript:sumario('pqmetodo');">Métodologia
+
+					<span class='blocktext1'>Usar um método é necessário?</span>
+					<span class='blocktext2'>Por que adotamos uma metodologia</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/taboutProjetao.png);'>
+				<a href="javascript:sumario('gooddesign');">Princípios
+
+					<span class='blocktext1'>Fundamentos do design</span>
+					<span class='blocktext2'>Diretrizes para o bom design</span>
+				</a>
+			</div>
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Metodologias
+						<span class='blocktext1'>Os diferentes métodos disponíveis</span>
+						<span class='blocktext2'>Diferenças entre as metodologias de design</span></p>
+				</div>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/twaterfall.svg);'>
+				<a href="javascript:sumario('waterfall');">Waterfall
+
+					<span class='blocktext1'>Análise estruturada</span>
+					<span class='blocktext2'>Metodologia Waterfall</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tcodesign.svg);'>
+				<a href="javascript:sumario('codesign');">CoDesign
+
+					<span class='blocktext1'>Design participativo</span>
+					<span class='blocktext2'>O design escandinavo</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/thcdblock.svg);'>
+				<a href="javascript:sumario('hcd');">HCD
+
+					<span class='blocktext1'>Human Centered Design</span>
+					<span class='blocktext2'>Conjunto de ferramentas de observação, análise e ideação da IDEO</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock superdouble left'
+				style='background-image: url(https://www.projetao.com.br/img/tdesignthinking.svg); background-size: cover;'>
+				<a href="javascript:sumario('designthinking');">Design Thinking
+
+					<span class='blocktext1'>O que é Design Thinking?</span>
+					<span class='blocktext2'>Metodologia de projeto desenvolvida pela IDEO</span>
+				</a>
+			</div>
+
+			<div class='singleblock right' style='background-image: url(https://www.projetao.com.br/img/tflavors.svg);'>
+				<a href="javascript:sumario('flavors');">Sabores
+
+					<span class='blocktext1'>Os diferentes Design Thinkings</span>
+					<span class='blocktext2'>Os diversos design thinkings</span>
+				</a>
+			</div>
+
+			<div class='singleblock right' style='background-image: url(https://www.projetao.com.br/img/tdschool.svg);'>
+				<a href="javascript:sumario('dschool');">d.School
+
+					<span class='blocktext1'>As versões de Stanford</span>
+					<span class='blocktext2'>Stanford d.School</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tdoublediamond.svg);'>
+				<a href="javascript:sumario('doublediamond');">Double diamond
+
+					<span class='blocktext1'>A versão do Design Council</span>
+					<span class='blocktext2'>Double Diamond</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tgsprint.svg);'>
+				<a href="javascript:sumario('googlesprint');">Design Sprint
+
+					<span class='blocktext1'>A versão do Google</span>
+					<span class='blocktext2'>Design Sprint</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tprojetao.svg);'>
+				<a href="javascript:sumario('projetao');">Projetão
+
+					<span class='blocktext1'>A versão da UFPE</span>
+					<span class='blocktext2'>Projetão</span>
+				</a>
+			</div>
+
+			<div class='singleblock right'
+				style='background-image: url(https://www.projetao.com.br/img/tcustommethod.svg);'>
+				<a href="javascript:sumario('custommethod');">Custom
+
+					<span class='blocktext1'>Uma versão customizada</span>
+					<span class='blocktext2'>Ranoya</span>
+				</a>
+			</div>
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Toolbox
+						<span class='blocktext1'>Biblioteca de técnicas e ferramentas</span>
+						<span class='blocktext2'>Organização das ferramentas e métodos apresentados no documento</span>
+					</p>
+				</div>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tlevantamento.png);'>
+				<a href="javascript:sumario('tkobservacao');">Observação
+
+					<span class='blocktext1'>Ferramentas de observação</span>
+					<span class='blocktext2'>Coleção de técnias para levantamento e observação</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/talternativas.png);'>
+				<a href="javascript:sumario('tkcriacao');">Criação
+
+					<span class='blocktext1'>Ferramentas de ideação</span>
+					<span class='blocktext2'>Coleção de técnias para ideação</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/ogMetQ7.jpg);'>
+				<a href="javascript:sumario('tkprototipagem');">Prototipagem
+
+					<span class='blocktext1'>Ferramentas de validação</span>
+					<span class='blocktext2'>Coleção de técnias para prototipação</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/taeiou.svg);'>
+				<a href="javascript:sumario('aeiou');">AEIOU Framework
+
+					<span class='blocktext1'>Atividades, Interações, Objetos, etc.</span>
+					<span class='blocktext2'>Diagrama de categorização para pesquisas de campo, observações ou
+						levantamentos</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tbrainstorming.svg);'>
+				<a href="javascript:sumario('brainstorm');">Brainstorm
+
+					<span class='blocktext1'>Dinâmica de criação</span>
+					<span class='blocktext2'>Atividade coletiva para geração de alternativas</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tafoitos.svg);'>
+				<a href="javascript:sumario('afoitos');">Early Adopters
+
+					<span class='blocktext1'>Comunidade de teste</span>
+					<span class='blocktext2'>Qual a utilidade de uma comunidade de teste no projeto</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tPersonas.svg);'>
+				<a href="javascript:sumario('personas');">Personas
+
+					<span class='blocktext1'>Caracterização do usuário</span>
+					<span class='blocktext2'>Construção de arquétipos de usuários contemplando seus interesses, gostos e
+						valores</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tbrainwriting.svg);'>
+				<a href="javascript:sumario('brainwriting');">Brainwriting
+
+					<span class='blocktext1'>Dinâmica de criação</span>
+					<span class='blocktext2'>Atividade coletiva para geração de alternativas</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/tusabilidade.svg);'>
+				<a href="javascript:sumario('usabilidade');">Usabilidade
+
+					<span class='blocktext1'>Testes e validações</span>
+					<span class='blocktext2'>Processo de validação com usuário</span>
+				</a>
+			</div>
+
+			<div class='singleblock double'
+				style='clear: both; background-image: url(https://www.projetao.com.br/img/tblueprint.svg);'>
+				<a href="javascript:sumario('tkblueprints');">Blueprint
+
+					<span class='blocktext1'>Mapa de interações</span>
+					<span class='blocktext2'>Mapeamento da relação entre o usuário, o artefato, e o serviço para o qual
+						ele serve como dispositivo</span>
+				</a>
+			</div>
+
+			<div class='singleblock double right'
+				style='clear: both; background-image: url(https://www.projetao.com.br/img/tuserflow.svg);'>
+				<a href="javascript:sumario('tkuserflow');">User flow
+
+					<span class='blocktext1'>Fluxo da interface</span>
+					<span class='blocktext2'>Arquitetura da solução e planejamento das atividades do usuário</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/tentrevistas.svg);'>
+				<a href="javascript:sumario('entrevistas');">Entrevistas
+
+					<span class='blocktext1'>Pesquisa com usuário</span>
+					<span class='blocktext2'>Técnicas de aprofundamento das questões com o usuário</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/tempathyMap.svg);'>
+				<a href="javascript:sumario('mapadeempatia');">Mapa de empatia
+
+					<span class='blocktext1'>Mapeamento de relações</span>
+					<span class='blocktext2'>Mapeamento das relações de como o usuário se sente em relação a algo</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/twireframe.svg);'>
+				<a href="javascript:sumario('tkwireframe');">Wireframe
+
+					<span class='blocktext1'>Planejamento de interface</span>
+					<span class='blocktext2'>Organização espacial e dimensionamento das interfaces</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='clear: both; background-image: url(https://www.projetao.com.br/img/tjornadas.svg);'>
+				<a href="javascript:sumario('jornadas');">Jornada do usuário
+
+					<span class='blocktext1'>Como o usuário se sente</span>
+					<span class='blocktext2'>Mapeamento das relações e da forma como o usuário se sente ao longo de uma
+						jornada</span>
+				</a>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Metodologia Projet&atilde;o
+						<span class='blocktext1'>Quests</span>
+						<span class='blocktext2'>A metodologia est&aacute; organizada em nove atividades de busca,
+							&quot;Quests&quot;, que procuram ajudar a responder quest&otilde;es importantes para o
+							projeto</span></p>
+				</div>
+			</div>
+
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ1.svg);'>
+				<a href="javascript:sumario('q1');">Cen&aacute;rio &amp; Pessoas
+
+					<span class='blocktext1'>Quest #1</span>
+					<span class='blocktext2'>Etapa de observa&ccedil;&atilde;o de pessoas e suas atividades, na busca de
+						quest&otilde;es reais e concretas onde a inova&ccedil;&atilde;o seja necess&aacute;ria</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ2.svg);'>
+				<a href="javascript:sumario('q2');">Tema &amp; Oportunidades
+
+					<span class='blocktext1'>Quest #2</span>
+					<span class='blocktext2'>Defini&ccedil;&atilde;o de uma tem&aacute;tica de atua&ccedil;&atilde;o e
+						identifica&ccedil;&atilde;o de oportunidades presentes para inova&ccedil;&atilde;o</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ3.svg);'>
+				<a href="javascript:sumario('q3');">Problema &amp; Concorrentes
+
+					<span class='blocktext1'>Quest #3</span>
+					<span class='blocktext2'>Identifica&ccedil;&atilde;o de problemas existentes na tem&aacute;tica
+						selecionada, e mapeamento dos concorrentes presentes neste campo</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock superdouble'
+				style='background-image: url(https://www.projetao.com.br/img/tMetOverview.png);'>
+				<a href="javascript:sumario('visaogeral');">Vis&atilde;o Geral
+
+					<span class='blocktext1'>Abordagem Metodol&oacute;gica</span>
+					<span class='blocktext2'>Um entendimento mais amplo e integral da metodologia de projeto conhecida
+						como Projet&atilde;o em torno de seus procedimentos, etapas e mecanismos</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ4.svg);'>
+				<a href="javascript:sumario('q4');">Proposta &Uacute;nica de Valor
+
+					<span class='blocktext1'>Quest #4</span>
+					<span class='blocktext2'>Defini&ccedil;&atilde;o de valores &uacute;nicos, que apenas a proposta em
+						desenvolvimento conseguir&aacute; entregar para os usu&aacute;rios e/ou consumidores</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ5.svg);'>
+				<a href="javascript:sumario('q5');">Estrat&eacute;gia de Inova&ccedil;&atilde;o
+					<span class='blocktext1'>Quest #5</span>
+					<span class='blocktext2'>Defini&ccedil;&atilde;o de uma abordagem estrt&eacute;gica para entregar os
+						valores &uacute;nicos do projeto em desenvolvimento</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ6.svg);'>
+				<a href="javascript:sumario('q6');">Modelo de Neg&oacute;cio &amp; ARM
+
+					<span class='blocktext1'>Quest #6</span>
+					<span class='blocktext2'>Defini&ccedil;&atilde;o de um modelo de neg&oacute;cio para viabilizar e
+						dar sustentabilidade ao projeto em desenvolvimento</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ7.svg);'>
+				<a href="javascript:sumario('q7');">Prototipa&ccedil;&atilde;o &amp; Usbilidade
+
+					<span class='blocktext1'>Quest #7</span>
+					<span class='blocktext2'>Elabora&ccedil;&atilde;o de prot&oacute;tipos e testes com usu&aacute;rios
+						para delinear a forma como a solu&ccedil;&atilde;o dever&aacute; entregar os valores
+						propostos</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tMetQ8.svg);'>
+				<a href="javascript:sumario('q8');">Plano de Projeto
+
+					<span class='blocktext1'>Quest #8</span>
+					<span class='blocktext2'>Organiza&ccedil;&atilde;o do processo de produ&ccedil;&atilde;o do projeto,
+						dos papeis de cada envolvido, das metas e cronograma de desenvolvimento</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock double' style='background-image: url(https://www.projetao.com.br/img/tMetQ9.svg);'>
+				<a href="javascript:sumario('q9');">Prepara&ccedil;&atilde;o para o Demoday
+
+					<span class='blocktext1'>Quest #9</span>
+					<span class='blocktext2'>Organiza&ccedil;&atilde;o do evento de lan&ccedil;amento e
+						apresenta&ccedil;&atilde;o do projeto desenvolvido</span>
+				</a>
+			</div>
+
+
+
+
+
+
+			<div style="display: inline-block; height: 90px; width: 100%;">&nbsp;</div>
+
+
+
+
+
+		</div>
+
+
+
+	</nav>
+
+	<iframe id="placehold" frameborder=0 style="position: fixed; left: 0; width: 100%; height: calc(100% + 34px);"
+		scrolling="no"></iframe>
+
+	<script>
+		var slide = 0;
+
+		var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+		if (mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) {
+			slide = 1;
+		}
+
+		var s = [
+			"https://slides.com/ranoya/designdigitalv6/embed",
+			"https://slides.com/ranoya/mobiledesigndigitalv6/embed"
+		];
+
+
+		document.getElementById("placehold").src = s[slide];
+
+		var menuOpen = false;
+
+		function menu() {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				menuOpen = true;
+
+				if (mobile > 375) {
+					document.getElementById("navpresentation").style.right = "0";
+					document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(100% - 375px)";
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+			} else {
+
+				menuOpen = false;
+				if (mobile > 375) {
+					document.getElementById("navpresentation").style.right = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-25px - 100%)";
+				}
+				document.getElementById("placehold").style.left = "0";
+
+			}
+
+		}
+
+		window.onresize = function (event) {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				if (mobile > 375) {
+					document.getElementById("navpresentation").style.right = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-25px - 100%)";
+				}
+				document.getElementById("placehold").style.left = "0";
+
+			} else {
+
+				document.getElementById("navpresentation").style.right = "0";
+				if (mobile > 375) {
+					document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+			}
+
+		};
+
+		function sumario(place) {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && (place == "q1" || place == "q2" || place ==
+					"q" || place == "q4" || place == "q5" || place == "q6" || place == "q7" || place == "q8" || place == "q9"
+				)) {
+
+				window.open("https://www.projetao.com.br/generator/index.php?dun=MetQ" + place.substring(1, 2) +
+					"&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "lean") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=lean&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "designthinking") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=designthinking&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "hcd") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=hcd&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "microinteracao") {
+
+				window.open(
+					"https://www.projetao.com.br/generator/index.php?tun=microinteractions&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "personas") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=Personas&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "aeiou") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=aeiou&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "usabilidade") {
+
+				window.open(
+					"https://www.projetao.com.br/generator/index.php?tun=testesusabilidade&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "jornadas") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=journey&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "tkblueprints") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=blueprints&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "tkwireframe") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=wireframe&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "tkuserflow") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=userflow&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "mapadeempatia") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=EmpathyMap&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "entrevistas") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=entrevistas&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "afoitos") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=afoitos&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "brainstorm") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=brainstorm&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "brainwriting") {
+
+				window.open("https://www.projetao.com.br/generator/index.php?tun=brainwriting&g=SERVICEDESIGN&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "tkobservacao") {
+
+				window.open(
+					"https://www.projetao.com.br/generator/?f=levantamento,tecnica&g=SERVICEDESIGN&t=true&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "tkcriacao") {
+
+				window.open(
+					"https://www.projetao.com.br/generator/?f=alternativas,tecnica&g=SERVICEDESIGN&t=true&embed=true");
+
+			} else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "tkprototipagem") {
+
+				window.open(
+					"https://www.projetao.com.br/generator/?f=comportamento,tecnica&g=SERVICEDESIGN&t=true&embed=true");
+
+			} else {
+
+				document.getElementById("placehold").src = s[slide] + "#/" + place;
+
+			}
+			menu();
+		}
+	</script>
+</body>
+
+</html>

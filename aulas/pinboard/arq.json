@@ -1,0 +1,71 @@
+[{
+		"topico": "pinhouse",
+		"label": "CASAS"
+
+	},
+	{
+		"topico": "pindecoracao",
+		"label": "DECORAÇÃO"
+
+	},
+	{
+		"topico": "pinhouseware",
+		"label": "HOUSEWARE"
+
+	},
+	{
+		"topico": "pinluminari",
+		"label": "LUMINÁRIAS"
+
+	},
+	{
+		"topico": "pineletrodomesticos",
+		"label": "ELETRÔNICOS"
+
+	},
+	{
+		"topico": "pinkitchen",
+		"label": "COZINHAS"
+
+	},
+	{
+		"topico": "pinkitchenware",
+		"label": "UTENSÍLIOS"
+
+	},
+	{
+		"topico": "pinbath",
+		"label": "BANHEIROS"
+
+	},
+	{
+		"topico": "pinescritorio",
+		"label": "ESCRITÓRIOS"
+
+	},
+	{
+		"topico": "pinsalas",
+		"label": "LIVINGS"
+
+	},
+	{
+		"topico": "pinvaronis",
+		"label": "JARDINS"
+
+	},
+	{
+		"topico": "pinpiscinas",
+		"label": "PISCINAS"
+
+	},
+	{
+		"topico": "nipon",
+		"label": "NIPON"
+
+	},
+	{
+		"topico": "pinma",
+		"label": "MA"
+
+	}
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html id='xpto'>
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>+ Playground</title>
+  <meta name="generator" content="artesanal" />
+  <meta name="description" content="Playground de webdesign">
+  <meta name="keywords" content="webdesign, playground, disciplina">
+  <meta name="author" content="Guilherme Ranoya">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link REL="SHORTCUT ICON" HREF="https://www.ranoya.com/favicon.ico">
+  <link rel="image_src" type="image/jpeg" href="https://webdesign.ranoya.com/cover.jpg" />
+  <meta property="og:image" content="https://webdesign.ranoya.com/cover.jpg" />
+  <meta property="og:image:width" content="1145" />
+  <meta property="og:image:height" content="601" />
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+<form id='codigo' style='position: absolute; left: 15px; top: 55%; z-index:4560;'><div id='caixa' style='background-color: grey; color: white; width: 100px; padding: 5px 7px 5px 12px; font-family: monospace; font-size: 16px;'>Código</div><textarea id='meuinput' style='font-family: monospace; font-size: 15px; line-height: 18px; width: 360px; height: 120px;'></textarea></form>
+
+  <script>
+
+
+    var drag = false;
+      var finalX;
+      var finalY;
+      var interface;
+      var lastcode;
+      var interfX;
+      var interfY;
+      var textAW;
+      var textAH;
+
+      fetch('https://www.ranoya.com/aulas/tryit/code.js')
+  .then(response => response.text())
+  .then((data) => {
+    interface = data;
+  })
+
+
+      $( document ).on( 'mousemove touchmove', function( event ) {
+
+          if (drag) {
+          $('#codigo').css('position', 'absolute');
+          $('#codigo').css('left', (event.pageX - 50) + 'px');
+          $('#codigo').css('top', (event.pageY - 25) + 'px');
+          }
+          
+          });
+
+
+      $(document).on('mouseup touchend', function () {
+
+          drag = false;
+
+      });
+
+
+    $('#caixa').on('mousedown touchstart', function () {
+
+        if (!drag) {
+
+          drag = true;
+
+        }
+
+
+      });
+
+    $('#meuinput').change( function () {
+
+        var xpto = $('#meuinput').val();
+        lastcode = xpto;
+        interfX = $('#codigo').css('left');
+        interfY = $('#codigo').css('top');
+        textAW = $('#meuinput').css('width');
+        textAH = $('#meuinput').css('height');
+
+        $('#xpto').html(xpto + interface);
+
+    });
+
+    </script>

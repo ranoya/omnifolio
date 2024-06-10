@@ -1,0 +1,81 @@
+[{
+		"topico": "publik",
+		"label": "SAFE MODE"
+
+	},
+	{
+		"topico": "pineditorial",
+		"label": "EDITORIAL"
+
+	},
+	{
+		"topico": "pingraphik",
+		"label": "ESTILO GRÁFICO"
+
+	},
+	{
+		"topico": "pinaesthetic",
+		"label": "REFERÊNCIAS ESTÉTICAS"
+
+	},
+	{
+		"topico": "pinpopculture",
+		"label": "CULTURA POP"
+
+	},
+	{
+		"topico": "pinfashion",
+		"label": "MODA"
+
+	},
+	{
+		"topico": "pinmanmachine",
+		"label": "HI-TECH"
+
+	},
+	{
+		"topico": "pincomphardware",
+		"label": "HARDWARE"
+
+	},
+	{
+		"topico": "pineletrodomesticos",
+		"label": "ELETRÔNICOS"
+
+	},
+	{
+		"topico": "pintoys",
+		"label": "BRINQUEDOS"
+
+	},
+	{
+		"topico": "pinlego",
+		"label": "LEGO"
+
+	},
+	{
+		"topico": "pinretro",
+		"label": "RETRÔ"
+
+	},
+	{
+		"topico": "pinpixelart",
+		"label": "PIXEL ART"
+
+	},
+	{
+		"topico": "pinarquitetura",
+		"label": "ARQUITETURA"
+
+	},
+	{
+		"topico": "pinhouseware",
+		"label": "HOUSEWARE"
+
+	},
+	{
+		"topico": "pindecoracao",
+		"label": "DECORAÇÃO"
+
+	}
+]

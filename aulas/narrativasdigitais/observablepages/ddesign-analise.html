@@ -1,0 +1,42 @@
+<style>
+    * {}
+
+    p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    a {
+        color: #0dc2f2;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .observablehq--collapsed {
+        display: none;
+    }
+
+    .observablehq--inspect {
+        display: none;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    body {
+        /* background-color: #0dc2f2; */
+        /* color: white; */
+    }
+</style>
+
+<div id="observablehq-f9093e80" style='max-width: 800px; margin-left: auto; margin-right: auto;'></div>
+
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@ranoya/analise-graduacao-ddesign.js?v=3";
+new Runtime().module(define, Inspector.into("#observablehq-f9093e80"));
+</script>

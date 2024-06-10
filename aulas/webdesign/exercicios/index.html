@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<meta char="UTF-8" />
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        /* -- Google Analytics ---------------------------------------------------- */
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-61225449-1', 'auto');
+        ga('send', 'pageview');
+
+        /* ---------------------------------------------------- Google Analytics -- */
+    </script>
+
+    <style>
+        :root {
+            --md-bg: #000cd0;
+            --md-fg: #eeeeee;
+            --md-h1: #eeeeee;
+            --md-code: #bbebfb;
+
+            --md-highlight: #05d4f8;
+            --md-mark: #989abb;
+
+            --md-detalhe: #9196ed;
+            --md-cabecalho: #9196ed;
+
+        }
+
+        td {
+            color: var(--md-fg, #000000);
+        }
+
+        li {
+            font-size: min(20px, 2.51vw);
+            line-height: min(28px, 3.2vw);
+        }
+
+        hr {
+            border: 1px solid white;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercícios</title>
+    <meta name="generator" content="artesanal" />
+    <meta name="description"
+        content="Exercícios da disciplina de materiais da mídia computacional do Bacharelado em Design da Universidade Federal de Pernambuco (UFPE)">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+    <meta name="keywords" content="webdesign, html, css, svg, disciplina">
+    <meta property="og:url" content="https://www.ranoya.com/aulas/webdesign/ementa/index.html">
+    <meta property="og:title" content="Exercícios">
+    <meta property="og:description"
+        content="Exercícios da disciplina de materiais da mídia computacional do Bacharelado em Design da Universidade Federal de Pernambuco (UFPE)">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/webdesign.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/webdesign.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/webdesign.jpg" />
+
+    <link REL="SHORTCUT ICON" HREF="https://www.ranoya.com/Assets/coverimages/webdesign.ico">
+
+
+    <script>
+        // FUNÇÃO URL GET
+        // urlGet('xpto'); www.site.com/?xpto=teste
+        // let data = $_GET['xpto']; www.site.com/?xpto=teste
+
+        $_GET = [];
+        (function () {
+            corte = window.location.href.toString().indexOf('?');
+            if (corte > 0) {
+                argumento = window.location.href.toString().substring(corte + 1);
+                argumentos = argumento.split('&');
+                for (arg in argumentos) {
+                    let argCorte = argumentos[arg].indexOf('=');
+                    $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[arg].substring(argCorte + 1);
+                }
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="https://www.ranoya.com/aulas/dev/ementaMD.css">
+
+</head>
+
+
+<body>
+
+    <script>
+        if (typeof $_GET['theme'] != "undefined") {
+            localStorage.setItem('tema', $_GET['theme']);
+
+            console.log("foi tema = " + $_GET['theme']);
+        } else {
+            if (localStorage.getItem('tema') == "" || typeof localStorage.getItem('tema') == "undefined" ||
+                localStorage
+                .getItem('tema') == null) {
+                localStorage.setItem('tema', 'interface80');
+            }
+        }
+
+        if (localStorage.getItem('tema') != "" && typeof localStorage.getItem('tema') != "undefined") {
+
+            let tag = document.createElement("link");
+            tag.setAttribute("rel", "stylesheet");
+            tag.setAttribute("type", "text/css");
+            tag.setAttribute("href", "https://www.ranoya.com/pinboard/" + localStorage.getItem('tema') +
+                "color.css");
+            document.getElementsByTagName("head")[0].appendChild(tag);
+        }
+
+        let corbodybg = getComputedStyle(document.documentElement)
+            .getPropertyValue('--cor-bg')
+
+        let colortagAll = document.createElement("meta");
+        colortagAll.setAttribute("name", "theme-color");
+        colortagAll.setAttribute("content", corbodybg);
+
+        let colortagWin = document.createElement("meta");
+        colortagWin.setAttribute("name", "msapplication-navbutton-color");
+        colortagWin.setAttribute("content", corbodybg);
+
+        let colortagios = document.createElement("meta");
+        colortagios.setAttribute("name", "msapplication-navbutton-color");
+        colortagios.setAttribute("content", corbodybg);
+
+        document.getElementsByTagName("head")[0].appendChild(colortagAll);
+        document.getElementsByTagName("head")[0].appendChild(colortagWin);
+        document.getElementsByTagName("head")[0].appendChild(colortagios);
+    </script>
+
+
+
+    <div id="observablehq-abertura-8163ffe1"></div>
+    <div id="observablehq-criterios-8163ffe1"></div>
+    <div id="prazos"></div>
+    <br><br>
+    <a name="layout1"></a><br>
+    <hr>
+    </hr>
+    <div id="observablehq-ex1-8163ffe1"></div>
+    <a name="layout2"></a><br>
+    <hr>
+    </hr>
+    <div id="observablehq-ex2-8163ffe1"></div>
+    <a name="layout3"></a><br>
+    <hr>
+    </hr>
+    <div id="observablehq-ex3-8163ffe1"></div>
+    <a name="layout4"></a><br>
+    <hr>
+    </hr>
+    <div id="observablehq-ex4-8163ffe1"></div>
+    <a name="layout5"></a><br>
+    <hr>
+    </hr>
+    <div id="observablehq-ex5-8163ffe1"></div>
+
+    <div id="blocotextual">
+        <div id="blocoesquerda">
+            <div id="observablehq-descricaoobjetivos-def0d67a"></div>
+            <div id="observablehq-descricaometodo-def0d67a"></div>
+            <div id="observablehq-descricaoavaliacao-def0d67a"></div>
+        </div>
+        <div id="blocodireita">
+            <div style="border-top: 1px solid #c6c6c6; height: 20px;"></div>
+            <div id="observablehq-descricaoementa-def0d67a"></div>
+            <div id="observablehq-detalhesdisciplina-def0d67a"></div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@ranoya/exercicios-intromateriaismidiacomp.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "abertura") return new Inspector(document.querySelector("#observablehq-abertura-8163ffe1"));
+  // if (name === "criterios") return new Inspector(document.querySelector("#observablehq-criterios-8163ffe1"));
+  if (name === "ex1") return new Inspector(document.querySelector("#observablehq-ex1-8163ffe1"));
+  if (name === "ex2") return new Inspector(document.querySelector("#observablehq-ex2-8163ffe1"));
+  if (name === "ex3") return new Inspector(document.querySelector("#observablehq-ex3-8163ffe1"));
+  if (name === "ex4") return new Inspector(document.querySelector("#observablehq-ex4-8163ffe1"));
+  if (name === "ex5") return new Inspector(document.querySelector("#observablehq-ex5-8163ffe1"));
+});
+</script>
+
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@ranoya/web-rv2.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "avaliacaocrit") return new Inspector(document.querySelector("#observablehq-criterios-8163ffe1"));
+  if (name === "datasav") return new Inspector(document.querySelector("#prazos"));
+
+});
+</script>
+
+
+
+    <div style="margin-top: 50px;">
+
+        <svg class="logosfoot" viewBox="0 0 2024 2024" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 0H2024V2024H0V0ZM1749.26 1922.02C1775.06 1858.57 1789.36 1788.65 1789.88 1713.81C1790.34 1642.85 1782.07 1567.4 1773.46 1488.79L1773.45 1488.77L1773.45 1488.74L1773.45 1488.7L1773.22 1486.65L1770.99 1466.25C1759.11 1356.73 1562.96 827.873 1518.68 726.838C1516.68 722.271 1514.59 717.516 1512.43 712.598L1512.23 712.15C1476.65 631.215 1421.82 506.482 1426.26 450.344C1429.25 321.16 1522.83 243.719 1637.5 244.787C1702.01 245.353 1773.51 297.378 1809.64 363.289C1836.48 417.294 1840.31 486.756 1826.96 572.051C1826.93 572.301 1826.49 573.182 1826.36 573.338C1708.33 699.16 1731.77 788.854 1772.85 945.684C1797.73 1040.75 1829 1160.32 1839.4 1327.2C1851.85 1189.76 1863 1056.11 1873.19 922.969C1878.19 857.674 1883.93 807.59 1889.56 758.525L1889.57 758.5L1889.58 758.395L1889.58 758.344C1896.26 700.201 1902.77 643.457 1907.69 564.479V564.416C1911.49 463.287 1896.79 361.404 1850.59 290.718C1800.28 213.717 1723.57 162.037 1625.27 167.629C1396.88 180.604 1285.63 401.774 1384.62 617.385C1459.57 780.561 1555.92 1050.9 1615.69 1223.09C1675.68 1395.88 1703.46 1542.62 1649.94 1602.19C1649.06 1603.16 1647.37 1603.01 1646.64 1601.88C1590.33 1513.63 1508.78 1481.93 1424.38 1449.13C1324.95 1410.49 1215.9 1357.8 1144.32 1222.46C1129.17 1257.43 1102.52 1288.47 1072.95 1313.57C1032.6 1347.84 956.365 1392.83 927.297 1400.12C925.6 1400.56 924.154 1398.58 924.846 1396.91C928.113 1389.12 931.383 1381.02 933.707 1370.53C935.812 1361.04 937.133 1349.51 937.07 1334.27C916.344 1354.44 905.027 1360.92 880.68 1374.85L880.666 1374.86L880.646 1374.87C873.289 1379.08 864.742 1383.97 854.391 1390.13C848.27 1393.77 842.125 1397.39 835.984 1401.01C736.693 1459.55 638.305 1517.56 648.307 1637.59C660.342 1782.33 806.971 1820.97 968.432 1832.12C1062.14 1838.6 1155.69 1845.32 1230.58 1878.46C1231.14 1863.38 1240.32 1834.98 1253.33 1809.66C1262.88 1791.09 1276.27 1774.1 1294.15 1764.89C1295.88 1764.01 1297.83 1766.21 1296.98 1768.04C1279.26 1805.92 1271.27 1874.29 1271.96 1908.43C1272.06 1913.07 1272.29 1917.6 1272.64 1922.02H1749.26ZM487.059 1922.02H95.3262V1776.23C135.381 1763.71 172.094 1704.64 197.381 1663.95L197.396 1663.93L197.422 1663.89C199.777 1660.1 202.035 1656.46 204.188 1653.04C237.592 1599.98 256.447 1546.39 266.252 1483.43C277.469 1539.41 329.227 1630.83 414.389 1703.03C479.279 1757.97 563.248 1801.55 664.027 1808.87C601.426 1852.53 544.717 1889.61 487.059 1922.02ZM95.3262 1151.5C117.939 1168.47 147.164 1192.21 160.021 1203.23C161.238 1204.26 162.344 1205.22 163.346 1206.09L164.766 1207.32C174.602 1173.2 186.701 1145.55 200.527 1122.96C214.668 1099.9 230.664 1082.15 248.01 1068.17C251.555 1045.08 256.158 1026.36 260.383 1009.17L260.424 1009L260.477 1008.79L260.529 1008.57C262.43 1000.83 264.252 993.402 265.859 986.021C270.699 963.779 297.883 914.518 318.559 889.855C311.871 886.234 300.031 884.67 288.801 883.189C284.838 882.666 280.951 882.152 277.393 881.562C234.449 874.49 141.475 841.926 95.3262 818.561V1151.5ZM283.432 1378.03C281.924 1372.37 274.004 1372.02 272.119 1377.52C265.457 1396.91 260.334 1417.14 255.338 1437.56C249.807 1459.64 244.182 1481.89 236.703 1502.75C229.256 1484.56 223.033 1466.74 217.975 1449.31C186.141 1340.01 199.119 1246.45 235.604 1171.93C272.088 1097.32 332.203 1041.71 394.486 1008.48C409.666 1000.4 424.969 993.615 440.084 988.244C445.395 986.359 444.107 976.148 438.514 975.834C411.457 974.295 388.611 976.494 367.807 982.746C351.467 987.646 336.445 994.998 321.707 1004.89C336.539 944.574 386.096 886.33 448.35 834.682C552.113 748.537 690.793 681.088 764.264 651.996C764.924 651.744 767.061 649.734 767.375 649.074C771.459 641.189 774.854 633.051 777.43 624.945C782.553 608.83 784.344 592.682 781.578 578.355C778.812 564.125 771.648 551.809 758.891 543.107C770.705 538.238 788.334 529.85 803.984 516.529C836.824 488.537 860.455 439.904 804.393 359.542C800.842 354.452 791.791 360.233 794.273 366.014C824.096 435.256 813.727 468.775 784.219 484.295C752.523 500.971 699.008 499.064 647.898 497.242L647.834 497.24C632.121 496.674 616.598 496.141 602.111 496.107L601.262 496.172C579.387 499.586 558.949 507.783 543.533 513.967L543.512 513.975L543.41 514.016C539.104 515.744 535.176 517.314 531.846 518.539C523.328 509.775 516.572 497.867 511.576 484.295C505.48 467.709 501.992 448.67 500.986 429.695C501.205 425.705 501.646 421.118 502.4 417.505C503.279 419.139 504.285 421.307 505.447 424.071C506.705 428.596 509.188 432.553 512.551 436.041C522.324 446.219 540.236 452.314 557.551 455.205C574.678 458.031 591.615 457.781 599.377 455.205C601.074 454.639 602.488 453.947 603.682 453.037C617.102 448.701 620.494 434.879 616.598 416.72C612.607 398.059 600.383 373.837 583.854 351.877C567.355 329.917 546.457 309.936 525.057 299.6C493.287 284.269 460.762 289.075 439.174 336.389C398.666 300.919 402.123 267.775 405.832 232.338C407.748 213.959 409.729 194.952 406.365 174.344C408.975 173.181 412.086 171.83 418.904 168.877C510.57 129.136 655.941 66.1143 757.695 78.5234C782.301 107.898 790.754 147.294 792.326 183.831C793.895 219.418 788.979 252.474 786.193 271.199L785.695 274.561C784.783 280.781 793.959 284.144 796.787 278.614C810.207 252.476 821.268 213.99 820.105 171.484C819.289 141.168 812.281 108.715 795.625 77.2041C829.564 72.2402 896.75 77.4561 956.521 91.8447C1001.96 102.777 1042.72 118.8 1060.29 139.283C1047.34 149.147 1039.89 155.054 1034.55 162.907C1028.42 171.861 1025.72 182.197 1021.63 202.146C1021.38 203.403 1022.1 206.514 1022.86 207.519C1027.57 213.646 1033.23 220.965 1038.85 228.222L1039.02 228.441C1091.99 296.861 1135.36 352.886 1168.07 443.957C1164.9 442.01 1161.88 440.408 1158.99 439.088C1151.23 435.568 1144.19 434.156 1137.87 434.533C1133.41 434.752 1130.77 440.377 1133.25 444.365C1177.44 515.744 1209.52 583.068 1228.97 655.797C1246.29 720.672 1253.58 789.945 1250.41 870.369C1249.21 867.889 1247.96 865.5 1246.67 863.176C1239.85 850.986 1231.9 841.248 1224.2 833.801C1220.52 830.252 1214.36 833.111 1214.3 838.42C1213.92 881.617 1198.4 1021.58 1144.63 1142.37C1115 1208.94 1073.74 1269.54 1017.01 1304.45C1023.68 1280.23 1028.45 1256.19 1030.31 1232.72C1032.6 1204.23 1030.65 1176.52 1022.83 1150.38C1021.04 1144.38 1011.7 1145.51 1011.23 1151.77C1007.12 1207.47 979.021 1250.04 948.256 1280.92C918.451 1310.84 885.752 1329.96 869.713 1339.34L868.027 1340.33C759.203 1392.38 692.584 1449.18 655.377 1504.76C624.895 1550.38 614.084 1595.17 616 1636.02C617.918 1676.89 632.625 1713.74 653.082 1743.4C668.92 1766.33 688.246 1784.99 707.855 1797.93C611.508 1787.22 527.352 1744.18 458.814 1680.66C375.16 1603.12 314.668 1495.11 283.432 1378.03ZM610.031 175.29C639.959 144.254 664.344 140.93 677.646 139.82C687.67 138.984 695.518 141.686 700.297 143.33L700.348 143.348C701.445 143.726 702.381 144.047 703.141 144.254C702.031 152.013 697.818 168.64 689.838 173.073C679.863 178.615 661.02 178.615 647.719 178.615C637.076 178.615 617.42 176.398 610.031 175.29ZM424.57 403.415C444.109 396.528 464.83 389.225 486.549 386.064C486.564 386.064 486.643 386.033 486.723 386.002C486.801 385.97 486.879 385.938 486.895 385.938C495.537 380.818 516.779 375.697 533.09 371.771C544.465 369.037 553.516 366.838 554.709 365.361C555.023 364.953 554.961 364.23 554.584 363.885C527.186 338.944 489.895 352.067 448.389 366.673L448.367 366.681L448.32 366.697C400.127 383.658 346.189 402.641 296.365 365.361C295.611 364.796 294.543 365.801 294.951 366.681C328.766 437.273 372.477 421.848 424.328 403.501L424.57 403.415Z" />
+        </svg>
+
+        <svg class="logosfoot" viewBox="0 0 719 719" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="ranoya-regexredux-truewhite">
+                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M719 0H0V719H719V0ZM230.686 183.844H337.371L230.686 535.31H124L230.686 183.844ZM383.351 183.844H381.782L275.097 535.31H381.782L435.91 356.992L490.037 535.31H596.723L490.037 183.844H488.468H383.351Z" />
+            </g>
+        </svg>
+
+        <svg class="logosfoot" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 0H600V600H0V0ZM98.6016 107.1C98.6016 96.6004 101.868 88.0837 108.402 81.5504C115.168 74.7837 123.802 71.4004 134.302 71.4004H180.502V113.4H152.152C145.852 113.4 142.702 116.9 142.702 123.9V218.05C142.702 225.984 140.135 232.517 135.002 237.65C130.102 242.784 123.568 245.35 115.402 245.35H113.302V251.65H115.402C123.568 251.65 130.102 254.217 135.002 259.35C140.135 264.484 142.702 271.017 142.702 278.95V373.1C142.702 380.1 145.852 383.6 152.152 383.6H180.502V425.6H134.302C123.802 425.6 115.168 422.217 108.402 415.45C101.868 408.917 98.6016 400.4 98.6016 389.9V283.85C98.6016 277.084 95.4516 273.7 89.1516 273.7H67.1016V223.3H89.1516C95.4516 223.3 98.6016 219.917 98.6016 213.15V107.1ZM511.049 331.3C504.749 331.3 501.599 327.917 501.599 321.15V215.1C501.599 204.6 498.216 196.084 491.449 189.55C484.916 182.784 476.399 179.4 465.899 179.4H419.699V221.4H448.049C454.349 221.4 457.499 224.9 457.499 231.9V326.05C457.499 333.984 459.949 340.517 464.849 345.65C469.983 350.784 476.633 353.35 484.799 353.35H486.899V359.65H484.799C476.633 359.65 469.983 362.217 464.849 367.35C459.949 372.484 457.499 379.017 457.499 386.95V481.1C457.499 488.1 454.349 491.6 448.049 491.6H419.699V533.6H465.899C476.399 533.6 484.916 530.217 491.449 523.45C498.216 516.917 501.599 508.4 501.599 497.9V391.85C501.599 385.084 504.749 381.7 511.049 381.7H533.099V331.3H511.049Z" />
+        </svg>
+
+        <div class="logosfoottextm">COPYRIGHT &copy; 2019<br>PROJETO FUTURO DO DESIGN &middot; dDESIGN &middot;
+            UFPE<br>PROF.
+            DR. GUILHERME RANOYA </div>
+
+    </div>
+
+
+</body>
+
+
+</html>

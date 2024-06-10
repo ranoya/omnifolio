@@ -1,0 +1,378 @@
+.custombutton {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 26px;
+  height: 26px;
+  border: 3px solid var(--cor-fundo, white);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--cor-neutroleve, #666666);
+  cursor: pointer;
+  margin-right: 6px;
+  color: var(--cor-fundo, white);
+}
+
+.custombutton:hover {
+  background-color: var(--cor-destaque, #FF4C9C);
+  border: 3px solid var(--cor-destaque, #FF4C9C);
+}
+
+
+/* tipografia -------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+/* cssreset.com ------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* base -------------------------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding-top: 15px;
+
+}
+
+#obsvhq-filtro {
+  position: absolute;
+  right: 11.5%;
+  top: -116px;
+}
+
+input {
+  padding: 4px;
+  background-color: var(--cor-fundo, white);
+  border: 1px solid var(--cor-neutroleve, #666666);
+}
+
+#obsvhq-nav {
+  display: inline-block;
+  margin-top: 16px;
+  width: 100%;
+  margin-left: -3px;
+}
+
+.dadosorientador {
+
+  margin-top: -16px;
+  display: block !important;
+  font-size: 12px;
+  line-height: 12px;
+
+}
+
+
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--cor-destaque, #FF4C9C);
+  margin-top: 20px;
+}
+
+#mobile {
+  display: none;
+  height: 280px;
+}
+
+#navblock {
+  max-width: 1800px;
+  width: 80%;
+  /* height: 85px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+#navblock a {
+  border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+#navblock a:hover {}
+
+.bloco-conteudo a {
+
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: -5px;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 15px 7px 15px;
+  border-radius: 2px;
+  margin-left: -15px;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+
+}
+
+a:hover {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.filtroativo {}
+
+.filtroinativo {}
+
+
+/* estrutura --------------------------------------------------------- */
+
+.secao {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: -40px;
+}
+
+.bloco-conteudo {
+  max-width: 1800px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+#rodape {
+  width: 100%;
+  height: 95px;
+  margin-top: 0;
+  margin-bottom: -50px;
+  display: inline-block;
+}
+
+#rodape .bloco-conteudo {
+  max-width: 1800px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+#carregando {
+  text-align: center;
+  float: none;
+  width: 100%;
+  clear: both;
+  display: inline-block;
+
+}
+
+.loadingimage {
+  width: 100px;
+}
+
+.videogrid {
+  min-width: 200px;
+  max-width: 400px;
+  width: 30%;
+  height: 200px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.halfblock {
+  width: 49%;
+  float: left;
+  padding-bottom: 12px;
+}
+
+.halfblock table {
+  width: 100%;
+}
+
+
+/* tipografia --------------------------------------------------------- */
+
+.separador {
+  border: 0;
+  width: 30%;
+  height: 20px;
+}
+
+.listalinha {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothetopt_on.svg");
+}
+
+#gototop {
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+
+#gototop:hover {
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothetopt_on.svg");
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+#gotobottom {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothebottomt_off.svg");
+}
+
+#gotobottom {
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+
+#gotobottom:hover {
+  background-image: url("https://www.ranoya.com/Assets/WebsiteIcons/tothebottomt_off.svg");
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+
+/* responsive ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+  .bloco-conteudo {
+    padding-right: 0;
+  }
+
+  #navblock {
+    padding-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .halfblock {
+    width: 100%;
+    float: left;
+  }
+
+  .listalinha {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h6 {
+
+    font-size: 11px;
+
+  }
+
+}
+
+
+@media screen and (max-width: 540px) {
+
+  body {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+
+  nav#mobile {
+    display: initial;
+    height: 130px;
+
+  }
+
+  nav {
+    display: none;
+
+  }
+
+  #navblock a {
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+  }
+
+  .videogrid {
+    width: 100%;
+  }
+
+  .listatitulo,
+  .listalinha,
+  a.listatitulo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 16px;
+
+  }
+
+  h6 {
+
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+}

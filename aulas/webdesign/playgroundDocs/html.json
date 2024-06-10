@@ -1,0 +1,320 @@
+[{
+		"cordefundo": "white",
+		"cordefrente": "#79BCE0",
+		"logourl": "https://www.ranoya.com/Assets/Logotipos/aulawebdesign-bluegreyvazado.svg",
+		"nextrefdoc": "CSS",
+		"nextrefdocurl": "introCSS.php?theme=html&elementos=css",
+		"tamanho": 200
+	},
+	{
+		"capitulo": "INTRODUÇÃO",
+		"topico": "Apresentação",
+		"url": "introHTML.php"
+	},
+	{
+		"capitulo": "INTRODUÇÃO",
+		"topico": "Solicitações",
+		"url": "solicitacoes.php"
+	},
+	{
+		"capitulo": "ESTRUTURA",
+		"topico": "Sintaxe",
+		"url": "sintaxe.php"
+	},
+	{
+		"capitulo": "ESTRUTURA",
+		"topico": "Propriedades gerais",
+		"url": "propriedadesgerais.php"
+	},
+	{
+		"capitulo": "ESTRUTURA",
+		"topico": "Organização",
+		"url": "estruturabase.php"
+	},
+	{
+		"capitulo": "ESTRUTURA",
+		"topico": "html",
+		"url": "tag-html.php"
+	},
+	{
+		"capitulo": "ESTRUTURA",
+		"topico": "head",
+		"url": "tag-head.php"
+	},
+	{
+		"capitulo": "ESTRUTURA",
+		"topico": "body",
+		"url": "tag-body.php"
+	},
+	{
+		"capitulo": "HEAD",
+		"topico": "link",
+		"url": "tag-link.php"
+	},
+	{
+		"capitulo": "HEAD",
+		"topico": "meta",
+		"url": "tag-meta.php"
+	},
+	{
+		"capitulo": "HEAD",
+		"topico": "script",
+		"url": "tag-script.php"
+	},
+	{
+		"capitulo": "HEAD",
+		"topico": "style",
+		"url": "tag-style.php"
+	},
+	{
+		"capitulo": "HEAD",
+		"topico": "title",
+		"url": "tag-title.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "a",
+		"url": "tag-a.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "b",
+		"url": "tag-b.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "br",
+		"url": "tag-br.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "em",
+		"url": "tag-em.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "i",
+		"url": "tag-i.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "img",
+		"url": "tag-img.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "span",
+		"url": "tag-span.php"
+	},
+	{
+		"capitulo": "INLINE / CONTEÚDO",
+		"topico": "strong",
+		"url": "tag-strong.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "body",
+		"url": "tag-body.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "canvas",
+		"url": "tag-canvas.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "div",
+		"url": "tag-div.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "h1-h6",
+		"url": "tag-h.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "head",
+		"url": "tag-head.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "html",
+		"url": "tag-html.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "p",
+		"url": "tag-p.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "svg",
+		"url": "tag-svg.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "table",
+		"url": "tag-table.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "td",
+		"url": "tag-td.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "th",
+		"url": "tag-th.php"
+	},
+	{
+		"capitulo": "BLOCK",
+		"topico": "tr",
+		"url": "tag-tr.php"
+	},
+	{
+		"capitulo": "FORMULÁRIOS",
+		"topico": "form",
+		"url": "tag-form.php"
+	},
+	{
+		"capitulo": "FORMULÁRIOS",
+		"topico": "input",
+		"url": "tag-input.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "a",
+		"url": "tag-a.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "b",
+		"url": "tag-b.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "body",
+		"url": "tag-body.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "br",
+		"url": "tag-br.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "canvas",
+		"url": "tag-canvas.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "div",
+		"url": "tag-div.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "em",
+		"url": "tag-em.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "form",
+		"url": "tag-form.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "head",
+		"url": "tag-head.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "h1-h6",
+		"url": "tag-h.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "html",
+		"url": "tag-html.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "i",
+		"url": "tag-i.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "img",
+		"url": "tag-img.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "input",
+		"url": "tag-input.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "link",
+		"url": "tag-link.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "meta",
+		"url": "tag-meta.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "p",
+		"url": "tag-p.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "script",
+		"url": "tag-script.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "span",
+		"url": "tag-span.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "strong",
+		"url": "tag-strong.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "style",
+		"url": "tag-style.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "svg",
+		"url": "tag-svg.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "table",
+		"url": "tag-table.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "td",
+		"url": "tag-td.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "th",
+		"url": "tag-th.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "tr",
+		"url": "tag-tr.php"
+	},
+	{
+		"capitulo": "TODAS AS TAGS",
+		"topico": "title",
+		"url": "tag-title.php"
+	}
+
+]

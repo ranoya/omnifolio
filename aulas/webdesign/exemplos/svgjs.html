@@ -1,0 +1,14 @@
+<svg onmousemove="move(event)" viewBox="0 0 500 500" style='width: 500px; border: 1px solid black'>
+
+    <rect id='teste' style="width: 250; x: 100; y: 50; height:100; fill: #FF0000" />
+
+</svg>
+
+
+<script>
+    function move(event) {
+
+        document.getElementById('teste').style.x = event.clientX;
+        document.getElementById('teste').style.y = event.clientY;
+    }
+</script>

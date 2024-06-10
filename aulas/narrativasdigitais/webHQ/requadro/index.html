@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>Web HQ * Requadro Adaptativo</title>
+  <meta name="generator" content="artesanal" />
+  <meta name="description" content="Requadros adaptativos para HQ Web">
+  <meta name="keywords" content="editorial digital, artefatos narrativos, interação, informação, disciplina">
+  <meta name="author" content="Guilherme Ranoya">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link REL="SHORTCUT ICON" HREF="https://www.ranoya.com/favicon.ico">
+  <link rel="image_src" type="image/jpeg" href="https://narrativas.ranoya.com/cover.jpg" />
+  <meta property="og:image" content="https://narrativas.ranoya.com/cover.jpg" />
+  <meta property="og:image:width" content="1145" />
+  <meta property="og:image:height" content="601" />
+  <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!" />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="white">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="white">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+<style>
+
+* {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background-repeat: no-repeat;
+}
+
+body {
+
+	background-color: white;
+	margin: 17px 10px 10px 10px;
+
+}
+
+div {
+
+	border: solid 3px black;
+	margin: 6px 6px 6px 6px;
+
+}
+
+.ancoracentrotopo {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: center top;
+	background-size: cover;
+
+
+}
+
+.ancoracentroesquerda {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: center left;
+	background-size: cover;
+	
+
+}
+
+.ancoracentrodireita {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: right center;
+	background-size: cover;
+
+}
+
+.ancoracentrofundo {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.ancoracentrocentro {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: center center;
+	background-size: cover;
+
+}
+
+.ancoraesquerdatopo {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: top left;
+	background-size: cover;
+
+}
+
+.ancoraesquerdafundo {
+
+	background-image: url('https://assets.ranoya.com/Diagramas/pixel100.svg');
+	background-position: bottom left;
+	background-size: cover;
+
+}
+
+
+.largefull {
+
+	width: calc(100% - 21px);
+	height: 300px;
+	clear: both;
+}
+
+.third {
+
+	width: calc(33.33% - 19px);
+	height: 160px;
+	float: left;
+	margin-bottom: 12px;
+
+}
+
+.thin23 {
+
+	width: calc(66.66% - 19px);
+	height: 600px;
+	float: left;
+
+}
+
+.thin13 {
+
+	width: calc(33.33% - 19px);
+	height: 600px;
+	float: left;
+
+}
+
+.thin13h {
+
+	width: calc(33.33% - 19px);
+	height: 100vh;
+	float: left;
+
+}
+
+.thin13w {
+
+	width: calc(33.33% - 19px);
+	height: 100vw;
+	float: left;
+
+}
+
+.quadrado13 {
+
+	width: calc(33.33% - 19px);
+	height: calc(33vw - 19px);
+	float: left;
+
+
+}
+
+.duploquadrado23 {
+
+	width: calc(66.66% - 19px);
+	height: calc(33vw - 19px);
+	float: left;
+
+
+}
+
+h1, h2, h3 {
+
+	clear: both;
+	margin-left: 6px;
+	margin-right: 6px;
+
+}
+
+p {
+
+	clear: both;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+	<p style="width: 100%;"><img src="https://assets.ranoya.com/Diagramas/redimensioneH.svg" style="width: calc(100% - 20px);"></p>
+
+		<h1><br><br><br><br>Imagens para HQs em dispositivos "digitais"</h1>
+	<h3>Os diversos dispositivos digitais possuem dimensões de tela muito diferentes uns dos outros. Por este motivo, não é prudente, ao produzir uma HQ para estes dispositivos, colocar as imagens na "página" com dimensões fixas. Mesmo quando construímos um aplicativo mobile, a dimensão das imagens varia no aplicativo por conta de resoluções e tamanhos de tela diferentes.<br><br>Para a Web, há uma maneira inteligente de resolver esta questão: colocamos as imagens nos requadros em forma de background, e aplicamos algumas regras de CSS para que elas redimensionem no quadro da maneira que desejamos.</h3>
+
+	<img src="https://assets.ranoya.com/Diagramas/fixedXprop.svg" style="width: 97%; margin-top: 20px; margin-left: 6px;">
+
+	<h1><br><br>Proporções variáveis do requadro</h1>
+	<h3>Dimensões horizontais variando com a dimensão do navegador, e dimensões verticais fixas.</h3>
+	<div class="ancoracentroesquerda third"><img src="https://assets.ranoya.com/Diagramas/anchorpointCW.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentrocentro third"><img src="https://assets.ranoya.com/Diagramas/anchorpointCC.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentrodireita third"><img src="https://assets.ranoya.com/Diagramas/anchorpointCE.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentrocentro largefull"><img src="https://assets.ranoya.com/Diagramas/anchorpointCC.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentrofundo thin13h"><img src="https://assets.ranoya.com/Diagramas/anchorpointSC.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoraesquerdafundo thin23"><img src="https://assets.ranoya.com/Diagramas/anchorpointSW.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentrodireita thin13"><img src="https://assets.ranoya.com/Diagramas/anchorpointCE.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentroesquerda thin13"><img src="https://assets.ranoya.com/Diagramas/anchorpointCW.svg" style="width: 50px; height: 50px;"></div>
+
+	<h1><br><br>Proporções "fixas" do requadro</h1>
+	<h3>Dimensões horizontais variando nos dois eixos com a dimensão do navegador: a vertical variando em função da dimensão da horizontal, mantendo o aspect ratio do requadro.</h3>
+	<div class="ancoracentrofundo quadrado13"><img src="https://assets.ranoya.com/Diagramas/anchorpointSC.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoraesquerdatopo duploquadrado23"><img src="https://assets.ranoya.com/Diagramas/anchorpointNW.svg" style="width: 50px; height: 50px;"></div>
+	<div class="ancoracentrofundo thin13w"><img src="https://assets.ranoya.com/Diagramas/anchorpointSC.svg" style="width: 50px; height: 50px;"></div>
+	
+
+
+
+
+
+</body>
+
+
+
+</html>

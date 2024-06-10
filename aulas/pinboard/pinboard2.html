@@ -1,0 +1,485 @@
+<!--
+
+
+    filtra=  -> termos de filtragem base
+    limita= -> número máximo de itens exibidos (aleatórios)
+    contentonly=  -> apaga menus
+    theme=  -> tema 
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="generator" content="artesanal" />
+    <meta name="description" content="Painel de referências do Prof. Dr. Guilherme Ranoya">
+    <meta property="og:description" content="Painel de referências do Prof. Dr. Guilherme Ranoya">
+    <meta name="keywords"
+        content="UX, User Experience, IA, Arquitetura de Informação, IxD, Design de Interação, Mídia Digital, Wearable Computing, Physical Computing, Pesquisa">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script>
+        // FUNÇÃO URL GET
+        // urlGet('xpto'); www.site.com/?xpto=teste
+        // let data = $_GET['xpto']; www.site.com/?xpto=teste
+
+        $_GET = [];
+        (function () {
+            corte = window.location.href.toString().indexOf('?');
+            if (corte > 0) {
+                argumento = window.location.href.toString().substring(corte + 1);
+                argumentos = argumento.split('&');
+                for (arg in argumentos) {
+                    let argCorte = argumentos[arg].indexOf('=');
+                    $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[arg].substring(argCorte + 1);
+                }
+            }
+        })();
+    </script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/pinboard600.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/pinboard600.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/pinboard600.jpg" />
+
+    <link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/pinboard16.png">
+    <link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/pinboard57.png" />
+    <link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/pinboard57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/pinboard72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/pinboard114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/pinboard144.png" />
+
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+
+    <script type="text/javascript" src="https://www.ranoya.com/Assets/JSLibs/DataT/basics.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;900&display=swap');
+
+
+        :root {
+
+            --cor-bg: white;
+
+            --cor-borda: white;
+            --cor-hightlight: pink;
+            --cor-outline: black;
+            --cor-medium: grey;
+            --cor-titulo: #ff0368;
+
+        }
+
+        body {
+            background-color: var(--cor-bg, white);
+            margin: 30px 40px 50px 30px;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        nav {
+            background-color: var(--cor-bg, white);
+            width: 100%;
+            height: auto;
+            margin-left: -30px;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            padding: 30px 40px 20px 30px;
+        }
+
+        h1 {
+
+            font-size: 108px;
+            line-height: 0;
+            color: var(--cor-hightlight);
+            font-weight: bolder;
+            color: var(--cor-titulo, #ff0368);
+        }
+
+        #midsection {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 25px 25px;
+        }
+
+        .imagembloco {
+            background-repeat: none;
+            background-size: cover;
+            background-position: center center;
+            border: 8px solid var(--cor-borda, white);
+            outline-color: var(--cor-outline, black);
+            outline-style: solid;
+            outline-width: 2px;
+            padding-top: 100%;
+        }
+
+        .imagembloco:hover {
+            border: 8px solid var(--cor-hightlight, pink);
+        }
+
+        #fullinput {
+            position: fixed;
+            z-index: 10;
+            right: 30px;
+            top: -116px;
+
+            width: 300px;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 1px 10px;
+            border: 1px solid var(--cor-hightlight, pink);
+            color: var(--cor-medium, grey);
+            outline: none;
+
+        }
+
+        .custommenu {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 26px;
+            height: 26px;
+            border: 3px solid var(--cor-bg, white);
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: var(--cor-medium, grey);
+            cursor: pointer;
+            margin-right: 6px;
+            color: var(--cor-bg, white);
+            text-decoration: none;
+        }
+
+        .custommenu:hover {
+            background-color: var(--cor-hightlight, pink);
+            border: 3px solid var(--cor-hightlight, pink);
+        }
+
+        #qualmenu {
+            line-height: 28px;
+            font-size: 12px;
+            height: 28px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            margin-top: 8px;
+            outline: none;
+            color: var(--cor-medium, grey);
+        }
+
+        #rodape {
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 80px;
+            color: var(--cor-medium, grey);
+        }
+
+        #rodape span {
+            font-size: 10px;
+            line-height: 13px;
+            display: inline-block;
+            font-weight: lighter;
+            margin-top: 1px;
+        }
+
+        #rodape svg {
+            width: 60px;
+            height: 60px;
+        }
+
+        #rodape svg path {
+            fill: var(--cor-medium, grey);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="titulo">
+        <br>
+        <h1 class=>PINBOARD</h1>
+    </div>
+
+    <nav id="navblock">
+        <div id="menutags"></div>
+        <select id="qualmenu" onchange="javascript:mudamenu();">
+            <option value="https://opensheet.elk.sh/1MUr_AiAYBa184e5ZOUO9jQGD-HvU3rQlOvu0oMAj7fw/Menu_Arte">Arte
+            </option>
+
+            <option value="https://opensheet.elk.sh/1MUr_AiAYBa184e5ZOUO9jQGD-HvU3rQlOvu0oMAj7fw/Consumo">Consumismo
+            </option>
+        </select>
+        <input type="text" id="fullinput">
+        <input type="hidden" id="masterfilter">
+    </nav>
+
+    <br><br><br>
+    <div id="midsection"></div>
+
+
+
+
+
+    <!-- RODAPÉ ------------------------------- -->
+    <div id="rodape">
+
+        <svg viewBox="0 0 719 719" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="width: 30px; height: 30px; float: left; vertical-align: top; margin-right: 10px;">
+            <g id="ranoya.com-regexredux-truewhite">
+                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M719 0H0V719H719V0ZM230.686 183.844H337.371L230.686 535.31H124L230.686 183.844ZM383.351 183.844H381.782L275.097 535.31H381.782L435.91 356.992L490.037 535.31H596.723L490.037 183.844H488.468H383.351Z" />
+            </g>
+        </svg>
+
+        <span>COPYRIGHT &copy; 2014<br>PROF. DR. GUILHERME RANOYA</span>
+
+    </div>
+    <!-- RODAPÉ ------------------------------- -->
+
+
+</body>
+
+
+<script>
+    let limite = 0;
+    let randomiza = false;
+
+    if (typeof $_GET['theme'] != "undefined") {
+        localStorage.setItem('tema', $_GET['theme']);
+    } else {
+        if (localStorage.getItem('tema') == "" || typeof localStorage.getItem('tema') == "undefined" || localStorage
+            .getItem('tema') == null) {
+            localStorage.setItem('tema', 'default');
+        }
+    }
+
+    if (typeof $_GET['limita'] != "undefined" && $_GET['limita'] != null && $_GET['limita'] != "") {
+        limite = $_GET['limita'];
+        randomiza = true;
+        console.log(limite);
+    }
+
+
+    if (localStorage.getItem('tema') != "" && typeof localStorage.getItem('tema') != "undefined") {
+        let tag = document.createElement("link");
+        tag.setAttribute("rel", "stylesheet");
+        tag.setAttribute("type", "text/css");
+        tag.setAttribute("href", "../" + localStorage.getItem('tema') + "color.css");
+        document.getElementsByTagName("head")[0].appendChild(tag);
+    }
+
+    let corbodybg = getComputedStyle(document.documentElement)
+        .getPropertyValue('--cor-bg')
+
+    let colortagAll = document.createElement("meta");
+    colortagAll.setAttribute("name", "theme-color");
+    colortagAll.setAttribute("content", corbodybg);
+
+    let colortagWin = document.createElement("meta");
+    colortagWin.setAttribute("name", "msapplication-navbutton-color");
+    colortagWin.setAttribute("content", corbodybg);
+
+    let colortagios = document.createElement("meta");
+    colortagios.setAttribute("name", "msapplication-navbutton-color");
+    colortagios.setAttribute("content", corbodybg);
+
+    document.getElementsByTagName("head")[0].appendChild(colortagAll);
+    document.getElementsByTagName("head")[0].appendChild(colortagWin);
+    document.getElementsByTagName("head")[0].appendChild(colortagios);
+
+    if ($_GET['filtra'] != "" && $_GET['filtra'] != null && typeof $_GET['filtra'] != "undefined") {
+        document.getElementById("masterfilter").value = decodeURI($_GET['filtra']);
+    }
+
+
+    let myTimeout = "";
+
+    if ($_GET['contentonly'] != "true") {
+
+        document.onkeypress = function () {
+
+            document.getElementById("fullinput").style.top = "30px";
+            document.getElementById("fullinput").focus();
+
+            myTimeout = setTimeout(function () {
+                document.getElementById("fullinput").style.top = "-116px";
+            }, 15000);
+
+
+        }
+    } else {
+        document.getElementById("fullinput").style.display = "none";
+        document.getElementById("navblock").style.display = "none";
+
+        document.getElementById("titulo").style.display = "none";
+
+    }
+
+
+    let omdados = [];
+    let getdata = function (arquivojson, el_id) {
+        // Fetch JSON file
+        fetch(arquivojson).then(response => response.json()).then((omdados) => {
+            //Start Omnifilter Event Listener Function
+            startomnifilter(omdados, el_id, processadados);
+
+        });
+    }
+
+
+    let menu = function (arquivojson) {
+        fetch(arquivojson).then(response => response.json()).then((dados) => {
+
+            let meuhtml = "";
+            for (i = 1; i < dados.length; i++) {
+
+                meuhtml +=
+                    `<a class='custommenu' href='javascript:popfiltro("${dados[i].Filtro}");'>${dados[i].Label}</a>`;
+
+            }
+
+            document.getElementById("menutags").innerHTML = meuhtml;
+        });
+    }
+
+    let popfiltro = function (str) {
+
+        document.getElementById("fullinput").value = str;
+        document.getElementById("fullinput").dispatchEvent(new Event('input', {
+            bubbles: true
+        }));
+
+    }
+
+    let mudamenu = function () {
+        let qual = document.getElementById("qualmenu").value;
+        menu(qual);
+
+    }
+
+    menu("https://opensheet.elk.sh/1MUr_AiAYBa184e5ZOUO9jQGD-HvU3rQlOvu0oMAj7fw/Menu_Arte");
+
+
+
+
+
+
+    // Omnifilter Event Listener Function
+    let startomnifilter = function (losdados, elemento, funcprocessa) {
+        //console.log("Omnifilter: fetch finished");
+        //console.table(losdados);
+
+        document.getElementById(elemento).addEventListener('input', function (evt) {
+
+            let newomniarray = select(losdados, multipatterncheck_exclude, document
+                .getElementById(
+                    "masterfilter").value +
+                " " + this.value);
+            funcprocessa(newomniarray);
+
+        });
+
+        let newomniarray = select(losdados, multipatterncheck_exclude, document.getElementById(
+            "masterfilter").value);
+        funcprocessa(newomniarray);
+    }
+
+    getdata("https://opensheet.elk.sh/1MUr_AiAYBa184e5ZOUO9jQGD-HvU3rQlOvu0oMAj7fw/Simples", "fullinput");
+
+
+    let delay = "";
+    let processadados = function (arr) {
+
+        document.getElementById("midsection").innerHTML = "";
+        clearTimeout(delay);
+
+        delay = setTimeout(function () {
+            if (document.getElementById("fullinput").value == "") {
+                limite = 30;
+            } else {
+                limite = 0;
+            }
+
+            if (typeof $_GET['limita'] != "undefined" && $_GET['limita'] != null && $_GET['limita'] != "") {
+                limite = $_GET['limita'];
+                randomiza = true;
+            }
+
+            // console.table(arr);
+            let myhtml = "";
+
+            let tamanho = arr.length;
+
+            if (limite != 0 && limite < tamanho) {
+                tamanho = limite;
+            }
+
+
+
+            let i = 0;
+            for (let k = 0; k < tamanho; k++) {
+
+                if (randomiza) {
+                    i = parseInt(Math.random() * arr.length);
+                } else {
+                    i = k;
+                }
+
+
+                myhtml += `<a target='_blank' href='${arr[i].imagemurl}' class='imagembloco'
+                style='background-image: url(${videoorwhat(arr[i].imagemurl)});'></a>`;
+
+            }
+
+            document.getElementById("midsection").innerHTML = myhtml;
+        }, 500);
+
+    }
+
+
+    let videoorwhat = function (original) {
+
+        let url = original;
+        let tipovideo = "none";
+
+        if (url.indexOf("youtu") <= -1 && url.indexOf("vimeo") <= -1) {
+            return original;
+
+        } else {
+            url.match(
+                /(http:|https:|)\/\/(player.|www.|m.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/
+            );
+
+            if (RegExp.$3.indexOf("youtu") > -1) {
+                tipovideo = "youtube";
+
+                return "https://img.youtube.com/vi/" + RegExp.$6 + "/0.jpg";
+
+            }
+
+            /*
+            if (RegExp.$3.indexOf("vimeo") > -1) {
+            tipovideo = "vimeo";
+            }
+
+            */
+
+        }
+    }
+
+    let VideoGridParseURL = function (url) {
+
+    }
+</script>
+
+</html>

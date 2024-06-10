@@ -1,0 +1,119 @@
+:root {
+
+    --bg-color: #92B5BD;
+    --neutral-grey: #999999;
+    --iconhighlight: #5F56E3;
+    --cont-foregroundcolor: #633438;
+    --fore-color: #7E2C75;
+    --highlight-normal: #50036c;
+
+}
+
+body {
+    color: #777777;
+    background-color: transparent;
+}
+
+nav a {
+    color: white;
+    background-color: #999999;
+}
+
+nav a:hover {
+    background-color: #5F56E3;
+}
+
+.navligado {
+    background-color: #5F56E3;
+}
+
+#botaosair:hover {
+    background-color: #5F56E3;
+}
+
+#fechaabawork {
+    background-color: #5F56E3;
+
+}
+
+#fechaabawork:hover {
+
+    background-color: #999999;
+
+}
+
+h2,
+h1 {
+    color: #5F56E3;
+}
+
+h3,
+.tempo {
+    color: #92B5BD;
+}
+
+h4 {
+    color: #92B5BD;
+
+}
+
+h5 {}
+
+.links {
+    border-bottom-color: #92B5BD;
+}
+
+.links:hover {
+    border-bottom-color: #92B5BD;
+    background-color: #92B5BD;
+    color: white;
+}
+
+.linkdelicado {
+    border-bottom-color: #CCCCCC;
+
+}
+
+.linkdelicado:hover {
+    border-bottom-color: #92B5BD;
+
+}
+
+.listatitulo {
+    border-bottom-color: #CCCCCC;
+
+}
+
+.listatitulo:hover {
+    border-bottom-color: #92B5BD;
+
+}
+
+.sublinhado {
+    font-weight: 700;
+    color: #92B5BD;
+}
+
+td {
+    border-color: #CCCCCC;
+}
+
+.alunonome {
+
+    color: #5F56E3;
+
+}
+
+.alunonota {
+
+    color: #5F56E3;
+    border-color: #5F56E3;
+
+
+
+}
+
+.QRCODE path {
+    fill: #5F56E3;
+    stroke: #5F56E3;
+}

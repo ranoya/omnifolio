@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "pinterest" content = "nopin" />
+		<meta name="pinterest" content="nohover">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<title>Puzzles</title>
+        <link REL="SHORTCUT ICON" href="">		
+
+  		<script>
+
+  		// GRABER DE PARÂMETROS DE URL
+        $.parametros = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (results==null){
+              return null;
+            } else{
+              return results[1] || 0;
+            }
+        };
+
+        myurl1 = "https://www.ranoya.com/aulas/tryit/v3/?exemplo=https://www.ranoya.com/aulas/webdesign/exemplos/block.html&lang=html&loaddisciplina=aulawd&loadatv=exercicio1&ref=https://www.ranoya.com/p/refweb&refheight=70&loadaluno=" + $.parametros('n') + "&loademail=" + $.parametros('e');
+
+        myurl2 = "https://www.ranoya.com/aulas/tryit/v3/?exemplo=https://www.ranoya.com/aulas/webdesign/exemplos/menu.html&lang=html&loaddisciplina=aulawd&loadatv=exercicio2&ref=https://www.ranoya.com/p/refweb&refheight=70&loadaluno=" + $.parametros('n') + "&loademail=" + $.parametros('e');
+
+        myurl3 = "https://www.ranoya.com/aulas/tryit/v3/?exemplo=https://www.ranoya.com/aulas/webdesign/exemplos/menudetail.html&lang=html&loaddisciplina=aulawd&loadatv=exercicio3&ref=https://www.ranoya.com/p/refweb&refheight=70&loadaluno=" + $.parametros('n') + "&loademail=" + $.parametros('e');
+
+        myurl4 = "https://www.ranoya.com/aulas/tryit/v3/?exemplo=https://www.ranoya.com/aulas/webdesign/exemplos/corpo.html&lang=html&loaddisciplina=aulawd&loadatv=exercicio4&ref=https://www.ranoya.com/p/refweb&refheight=70&loadaluno=" + $.parametros('n') + "&loademail=" + $.parametros('e');
+        
+        myurl5 = "https://www.ranoya.com/aulas/tryit/v3/?exemplo=https://www.ranoya.com/aulas/webdesign/exemplos/corpodetail.html&lang=html&loaddisciplina=aulawd&loadatv=exercicio5&ref=https://www.ranoya.com/p/refweb&refheight=70&loadaluno=" + $.parametros('n') + "&loademail=" + $.parametros('e');
+
+        myurl6 = "https://www.ranoya.com/aulas/tryit/v3/?exemplo=https://www.ranoya.com/aulas/webdesign/exemplos/responsive.html&lang=html&loaddisciplina=aulawd&loadatv=exercicio6&ref=https://www.ranoya.com/p/refweb&refheight=70&loadaluno=" + $.parametros('n') + "&loademail=" + $.parametros('e');
+
+        window.open(myurl6, "_blank");
+
+        window.open(myurl5, "_blank");
+
+        window.open(myurl4, "_blank");
+
+        window.open(myurl3, "_blank");
+
+        window.open(myurl2, "_blank");
+
+        window.open(myurl1, "_self");
+
+  		</script>
+
+
+  	</head>
+    
+    <body>
+
+   	
+
+
+    </body>
+</html>

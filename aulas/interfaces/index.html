@@ -1,0 +1,879 @@
+<script type="text/javascript">
+	/* -- Google Analytics ---------------------------------------------------- */
+
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-61225449-1', 'auto');
+	ga('send', 'pageview');
+
+	/* ---------------------------------------------------- Google Analytics -- */
+</script>
+
+<!DOCTYPE html>
+<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-opensans theme-color-white-blue">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="pinterest" content="nopin" />
+	<meta name="pinterest" content="nohover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Design de Interfaces * UFPE</title>
+	<meta name="generator" content="slides.com" />
+	<meta name="description"
+		content="Material de apoio da disciplina de Design de Interfaces Digitais da Universidade Federal de Pernambuco">
+	<meta name="author" content="Prof. Dr. Guilherme Ranoya">
+	<meta name="keywords" content="design de interface, projetão, arquitetura de informação">
+	<meta property="og:url" content="https://www.ranoya.com/aulas/interfaces/index.html">
+	<meta property="og:title" content="Design de Interfaces * UFPE">
+	<meta property="og:description"
+		content="Material de apoio da disciplina de Design de Interfaces Digitais da Universidade Federal de Pernambuco">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="600">
+	<meta property="og:site_name" content="ranoya.com">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/interfaces.jpg" />
+	<meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/interfaces.jpg">
+	<link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/interfaces.jpg" />
+
+	<link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/InterfacesFavicon.png">
+	<link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/InterfacesFavicon57.png" />
+	<link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/InterfacesFavicon57.png" />
+	<link rel="apple-touch-icon" sizes="72x72"
+		href="https://www.ranoya.com/Assets/coverimages/InterfacesFavicon72.png" />
+	<link rel="apple-touch-icon" sizes="114x114"
+		href="https://www.ranoya.com/Assets/coverimages/InterfacesFavicon114.png" />
+	<link rel="apple-touch-icon" sizes="144x144"
+		href="https://www.ranoya.com/Assets/coverimages/InterfacesFavicon144.png" />
+
+	<link rel="stylesheet" type="text/css" href="./unifiedstyle.css">
+
+	<script src="https://www.ranoya.com/hal9000/samcore2.js"></script>
+
+	<script src="https://www.ranoya.com/Assets/JSLibs/AMS/listlinks.js"></script>
+	<script src="https://www.ranoya.com/Assets/JSLibs/AMS/listcal.js"></script>
+	<script src="https://www.ranoya.com/Assets/JSLibs/AMS/imagepanel.js"></script>
+
+	<meta name="theme-color" content="#361e73">
+	<meta name="msapplication-navbutton-color" content="#361e73">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#361e73">
+
+	<!--<link rel="stylesheet" type="text/css" href="https://www.projetao.com.br/style/Interfacescolor.css">-->
+
+</head>
+
+<body style="padding: 0 0 0 0; margin: 0 0 0 0; overflow-y: hidden; overflow-x: hidden;">
+
+	<a href="javascript: menu();" class="menubutton"><img
+			src="https://www.ranoya.com/Assets/WebsiteIcons/hamburguer-white.svg" style="width: 100%;"></a>
+
+	<div id="samthings">
+		<div id="pontoatual"></div>
+		<input type="text" id="entrada" autocomplete="off">
+		<div id="notificacao"></div>
+		<div id="dialogbox"></div>
+	</div>
+
+	<a id="samBlock" href="javascript:changeSam()">
+
+		<div id="samdialogbox">
+			<div id='sam2'>
+				<svg viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect id='sam2-shine' />
+					<rect id='sam2-interno' />
+					<rect id='sam2-externo' />
+					<rect id='sam2-over' />
+				</svg>
+			</div>
+
+	</a>
+	<nav id="navpresentation">
+
+		<div id='bigblock' style='background-image: url(https://www.projetao.com.br/img/fcomponentes.png);'>
+			<div id='invisibleblocsA'></div>
+
+			<svg width="1676" height="1675" id="logosmall" viewBox="0 0 1676 1675" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M0.880859 837.214L838.095 0L1154.2 316.101H781.143V1253.35H421.525L421.525 889.459H558.162L558.162 1139.19H666.986V780.636H312.702L312.702 1149.04L0.880859 837.214ZM1359.88 893.398V521.781L1675.31 837.214L838.095 1674.43L525.841 1362.17H889.967L889.967 893.549L889.967 424.925L1251.05 424.925L1251.05 784.575H1119.92V534.704H1008.19V893.398H1359.88ZM313 680.839L664 680.839V315.839L546.851 315.839V563.594H313V680.839ZM1361 999.839H1010V1361.84H1126.89V1117.63H1361V999.839Z"
+					class="iconforeground" fill="#0BC2F2" />
+			</svg>
+
+			<div id='invisibleblocsB'></div>
+		</div>
+
+		<div id='molduratitle'>
+			<div id='visibleblocsA'></div>
+			<div id='visibleblocsB'>
+				<p class='bigtitle'>Sobre a Disciplina
+					<span class='blocktext1'>Institucional</span>
+					<span class='blocktext2'></span></p>
+			</div>
+		</div>
+
+		<div>
+
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tflippedclassroom.png);'>
+				<a href="javascript:sumario('programa');">Programa
+
+					<span class='blocktext1'>Ementa e calendário da disciplina</span>
+					<span class='blocktext2'>Ementa, programa, calendário, acesso aos recursos institucionais,
+						etc.</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/tRanoya.png);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&dun=Ranoya&">Professor
+
+					<span class='blocktext1'>Quem é seu professor</span>
+					<span class='blocktext2'>Mais informações sobre o professor</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/ogforum.jpg);'>
+				<a href="javascript:sumario('conexao');">Integração
+
+					<span class='blocktext1'>Relação com outras disciplinas</span>
+					<span class='blocktext2'>Integração com disciplinas de projeto</span>
+				</a>
+			</div>
+
+
+			<!-- singleblock superdouble right' -->
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tstartupsprojetao.png); background-position: left center;'>
+
+				<a href="javascript:sumario('fluxo');">Atividades
+
+					<span class='blocktext1'>Rotina semanal</span>
+					<span class='blocktext2'>Ciclo de atividades de desenvolvimento da disciplina</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tMetOverview.png); background-position: left center;'>
+
+				<a href="javascript:sumario('extensao');">Extensão
+
+					<span class='blocktext1'>Programa de extensão em inovação</span>
+					<span class='blocktext2'>Mais informações sobre o programa de extensão</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/ogbooks.jpg);'>
+				<a target="_blank"
+					href="https://bibliografia.ranoya.com/index.php?theme=cyancin&embed=slides&contentonly=true&filter=auladi,showit">Bibliografia
+
+					<span class='blocktext1'>Livros e fontes</span>
+					<span class='blocktext2'>Fontes confiáveis sobre o assunto</span>
+				</a>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Conceitos e fundamentos
+						<span class='blocktext1'>Base conceitual</span>
+						<span class='blocktext2'>Conjunto de conceitos nos quais a prática se ampara para estabelecer
+							uma abordagem projetual</span></p>
+				</div>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/spacewar.jpg);'>
+				<a target="_blank" href="https://servicos.ranoya.com/sabores.html">História das interfaces
+
+					<span class='blocktext1'>Excurso: formação do conceito de interface gráfica</span>
+					<span class='blocktext2'>Da primeira tela às interfaces de toque e gesto</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tinteraction.png);'>
+				<a href="javascript:sumario('interacao');">iD, IxD e UX
+
+					<span class='blocktext1'>Interfaces x Interação</span>
+					<span class='blocktext2'>Quais as diferenças entre design de interface e design de interação?</span>
+				</a>
+			</div>
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'><br>Representação
+						<span class='blocktext1'>A primeira forma de interface</span>
+						<span class='blocktext2'>Apresentar informação é uma interface, que precisa ser
+							projetada.</span></p>
+				</div>
+			</div>
+
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tetnografia.png);'>
+				<a href="javascript:sumario('ax');">AXismo
+
+					<span class='blocktext1'>Projetando para o mundo real</span>
+					<span class='blocktext2'>Observar o usuário em seu contexto, em sua cultura, sem aplicar juízos e
+						valores próprios</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tetnografia.png);'>
+				<a href="javascript:sumario('etnografia');">Escuta altruísta
+
+					<span class='blocktext1'>Pensando como um antropólogo</span>
+					<span class='blocktext2'>Observar o usuário em seu contexto, em sua cultura, sem aplicar juízos e
+						valores próprios</span>
+				</a>
+			</div>
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Usuário
+						<span class='blocktext1'>Fase de observação e empatia (Quests #1 - #4)</span>
+						<span class='blocktext2'>Questão central de qualquer projeto: seu usuário, suas necessidades e
+							seu protagonismo</span></p>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/taeiou.svg);'>
+				<a href="javascript:sumario('aeiou');">AEIOU Framework
+
+					<span class='blocktext1'>Atividades, Interações, Objetos, etc.</span>
+					<span class='blocktext2'>Diagrama de categorização para pesquisas de campo, observações ou
+						levantamentos</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tPersonas.svg);'>
+				<a href="javascript:sumario('personas');">Personas
+
+					<span class='blocktext1'>Caracterização do usuário</span>
+					<span class='blocktext2'>Construção de arquétipos de usuários contemplando seus interesses, gostos e
+						valores</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tempatia.png);'>
+				<a href="javascript:sumario('empatia');">Empatia
+
+					<span class='blocktext1'>Escuta altruísta</span>
+					<span class='blocktext2'>É necessário entender o ponto de vista do usuário, e se conectar a
+						ele</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tempathyMap.svg);'>
+				<a href="javascript:sumario('mapadeempatia');">Mapa de empatia
+
+					<span class='blocktext1'>Mapeamento de relações</span>
+					<span class='blocktext2'>Mapeamento das relações de como o usuário se sente em relação a algo</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tafoitos.svg);'>
+				<a href="javascript:sumario('afoitos');">Early Adopters
+
+					<span class='blocktext1'>Comunidade de teste</span>
+					<span class='blocktext2'>Qual a utilidade de uma comunidade de teste no projeto</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tjornadas.svg);'>
+				<a href="javascript:sumario('jornadas');">Jornada do usuário
+
+					<span class='blocktext1'>Como o usuário se sente</span>
+					<span class='blocktext2'>Mapeamento das relações e da forma como o usuário se sente ao longo de uma
+						jornada</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tentrevistas.svg);'>
+				<a href="javascript:sumario('entrevistas');">Entrevistas
+
+					<span class='blocktext1'>Pesquisa com usuário</span>
+					<span class='blocktext2'>Técnicas de aprofundamento das questões com o usuário</span>
+				</a>
+			</div>
+
+
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'><br>Processo
+						<span class='blocktext1'>Entendendo como o método é aplicado</span>
+						<span class='blocktext2'>Como o projetar funciona no Design Thinking</span></p>
+				</div>
+			</div>
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/tGrupos.png);'>
+				<a href="javascript:sumario('criatividade');">Sabores do design thinking
+
+					<span class='blocktext1'>Excurso: as diversas versões do método da IDEO</span>
+					<span class='blocktext2'>Diagramas sobre as interpretações e formas como o Design Thinking foi
+						adaptado em diversos lugares.</span>
+				</a>
+			</div>
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Materialidade
+						<span class='blocktext1'>Ideação+Configuração (Quests #5 - #9)</span>
+						<span class='blocktext2'>Processo metodológico de representação e construção do artefato</span>
+					</p>
+				</div>
+			</div>
+
+			<div class='singleblock triple' style='background-image: url(https://www.projetao.com.br/img/tGrupos.png);'>
+				<a href="javascript:sumario('criatividade');">Ideação
+
+					<span class='blocktext1'>Atitude criativa</span>
+					<span class='blocktext2'>Relação da criatividade com o projetar</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tusabilidade.svg);'>
+				<a href="javascript:sumario('uxstory');">Storyboard
+
+					<span class='blocktext1'>Experience Storyboards</span>
+					<span class='blocktext2'>Representação da experiência</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/twireframe.svg);'>
+				<a href="javascript:sumario('uxstory');">Wireframe
+
+					<span class='blocktext1'>Planejamento de interface</span>
+					<span class='blocktext2'>Organização espacial e dimensionamento das interfaces</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tuserflow.svg);'>
+				<a href="javascript:sumario('uxstory');">User flow
+
+					<span class='blocktext1'>Fluxo da interface</span>
+					<span class='blocktext2'>Organização espacial e dimensionamento das interfaces</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock triple'
+				style='background-position: right bottom; background-image: url(https://www.projetao.com.br/img/tblueprint.svg);'>
+				<a href="javascript:sumario('blueprint');">Blueprint
+
+					<span class='blocktext1'>Mapa de interações</span>
+					<span class='blocktext2'>Mapeamento da relação entre o usuário, o artefato, e o serviço para o qual
+						ele serve como dispositivo</span>
+				</a>
+			</div>
+
+			<div class='background-position: right bottom; singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tMetQ7.svg);'>
+				<a href="javascript:sumario('prototipo');">Protótipo
+
+					<span class='blocktext1'>Experimentação</span>
+					<span class='blocktext2'>Experimentos que nos auxiliam a configurar o artefato (projetar certo a
+						coisa)</span>
+				</a>
+			</div>
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Protocolos
+						<span class='blocktext1'>Pormenores do design de interfaces</span>
+						<span class='blocktext2'>Detalhes e especificadas</span></p>
+				</div>
+			</div>
+
+
+			<div class='singleblock triple' style='background-image:
+				url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/49b60c87059533.5dacd262b112f.png);'>
+				<a href="javascript:sumario('cores');">Cores
+
+					<span class='blocktext1'>Palete, contraste, composição.</span>
+					<span class='blocktext2'>Ferramentas para definição cromática</span>
+				</a>
+			</div>
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tprototipo.png);'>
+				<a href="javascript:sumario('principios');">Diretrizes
+
+					<span class='blocktext1'>Princípios e direcionamentos</span>
+					<span class='blocktext2'>Princípios do design de interfaces</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tlinguagem.png);'>
+				<a href="javascript:sumario('linguagem');">Linguagem
+
+					<span class='blocktext1'>Manuais, layout, componentes, dimensionamento</span>
+					<span class='blocktext2'>Manuais das linguagens visuais e estrutura das interfaces</span>
+				</a>
+			</div>
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Design systems
+						<span class='blocktext1'>Regras e governança</span>
+						<span class='blocktext2'>Componentização e normatização das interfaces</span></p>
+				</div>
+			</div>
+
+
+
+
+			<div class='singleblock triple'
+				style='background-image: url(https://www.projetao.com.br/img/tdesignsystems.png);'>
+				<a href="javascript:f('designsystems');">Sistemas existentes
+
+					<span class='blocktext1'>Modelos de design systems</span>
+					<span class='blocktext2'>O que são design systems e componentes de interface</span>
+				</a>
+			</div>
+
+
+
+			<div class='singleblock triple' style='background-position: right bottom; background-image:
+				url(https://www.projetao.com.br/img/tmicrointeracao.svg);'>
+				<a href="javascript:sumario('microinteracao');">Microinteração
+
+					<span class='blocktext1'>Sinalização</span>
+					<span class='blocktext2'>O que são microinterações e comportamento da interface</span>
+				</a>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id='molduratitle'>
+
+				<div id='visibleblocsB'>
+					<p class='bigtitle'>Toolbox
+						<span class='blocktext1'>Biblioteca de técnicas e ferramentas</span>
+						<span class='blocktext2'>Organização das ferramentas e métodos apresentados no documento</span>
+					</p>
+				</div>
+			</div>
+
+			<div class='singleblock quad'
+				style='background-image: url(https://www.projetao.com.br/img/tferramentas.png);'>
+				<a href="javascript:sumario('softwares');">Softwares
+
+					<span class='blocktext1'>Instrumentos de trabalho</span>
+					<span class='blocktext2'>UX TOOLS<br>Catálogo e benchmark das ferramentas de desenho de interfaces,
+						prototipagem, fluxo, handoff, monitoramento e documentação.</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tlevantamento.png);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&f=levantamento,tecnica&t=true#titlestart">Observação
+
+					<span class='blocktext1'>Ferramentas de observação</span>
+					<span class='blocktext2'>Coleção de técnias para levantamento e observação</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/talternativas.png);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&f=alternativas,tecnica&t=true#titlestart">Criação
+
+					<span class='blocktext1'>Ferramentas de ideação</span>
+					<span class='blocktext2'>Coleção de técnias para ideação</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/ogMetQ7.jpg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&f=comportamento,tecnica&t=true#titlestart">Prototipagem
+
+					<span class='blocktext1'>Ferramentas de validação</span>
+					<span class='blocktext2'>Coleção de técnias para prototipação</span>
+				</a>
+			</div>
+
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/taeiou.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=aeiou#titlestart">AEIOU
+					Framework
+
+					<span class='blocktext1'>Atividades, Interações, Objetos, etc.</span>
+					<span class='blocktext2'>Diagrama de categorização para pesquisas de campo, observações ou
+						levantamentos</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tbrainstorming.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=brainstorm#titlestart">Brainstorm
+
+					<span class='blocktext1'>Dinâmica de criação</span>
+					<span class='blocktext2'>Atividade coletiva para geração de alternativas</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tafoitos.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=afoitos#titlestart">Early
+					Adopters
+
+					<span class='blocktext1'>Comunidade de teste</span>
+					<span class='blocktext2'>Qual a utilidade de uma comunidade de teste no projeto</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tPersonas.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=Personas#titlestart">Personas
+
+					<span class='blocktext1'>Caracterização do usuário</span>
+					<span class='blocktext2'>Construção de arquétipos de usuários contemplando seus interesses, gostos e
+						valores</span>
+				</a>
+			</div>
+
+			<div class='singleblock' style='background-image: url(https://www.projetao.com.br/img/tbrainwriting.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=brainwriting#titlestart">Brainwriting
+
+					<span class='blocktext1'>Dinâmica de criação</span>
+					<span class='blocktext2'>Atividade coletiva para geração de alternativas</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/tusabilidade.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=testeusabilidade#titlestart">Usabilidade
+
+					<span class='blocktext1'>Testes e validações</span>
+					<span class='blocktext2'>Processo de validação com usuário</span>
+				</a>
+			</div>
+
+			<div class='singleblock double'
+				style='clear: both; background-image: url(https://www.projetao.com.br/img/tblueprint.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=blueprints#titlestart">Blueprint
+
+					<span class='blocktext1'>Mapa de interações</span>
+					<span class='blocktext2'>Mapeamento da relação entre o usuário, o artefato, e o serviço para o qual
+						ele serve como dispositivo</span>
+				</a>
+			</div>
+
+			<div class='singleblock double right'
+				style='clear: both; background-image: url(https://www.projetao.com.br/img/tuserflow.svg);'>
+				<a target=" _blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=userflow#titlestart">User
+					flow
+
+					<span class='blocktext1'>Fluxo da interface</span>
+					<span class='blocktext2'>Arquitetura da solução e planejamento das atividades do usuário</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/tentrevistas.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=entrevistas#titlestart">Entrevistas
+
+					<span class='blocktext1'>Pesquisa com usuário</span>
+					<span class='blocktext2'>Técnicas de aprofundamento das questões com o usuário</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/tempathyMap.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=EmpathyMap#titlestart">Mapa
+					de
+					empatia
+
+					<span class='blocktext1'>Mapeamento de relações</span>
+					<span class='blocktext2'>Mapeamento das relações de como o usuário se sente em relação a algo</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='background-image: url(https://www.projetao.com.br/img/twireframe.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=wireframe#titlestart">Wireframe
+
+					<span class='blocktext1'>Planejamento de interface</span>
+					<span class='blocktext2'>Organização espacial e dimensionamento das interfaces</span>
+				</a>
+			</div>
+
+			<div class='singleblock left'
+				style='clear: both; background-image: url(https://www.projetao.com.br/img/tjornadas.svg);'>
+				<a target="_blank"
+					href="https://www.projetao.com.br/generator/?embed=plain&g=Interfaces&tun=journey#titlestart">Jornada
+					do
+					usuário
+
+					<span class='blocktext1'>Como o usuário se sente</span>
+					<span class='blocktext2'>Mapeamento das relações e da forma como o usuário se sente ao longo de uma
+						jornada</span>
+				</a>
+			</div>
+
+
+
+
+
+			<div style="display: inline-block; height: 90px; width: 100%;">&nbsp;</div>
+
+
+
+
+
+		</div>
+
+
+
+	</nav>
+
+	<iframe src="https://www.slides.com/ranoya/interfacesindigo/embed#capa" id="placehold" frameborder=0
+		style="position: fixed; left: 0; width: 100%; height: calc(100% + 34px);" scrolling="no"></iframe>
+
+	<script>
+		function sumario(onde) {
+
+			document.getElementById('placehold').src = "https://www.slides.com/ranoya/interfacesindigo/embed#" + onde;
+			menu();
+		}
+
+
+
+		/*
+		 *
+		 * FUNÇÃO DE INTERFACE COM MENU
+		 *
+		 */
+
+		var notificouentrada = {};
+		var menuOpen = true;
+		var samOpen = false;
+		var menuOpen = false;
+
+		function menu() {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				menuOpen = true;
+				samOpen = false;
+				document.getElementById("navpresentation").style.right = "0";
+				if (mobile > 640) {
+					document.getElementById("placehold").style.left = "-375px";
+					document.getElementById("samthings").style.left = "-750px";
+				} else {
+					document.getElementById("placehold").style.left = "-100%";
+					document.getElementById("samthings").style.left = "-200%";
+				}
+				//document.getElementById('myVideo').pause();
+
+			} else {
+
+				menuOpen = false;
+				samOpen = false;
+				if (mobile > 640) {
+					document.getElementById("navpresentation").style.right = "-375px";
+					document.getElementById("samthings").style.left = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-40px - 100%)";
+					document.getElementById("samthings").style.left = "-100%";
+
+				}
+				document.getElementById("placehold").style.left = "0";
+				//document.getElementById('myVideo').play();
+
+			}
+
+		}
+
+
+
+
+		/*
+		 *
+		 * FUNÇÃO DE INTERFACE COM SAM
+		 *
+		 */
+
+		function changeSam() {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!samOpen) {
+
+				samOpen = true;
+				menuOpen = false;
+				if (mobile > 640) {
+					document.getElementById("navpresentation").style.right = "-375px";
+					document.getElementById("placehold").style.left = "375px";
+					document.getElementById("samthings").style.left = 0;
+				} else {
+					document.getElementById("navpresentation").style.right = "-200%";
+					document.getElementById("placehold").style.left = "100%";
+					document.getElementById("samthings").style.left = 0;
+				}
+				//document.getElementById('myVideo').pause();
+
+			} else {
+
+				samOpen = false;
+				menuOpen = false;
+				if (mobile > 640) {
+					document.getElementById("navpresentation").style.right = "-375px";
+					document.getElementById("samthings").style.left = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-40px - 100%)";
+					document.getElementById("samthings").style.left = "-100%";
+				}
+				document.getElementById("placehold").style.left = "0";
+				//document.getElementById('myVideo').play();
+
+			}
+
+		}
+
+		window.onresize = function (event) {
+
+			var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+			if (!menuOpen) {
+
+				if (mobile > 640) {
+					document.getElementById("navpresentation").style.right = "-375px";
+				} else {
+					document.getElementById("navpresentation").style.right = "calc(-40px - 100%)";
+				}
+				document.getElementById("placehold").style.left = "0";
+
+			} else if (menuOpen) {
+
+				document.getElementById("navpresentation").style.right = "0";
+				if (mobile > 640) {
+					document.getElementById("placehold").style.left = "-375px";
+				} else {
+					document.getElementById("placehold").style.left = "-100%";
+				}
+
+			} else if (!samOpen) {
+				if (mobile > 640) {
+					document.getElementById("samthings").style.left = 0;
+				} else {
+					document.getElementById("samthings").style.left = 0;
+				}
+
+			}
+
+		};
+
+
+		document.addEventListener('DOMContentLoaded', function () {
+
+			sam.addDialogBox("entrada", "dialogbox", "notificacao");
+			sam.loadscript("./dialogo/samscript.json");
+
+			window.addEventListener("message", receiveMessage, false);
+
+			function receiveMessage(event) {
+
+				console.log("---- Recebi mensagem para continuar!");
+				if (event.data == "continue") {
+
+					document.getElementById('myVideo').play();
+
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

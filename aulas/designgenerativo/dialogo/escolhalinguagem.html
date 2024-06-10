@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+    <script type='text/javascript' src="https://www.ranoya.com/aulas/pesquisas/dev/formgrid.js"></script>
+ 
+      <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+        :root {
+
+          --formgrid-background: #FFFFFF;
+          --formgrid-foreground: #40124d;
+          --formgrid-highlight: #FFFFFF;
+          --formgrid-passivecolor: #40124d55;
+          --formgrid-largura: 100%;
+          --formgrid-fontsizecampos: 22px;
+          --formgrid-fontsizelabel: 14px;
+          --formgrid-font-family: 'Open Sans';
+        
+        }
+
+        html {
+
+          background-color: #40124d;
+          color: white;
+        
+        }
+
+        body {
+
+
+        }  
+
+        #tela {
+
+          position: fixed;
+          top: 5vw;
+          left: 5vw;
+          width: 90vw;
+          height: 20vh;
+          text-align: left;
+          padding: 0;
+          margin: 0;
+          transition: all .4s ease-in;
+
+        }
+
+        
+
+
+      </style>
+
+
+  	</head>
+
+    
+    <body>
+
+   	  <div id="tela"></div>
+
+      <script>
+
+        forma = [
+          {
+          'label': 'Sobre as linguagens de programação...',
+          'wait': 'POR FAVOR, INDIQUE SEU INTERESSE',
+          'botao': 'REGISTRAR',
+          'blockCorner': '0',
+          'fontsizecampos': '16px',
+          'handler': 'https://script.google.com/macros/s/AKfycbzlG_Ctau80GhXNLOEvwY_m39I2xJ-FNENPlWpn65uNDoGKvQ0/exec'
+          },
+          {
+            'tipo': 'singleoption',
+            'var': 'COMENTARIO1',
+            'nome': 'Qual linguagem você prefere aprender?',
+            'alternativas': {
+                              'TANTO FAZ': 'INDIFERENTE',
+                              'PROCESSING': 'PROCESSING',
+                              'P5': 'P5',
+                              'JAVASCRIPT + SVG': 'JS+SVG',
+                              'JAVASCRIPT + D3': 'JS+D3',
+                            },
+            'default': 'TANTO FAZ',
+          },
+          {
+            'tipo': 'singleoption',
+            'var': 'VALENCIA',
+            'nome': 'Você já possui alguma experiência com programação?',
+            'alternativas': {
+                              'NENHUMA': 'NAO',
+                              'COM HTML E CSS': 'WEB',
+                              'UM POUCO, SOU INICIANTE': 'INICIANTE',
+                              'SIM, TENHO EXPERIÊNCIA': 'SIM'
+                            },
+            'default': 'NENHUMA'
+          },
+          {
+            'tipo': 'multiline',
+            'var': 'COMENTARIO2',
+            'nome': 'O que você espera aprender na disciplina?',
+            'exemplo': 'Ex: Um pouco de programação',
+            'default': '',
+            'maxchar': 500,
+            'maxheight': 50,
+            'alturainicial': 50,
+            'optional': 'true'
+          },
+          { 
+            'tipo': 'hidden',
+            'var': 'DISCIPLINA',
+            'default': 'Design Generativo'
+          },
+          { 
+            'tipo': 'hidden',
+            'var': 'FASE',
+            'default': 'Escolha de Linguagem'
+          }
+        ];
+
+        document.getElementById("tela").formgridstart(forma);
+      </script>
+
+    </body>
+</html>

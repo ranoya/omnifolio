@@ -1,0 +1,202 @@
+/* tipografia -------------------------------------------------------- */
+
+/* cssreset.com ------------------------------------------------------ */
+* {}
+
+/* base -------------------------------------------------------------- */
+.logocolor {
+
+  fill: #6a61e7;
+
+}
+
+body {
+  background-color: white;
+  color: grey;
+}
+
+nav {
+  background-color: white;
+}
+
+#tintcolor {
+  background-color: white;
+  opacity: .9;
+}
+
+#mobile {}
+
+#navblock {}
+
+.listalinha {
+
+  padding-bottom: 20px;
+
+}
+
+a {
+  color: grey;
+}
+
+a:hover {
+  background-color: #6a61e7;
+  color: white;
+}
+
+.filtroativo {
+  background-color: #6a61e7;
+  color: white;
+
+}
+
+.filtroinativo {
+  background-color: transparent;
+  color: #42148e;
+}
+
+#navblock a {
+  color: #42148e;
+}
+
+#navblock a:hover {
+  background-color: #6a61e7;
+  color: #42148e;
+}
+
+.marcacao {
+  background-color: transparent;
+}
+
+.marcacao:hover {
+  background-color: transparent;
+}
+
+/* estrutura --------------------------------------------------------- */
+
+#heading {
+  background-color: transparent;
+  color: #cf3a32;
+}
+
+.secao {
+  background-color: transparent;
+}
+
+.bloco-conteudo {}
+
+#rodape {
+  background-color: transparent;
+  color: #6a61e7;
+
+}
+
+#rodape .bloco-conteudo {
+  background-color: transparent;
+  color: #6a61e7;
+
+}
+
+#rodape .bloco-conteudo svg {
+  fill: #6a61e7;
+}
+
+#rodape .bloco-conteudo h6 {
+  color: #6a61e7;
+
+}
+
+#ranoyalogo {}
+
+#carregando {}
+
+.loadingimage {}
+
+.videogrid {}
+
+#sumario {}
+
+.sumariolink {
+  background-color: #bfbfbf;
+  color: white;
+
+}
+
+.sumariolink:hover {
+  background-color: #f44292;
+
+}
+
+.halfblock {}
+
+
+/* tipografia --------------------------------------------------------- */
+
+h1 {}
+
+h6 {}
+
+.separador {}
+
+.littlegap {}
+
+.doublegap {}
+
+.triplegap {}
+
+.listalinha {}
+
+.mytags {}
+
+/* elementos ---------------------------------------------------------- */
+
+#gototop {
+  background-color: grey;
+
+}
+
+#gototop:hover {
+  background-color: #6a61e7;
+
+}
+
+#gotobottom {
+  background-color: grey;
+
+}
+
+#gotobottom:hover {
+  background-color: #6a61e7;
+
+}
+
+#foot-portfolio {}
+
+#foot-portfolio:hover {}
+
+#foot-linkedin {}
+
+#foot-linkedin:hover {}
+
+#foot-facebook {}
+
+#foot-facebook:hover {}
+
+#foot-github {}
+
+#foot-github:hover {}
+
+#foot-twitter {}
+
+#foot-twitter:hover {}
+
+#foot-googleplus {}
+
+#foot-googleplus:hover {}
+
+.buttom-agenda {}
+
+.buttom-agenda:hover {}
+
+#botaosair {}
+
+#botaosair:hover {}

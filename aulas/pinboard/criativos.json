@@ -1,0 +1,52 @@
+[{
+        "topico": "aescriativo",
+        "label": "CRIATIVO"
+
+    },
+    {
+        "topico": "aesinovador",
+        "label": "INOVADOR / TRANSFORMADOR"
+
+    },
+    {
+        "topico": "aesemocional",
+        "label": "EMOCIONAL / AFETIVO"
+
+    },
+    {
+        "topico": "aesludico",
+        "label": "LÚDICO"
+
+    },
+    {
+        "topico": "aesimersivo",
+        "label": "IMERSIVO"
+
+    },
+    {
+        "topico": "hipnotico",
+        "label": "HIPNÓTICO"
+
+    },
+    {
+        "topico": "aessublime",
+        "label": "SUBLIME"
+
+    },
+    {
+        "topico": "aesprazeroso",
+        "label": "PRAZER DE USO"
+
+    }, {
+        "topico": "aesvisceral",
+        "label": "VISCERAL"
+
+    }, {
+        "topico": "aescomportamental",
+        "label": "COMPORTAMENTAL"
+    }, {
+        "topico": "aesreflexivo",
+        "label": "REFLEXIVO"
+
+    }
+]

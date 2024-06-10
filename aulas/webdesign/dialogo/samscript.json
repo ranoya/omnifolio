@@ -1,0 +1,798 @@
+{
+    "start": {
+        "beginindex": "verifica-usersavedata",
+        "tryagainmessage": [
+            "Me desculpe, não entendi sua resposta.",
+            "Não fui capaz de interpretar sua resposta."
+        ]
+    },
+    "intentions": {
+        "e(.*)voce": "sobre-sam",
+        "me conte mais sobre a disciplina em ead": "notify-disciplina",
+        "futuro(.*)design": "sobre-futuro",
+        "projeto futuro do design": "notify-futuro",
+        "codigo(.*)computacional": "video-computador",
+        "me fale sobre o codigo que roda em computadores": "notify-naturezadocodigo",
+        "que(.*)e(.*)rede": "video-arede",
+        "me explique sobre a internet": "notify-arede",
+        "como(.*)dominio": "explica-dominio",
+        "me explique como registrar um site": "notify-dominio",
+        "compati(.*)svg": "compatibilidade-svg",
+        "mostre tabela de navegadores com svg": "notify-compatibilidadesvg",
+        "exemplo(.*)variave(.*)url": "google-url",
+        "mostre um exemplo de variavel url": "notify-googleurl",
+        "livro(.*)html": "livro-html",
+        "mostre o livro sobre html": "notify-livrohtml",
+        "livro(.*)css": "livro-css",
+        "mostre o livro sobre css": "notify-livrocss",
+        "sintaxe(.*)html": "capitulo-sintaxe-html",
+        "mostre o capitulo sobre sintaxe html": "notify-capitulo-sintaxe-html",
+        "sintaxe(.*)css": "capitulo-sintaxe-css",
+        "mostre o capitulo sobre sintaxe css": "notify-capitulo-sintaxe-css",
+        "propriedades(.*)html": "capitulo-propriedades-tags-html",
+        "mostre o capitulo sobre propriedades gerais das tags html": "notify-capitulo-propriedades-tags-html",
+        "tag html": "capitulo-a-tag-html",
+        "mostre o capitulo sobre a tag html": "notify-capitulo-a-tag-html",
+        "tag head": "capitulo-a-tag-head",
+        "mostre o capitulo sobre a tag head": "notify-capitulo-a-tag-head",
+        "tag body": "capitulo-a-tag-body",
+        "mostre o capitulo sobre a tag body": "notify-capitulo-a-tag-body",
+        "tag form": "capitulo-a-tag-form",
+        "mostre o capitulo sobre a tag form": "notify-capitulo-a-tag-form",
+        "seletor(.*)css": "capitulo-seletores",
+        "mostre o capitulo sobre seletores": "notify-capitulo-seletores",
+        "css override": "capitulo-override",
+        "mostre o capitulo sobre css override": "notify-capitulo-override",
+        "vida(.*)universo": "mochileiro",
+        "(webdesign)|(web design)": "materiais-web",
+        "(vers(.*)html)|(html(.*)vers)": "cern-emulator",
+        "apague(.*)mensagem": "clear-notify",
+        "(mais|outro|algum)(.*)curso": "lista-cursos-online",
+        "proxim(.*)(aula|encontro|atividade)": "cria-bloco-proximaaula",
+        "ultim(.*)(aula|encontro|atividade)": "cria-bloco-ultimaaula",
+        "(tags|instrucoes|instruçoes|codigo|manual|referencia)(.*)html": "lista-tags-html",
+        "(propriedades|atributos|instrucoes|instruçoes|codigo|manual|referencia)(.*)css": "lista-propriedades-css",
+        "(ferramenta|editor|edicao|programa|aplicativo)(.*)codigo": "lista-editores-codigo",
+        "(ambiente|remoto|espaco|site|sessoes|sessao)(.*)(workshop|programacao|programaçao)": "acesso-ide",
+        "estrutura(.*)html": "snippet-html",
+        "(video|registro|gravac|gravaç)(.*)aula": "painel-de-aulas"
+    },
+    "tracks": {
+        "notify-disciplina": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "materiais-web",
+            "text": [
+                "Quer informações institucionais sobre a disciplina?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "notify-futuro": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "sobre-futuro",
+            "text": [
+                "Tenho mais informações sobre o que está sendo falado no slide, te interessa saber?",
+                "<b>$nomedousuario$</b>, quer saber mais sobre isso que está sendo apresentado?",
+                "Tenho mais informações sobre essa questão. Deseja que coloque aqui?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "painel-de-aulas": {
+            "action": "message",
+            "text": [
+                "Tenho alguns registros gravados das aulas do prof. Guilherme Ranoya sobre esse assunto:<br><br><div id='painelaulas' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "insere-aulas",
+            "reaction": "natural"
+        },
+        "insere-aulas": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=workshops&filter=publik,aulasemvideo,aulawd', 'painelaulas');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "sobre-futuro": {
+            "action": "message",
+            "text": [
+                "Com o projeto <a target='_blank' href='https://www.ranoya.com/public/futuro'>futuro do design</a>, o professor Guilherme Ranoya tem tentado trazer conhecimentos em programação para as áreas de design, arte, comunicação e arquitetura. Seu objetivo é preparar os estudantes das áreas criativas para que trabalharem com um conjunto novo de ferramentas para a prática do design. Atualmente utilizamos programas como o Photoshop, Illustrator, CADs ou ferramentas de modelagem 3D, para desenvolver projetos. Em breve será inevitável que eles precisem incorporar recursos mais profundos da computação para que respondam adequadamente às necessidades que se apresentarão."
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-naturezadocodigo": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "video-computador",
+            "text": [
+                "Tenho aqui um vídeo que explica bem o que é o código computacional. Quer que eu coloque aqui?",
+                "<b>$nomedousuario$</b>, quer ver um vídeo que explica isso? Quer que eu coloque aqui?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "video-computador": {
+            "action": "message",
+            "text": [
+                "<iframe style='width: 100%; height: 320px;' src='https://www.youtube.com/embed/P86w6CHhmQ4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-arede": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "video-arede",
+            "text": [
+                "Tenho aqui um vídeo que conta a história da internet. Quer que eu coloque aqui?",
+                "<b>$nomedousuario$</b>, quer ver um vídeo que explica o que é a internet e como ela foi criada?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "video-arede": {
+            "action": "message",
+            "text": [
+                "<iframe style='width: 100%; height: 320px;' src='https://www.youtube.com/embed/9hIQjrMHTv4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-dominio": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "explica-dominio",
+            "text": [
+                "Quer informações de como fazer um registro de domínio?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "explica-dominio": {
+            "action": "message",
+            "text": [
+                "No Brasil, o órgão responsável pelo registro de domínios é o NIC.br (Núcleo de Informação e Coordenação do Ponto BR). Os domínios são registrados através do site <a target='_blank' href='https://registro.br/'>Registro.br</a><br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-compatibilidadesvg": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "compatibilidade-svg",
+            "text": [
+                "Deseja ver a tabela de compatibilidade dos navegadores com SVG?",
+                "<b>$nomedousuario$</b>, quer ver a tabela de compatibilidade dos navegadores com SVG?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "compatibilidade-svg": {
+            "action": "message",
+            "text": [
+                "<a target='_blank' href='https://caniuse.com/svg'>Este site</a> tem todas as informações atualizadas sobre o que é, e o que não é, compatível com SVG.<br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-googleurl": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "google-url",
+            "text": [
+                "Deseja ver um exemplo de como funcionam variáveis pela URL?",
+                "<b>$nomedousuario$</b>, quer experimentar um exemplo de como funcionam variáveis pela URL?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "google-url": {
+            "action": "message",
+            "text": [
+                "Se você passar uma variável <b>q</b> para o site de busca do google, ele atribuirá esse valor para a pesquisa. Usaremos este link para fazer isso: <a target='_blank' href='https://www.google.com/search?q=Ranoya'>https://www.google.com/search?<b>q=Ranoya</a></a><br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-livrohtml": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "livro-html",
+            "text": [
+                "Um dos volumes do livro <b>O tecido das tecnologias criativas</b> é inteiro dedicado ao código HTML. Deseja acessá-lo?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "livro-html": {
+            "action": "message",
+            "text": [
+                "Aqui está o <a href='https://www.ranoya.com/books/public/html/?theme=cobalt&embed=plain' target='_blank'>link</a> para o livro. Boa leitura!<br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-livrocss": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "livro-css",
+            "text": [
+                "Um dos volumes do livro <b>O tecido das tecnologias criativas</b> é inteiro dedicado ao código CSS. Deseja acessá-lo?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "livro-css": {
+            "action": "message",
+            "text": [
+                "Aqui está o <a href='https://www.ranoya.com/books/public/css/?theme=cobalt&embed=plain' target='_blank'>link</a> para o livro. Boa leitura!<br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-propriedades-tags-html": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-propriedades-tags-html",
+            "text": [
+                "Deseja ver a documentação de referência para propriedades gerais das tags HTML?",
+                "<b>$nomedousuario$</b>, no livro <b>O tecido das tecnologias criativas</b> há um capítulo sobre as propriedades gerais das tags HTML. Quer vê-lo?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-propriedades-tags-html": {
+            "action": "message",
+            "text": [
+                "Aqui está o <a href='https://www.ranoya.com/books/public/html/propriedadesgerais.php&embed=plain' target='_blank'>link</a> para o capítulo com essa referência.<br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-sintaxe-html": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-sintaxe-html",
+            "text": [
+                "Deseja ver a documentação de referência para a sintaxe HTML?",
+                "<b>$nomedousuario$</b>, no livro <b>O tecido das tecnologias criativas</b> há um capítulo sobre a sintxe do código HTML. Quer vê-lo?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-sintaxe-html": {
+            "action": "message",
+            "text": [
+                "Aqui está o <a href='https://www.ranoya.com/books/public/html/sintaxe.php?theme=cobalt&embed=plain' target='_blank'>link</a> para o capítulo com essa referência.<br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-sintaxe-css": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-sintaxe-css",
+            "text": [
+                "Deseja ver a documentação de referência para a sintaxe CSS?",
+                "<b>$nomedousuario$</b>, no livro <b>O tecido das tecnologias criativas</b> há um capítulo sobre a sintxe do código CSS. Quer vê-lo?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-sintaxe-css": {
+            "action": "message",
+            "text": [
+                "Aqui está o <a href='https://www.ranoya.com/books/public/css/sintaxecss.php?theme=cobalt&embed=plain' target='_blank'>link</a> para o capítulo com essa referência.<br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-a-tag-html": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-a-tag-html",
+            "text": [
+                "Deseja ver a documentação de referência para a tag HTML?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-a-tag-html": {
+            "action": "message",
+            "text": [
+                "<br><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/html/tag-html.php?theme=cobalt&embed=plain'>tag HTML</a>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-a-tag-head": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-a-tag-head",
+            "text": [
+                "Deseja ver a documentação de referência para a tag HEAD?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-a-tag-head": {
+            "action": "message",
+            "text": [
+                "<br><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/html/tag-head.php?theme=cobalt&embed=plain'>tag HEAD</a>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-a-tag-body": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-a-tag-body",
+            "text": [
+                "Deseja ver a documentação de referência para a tag BODY?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-a-tag-body": {
+            "action": "message",
+            "text": [
+                "<br><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/html/tag-body.php?theme=cobalt&embed=plain'>tag BODY</a>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-a-tag-form": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-a-tag-form",
+            "text": [
+                "Deseja ver a documentação de referência para a tag FORM?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-a-tag-form": {
+            "action": "message",
+            "text": [
+                "<br><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/html/tag-form.php?theme=cobalt&embed=plain'>tag FORM</a>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-seletores": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-seletores",
+            "text": [
+                "Deseja ver a documentação sobre seletores CSS?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-seletores": {
+            "action": "message",
+            "text": [
+                "<br><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/css/seletorescss.php?theme=cobalt&embed=plain'>Seletores</a><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/css/seletorescss.php?theme=cobalt&embed=plain#Seletores%20condicionais'>Condicionais</a><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/css/seletorescss.php?theme=cobalt&embed=plain#Condições%20de%20encadeamento/hierarquia'>Hierárquicos</a>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "notify-capitulo-override": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "capitulo-override",
+            "text": [
+                "Deseja ver a documentação sobre CSS Override e comportamentos?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "capitulo-override": {
+            "action": "message",
+            "text": [
+                "<br><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/css/sintaxecss.php?theme=cobalt&embed=plain#override'>Override</a><a target='_blank' class='linkinlistlink' href='https://www.ranoya.com/books/public/css/seletorescss.php?theme=cobalt&embed=plain#Seletores%20de%20estado/comportamento'>Comportamentos</a>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "lista-tags-html": {
+            "action": "message",
+            "text": [
+                "Há muitas tags HTML, algumas mais usadas, e outras menos. As mais comuns estão documentadas pelo professor Guilherme Ranoya nos links abaixo:<br><br><div id='tagshtmlaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-tags-html"
+        },
+        "insere-tags-html": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=posts&filter=livrohtml', 'tagshtmlaqui')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "lista-propriedades-css": {
+            "action": "message",
+            "text": [
+                "Há uma infinidade de propriedades CSS. As mais importantes estão documentadas pelo professor Guilherme Ranoya nos links abaixo:<br><br><div id='propscssaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-propriedades-css"
+        },
+        "insere-propriedades-css": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=posts&filter=livrocss', 'propscssaqui')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "acesso-ide": {
+            "action": "message",
+            "text": [
+                "As sessões de programação (workshops) da disciplina serão realizadas em um ambiente integrado de desenvolvimento (IDE) online. Os alunos do curso receberão convite para acessá-lo através de seus emails institucionais, e o ambiente pode ser acessado <a target='_blank' href='https://codesandbox.io/s/webdesign-workshop-8se0c'>neste link</a>"
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "lista-editores-codigo": {
+            "action": "message",
+            "text": [
+                "Aqui estão as ferramentas de edição de código mais utilizadas para você instalar no seu computador:<br><br><div id='editoresdecodigoaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>E estas são ferramentas (IDEs) online que tambem te permitem editar código, mas dentro do navegador:<br><br><div id='idesonlineaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-editorescodigo"
+        },
+        "insere-editorescodigo": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=codeeditors&quantos=5', 'editoresdecodigoaqui');listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=idesonline,jshtmlcsslang&quantos=5', 'idesonlineaqui')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "lista-cursos-online": {
+            "action": "message",
+            "text": [
+                "Tenho uma relação de cursos sobre HTML e CSS gratuitos e online. Aqui está:<br><br><div id='cursosonlineaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-cursos"
+        },
+        "insere-cursos": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=cursosonline,web,aulawd&quantos=10', 'cursosonlineaqui')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "materiais-web": {
+            "action": "input",
+            "model": "disciplina-elementos",
+            "text": [
+                "Me diga o que você precisa: uma explicação sobre a disciplina? a bibliografia? O programa/ementa? links para a sala do meet? o calendário?"
+            ],
+            "goto": {
+                "explicacao": "sobre-web",
+                "bibliografia": "bibliografia-web",
+                "ementa": "ementa-web",
+                "classroom": "classroom-web",
+                "meets": "cria-bloco-proximaaula",
+                "calendario": "cria-bloco-calendario",
+                "void": "site-aulas-web"
+            },
+            "reaction": {
+                "explicacao": "natural",
+                "bibliografia": "natural",
+                "ementa": "natural",
+                "classroom": "natural",
+                "meets": "natural",
+                "calendario": "natural",
+                "slides": "natural",
+                "void": "natural"
+            }
+        },
+        "bibliografia-web": {
+            "action": "message",
+            "text": [
+                "A bibliografia da disciplina está disponível <a target='_blank' href='https://bibliografia.ranoya.com/index.php?theme=bluemsx&embed=slides&contentonly=true&filter=aulawd,showit' target='_blank'>neste link</a>.",
+                "Você encontra a bibliografia de Design Generativo <a target='_blank' href='https://bibliografia.ranoya.com/index.php?theme=bluemsx&embed=slides&contentonly=true&filter=aulawd,showit' target='_blank'>aqui</a>."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "ementa-web": {
+            "action": "run",
+            "function": "location.href='https://webdesign.ranoya.com/ementa'",
+            "text": [
+                "Encaminhando..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "site-aulas-web": {
+            "action": "run",
+            "function": "location.href='https://www.ranoya.com/public/aulas/?#webdesign'",
+            "text": [
+                "Talvez isso aqui lhe ajude a encontrar o que precisa..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "slides-web": {
+            "action": "run",
+            "function": "location.href='https://webdesign.ranoya.com'",
+            "text": [
+                "Encaminhando..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "sobre-web": {
+            "action": "message",
+            "text": [
+                "<iframe style='width: 100%; height: 320px;' src='https://www.youtube.com/embed/u036kB8KIrs' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><br>A disciplina de Webdesign é o primeiro passo para o entendimento técnico sobre o design de artefatos digitais, ou mais especificamente, o design de artefatos de informação que usam a web como suporte material. Nessa disciplina você aprenderá a trabalhar com programação em linguagens de marcação (HTML e CSS), que são ótimos fundamentos para ingressar no uso da programação como ferramenta de design."
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "snippet-html": {
+            "action": "message",
+            "text": [
+                "A estrutura básica do código html é esta:<br><br><div id='estruturahtml' style='display: inline-block; width: 100%; height: auto;'></div>"
+            ],
+            "goto": "insere-ace-snippet-html",
+            "reaction": "natural"
+        },
+        "insere-ace-snippet-html": {
+            "action": "run",
+            "function": "onAce('https://webdesign.ranoya.com/snippets/estruturahtml.txt','estruturahtml','ace/mode/html')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "apresenta-calendario-sam": {
+            "action": "message",
+            "text": [
+                "O calendário das aulas e os links para os encontros síncronos já fazem parte da sua agenda (na conta institucional) assim que você entra no Google Classroom da disciplina.<br><br><iframe style='width: 327px; height: 2157px;' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQsp4-5OgBMRMCAKlYrlQXFsCrMeGPc9yNQhUW4Yl6p70eOQgGTR9Q6Doqd_caikWEvV99MZPSY73GF/pubhtml?gid=392533468&single=true&chrome=false' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><br>"
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "cria-bloco-calendario": {
+            "action": "message",
+            "text": [
+                "O calendário das aulas e os links para os encontros síncronos já fazem parte da sua agenda (na conta institucional) assim que você entra no Google Classroom da disciplina.<br><br><div id='sam-cal'></div>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-bloco-calendario"
+        },
+        "insere-bloco-calendario": {
+            "action": "run",
+            "function": "listcal('https://www.ranoya.com/EduManager/simplequery/index.php?cat=Calendario&filter=aulawd', 'sam-cal');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "cria-bloco-proximaaula": {
+            "action": "message",
+            "text": [
+                "Próxima atividade de aula:<br><br><div id='sam-cal-next'></div>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-bloco-proximaaula"
+        },
+        "insere-bloco-proximaaula": {
+            "action": "run",
+            "function": "listcal('https://www.ranoya.com/EduManager/simplequery/index.php?cat=Calendario&filter=aulawd&hoje=true&quantos=1', 'sam-cal-next');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "cria-bloco-ultimaaula": {
+            "action": "message",
+            "text": [
+                "Última atividade realizada na disciplina:<br><br><div id='sam-cal-next'></div>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-bloco-ultimaaula"
+        },
+        "insere-bloco-ultimaaula": {
+            "action": "run",
+            "function": "listcal('https://www.ranoya.com/EduManager/simplequery/index.php?cat=Calendario&filter=aulawd&ontem=true&quantos=1', 'sam-cal-next');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "cern-emulator": {
+            "action": "message",
+            "text": [
+                "Não tenho como te explicar as diferenças entre as versões do código HTML, mas posso te mostrar como eram as coisas em 1990. Você pode acessar o <a target='_blank' href='https://worldwideweb.cern.ch/browser/#https://www.globo.com'>emulador de um NeXT do Cern</a>, usando uma das primeiras versões do código HTML para abrir um site de hoje. Se quiser experimentar com outro site, clique em<br><b>Document</b><br><b>Open from full document reference</b>"
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "apresentacao": {
+            "action": "message",
+            "text": [
+                "Olá, eu sou SAM, inteligência artificial assistente do prof. Guilherme Ranoya.",
+                "Bem vindo. Me chamo SAM. Sou uma inteligência artificial e assistente do prof. Guilherme Ranoya.",
+                "Olá. Seja bem vindo. Eu sou SAM."
+            ],
+            "goto": "user-name",
+            "reaction": "natural"
+        },
+        "sobre-sam": {
+            "action": "message",
+            "text": [
+                "$nomedousuario$, muito prazer. Eu me chamo SAM, inteligência artificial criada pelo Prof. Guilherme Ranoya para ajudá-lo, e ajudar seus alunos, na conexão entre inúmeras informações educacionais e os documentos elaborados por ele. Admito que também acho tudo bastante confuso (ele tem uma mania de documentar tantas coisas que é difícil achar o que a gente quer...). Sou parte da iniciativa <a target='_blank' href='https://www.ranoya.com/public/eie'>DEIE</a> (Documentação do Emaranhado de Informações Educacionais). Ainda não possuo muitos recursos, mas já sou capaz de fazer alguns truques, e interpretar algumas de suas perguntas e respostas para localizar o que você precisa."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "warm"
+        },
+        "verifica-usersavedata": {
+            "action": "getlocaldata",
+            "var": "nomedousuario",
+            "text": [
+                "Restaurando memória... aguarde, por favor.",
+                "Recuperando registros..."
+            ],
+            "goto": {
+                "hasdata": "check-username",
+                "nodata": "apresentacao"
+            },
+            "reaction": {
+                "hasdata": "warm",
+                "nodata": "plain"
+            }
+        },
+        "user-name": {
+            "action": "varinput",
+            "var": "nomedousuario",
+            "text": [
+                "<b>Como você se chama?</b>",
+                "<b>Qual é seu nome?</b>"
+            ],
+            "goto": "savelocaldata",
+            "reaction": "warm"
+        },
+        "check-username": {
+            "action": "confirm",
+            "button-label": "não",
+            "cancel-label": "sim",
+            "on-click": "user-reset",
+            "var": "nomedousuario",
+            "text": [
+                "Estou conversando com <b>$nomedousuario$</b>, certo?",
+                "Você é <b>$nomedousuario$</b>, não é?"
+            ],
+            "goto": "historico"
+        },
+        "historico": {
+            "action": "gethistory",
+            "text": [""],
+            "goto": "perguntalivre"
+        },
+        "user-reset": {
+            "action": "reset",
+            "text": [
+                "Me desculpe... vamos começar novamente."
+            ]
+        },
+        "savelocaldata": {
+            "action": "input",
+            "model": "tipodeacesso",
+            "text": [
+                "<b>$nomedousuario$, você está usando um computador pessoal, ou um computador público?</b>"
+            ],
+            "goto": {
+                "save": "registra-usuario",
+                "void": "naoregistra-usuario"
+            },
+            "reaction": {
+                "save": "natural",
+                "void": "cold"
+            }
+        },
+        "registra-usuario": {
+            "action": "setlocaldata",
+            "var": "nomedousuario",
+            "text": [
+                "<br>Vou manter nossas conversas registradas no seu computador para que eu possa me lembrar sobre o que nós conversarmos. Não se preocupe...  nenhum dado pessoal seu será enviado para terceiros."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "naoregistra-usuario": {
+            "action": "message",
+            "text": [
+                "<br>Não me parece prudente registrar informações neste computador, e por conta disso, não conseguirei me lembrar de nossas conversas feitas aqui."
+            ],
+            "goto": "perguntalivre"
+        },
+        "perguntalivre": {
+            "action": "openquestion",
+            "text": [
+                "<b>$nomedousuario$, como posso lhe ajudar?</b>",
+                "<b>O que posso fazer por você?</b>",
+                "<b>Há algo em que posso ajudar?</b>",
+                "<b>O que você deseja?</b>"
+            ]
+        },
+        "clear-notify": {
+            "action": "run",
+            "function": "sam.dialogNotificationClear()",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "mochileiro": {
+            "action": "message",
+            "text": [
+                "<b>42</b>, ou mais precisamente o caracter <b>*</b>, que para um programa de computador como eu, significa: <b>tudo</b>."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "warm"
+        }
+    },
+    "models": {
+        "tipodeacesso": {
+            "pessoal": "save",
+            "meu": "save",
+            "proprio": "save",
+            "casa": "save",
+            "notebook": "save",
+            "unico": "save"
+        },
+        "disciplina-elementos": {
+            "explica": "explicacao",
+            "resumo": "explicacao",
+            "descricao": "explicacao",
+            "codigo": "classroom",
+            "classroom": "classroom",
+            "turma": "classroom",
+            "google": "classroom",
+            "bibliografia": "bibliografia",
+            "livro": "bibliografia",
+            "ementa": "ementa",
+            "programa": "ementa",
+            "atividade": "ementa",
+            "documentacao": "ementa",
+            "meet": "meets",
+            "sala": "meets",
+            "conferencia": "meets",
+            "zoom": "meets",
+            "remot": "meets",
+            "calendario": "calendario",
+            "tod(.*)(aula|encontro|atividade)": "calendario"
+        }
+    },
+    "extract": {},
+    "fail-intentions": {
+        "text": [
+            "Desculpe, eu ainda estou aprendendo e não fui capaz de entender sua pergunta. Talvez eu ainda não tenha como entender.",
+            "Me desculpe, $nomedousuario$. Ainda não consigo entender o que você precisa.",
+            "Eu não fui capaz de entender. Acho que não estou preparado para interpretar sua pergunta."
+        ]
+    }
+}

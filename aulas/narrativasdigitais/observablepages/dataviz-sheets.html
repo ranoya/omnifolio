@@ -1,0 +1,37 @@
+<style>
+    :root {
+        --md-highlight: #fdd4e7;
+        --md-mark: rgb(66, 80, 112);
+        --md-h1: white;
+        --md-fg: white;
+        --md-bg: #0dc2f2;
+        --md-code: #ffeeb6;
+    }
+
+
+    p a:hover {
+        text-decoration: underline;
+    }
+
+    body {
+        margin: 100px 40px 70px 40px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 80px);
+
+
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://www.ranoya.com/Assets/JSLibs/markdown/md.css">
+</link>
+
+<div id="observablehq-9bc603dc">
+</div>
+
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@ranoya/googlesheets-dataviz.js?v=3";
+new Runtime().module(define, Inspector.into("#observablehq-9bc603dc"));
+</script>

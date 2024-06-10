@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<!--
+
+Web Playground
+Copyright 2018, Prof. Guilherme Ranoya
+https://www.ranoya.com/aulas/tryit
+
+Bibliotecas e aplicações utilizadas
+ACE Editor, https://ace.c9.io/
+jQuery, https://jquery.com/
+MIT License 
+
+
+-->
+
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>+ Playground</title>
+  <meta name="generator" content="artesanal" />
+  <meta name="description" content="Playground de webdesign v2.0">
+  <meta name="keywords" content="webdesign, playground, disciplina">
+  <meta name="author" content="Guilherme Ranoya">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link REL="SHORTCUT ICON" HREF="https://www.ranoya.com/favicon.ico">
+  <link rel="image_src" type="image/jpeg" href="https://webdesign.ranoya.com/cover.jpg" />
+  <meta property="og:image" content="https://webdesign.ranoya.com/cover.jpg" />
+  <meta property="og:image:width" content="1145" />
+  <meta property="og:image:height" content="601" />
+  <meta name = "pinterest" content = "nopin" />
+  <meta name="pinterest" content="nohover">
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <!-- load ace -->
+  <script src="https://www.ranoya.com/aceeditor/src-min-noconflict/ace.js"></script>
+  <!-- load ace language tools -->
+  <script src="https://www.ranoya.com/aceeditor/src-min-noconflict/ext-language_tools.js"></script>
+
+  <script>
+
+    // GRABER DE PARÂMETROS DE URL
+        $.parametros = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (results==null){
+              return null;
+            } else{
+              return results[1] || 0;
+            }
+        }
+
+
+  </script>
+
+  <style type="text/css" media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+    #editor { 
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #aceditor {
+
+      position: fixed;
+      z-index:4500;
+      width: 500px;
+      height: 250px;
+      left: 100px;
+      top: 200px;
+      border: 5px solid gray;
+
+    }
+
+    #editortitle {
+
+      font-family: 'Share Tech Mono', monospace;
+      width: 150px;
+      height: 30px;
+      background-color: gray;
+      color: white;
+      position: relative;
+      z-index: 4501;
+      top: -40px;
+      left: -5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+
+
+    }
+
+    #editorresize {
+
+      width: 15px;
+      height: 15px;
+      position: fixed;
+      z-index: 4502;
+      left: 583px;
+      top: 433px;
+      background-color: gray;
+
+    }
+
+    #editorcontainer {
+
+      width: 100%;
+    }
+
+    #meuHTML {
+
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<iframe id="meuHTML" frameBorder="0"></iframe>
+
+<div id="aceditor">
+<div id="editortitle"><script>
+
+  if($.parametros('title')) {
+    document.write($.parametros('title'));
+  } else {
+    document.write("+PLAYGROUND");
+  }
+  
+</script></div>
+<div id="editorresize">&nbsp;</div>
+
+
+<div id="editorcontainer">
+
+<pre id="editor">
+Hello World!
+</pre>
+
+<script>
+    // trigger extension
+    ace.require("ace/ext/language_tools");
+    var editor = ace.edit("editor");
+    if($.parametros('lang')) {
+
+      editor.session.setMode("ace/mode/" + $.parametros('lang'));
+
+    } else {
+
+      editor.session.setMode("ace/mode/html");
+
+    }
+    
+
+    if($.parametros('theme')) {
+
+      editor.setTheme("ace/theme/" + $.parametros('theme'));
+    
+    } else {
+
+      editor.setTheme("ace/theme/sqlserver");
+    
+    }
+
+    editor.setShowPrintMargin(false);
+
+    // enable autocompletion and snippets
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false,
+        autoScrollEditorIntoView: false
+    });
+
+    editor.session.setUseWrapMode(true);
+</script>
+
+<!-- <script src="./show_own_source.js"></script> -->
+</div>
+
+
+</div>
+
+<script>
+
+      var drag = false;
+      var dragresize = false;
+      var finalX;
+      var finalY;
+      var interface;
+      var lastcode;
+      var interfX;
+      var interfY;
+      var textAW;
+      var textAH;
+      var deltaX;
+      var deltaY;
+      var positX;
+      var positY;
+      var bdeltaX;
+      var bdeltaY;
+
+
+      if($.parametros('file')) { 
+        fetch($.parametros('file')).then(response => response.text()).then((data) => {
+
+          editor.session.setValue(data); // set value and reset undo history
+
+        });
+      }
+
+      function changeContent(data) {
+
+        var iframe = document.getElementById('meuHTML');
+        iframe = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
+
+        iframe.document.open();
+        iframe.document.write(data);
+        iframe.document.close();
+
+
+      }
+
+      changeContent(editor.getValue());
+
+
+      editor.session.on('change', function(delta) {
+        changeContent(editor.getValue());
+      });
+
+      $( document ).on( 'mousemove touchmove', function( event ) {
+
+          if (drag) {
+          $('#aceditor').css('position', 'fixed');
+          $('#aceditor').css('left', (event.pageX - deltaX) + 'px');
+          $('#aceditor').css('top', (event.pageY - deltaY) + 'px');
+          $('#editorresize').css('position', 'fixed');
+          $('#editorresize').css('left', (event.pageX - deltaX + bdeltaX) + 'px');
+          $('#editorresize').css('top', (event.pageY - deltaY + bdeltaY) + 'px');
+          }
+          
+
+          if (dragresize) {
+          $('#aceditor').css('position', 'fixed');
+          $('#aceditor').css('width', (event.pageX - positX) + 'px');
+          $('#aceditor').css('height', (event.pageY - positY) + 'px');
+          $('#editorresize').css('position', 'fixed');
+          $('#editorresize').css('left', (event.pageX - deltaX) + 'px');
+          $('#editorresize').css('top', (event.pageY - deltaY) + 'px');
+          editor.resize();
+          }
+          
+          });
+
+
+      $(document).on('mouseup touchend', function () {
+
+          console.log('stop drag');
+          drag = false;
+          dragresize = false;
+          editor.resize();
+
+      });
+
+      $('#editortitle').on('mousedown touchstart', function () {
+
+        if (!drag) {
+
+          console.log('start drag');
+          drag = true;
+
+          console.log (event.pageX + " " + parseInt($('#aceditor').css('left')));
+          deltaX = event.pageX - parseInt($('#aceditor').css('left'));
+          deltaY = event.pageY - parseInt($('#aceditor').css('top'));
+          bdeltaX = parseInt($('#aceditor').css('width')) - 20;
+          bdeltaY = parseInt($('#aceditor').css('height')) - 20;
+
+        }
+
+
+      });
+
+      $('#editorresize').on('mousedown touchstart', function () {
+
+        if (!dragresize) {
+
+          console.log('start drag');
+          dragresize = true;
+
+          deltaX = event.pageX - parseInt($('#editorresize').css('left'));
+          deltaY = event.pageY - parseInt($('#editorresize').css('top'));
+          positX = parseInt($('#aceditor').css('left')) - 10;
+          positY = parseInt($('#aceditor').css('top')) - 10;
+          editor.resize();
+
+        }
+
+
+      });
+
+
+
+</script>
+
+</body>
+</html>

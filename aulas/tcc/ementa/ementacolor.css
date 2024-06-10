@@ -1,0 +1,85 @@
+body {
+  color: #777777;
+  background-color: transparent;
+}
+
+nav a {
+  color: white;
+  background-color: #999999;
+}
+
+nav a:hover {
+  background-color: #61007D;
+}
+
+#botaosair:hover {
+  background-color: #526b69;
+}
+
+#fechaabawork {
+  background-color: #61007D;
+
+}
+
+#fechaabawork:hover {
+
+  background-color: #999999;
+      
+}
+
+h2, h1 {
+  color: #61007D;
+}
+
+h3, .tempo {
+  color: #61007D;
+}
+
+h4 {
+  color: #61007D;
+
+    }
+
+h5 {
+
+  
+    }
+
+.links {
+  border-bottom-color: #61007D;
+}
+
+.links:hover {
+  border-bottom-color: #61007D;
+  background-color: #61007D;
+  color: white;
+}
+
+.linkdelicado {
+  border-bottom-color: #CCCCCC;
+  
+}
+
+.linkdelicado:hover {
+  border-bottom-color: #61007D;
+  
+}
+
+.listatitulo {
+  border-bottom-color: #EEEEEE;
+  
+}
+
+.listatitulo:hover {
+  border-bottom-color: #61007D;
+  
+}
+
+.sublinhado {
+  font-weight: 700;
+  color: #61007D;
+}
+
+td {
+  border-color: #CCCCCC;
+}

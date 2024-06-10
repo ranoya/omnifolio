@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		div {
+
+			border: 1px dashed black;
+
+		}
+
+		.wrap {
+
+			width: calc(100% - 7px); height: calc(100% - 7px); text-align: center;
+
+		}
+
+		.cabecalho {
+
+			width: 80%; margin-left: auto; margin-right: auto; margin-top: 0; display: block; height: calc(54px); padding: 20px;
+
+
+		}
+
+		.menutop {
+
+			display: block; width: calc(50% + 80px); height: 50px; float: right; padding: 0; margin: 0;
+
+		}
+
+		.menutopopt {
+
+			float: right; display: block; height: 50px; width: calc(25% - 22px); list-style-type: none; border: dashed 1px black; margin-left: 20px;
+
+		}
+
+		.corpo {
+			width: 80%; margin-left: auto; margin-right: auto; margin-top: 20px; padding: 20px; display: inline-block;
+		}
+
+		.menulateral {
+
+			width: 150px; padding: 0; margin: 0; float: left; margin-right: 20px; display: inline-block;
+		}
+
+		.menulateralopt {
+
+			border: dashed 1px black; width: calc(100% - 2px); height: 30px; list-style-type: none;
+
+		}
+
+		.rodape {
+
+			width: calc(100% - 212px); display: inline-block; margin-left: 172px; padding: 20px; margin-right: 6px;
+		}
+
+		.conteudo {
+
+			width: calc(100% - 212px); padding: 20px; display: inline-block; float: left;
+		}
+
+		@media (max-width: 600px) {
+
+			.menutop li:nth-child(1) { 
+
+				display: none;
+
+			 }
+
+			.menutop li:nth-child(2) {
+
+				display: none;
+
+			}
+
+			.menutop li:nth-child(3) {
+
+				display: none;
+
+			}
+
+			.menulateral li:nth-child(2) {
+
+				display: none;
+
+			}
+
+			.menulateral li:nth-child(3) {
+
+				display: none;
+
+			}
+
+			.menulateral li:nth-child(4) {
+
+				display: none;
+
+			}
+
+			.menulateral li:nth-child(5) {
+
+				display: none;
+
+			}
+
+			.menulateral li:nth-child(6) {
+
+				display: none;
+
+			}
+
+			.conteudo {
+
+				width: calc(100% - 44px);
+				clear: both;
+
+			}
+			
+			.menulateral {
+
+				width: calc(100% - 4px);
+				margin-bottom: 20px;
+
+			}
+
+
+			.menulateral li:nth-child(1) {
+
+				width: 100%;
+
+
+			}
+
+			.menutop {
+
+				width: calc(60% - 2px);
+
+			}
+
+			.menutop li:nth-child(4) {
+				width: 100%;
+			}
+
+			.rodape {
+
+				margin-left: 0;
+				width: calc(100% - 44px);
+			}
+			
+		}
+
+	</style>	
+
+</head>
+
+<body>
+
+<div class="wrap">
+<div class="cabecalho">
+
+	<ul class="menutop">
+			
+			<li class="menutopopt"></li>
+			<li class="menutopopt"></li>
+			<li class="menutopopt"></li>
+			<li class="menutopopt"></li>
+
+	</ul>
+
+	<div style="display: block; width: 30%; height: 50px; float: left;"><br><br></div>
+	
+</div>
+
+<div class="corpo">
+	
+		<ul class="menulateral">
+
+			<li class="menulateralopt"></li>
+			<li class="menulateralopt"></li>
+			<li class="menulateralopt"></li>
+			<li class="menulateralopt"></li>
+			<li class="menulateralopt"></li>
+			<li class="menulateralopt"></li>
+
+		</ul>
+
+	<div class="conteudo"><br><br><br><br><br></div>
+
+</div>
+
+<div class="corpo">
+	
+	<div class="rodape"><br><br></div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

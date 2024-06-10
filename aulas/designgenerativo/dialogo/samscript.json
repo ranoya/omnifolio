@@ -1,0 +1,1441 @@
+{
+    "start": {
+        "beginindex": "verifica-usersavedata",
+        "tryagainmessage": [
+            "Me desculpe, não entendi sua resposta.",
+            "Não fui capaz de interpretar sua resposta."
+        ]
+    },
+    "intentions": {
+        ".*": "nao-entendi",
+        "fundament": "lista-instrucoes-fundamentos",
+        "observabl": "sobre-observable",
+        "community|comunity|pcd": "sobre-pcd",
+        "(instal|download)": "instrucoes-instala-processing",
+        "(referencia)|(exemplo)|(inspirac)": "entende-referencia",
+        "projeto|uso(.*)tecnologia|aplicac|aplicaç": "projetos-computacao-fisica",
+        "arte": "palestras-arte-generativa",
+        "bibliograf|livros|textos": "bibliografia",
+        "playground|ambiente(.*)experiment|live|teste|ambiente(.*)program": "livecode-integrado",
+        "livro|tecido|tecnologias criativas|texto": "livro-integrado",
+        "(abra|abre|mostr|va pa|vai)(.*)fundament": "vai-para-fundament",
+        "(abra|abre|mostr|va pa|vai)(.*)sintax": "vai-para-sintaxe",
+        "(abra|abre|mostr|va pa|vai)(.*)variav": "vai-para-variaveis",
+        "(abra|abre|mostr|va pa|vai)(.*)(aritmetic|aritimetic|calcu|conta|matematic)": "vai-para-aritmeticos",
+        "logic": "vai-para-logica",
+        "(abra|abre|mostr|va pa|vai)(.*)(func|funç)": "vai-para-funcao",
+        "(abra|abre|mostr|va pa|vai)(.*)(array|matriz)": "vai-para-array",
+        "(abra|abre|mostr|va pa|vai)(.*)(objet|poo|orientad)": "vai-para-objeto",
+        "e(.*)voce": "sobre-sam",
+        "ranoya|professor": "sobre-ranoya",
+        "aula": "painel-de-aulas",
+        "(sobre|que)(.*)(disciplina|materia|conteudo)": "sobre-dgen",
+        "futuro(.*)design": "sobre-futuro",
+        "comunidade": "sobre-comunidade",
+        "evento|noite|festiva|encontro": "cria-bloco-calendario",
+        "vida(.*)universo": "mochileiro",
+        "que(.*)e(.*)processing": "sobre-processing",
+        "que(.*)e(.*)p5": "sobre-p5",
+        "que(.*)e(.*)javascript": "sobre-javascript",
+        "que(.*)e(.*)svg": "sobre-svg",
+        "que(.*)e(.*)d3": "sobre-d3",
+        "diferenca(.*)(p5(.*)processing)|(processing(.*)p5)": "diff-processing-p5",
+        "linguage(.*)(facil|melhor|começ|comec)": "linguagens-adotadas",
+        "(melhor(.*)p5(.*)processing)|(melhor(.*)processing(.*)p5)|(processing(.*)melhor(.*)p5)|(processing(.*)p5(.*)melhor)|(p5(.*)melhor(.*)processing)|(p5(.*)processing(.*)melhor)": "melhor-processing-p5",
+        "diferenca(.*)(p5(.*)javascript)|(javascript(.*)p5)": "diff-javascript-p5",
+        "parametric": "explica-design-parametrico",
+        "(instrucoes|instruçoes|func|funç|manual|referencia)(.*)desenh": "lista-instrucoes-desenho",
+        "edit(.*)codig": "lista-editores",
+        "respond(.*)linguage": "inicia-pesquisa-linguagens",
+        "grava contexto": "teste-contexto-save-entradados",
+        "limpa": "clear-notify",
+        "instalar processing": "notify-instala-processing",
+        "futuro do design": "notify-futuro",
+        "emulador de msx basic": "notify-emuladormsx",
+        "gerador de capas do Fronteias do Design": "notify-geradorfronteiras",
+        "historia da linguagem processing": "notify-introprocessing",
+        "documentacao sobre sintaxe": "notify-docsintaxe",
+        "documentacao sobre line": "notify-docline",
+        "documentacao sobre ellipse": "notify-docellipse",
+        "documentacao sobre setup": "notify-docsetup",
+        "documentacao sobre draw": "notify-docdraw",
+        "documentacao sobre variaveis": "notify-docvars",
+        "documentacao sobre operadores": "notify-doccalc",
+        "documentacao sobre logica": "notify-doclogica",
+        "documentacao sobre loops": "notify--docloops",
+        "documentacao sobre funcoes": "notify--docfunc",
+        "exemplos no OpenProcessing": "notify-abreopenprocessing",
+        "documentacao sobre arrays": "notify-docarrays",
+        "documentacao sobre objetos": "notify-docobjs",
+        "contato com a comunidade": "notify-contato-comunidade"
+    },
+    "tracks": {
+        "nao-entendi": {
+            "action": "message",
+            "text": [
+                "Desculpe, não sou capaz de entender sua solicitação",
+                "$nomedousuario$, me perdoe. Sua solicitação está além daquilo que eu sou capaz de compreender.",
+                "Me desculpe $nomedousuario$, não sou capaz de responder ao que você pediu."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "apresentacao": {
+            "action": "message",
+            "text": [
+                "Olá. Eu sou HAL, assistente digital do Prof. Guilherme Ranoya.",
+                "Olá. Eu sou HAL, assistente digital do Prof. Guilherme Ranoya.",
+                "Bem vindo. Me chamo HAL.",
+                "Olá. Seja bem vindo. Eu sou HAL."
+            ],
+            "goto": "user-name",
+            "reaction": "natural"
+        },
+        "cria-bloco-calendario": {
+            "action": "message",
+            "text": [
+                "Este é o calendário de eventos que na área de tecnologias criativas que tenho registrado:.<br><br><div id='sam-cal'></div>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-bloco-calendario"
+        },
+        "insere-bloco-calendario": {
+            "action": "run",
+            "function": "listcal('https://www.ranoya.com/EduManager/simplequery/index.php?cat=Calendario&filter=rodando,EVENTOS,FUTURO', 'sam-cal');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "vai-para-fundament": {
+            "action": "run",
+            "function": "bookmark(199.1); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-sintaxe": {
+            "action": "run",
+            "function": "bookmark(618.5); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-variaveis": {
+            "action": "run",
+            "function": "bookmark(1157.4); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-aritmeticos": {
+            "action": "run",
+            "function": "bookmark(1476.2); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-logica": {
+            "action": "run",
+            "function": "bookmark(1829.2); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-funcao": {
+            "action": "run",
+            "function": "bookmark(2266.6); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-array": {
+            "action": "run",
+            "function": "bookmark(2748.3); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "vai-para-objeto": {
+            "action": "run",
+            "function": "bookmark(3124.8); menu();",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-instala-processing": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "instrucoes-instala-processing",
+            "text": [
+                "Deseja saber como instalar ou usar Processing no seu computador?",
+                "<b>$nomedousuario$</b>, quer saber como instalar ou usar Processing no seu computador?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "notify-emuladormsx": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-emuladormsx",
+            "text": [
+                "Posso abrir um emulador de MSX BASIC em outra janela se você quiser experimentar com os exemplos do professor Pierluigi Piazzi..."
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-emuladormsx": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/aulas/msxbasic/')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-geradorfronteiras": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-fronteirasobservable",
+            "text": [
+                "As capas da série de livros <i>Fronteiras do Design</i> são geradas por código. Quer conhecer a ferramenta usada para criá-las?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-fronteirasobservable": {
+            "action": "run",
+            "function": "window.open('https://observablehq.com/@ranoya/fronteiras-do-design')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-introprocessing": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-introprocessing",
+            "text": [
+                "Neste material você aprenderá sobre a linguagem Processing. Deseja saber mais sobre essa linguagem e seus usos?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-introprocessing": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/?theme=deeppurple&embed=plain')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docsintaxe": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-sintaxe",
+            "text": [
+                "Quer ver uma documentação sobre os primeiros passos e a sintaxe Processing?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-sintaxe": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/processingbasics.php?theme=deeppurple&embed=plain')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docline": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-funline",
+            "text": [
+                "Gostaria de ver a documentação da instrução line?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-funline": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/fun-line.php?theme=deeppurple&embed=plain')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docsetup": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-funsetup",
+            "text": [
+                "Deseja ver a documentação da função setup?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-funsetup": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/fun-setup.php?theme=deeppurple&embed=plain')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docellipse": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-funellipse",
+            "text": [
+                "Gostaria de ver a documentação da instrução ellipse?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-funellipse": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/fun-ellipse.php?theme=deeppurple&embed=plain')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docdraw": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-fundraw",
+            "text": [
+                "Deseja ver a documentação da função draw?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-fundraw": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/fun-draw.php?theme=deeppurple&embed=plain')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docvars": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-docvars",
+            "text": [
+                "Deseja ver a documentação sobre variáveis?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-docvars": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/variaveisbasics.php?embed=plain&theme=deeppurple')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-doccalc": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-doccalc",
+            "text": [
+                "Deseja ver a documentação sobre operadores?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-doccalc": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/operadoresbasics.php?embed=plain&theme=deeppurple')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-doclogica": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-doclogic",
+            "text": [
+                "Deseja ver a documentação sobre operadores lógicos?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-doclogic": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/operadoresbasics.php?embed=plain&theme=deeppurple#logicos')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify--docloops": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-docloops",
+            "text": [
+                "Deseja ver a documentação sobre loops?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-docloops": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/loopsbasics.php?embed=plain&theme=deeppurple')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify--docfunc": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-docfunc",
+            "text": [
+                "Deseja ver a documentação sobre funções?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-docfunc": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/functionsbasics.php?embed=plain&theme=deeppurple')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-abreopenprocessing": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "openprocessing",
+            "text": [
+                "Há muitos códigos em processing disponíveis na plataforma OpenProcessing, para serem explorados. Gostaria de dar uma olhada?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "notify-docarrays": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-docarrays",
+            "text": [
+                "Deseja ver a documentação sobre arrays?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-docarrays": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/arraysbasics.php?embed=plain&theme=deeppurple')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-docobjs": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "abre-docobjs",
+            "text": [
+                "Deseja ver a documentação sobre objetos?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "abre-docobjs": {
+            "action": "run",
+            "function": "window.open('https://www.ranoya.com/books/public/processing/objetosbasics.php?embed=plain&theme=deeppurple')",
+            "text": [
+                "Abrindo..."
+            ],
+            "reaction": "natural",
+            "goto": "clear-notify"
+        },
+        "notify-contato-comunidade": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "sobre-comunidade",
+            "text": [
+                "informações sobre a comunidade brasileira de programação criativa?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "instrucoes-instala-processing": {
+            "action": "message",
+            "text": [
+                "$nomedousuario$, se você deseja instalar a IDE e toda a infra-estrutura para rodar códigos Processing no seu próprio computador, pode fazer o download em <a href='https://www.processing.org/download/' target='_blank'>Processing.org</a>. A instação é bem simples.<br><br>Há também outras formas de programar e rodar Processing: você pode rodar uma IDE online, ou pode rodar um ambiente de livecode que executa código em tempo-real, geralmente usados para experimentação. Aqui estão opções para isso:<br><br><b>Para instalação</b><br><br><div id='listaprocessinginstall' style='width: 100%; border: 0; padding: 0; margin: 0'></div><b>IDEs online</b><br><br><div id='listaidesonline' style='width: 100%; border: 0; padding: 0; margin: 0'></div><b>Livecodes</b><br><br><div id='listalivecodeonline' style='width: 100%; border: 0; padding: 0; margin: 0'></div>"
+            ],
+            "goto": "insere-processinginstalacao",
+            "reaction": "natural"
+        },
+        "insere-processinginstalacao": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=downloadlinks,processinglang', 'listaprocessinginstall')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "insere-idesonline"
+        },
+        "insere-idesonline": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=idesonline,processinglang', 'listaidesonline')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "insere-livecodesonline"
+        },
+        "insere-livecodesonline": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=livecoding,processinglang', 'listalivecodeonline')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "bibliografia": {
+            "action": "message",
+            "text": [
+                "$nomedousuario$, estou compilando para você uma relação de livros e referências bibliográficas que são públicas e acessíveis online:<br><br><div id='bibliografia' style='width: 100%; border: 0; padding: 0; margin: 0'></div>"
+            ],
+            "goto": "insere-bibliografia",
+            "reaction": "natural"
+        },
+        "insere-bibliografia": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bibliografia&filter=publico,auladg', 'bibliografia')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "sobre-ranoya": {
+            "action": "message",
+            "text": [
+                "O professor Guilherme Ranoya é professor e pesquisador do departamento de design (dDesign) da Universidade Federal de Pernambuco (UFPE). Se você deseja saber mais sobre ele, as informações no website <a href='https://www.ranoya.com' target='_blank'>ranoya.com</a> estão sempre atualizadas. <a href='https://www.ranoya.com/public/profile' target='_blank'>Neste documento</a> você encontra mais informações sobre o seu perfil e atuação acadêmica."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-sam": {
+            "action": "message",
+            "text": [
+                "$nomedousuario$, muito prazer. Eu sou HAL, inteligência artificial criada pelo Prof. Guilherme Ranoya para ajudá-lo, e ajudar seus alunos, na conexão entre inúmeras informações educacionais e os documentos elaborados por ele. Admito que também acho tudo bastante confuso. Sou parte da iniciativa <a target='_blank' href='https://www.ranoya.com/public/eie'>DEIE</a> (Documentação do Emaranhado de Informações Educacionais). Ainda não possuo muitos recursos, mas já sou capaz de interpretar algumas de suas perguntas e respostas para localizar o que você precisa e indicar algumas coisas."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-observable": {
+            "action": "message",
+            "text": [
+                "$nomedousuario$, <a href='https://www.observablehq.com' target='_blank'>Observable</a> é uma plataforma de desenvolvimento que trabalha com um paradigma diferente de programação: a <a href='https://en.wikipedia.org/wiki/Literate_programming' target='_blank'>programação literária</a>; trata-se de um tipo de programação que envolve textos, imagens, vídeos, junto com o código. É uma coisa realmente interessante, pois, além de permitir que o código seja discutido, referências sejam incluídas nele, e todo o raciocínio envolvido possa ser documentado de forma rica, este tipo de programação também permite que você faça experimentos com aquilo que está construíndo, no seu próprio código.<br><br>Os professores Guilherme Ranoya e Cláudio Esperança escreveram alguns artigos sobre o uso de Processing e seus derivados nesta plataforma, que você pode acessar no perfil do <a href='https://observablehq.com/collection/@processingbrasil/introducoes' target='_blank'>Processing Brasil</a> nela.<br><br>Se preferir, aqui estão alguns dos textos:<br><br><div id='textosobservable'></div>"
+            ],
+            "goto": "insere-textos-observable",
+            "reaction": "natural"
+        },
+        "insere-textos-observable": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=posts&filter=sobreprocessing,pt,observablehqpaper', 'textosobservable')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "verifica-usersavedata": {
+            "action": "getlocaldata",
+            "var": "nomedousuario",
+            "text": [
+                "Restaurando memória... aguarde, por favor.",
+                "Recuperando registros..."
+            ],
+            "goto": {
+                "hasdata": "check-username",
+                "nodata": "apresentacao"
+            },
+            "reaction": {
+                "hasdata": "warm",
+                "nodata": "plain"
+            }
+        },
+        "user-name": {
+            "action": "varinput",
+            "var": "nomedousuario",
+            "text": [
+                "<b>Como você se chama?</b>",
+                "<b>Qual é seu nome?</b>"
+            ],
+            "goto": "savelocaldata",
+            "reaction": "natural"
+        },
+        "check-username": {
+            "action": "confirm",
+            "button-label": "não",
+            "on-click": "user-reset",
+            "var": "nomedousuario",
+            "text": [
+                "Estou conversando com <b>$nomedousuario$</b>, certo?",
+                "Você é <b>$nomedousuario$</b>, não é?"
+            ],
+            "goto": "historico"
+        },
+        "historico": {
+            "action": "gethistory",
+            "text": [""],
+            "goto": "perguntalivre"
+        },
+        "user-reset": {
+            "action": "reset",
+            "text": [
+                "Me desculpe... vamos começar novamente."
+            ]
+        },
+        "savelocaldata": {
+            "action": "input",
+            "model": "tipodeacesso",
+            "text": [
+                "<b>$nomedousuario$, você está usando um computador pessoal, ou um computador público?</b>"
+            ],
+            "goto": {
+                "save": "registra-usuario",
+                "void": "naoregistra-usuario"
+            },
+            "reaction": {
+                "save": "natural",
+                "void": "cold"
+            }
+        },
+        "registra-usuario": {
+            "action": "setlocaldata",
+            "var": "nomedousuario",
+            "text": [
+                "<br>Vou manter nossas conversas registradas no seu computador para que eu possa me lembrar sobre o que nós conversarmos. Não se preocupe...  nenhum dado pessoal seu será enviado para terceiros."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "naoregistra-usuario": {
+            "action": "message",
+            "text": [
+                "<br>Não me parece prudente registrar informações neste computador, e por conta disso, não conseguirei me lembrar de nossas conversas feitas aqui."
+            ],
+            "goto": "perguntalivre"
+        },
+        "perguntalivre": {
+            "action": "openquestion",
+            "text": [
+                "<b>$nomedousuario$, como posso lhe ajudar?</b>",
+                "<b>$nomedousuario$, como posso lhe ajudar?</b>",
+                "<b>O que posso fazer por você?</b>",
+                "<b>Há algo em que posso ajudar?</b>",
+                "<b>O que você deseja?</b>"
+            ]
+        },
+        "sobre-dgen": {
+            "action": "message",
+            "text": [
+                "A disciplina de Design Generativo é parte do projeto <a target='_blank' href='https://www.ranoya.com/public/futuro'>futuro do design</a>, que visa desenolver as competências e habilidades necessárias para a prática do design ainda por vir. A disciplina trabalha o que chamamos de design paramétrico ou design generativo, isto é, um design que usa a programação como ferramenta de projeto.",
+                "A disciplina de Design Generativo tem como objetivo transformar a programação de computadores em ferramenta de design. Nela, os alunos aprendem um pouco sobre programação, de forma que possam usar isso para o design.",
+                "<iframe src='https://www.youtube.com/embed/WzB8Q9DrkLQ' frameborder=0></iframe>"
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "notify-futuro": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "sobre-futuro",
+            "text": [
+                "Deseja saber mais sobre a relação da programação com o design?",
+                "<b>$nomedousuario$</b>, deseja saber mais sobre a relação da programação com o design?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "sobre-futuro": {
+            "action": "message",
+            "text": [
+                "Com o projeto <a target='_blank' href='https://www.ranoya.com/public/futuro'>futuro do design</a>, o professor Guilherme Ranoya tem tentado trazer conhecimentos em programação para as áreas de design, arte, comunicação e arquitetura. Seu objetivo é preparar os estudantes das áreas criativas para que trabalharem com um conjunto novo de ferramentas para a prática do design. Atualmente utilizamos programas como o Photoshop, Illustrator, CADs ou ferramentas de modelagem 3D, para desenvolver projetos. Em breve será inevitável que eles precisem incorporar recursos mais profundos da computação para que respondam adequadamente às necessidades que se apresentarão."
+            ],
+            "goto": "clear-notify",
+            "reaction": "natural"
+        },
+        "clear-notify": {
+            "action": "run",
+            "function": "sam.dialogNotificationClear()",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "sobre-comunidade": {
+            "action": "message",
+            "text": [
+                "A comunidade brasileira de programação criativa é muito receptiva e está aberta a receber todos os interessados na área, incluíndo os iniciantes. Estas pessoas estão em contato permanente através de um <a href='https://t.me/programacaocriativa' target='_blank'>grupo de Telegram</a>, e você é bem vindo para participar.<br><br>A comunidade também organiza alguns eventos periódicos, que podem lhe interessar, incluíndo as <a href='https://garoa.net.br/wiki/Noite_de_Processing' target='_blank'>Noites de Processing</a>, que acontecem mensalmente, o <a href='https://pcd.encontrosdigitais.com.br' target='_blank'>Processing Community Day</a> que acontece anualmente, e eventos com edições mais esporádicas como o <a href='https://multiverso.cc/' target='_blank'>Multiverso</a>. Aqui está o calendário dos próximos eventos:<br><br><div id='sam-cal'></div>"
+            ],
+            "goto": "insere-bloco-calendario",
+            "reaction": "natural"
+        },
+        "sobre-pcd": {
+            "action": "message",
+            "text": [
+                "O Processing Community Day são eventos espalhados ao longo do mundo todo, organizados pela própria comunidade para dar apoio e suporte àqueles que começam com as tecnologias criativas. Edições do evento em português acontecem em diversas cidades do Brasil, assim como em cidades portuguesas como Coimbra e o Porto. A <a href='https://processingfoundation.org/' target='_blank'>Processing Foundation</a> documenta <a href='https://processingfoundation.org/advocacy/processing-community-day-2020/pcd-2021' target='_blank'>nesta página</a> todas as edições do evento acontecendo pelo mundo. No Brasil, os PCDs aconteciam com regularidade em São Paulo e Rio de Janeiro, e com edições esporádicas em outras cidades como Santa Maria. Desde 2021, o evento se tornou virtual e nacional, com o intuito de integrar todas as comunidades espalhadas pelo país. O <a target='_blank' href='https://pcd.encontrosdigitais.com.br/'>site do PCDBR21</a> permanece online com tudo que aconteceu, incluíndo uma galeria de arte virtual. Também permanecem disponíveis <a target='_blank' href='https://www.youtube.com/channel/UCOiwQ_BVKNn6ftNaDqfPraw'>o canal de Youtube</a> do Processing Brasil, e uma <a target='_blank' href='https://observablehq.com/@processingbrasil'>publicação interativa</a> com artigos mais técnicos. Já selecionei alguns workshops e palestras do PCD para você ver, se te interessar:<br><br><div id='videos-pcds'></div>"
+            ],
+            "goto": "insere-bloco-pcd",
+            "reaction": "natural"
+        },
+        "insere-bloco-pcd": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=workshops&filter=pcdbr21,publik&surpriseme=true&quantos=6', 'videos-pcds');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "mochileiro": {
+            "action": "message",
+            "text": [
+                "42, ou mais precisamente o caracter *, que para um programa de computador como eu, significa: tudo."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-processing": {
+            "action": "message",
+            "text": [
+                "Processing é uma ferramenta criada para possibilitar que artistas, designers e criadores, sem experiência com computação, possam utilizar programação em seus trabalhos. Processing, originalmente, é um conjunto composto por um ambiente integrado de desenvolvimento (IDE), isto é, um software para desenvolver programação; um conjunto de instruções pré-definidas para facilitar o processo de programação, ou em termos técnicos (uma API); e uma linguagem de programação que é uma versão simplificada da linguagem Java. Você encontra mais informações no próprio <a target='_blank' href='https://www.processing.org'>site do Processing</a>"
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-p5": {
+            "action": "message",
+            "text": [
+                "P5 é uma versão mais moderna do Processing, que troca sua base original em Java, por Javascript, que é a linguagem de programação utilizada nos navegadores da web. P5 facilita a construção de programação criativa voltada para a web, mantendo todos os princípios e mecanismos utilizados da programação em Processing. Você encontra mais informações no próprio <a target='_blank' href='https://p5js.org/'>site do P5</a>"
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-javascript": {
+            "action": "message",
+            "text": [
+                "Javascript é a linguagem de programação nativa nos navegadores web. Ela permite que os documentos apresentados neles computem dados, informações e processos, como código computacional de fato. Javascript é uma linguagem de programação muito flexível e amplamente adotada na indústria de software."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-svg": {
+            "action": "message",
+            "text": [
+                "SVG é uma forma de estruturar dados para construção de imagens/gráficos vetoriais. É um formato aberto, que permite a portabilidade (compatibilidade dos dados entre diversos softwares, como um tradutor universal), baseado na linguagem de marcação XML, muito parecida com o código HTML utilizado pelos documentos dos navegadores web. Por utilizar esta linguagem, os documentos SVG podem ser construídos com código, da mesma forma que as páginas HTML, e seus elementos manipulados por programação Javascript no navegador."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "sobre-d3": {
+            "action": "message",
+            "text": [
+                "D3 (Data Driven Documents) é uma biblioteca de programação (um conjunto pré-definido de processos e instruções) voltada à construção de infografia, diagramas e visualização de dados. Ela está disponível na linguagem javascript, e possui recursos poderosos para a construção destes tipos de elementos gráficos. Você encontra mais informações no próprio <a target='_blank' href='https://d3js.org/'>site do D3</a>."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "diff-processing-p5": {
+            "action": "message",
+            "text": [
+                "Processing foi construído, originalmente, através de uma simplificação da linguagem de programação Java. P5 utiliza os mesmos procedimentos e mecanismos do Processing, mas adota como base a linguagem de programação Javascript (que é diferente de Java, apesar de ambas terem Java no nome). A grande maioria das instruções da biblioteca (API) de Processing e P5 são idênticas, e a estrutura sintática das linguagens também é muito próxima, fazendo com que tudo que se aprende em uma linguagem possa ser reaproveitado na outra. A diferença mais sensível entre as duas é que Processing é mais recomendado para o desenvolvimento de programas no contexto de uma aplicação desktop, e P5 para programas que rodarão dentro do navegador.<br><br>No vídeo abaixo, <a href='https://shiffman.net/'>Daniel Shiffman</a>, professor da New York University, compara as duas linguagens (em inglês):<br><br><iframe src='https://www.youtube.com/embed/AmlAiKsiy0o' frameborder=0></iframe>"
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "diff-javascript-p5": {
+            "action": "message",
+            "text": [
+                "P5 funciona dentro do Javascript. A linguagem de programação que você estará usando será Javascript, e as instruções da biblioteca (API) do Processing, e seus mecanismos, são trazidos para o Javascript através do P5, que funciona apenas como uma nova biblioteca de instruções de Javascript. Ou seja, ao usar P5, você, na verdade, está programando em Javascript, enriquecido com novas funções traduzidas do Processing original."
+            ],
+            "goto": "ficouclaro-diff-p5-javascript",
+            "reaction": "natural"
+        },
+        "melhor-processing-p5": {
+            "action": "message",
+            "text": [
+                "Nem uma das duas versões é melhor que a outra.",
+                "Não se trata de melhor ou pior... elas fazem a mesma coisa em contextos diferentes."
+            ],
+            "goto": "verifica-conhece-diferenca-processing-p5",
+            "reaction": "natural"
+        },
+        "linguagens-adotadas": {
+            "action": "message",
+            "text": [
+                "Realizamos uma pesquisa com estudantes para saber um pouco de qual linguagem de programação eles preferem aprender primeiro para utilizar tecnologias criativas. O resultado atualizado é este aqui:<br><br><iframe frameborder=0 style='margin: 0; padding: 0; width: 100%; height: 250px;' src='https://designgenerativo.ranoya.com/dialogo/graphdark.html'></iframe>"
+            ],
+            "goto": "notify-responder-pesquisa",
+            "reaction": "natural"
+        },
+        "notify-responder-pesquisa": {
+            "action": "confirm",
+            "button-label": "sim",
+            "cancel-label": "não",
+            "on-click": "clear-responderpesquisa",
+            "text": [
+                "Deseja responder a pesquisa sobre linguagens de programação iniciais para tecnologias criativas?",
+                "<b>$nomedousuario$</b>, você quer responder a pesquisa sobre linguagens de programação iniciais para tecnologias criativas?"
+            ],
+            "goto": "perguntalivre"
+        },
+        "clear-responderpesquisa": {
+            "action": "run",
+            "function": "sam.dialogNotificationClear()",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "inicia-pesquisa-linguagens"
+        },
+        "lista-instrucoes-desenho": {
+            "action": "message",
+            "text": [
+                "Há muitas instruções e funções em Processing para desenho, algumas mais usadas, e outras menos. As mais comuns estão documentadas no livro <a href='javascript:pausengoto(\"livro\");'>O tecido das tecnologias criativas</a> que está integrado neste material. Se preferir, você pode abrir a referências para cada instrução em outra aba do navegador:<br><br><div id='desenhoaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-instrucoesdeseneho"
+        },
+        "insere-instrucoesdeseneho": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=posts&filter=capdesenho,livroprocessing', 'desenhoaqui')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "livecode-integrado": {
+            "action": "run",
+            "function": "pausengoto('livecode');",
+            "text": [
+                "Abrindo ambiente de livecode integrado..."
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "livro-integrado": {
+            "action": "run",
+            "function": "pausengoto('livro');",
+            "text": [
+                "Abrindo o livro interativo integrado..."
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "lista-instrucoes-fundamentos": {
+            "action": "message",
+            "text": [
+                "Os fundamentos da programação estão documentados no livro <a href='javascript:pausengoto(\"livro\");'>O tecido das tecnologias criativas</a> que está integrado neste material. Se preferir, você pode abrir os capítulos do livro sobre cada fundamento de programação individualmente, em outra aba do navegador:<br><br><div id='fundamentaqui' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-fundament"
+        },
+        "insere-fundament": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=posts&filter=capfundamentos,livroprocessing', 'fundamentaqui')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "lista-editores": {
+            "action": "message",
+            "text": [
+                "Aqui estão alguns dos softwares mais utilizados para edição de código / desenvolvimento integrado:<br><br><div id='codeeditors' style='width: 100%; border: 0; padding: 0; margin: 0'></div><br>"
+            ],
+            "reaction": "natural",
+            "goto": "insere-codeeditors"
+        },
+        "insere-codeeditors": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=codeeditors', 'codeeditors')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "verifica-conhece-diferenca-processing-p5": {
+            "action": "input",
+            "model": "compreende",
+            "text": [
+                "$nomedousuario$, você entende qual a diferença entre Processing e P5?",
+                "$nomedousuario$, você entende qual a diferença entre as duas?",
+                "Está claro para você a diferença entre elas?"
+            ],
+            "goto": {
+                "sim": "perguntalivre",
+                "void": "diff-processing-p5"
+            },
+            "reaction": {
+                "sim": "natural",
+                "void": "natural"
+            }
+        },
+        "ficouclaro-diff-p5-javascript": {
+            "action": "input",
+            "model": "compreende",
+            "text": [
+                "$nomedousuario$, deu para entender a relação entre P5 e Javascript?",
+                "$nomedousuario$, ficou claro a relação que existe entre P5 e Javascript?"
+            ],
+            "goto": {
+                "sim": "perguntalivre",
+                "void": "diff-processing-p5"
+            },
+            "reaction": {
+                "sim": "natural",
+                "void": "natural"
+            }
+        },
+        "guia-processing": {
+            "action": "message",
+            "text": [
+                "Há um volume inteiro dedicado à linguagem Processing no <a href='https://www.ranoya.com/books/public/processing/?theme=deeppurple'>livro interativo</a> do Prof. Guilherme Ranoya, onde você pode modificar/experimentar com os exemplos. Ele ainda não está completo, mas está sempre em aperfeiçoamento.<br><br>Se você preferir, há também o <a href='https://processing.org/reference/'>manual de programação</a> original na própria fundação Processing, que é muito bom, mas está em inglês."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "guia-svg": {
+            "action": "message",
+            "text": [
+                "Há um volume inteiro dedicado ao SVG no <a href='https://www.ranoya.com/books/public/svg/?theme=deeppurple'>livro interativo</a> do Prof. Guilherme Ranoya, onde você pode modificar/experimentar com os exemplos. Ele ainda não está completo, mas está sempre em aperfeiçoamento.<br><br>Outras boas referências, em inglês, são o <a href='https://www.w3schools.com/graphics/svg_intro.asp'>w3schools</a> e o <a href='https://devdocs.io/svg/'>DevDocs</a>."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "guia-p5": {
+            "action": "message",
+            "text": [
+                "Há um volume inteiro dedicado à biblioteca P5 no <a href='https://www.ranoya.com/books/public/p5/?theme=deeppurple'>livro interativo</a> do Prof. Guilherme Ranoya, onde você pode modificar/experimentar com os exemplos. Ele ainda não está completo, mas está sempre em aperfeiçoamento."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "guia-javascript": {
+            "action": "message",
+            "text": [
+                "Há um volume inteiro dedicado à linguagem Javascript no <a href='https://www.ranoya.com/books/public/javascript/?theme=deeppurple'>livro interativo</a> do Prof. Guilherme Ranoya, onde você pode modificar/experimentar com os exemplos. Ele ainda não está completo, mas está sempre em aperfeiçoamento."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        },
+        "teste-contexto-save-entradados": {
+            "action": "varinput",
+            "var": "testedocontexto",
+            "text": [
+                "O que vai gravar"
+            ],
+            "goto": "testesavecontexto",
+            "reaction": "natural"
+        },
+        "testesavecontexto": {
+            "action": "setlocaldata",
+            "var": "testedocontexto",
+            "text": [
+                "Registrando $linguagem-escolhida$ como informação de contexto"
+            ],
+            "goto": "testeusaodadodecontexto",
+            "reaction": "natural"
+        },
+        "testeusaodadodecontexto": {
+            "action": "inputincontext",
+            "var": "testedocontexto",
+            "model": "linguagens",
+            "text": [
+                "$nomedousuario$, recuperando o dado $testedocontexto$"
+            ],
+            "goto": {
+                "processing": "guia-processing",
+                "p5": "guia-p5",
+                "javascript": "guia-javascript",
+                "svg": "guia-svg",
+                "void": "guia-processing"
+            },
+            "reaction": {
+                "processing": "warm",
+                "p5": "warm",
+                "javascript": "warm",
+                "svg": "warm",
+                "void": "warm"
+            }
+        },
+        "verifica-linguagem-padrao": {
+            "action": "getlocaldata",
+            "var": "linguagem-escolhida",
+            "text": [
+                "Verificando...",
+                "Procurando..."
+            ],
+            "goto": {
+                "hasdata": "confirma-linguagem-padrao",
+                "nodata": "escolhe-linguagem-padrao"
+            },
+            "reaction": {
+                "hasdata": "warm",
+                "nodata": "plain"
+            }
+
+        },
+        "escolhe-linguagem-padrao": {
+            "action": "varinput",
+            "var": "linguagem-escolhida",
+            "text": [
+                "Sobre qual linguagem de programação você quer informações?",
+                "De que linguagem, então?"
+            ],
+            "goto": "registra-linguagem-padrao",
+            "reaction": "natural"
+        },
+        "registra-linguagem-padrao": {
+            "action": "setlocaldata",
+            "var": "linguagem-escolhida",
+            "text": [
+                "<br>Irei considerar <b>$linguagem-escolhida$</b> como a linguagem de programação que você está interessado.<br>"
+            ],
+            "goto": "apresentareferencia-linguagem-padrao",
+            "reaction": "natural"
+        },
+        "confirma-linguagem-padrao": {
+            "action": "confirm",
+            "button-label": "não",
+            "on-click": "reseta-linguagem",
+            "var": "linguagem-escolhida",
+            "text": [
+                "Estamos falando de <b>$linguagem-escolhida$</b>, certo?",
+                "A linguagem que você se referê é <b>$linguagem-escolhida$</b>, não é?"
+            ],
+            "goto": "apresentareferencia-linguagem-padrao"
+        },
+        "reseta-linguagem": {
+            "action": "erasesingledata",
+            "var": "linguagem-escolhida",
+            "text": [
+                "Me desculpe... vamos começar novamente."
+            ],
+            "goto": "escolhe-linguagem-padrao"
+        },
+        "apresentareferencia-linguagem-padrao": {
+            "action": "inputincontext",
+            "var": "linguagem-escolhida",
+            "model": "linguagens",
+            "text": [
+                "<b>Referências sobre $linguagem-escolhida$</b>:"
+            ],
+            "goto": {
+                "processing": "guia-processing",
+                "p5": "guia-p5",
+                "javascript": "guia-javascript",
+                "svg": "guia-svg",
+                "void": "guia-processing"
+            },
+            "reaction": {
+                "processing": "warm",
+                "p5": "warm",
+                "javascript": "warm",
+                "svg": "warm",
+                "void": "warm"
+            }
+        },
+        "envia-email-contato": {
+            "action": "set",
+            "vars": {
+                "deonde": "Design Generativo",
+                "dequem": "",
+                "oemail": "",
+                "amensagem": ""
+            },
+            "goto": "confirma-envio-email"
+        },
+        "confirma-envio-email": {
+            "action": "input",
+            "model": "modeloedesejaresponderquestionario",
+            "text": [
+                "$nomedousuario$, não tenho como lhe passar informações pessoais do professor Guilherme Ranoya, mas posso enviar uma mensagem para ele em seu nome. Quer que eu faça isso?"
+            ],
+            "goto": {
+                "sim": "pega-nome-completo",
+                "void": "perguntalivre"
+            },
+            "reaction": {
+                "sim": "natural",
+                "void": "natural"
+            }
+        },
+        "pega-nome-completo": {
+            "action": "varinput",
+            "var": "dequem",
+            "text": [
+                "$nomedousuario$, nossa conversa é mais informal, mas para que o professor saiba com quem ele está falando, preciso que você me diga o seu nome completo:"
+            ],
+            "goto": "pega-email-pessoa",
+            "reaction": "natural"
+        },
+        "pega-email-pessoa": {
+            "action": "varinput",
+            "var": "oemail",
+            "text": [
+                "$nomedousuario$, me informe seu email de contato para que ele possa lhe responder:"
+            ],
+            "goto": "pega-mensagem-envio",
+            "reaction": "natural"
+        },
+        "pega-mensagem-envio": {
+            "action": "varinput",
+            "var": "amensagem",
+            "text": [
+                "Qual a mensagem que você deseja enviar ao professor?"
+            ],
+            "goto": "envia-email-final",
+            "reaction": "natural"
+        },
+        "envia-email-final": {
+            "action": "exchange",
+            "text": [""],
+            "vars": ["deonde", "dequem", "oemail", "amensagem"],
+            "url": "./dialogo/emailme.php",
+            "goto": "perguntalivre"
+        },
+        "inicia-pesquisa-linguagens": {
+            "action": "set",
+            "vars": {
+                "COMENTARIO1": "INDIFERENTE",
+                "VALENCIA": "NÃO",
+                "COMENTARIO2": "",
+                "DISCIPLINA": "Design Generativo",
+                "FASE": "Escolha de Linguagem"
+            },
+            "goto": "pega-nome-completo"
+        },
+        "responde-pesquisa-linguagens": {
+            "action": "varinput",
+            "var": "raw-linguagem-escolhida",
+            "text": [
+                "Que linguagem de programação você acha melhor aprender para começar com tecnologias criativas?</b>"
+            ],
+            "goto": "clear-perguntasobreapesquisa",
+            "reaction": "natural",
+            "extract": {
+                "(processing)|(facil)|(nao(.*)complicad)": {
+                    "var": "COMENTARIO1",
+                    "value": "PROCESSING"
+                },
+                "p5": {
+                    "var": "COMENTARIO1",
+                    "value": "P5"
+                },
+                "svg": {
+                    "var": "COMENTARIO1",
+                    "value": "JS+SVG"
+                },
+                "python": {
+                    "var": "COMENTARIO1",
+                    "value": "PYTHON"
+                },
+                "(d3)|(visualizacao(.*)dado)|(dado(.*)visualizacao)|(dataviz)": {
+                    "var": "COMENTARIO1",
+                    "value": "JS+D3"
+                },
+                "(tanto(.*)faz)|(qualquer(.*)um)|(nao(.*)sei)|(indiferente)|(qualquer(.*)linguage)": {
+                    "var": "COMENTARIO1",
+                    "value": "INDIFERENTE"
+                }
+            }
+        },
+        "clear-perguntasobreapesquisa": {
+            "action": "run",
+            "function": "sam.dialogNotificationClear()",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "responde-experiencia-previa"
+        },
+        "responde-experiencia-previa": {
+            "action": "varinput",
+            "var": "raw-experiencia-previa",
+            "text": [
+                "<b>Você já tem alguma experiência ou conhecimento sobre programação?</b>"
+            ],
+            "goto": "responde-expectativa-aprendizado",
+            "reaction": "natural",
+            "extract": {
+                "(nenhum)|(nao)": {
+                    "var": "VALENCIA",
+                    "value": "NAO"
+                },
+                "(pouc)|(iniciante)|(alguma)|(aprendi)": {
+                    "var": "VALENCIA",
+                    "value": "INICIANTE"
+                },
+                "(html)|(css)|(programa(.*)web)": {
+                    "var": "VALENCIA",
+                    "value": "WEB"
+                },
+                "(sim)|(tenho)|(experiencia(.*)com)|(experiencia(.*)em)": {
+                    "var": "VALENCIA",
+                    "value": "SIM"
+                }
+            }
+        },
+        "responde-expectativa-aprendizado": {
+            "action": "varinput",
+            "var": "COMENTARIO2",
+            "text": [
+                "<b>O que você espera ou esperava aprender através deste material?</b>"
+            ],
+            "goto": "send-data-to-sheets",
+            "reaction": "natural"
+        },
+        "send-data-to-sheets": {
+            "action": "exchange",
+            "text": [""],
+            "vars": ["COMENTARIO1", "COMENTARIO2", "FASE", "DISCIPLINA", "VALENCIA"],
+            "url": "https://script.google.com/macros/s/AKfycbzlG_Ctau80GhXNLOEvwY_m39I2xJ-FNENPlWpn65uNDoGKvQ0/exec",
+            "goto": "perguntalivre"
+        },
+        "entende-referencia": {
+            "action": "input",
+            "model": "tipodereferencia",
+            "text": [
+                "$nomedousuario$, que tipo de referência você procura? Referências/exemplos visuais? De usos e aplicações das tecnologias criativas? Referências de códigos de programação criativa? Referências de sites com informações e discussões sobre o assunto? Ou referências bibliográficas?"
+            ],
+            "goto": {
+                "projetos": "openprocessing",
+                "aplicacao": "projetos-computacao-fisica",
+                "pinboard": "pinboard-ranoya",
+                "meuslinks": "referencias-ranoya",
+                "bibliografica": "bibliografia",
+                "void": "referencias-ranoya"
+            },
+            "reaction": {
+                "projetos": "natural",
+                "aplicacao": "natural",
+                "pinboard": "natural",
+                "void": "natural",
+                "bibliografica": "natural",
+                "meuslinks": "natural"
+            }
+        },
+        "pinboard-ranoya": {
+            "action": "message",
+            "text": [
+                "Estou montando um painel de referência resumido com algumas obras feitas com tecnologias criavas. Se você quiser ver um painel completo de artefatos gráficos generativos, pode acessá-lo <a href='https://www.ranoya.com/aulas/pinboard/?filter=pinboardcompatible,pingenerativo&contentonly=true&theme=violetpink' target='_blank'>neste link</a>:<br><br><div id='painelprocessing' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "insere-painel",
+            "reaction": "natural"
+        },
+        "insere-painel": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=artefatos&filter=pinpoetica,pinboardcompatible&surpriseme=true&quantos=10', 'painelprocessing');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "painel-de-aulas": {
+            "action": "message",
+            "text": [
+                "Tenho alguns registros gravados das aulas do prof. Guilherme Ranoya sobre esse assunto:<br><br><div id='painelaulas' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "insere-aulas",
+            "reaction": "natural"
+        },
+        "insere-aulas": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=workshops&filter=publik,aulasemvideo,auladg', 'painelaulas');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "palestras-arte-generativa": {
+            "action": "message",
+            "text": [
+                "A arte generativa é o uso da programação criativa para a poética e a expressão artística.Os primeiros artistas a usarem computação para criar obras de arte fizeram isso na década de 1950. Vou organizar abaixo alguns vídeos que falam um pouco da arte generativa e de sua história:<br><br><div id='painelpalestrasartegenerativa' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "insere-palestras-arte",
+            "reaction": "natural"
+        },
+        "insere-palestras-arte": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=workshops&filter=histgenerativeart,talks&quantos=10','painelpalestrasartegenerativa');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "explica-design-parametrico": {
+            "action": "message",
+            "text": [
+                "Design paramétrico é o uso de computação criativa para criação de objetos que podem ter comportamentos, ou que podem ter seus projetos modificados em função de parâmetros que lhe são fornecidos (manualmente, ou através de sensores ou dados). Estou compilando alguns vídeos sobre isso para você:<br><br><div id='exemplosparametricos' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "insere-parametricos",
+            "reaction": "natural"
+        },
+        "insere-parametricos": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=artefatos&filter=pinparametrico,pinboardcompatible&surpriseme=true&quantos=10', 'exemplosparametricos');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "projetos-computacao-fisica": {
+            "action": "message",
+            "text": [
+                "As aplicações das tecnologias criativas são muito amplas no design e na arte. Estou compilando alguns exemplos interessantes para você. Se preferir ver um painel completo, pode acessá-lo <a href='https://www.ranoya.com/aulas/pinboard/?filter=pinboardcompatible,ontphysical&contentonly=true&theme=violetpink' target='_blank'>neste link</a>:<br><br><div id='exemploscomputacaofisica' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "insere-computacaofisica",
+            "reaction": "natural"
+        },
+        "insere-computacaofisica": {
+            "action": "run",
+            "function": "imagepanel('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=artefatos&filter=ontphysical,pinboardcompatible&surpriseme=true&quantos=10', 'exemploscomputacaofisica');",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "referencias-ranoya": {
+            "action": "message",
+            "text": [
+                "Estou compilando algumas referências interessantes sobre tecnologias criativas para você:<br><br><div id='referencialinks' style='margin: 0; pading: 0; width: 100%;'></div>"
+            ],
+            "goto": "ams-inserelinks",
+            "reaction": "natural"
+
+        },
+        "ams-inserelinks": {
+            "action": "run",
+            "function": "listlinks('https://www.ranoya.com/AssetsManager/simplequery/index.php?cat=bookmarks&filter=auladg&surpriseme=true&quantos=10', 'referencialinks')",
+            "text": [
+                ""
+            ],
+            "reaction": "natural",
+            "goto": "perguntalivre"
+        },
+        "openprocessing": {
+            "action": "message",
+            "text": [
+                "A comunidade da plataforma <a href='https://www.openprocessing.org/browse' target='_blank'>OpenProcessing</a> dispõe de inúmeros exemplos e referências de programação criativa para consulta, utilizando Processing, P5 e Javascript. É um ótimo lugar para encontrar referências e inspiração, e os códigos estão todos disponíveis para que você entenda como cada sketch é construído."
+            ],
+            "goto": "perguntalivre",
+            "reaction": "natural"
+        }
+    },
+    "models": {
+        "tipodereferencia": {
+            "projeto": "aplicacao",
+            "aplicaç": "aplicacao",
+            "aplicac": "aplicacao",
+            "uso": "aplicacao",
+            "tecnologia": "aplicacao",
+            "codigo": "projetos",
+            "programa": "projetos",
+            "video": "pinboard",
+            "pinboard": "pinboard",
+            "visua": "pinboard",
+            "painel": "pinboard",
+            "link": "meuslinks",
+            "info": "meuslinks",
+            "site": "meuslinks",
+            "discus": "meuslinks",
+            "livros": "bibliografica",
+            "bibliograf": "bibliografica"
+        },
+        "tipodeacesso": {
+            "pessoal": "save",
+            "meu": "save",
+            "proprio": "save",
+            "casa": "save",
+            "notebook": "save",
+            "unico": "save"
+        },
+        "compreende": {
+            "compreendo": "sim",
+            "entendo": "sim",
+            "claro": "sim",
+            "sim": "sim",
+            "obvio": "sim",
+            "obviamente": "sim",
+            "sei": "sim"
+        },
+        "linguagens": {
+            "processing": "processing",
+            "p5": "p5",
+            "svg": "svg",
+            "js": "javascript",
+            "javascript": "javascript"
+        },
+        "modeloedesejaresponderquestionario": {
+            "claro": "sim",
+            "(.*)sim": "sim",
+            "desejo": "sim",
+            "por favor": "sim",
+            "obviamente": "sim",
+            "(.*)agora": "sim"
+        }
+    },
+    "extract": {},
+    "fail-intentions": {
+        "text": [
+            "Desculpe, eu ainda estou aprendendo e não fui capaz de entender sua pergunta. Talvez eu ainda não tenha como entender.",
+            "Me desculpe, $nomedousuario$. Ainda não consigo entender o que você precisa.",
+            "Eu não fui capaz de entender. Acho que não estou preparado para interpretar sua pergunta."
+        ]
+    }
+}

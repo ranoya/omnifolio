@@ -1,0 +1,186 @@
+
+
+html {
+
+    background-color: #47192d;
+    overflow-x: hidden;
+    padding: 0;
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+    background-color: white;
+
+}
+
+nav {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #47192d;
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    z-index: 30;
+
+}
+
+#projetaologo {
+
+    width: 150px;
+    height: 50px;
+    background-image: url(https://assets.ranoya.com/projetao/projetaofulllogo-white.svg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: -20px;
+    margin-right: 20px;
+    margin-left: 1vw;
+
+}
+
+#instrucoes {
+
+	width: calc(100%-16px);
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 80px;
+
+}
+
+#avaliador {
+margin-top: 0px;
+float: right;
+font-size: 16px;
+margin-right: 20px;
+
+}
+
+	#locker {
+
+		position: fixed;
+		z-index: 100;
+		top: 15px;
+		right: 15px;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		background-color: #860073;
+		display: none;
+
+	}
+
+	#loader {
+		
+		background-image:url(https://assets.ranoya.com/projetao/loading.gif);
+		background-position: center center;
+		background-size: 140px 105px;
+		background-repeat: no-repeat;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		overflow: hidden;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		display: none;
+
+	}
+
+	#painel {
+
+		width: calc(100% -10px);
+		height: 100%;
+		padding-top: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+
+		margin: 0;
+
+	}
+
+	.nomegrupo {
+
+		width: 100%;
+		color: grey;
+		font-weight: bolder;
+		font-size: 14px;
+		clear: both;
+		margin-top: 65px;
+		margin-bottom: 10px;
+		margin-left: 3px;
+
+	}
+
+	.botaonota {
+
+		width: 50px;
+		height: 50px;
+		float: left;
+		margin-left: 3px;
+		border: 3px solid #aaaaaa;
+		text-align: center;
+		line-height: 45px;
+		font-size: 20px;
+		color: black;
+		text-decoration: none;
+		margin-right: 1px;
+
+	}
+
+	.botaonota:hover {
+
+		border: 3px solid black;
+
+	}
+
+
+	@media (max-width: 600px) {
+
+
+		#locker {
+		display: block;
+
+	}
+
+	#instrucoes {
+
+	font-size: 12px;
+
+	}
+
+	#avaliador {
+	margin-top: 0px;
+	float: left;
+	font-size: 16px;
+
+	}
+
+		#projetaologo {
+
+    width: 50px;
+    height: 50px;
+    background-image: url(https://assets.ranoya.com/projetao/projetaosymbol-white.svg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: -20px;
+    margin-right: 20px;
+    margin-left: 2vw;
+
+		}
+	}

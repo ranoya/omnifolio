@@ -1,0 +1,23 @@
+[
+	
+	{	
+		"topico": "pineditorial",
+		"label": "DESIGN EDITORIAL"
+
+	},
+	{	
+		"topico": "pindataviz",
+		"label": "INFORGRAFIA"
+
+	},
+	{	
+		"topico": "pinaesthetic",
+		"label": "ESTÉTICA"
+
+	},
+	{	
+		"topico": "pininteracao",
+		"label": "MICRO-INTERAÇÃO"
+
+	}
+]

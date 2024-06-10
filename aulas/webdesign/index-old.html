@@ -1,0 +1,482 @@
+<script type="text/javascript">
+    /* -- Google Analytics ---------------------------------------------------- */
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61225449-1', 'auto');
+    ga('send', 'pageview');
+
+    /* ---------------------------------------------------- Google Analytics -- */
+</script>
+
+<!DOCTYPE html>
+<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-opensans theme-color-black-blue">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WEBDESIGN</title>
+    <meta name="generator" content="slides.com" />
+    <meta name="description"
+        content="Material de apoio da disciplina de Webdesign do Bacharelado de Design da Universidade Federal de Pernambuco">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+    <meta name="keywords" content="webdesign, html, css, disciplina">
+    <meta property="og:url" content="https://www.ranoya.com/aulas/webdesign/index.html">
+    <meta property="og:title" content="WEBDESIGN">
+    <meta property="og:description"
+        content="Material de apoio da disciplina de Webdesign do Bacharelado de Design da Universidade Federal de Pernambuco">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/webdesign600.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/webdesign600.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/webdesign600.jpg" />
+
+    <link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/WebdesignFavicon.png">
+    <link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/webdesign57.png" />
+    <link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/webdesign57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/webdesign72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/webdesign114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/webdesign144.png" />
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000cd0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000cd0">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000cd0">
+
+    <style>
+        html {
+
+            background-color: #000cd0;
+
+        }
+
+        .menubutton {
+
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            z-index: 100;
+            top: 20px;
+            right: 30px;
+            background-color: #000cd0;
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+
+        }
+
+        .menubutton:hover {
+
+            background-color: #989abb;
+            /*  #0decf2; */
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+
+        }
+
+        h3 {
+
+            font-family: Helvetica, Arial, sans-serif;
+            color: #000cd0;
+            font-size: 1.8vh;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 1.2vh;
+
+
+        }
+
+        nav {
+
+            width: 335px;
+            height: 100%;
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            right: -375px;
+            background-color: #989abb;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 1.4vh;
+            color: white;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 70px;
+            vertical-align: middle;
+            overflow-y: auto;
+            height: calc(100% - 114px);
+
+
+        }
+
+        nav a {
+
+            font-size: 2.2vh;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-left: -8px;
+            padding-top: 0.7vh;
+            padding-bottom: 0.7vh;
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-bottom: 0px;
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+
+        }
+
+        nav a:hover {
+
+            background-color: white;
+            color: #989abb;
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+
+        }
+
+        .desligado {
+            color: white !important;
+            background-color: transparent !important;
+            cursor: default;
+        }
+
+        .desligado:hover {
+            color: white !important;
+            background-color: transparent !important;
+            cursor: default;
+        }
+
+        * {
+            -webkit-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+        }
+
+        @media (max-width: 640px) {
+
+            .menubutton {
+
+                background-color: #000cd0;
+
+            }
+
+            h3 {
+
+                color: cyan;
+
+            }
+
+
+
+            nav {
+
+                width: calc(100% - 40px);
+                right: calc(-40px - 100%);
+                font-size: 1.8vh;
+                background-color: #000cd0;
+            }
+
+            nav a {
+
+                font-size: 2.8vh;
+                padding-left: 13px;
+                padding-right: 8px;
+                margin-left: -8px;
+                padding-top: 1.5vh;
+                padding-bottom: 1.5vh;
+                text-decoration: none;
+                color: white;
+                display: block;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                -webkit-transition: all 0.4s ease-in;
+                transition: all 0.4s ease-in;
+                background-color: rgba(255, 255, 255, 0.2);
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body style="padding: 0 0 0 0; margin: 0 0 0 0; overflow-y: hidden; overflow-x: hidden;">
+
+    <a href="javascript: menu();" class="menubutton"><img
+            src="https://www.ranoya.com/Assets/WebsiteIcons/hamburguer-white.svg" style="width: 100%;"></a>
+
+    <nav id="menu">
+        <h3>SUMÁRIO</h3><br>
+
+        <br>INTRODUÇÃO<br>
+        <a href="javascript:sumario('capa');">CAPA</a>
+        <a href="javascript:sumario('professor');">SOBRE O PROFESSOR</a>
+        <a href="javascript:sumario('ementa');">PROGRAMA</a>
+        <a href="javascript:sumario('cultura');">PROJETO ASSOCIADO</a>
+        <a href="javascript:sumario('qexpectativa');">SUA EXPECTATIVA</a>
+
+        <!--
+		<a href="javascript:sumario('comm');">COMUNICAÇÃO</a>
+		<a href="javascript:sumario('bibliografia');">BIBLIOGRAFIA</a>
+		<a href="javascript:sumario('cursos');">CURSOS ON-LINE</a>
+		<a href="javascript:sumario('referencias');">REFERÊNCIAS</a>
+		-->
+
+        <a href="javascript:sumario('playground');">AMBIENTE DE EXPERIMENTAÇÃO</a>
+        <a id="workshops" target="_blank">REMOTE SESSIONS / WORKSHOPS</a>
+
+        <br>FUNDAMENTOS<br>
+        <a href="javascript:sumario('computacao');">MÍDIA COMPUTACIONAL</a>
+        <a href="javascript:sumario('codigocomputacional');">TIPOS DE CÓDIGO</a>
+        <a href="javascript:sumario('morfologia');">MORFOLOGIA DOS CÓDIGOS</a>
+        <a href="javascript:sumario('arede');">LIMITES DA MÍDIA</a>
+        <a href="javascript:sumario('estratos');">ESTRATOS DE CRIAÇÃO</a>
+        <a href="javascript:sumario('construcao');">PROCESSO DE CONSTRUÇÃO</a>
+        <a href="javascript:sumario('diretorios');">ESTRUTURA DE ARQUIVOS</a>
+        <a href="javascript:sumario('arquivos');">TIPOS DE ARQUIVOS</a>
+        <a href="javascript:sumario('aurl');">A URL</a>
+
+        <br>CÓDIGO HTML<br>
+        <a href="javascript:sumario('sintaxehtml');">SINTAXE DO HTML</a>
+        <a href="javascript:sumario('estruturahtml');">ORGANIZAÇÃO DO CÓDIGO</a>
+        <a href="javascript:sumario('guia');">GUIA DE HTML</a>
+        <a href="javascript:sumario('headhtml');">CABEÇALHO (HEAD)</a>
+        <a href="javascript:sumario('inlinehtml');">INLINE TAGS</a>
+        <a href="javascript:sumario('blockhtml');">BLOCK TAGS</a>
+        <a href="javascript:sumario('formhtml');">FORMULÁRIOS</a>
+        <a href="javascript:sumario('exercicioserroshtml');">EXERCÍCIOS DE IDENTIFICAÇÃO DE ERROS EM HTML</a>
+
+        <br>CÓDIGO CSS<br>
+        <a href="javascript:sumario('aplicacaocss');">APLICAÇÃO SOBRE O HTML</a>
+        <a href="javascript:sumario('sintaxecss');">SINTAXE DO CSS</a>
+        <a href="javascript:sumario('guiacss');">GUIA DE CSS</a>
+        <a href="javascript:sumario('corescss');">CORES</a>
+        <a href="javascript:sumario('metricacss');">MEDIDAS E UNIDADES</a>
+        <a href="javascript:sumario('boxmodelcss');">DIMENSIONAMENTO</a>
+        <a href="javascript:sumario('posicionamentocss');">POSICIONAMENTO</a>
+        <a href="javascript:sumario('tipografiacss');">TIPOGRAFIA E FONTES</a>
+        <a href="javascript:sumario('detalhamentocss');">DETALHAMENTO</a>
+        <a href="javascript:sumario('transicaocss');">TRANSIÇÃO</a>
+        <a href="javascript:sumario('exercicioserroscss');">EXERCÍCIOS DE IDENTIFICAÇÃO DE ERROS EM CSS</a>
+
+        <br>DESIGN RESPONSIVO<br>
+        <a href="javascript:sumario('rescale');">COMPORTAMENTO</a>
+        <a href="javascript:sumario('mobilefirst');">MOBILE FIRST</a>
+        <a href="javascript:sumario('breakpoints');">BREAKPOINTS / MÉTRICAS</a>
+        <a href="javascript:sumario('mediaquerycss');">MEDIA QUERY</a>
+        <a href="javascript:sumario('heatmaps');">EYE TRACKING / HEATMAPS</a>
+
+        <br>TÉCNICAS E TRUQUES<br>
+        <a href="javascript:sumario('codesplit');">SEPARAÇÃO DE CÓDIGO</a>
+        <a href="javascript:sumario('variaveiscss');">VARIÁVEIS DE CSS</a>
+        <a href="javascript:sumario('funcoescss');">FUNÇÕES DE CSS</a>
+        <a href="javascript:sumario('gridnik');">GRIDNIK CSS</a>
+
+        <!--
+			<br>ATIVIDADES<br>
+			<a href="javascript:sumario('registro');">IDENTIFICAÇÃO</a>
+			<a href="javascript:sumario('exercicios');">PUZZLES</a>
+			<a href="javascript:sumario('exerciciofinal');">PROJETO PESSOAL</a>
+			<a href="javascript:sumario('feedbackfinal');">SEU FEEDBACK</a>
+			-->
+
+    </nav>
+
+    <iframe id="placehold" frameborder=0 style="position: fixed; left: 0; width: 100%; height: calc(100% + 34px);"
+        scrolling="no"></iframe>
+
+    <script>
+        // FUNÇÃO DE FETCH DE ARQUIVO JSON
+
+        sessionavaliable = false;
+        sessionaddress = "";
+        arquivojson = './session.json';
+        fetch(arquivojson).then(response => response.json()).then((dados) => {
+
+            console.table(dados);
+            sessionavaliable = dados[0].status;
+            sessionaddress = dados[0].url;
+            console.log("URL É: " + sessionaddress);
+
+            if (dados[0].status == false) {
+
+                console.log("no session!");
+                document.getElementById("workshops").className = "desligado";
+
+            } else {
+
+                console.log("there is a session!");
+                document.getElementById("workshops").href = sessionaddress;
+
+
+            }
+
+        });
+
+        /*
+        var s = [
+        	"https://slides.com/ranoya/webdesignv4/embed",
+        	"https://slides.com/ranoya/mobilewebdesignv4/embed"
+        ];
+        */
+
+        var s = [
+            "https://slides.com/ranoya/mobilewebdesignv4/embed",
+            "https://slides.com/ranoya/mobilewebdesignv4/embed"
+        ];
+
+        var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        qualarquivo = 0;
+
+        if (mobile <= 640) {
+            qualarquivo = 1;
+
+        }
+
+        console.log(s[qualarquivo]);
+
+        document.getElementById("placehold").src = s[qualarquivo] + "#/capa";
+
+        var menuOpen = false;
+
+        function menu() {
+
+            var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (!menuOpen) {
+
+                menuOpen = true;
+                document.getElementById("menu").style.right = "0";
+                if (mobile > 640) {
+                    document.getElementById("placehold").style.left = "-375px";
+                } else {
+                    document.getElementById("placehold").style.left = "-100%";
+                }
+
+            } else {
+
+                menuOpen = false;
+                if (mobile > 640) {
+                    document.getElementById("menu").style.right = "-375px";
+                } else {
+                    document.getElementById("menu").style.right = "calc(-40px - 100%)";
+                }
+                document.getElementById("placehold").style.left = "0";
+
+            }
+
+        }
+
+        window.onresize = function (event) {
+
+            var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (!menuOpen) {
+
+                if (mobile > 640) {
+                    document.getElementById("menu").style.right = "-375px";
+                } else {
+                    document.getElementById("menu").style.right = "calc(-40px - 100%)";
+                }
+                document.getElementById("placehold").style.left = "0";
+
+            } else {
+
+                document.getElementById("menu").style.right = "0";
+                if (mobile > 640) {
+                    document.getElementById("placehold").style.left = "-375px";
+                } else {
+                    document.getElementById("placehold").style.left = "-100%";
+                }
+
+            }
+
+        };
+
+        function sumario(place, slide) {
+            if (!slide) {
+
+                slide = qualarquivo;
+
+            }
+            var mobile = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            //alterna para versão mobile, se for acessado de um
+
+
+            if (mobile <= 640 && slide > 1) {
+                slide++;
+            }
+
+
+            if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "playground") {
+
+                window.open("https://codesandbox.io/s/competent-banach-5v935");
+
+            } else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "referencias") {
+
+                place = "bibliografia";
+                document.getElementById("placehold").src = s[slide] + "#/" + place;
+                menu();
+
+            } else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "cursos") {
+
+                place = "bibliografia";
+                document.getElementById("placehold").src = s[slide] + "#/" + place;
+                menu();
+
+            } else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "guia") {
+
+                window.open(
+                    "https://www.ranoya.com/aulas/webdesign/playgroundDocs/introHTML.php?theme=web&elementos=html");
+
+            } else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "guiacss") {
+
+                window.open(
+                    "https://www.ranoya.com/aulas/webdesign/playgroundDocs/introCSS.php?theme=web&elementos=css");
+
+            } else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place == "funcoescss") {
+
+                window.open(
+                    "https://www.ranoya.com/aulas/webdesign/playgroundDocs/funcoescss.php?theme=web&elementos=css");
+
+            } else if ((mobile <= 640 || navigator.userAgent.match(/iPad/i) != null) && place ==
+                "exercicioserroshtml") {
+
+                window.open(
+                    "https://www.ranoya.com/aulas/webdesign/playgroundDocs/err-ordemtags.php?theme=web&elementos=erros&embed=slides"
+                );
+
+            } else {
+
+                document.getElementById("placehold").src = s[slide] + "#/" + place;
+                menu();
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

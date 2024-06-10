@@ -1,0 +1,41 @@
+<script>
+
+// FUNÇÃO URL GET
+// urlGet('xpto'); www.site.com/?xpto=teste
+// let data = $_GET['xpto']; www.site.com/?xpto=teste
+
+
+let $_GET = [];
+(function(){
+    corte = window.location.href.toString().indexOf('?');
+    if (corte > 0) {
+        argumento = window.location.href.toString().substring(corte + 1);
+        argumentos = argumento.split('&');
+        for (arg in argumentos){
+            let argCorte = argumentos[arg].indexOf('=');
+            $_GET[argumentos[arg].substring(0,argCorte)] = argumentos[arg].substring(argCorte + 1);
+        }
+    } 
+})();
+
+// FUNÇÃO DE FETCH DE ARQUIVO JSON
+
+
+    arquivojson = $_GET["file"];
+    fetch(arquivojson).then(response => response.text()).then((dados) => {
+        console.log(dados);
+
+        if (dados.match(/(createCanvas|function draw)/i)) {
+
+            window.open("https://www.ranoya.com/aulas/tryit/p5/?embed=slides&lang=javascript&file=" + $_GET["file"], "_self");
+        } else {
+
+            window.open("https://www.ranoya.com/aulas/tryit/javascript/?embed=slides&lang=javascript&file=" + $_GET["file"], "_self");
+
+        }
+        
+    });
+
+
+
+</script>

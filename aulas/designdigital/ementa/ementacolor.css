@@ -1,0 +1,112 @@
+body {
+  color: #777777;
+  background-color: transparent;
+}
+
+nav a {
+  color: #999999;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #FA8400;
+}
+
+.navligado {
+  border-right-color: #FA8400;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  color: #FA8400;
+}
+
+#botaosair:hover {
+  background-color: #FA8400;
+}
+
+#fechaabawork {
+  background-color: #572e05;
+
+}
+
+#fechaabawork:hover {
+
+  background-color: #FA8400;
+      
+}
+
+h2, h1 {
+  color: #FA8400;
+}
+
+h3, .tempo {
+  color: #F29610;
+}
+
+h4 {
+
+    }
+
+h5 {
+
+  
+    }
+
+.links {
+  border-bottom-color: #F29610;
+}
+
+.links:hover {
+  border-bottom-color: #F29610;
+  background-color: #F29610;
+  color: white;
+}
+
+.linkdelicado {
+  border-bottom-color: #AAAAAA;
+  
+}
+
+.linkdelicado:hover {
+  border-bottom-color: #F29610;
+  
+}
+
+.listatitulo {
+  border-bottom-color: #CCCCCC;
+  
+}
+
+.listatitulo:hover {
+  border-bottom-color: #F29610;
+  
+}
+
+.sublinhado {
+  background-color: #F29610;
+  color: white;
+}
+
+td {
+  border-color: #CCCCCC;
+}
+
+.alunonome {
+
+  color: #000cd0;
+
+}
+
+.alunonota {
+
+  color: #000cd0;
+  border-color: #000cd0;
+
+  
+
+}
+
+.QRCODE path {
+fill: #F29610;
+stroke: #F29610;
+
+}

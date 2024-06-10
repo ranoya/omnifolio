@@ -1,0 +1,66 @@
+[{
+		"topico": "pinmanmachine",
+		"label": "MACHINES"
+
+	},
+	{
+		"topico": "pinrealdeal",
+		"label": "REAL"
+
+	},
+	{
+		"topico": "pinpopculture",
+		"label": "CULTURA POP"
+
+	},
+	{
+		"topico": "pinlego",
+		"label": "LEGO"
+
+	},
+	{
+		"topico": "pinfuturismo",
+		"label": "FUTURISMO"
+
+	},
+	{
+		"topico": "pinspaceships",
+		"label": "NAVES"
+
+	},
+	{
+		"topico": "pinrobots",
+		"label": "ROBÔS"
+
+	},
+	{
+		"topico": "pincyberpunk",
+		"label": "CYBERPUNK"
+
+	},
+	{
+		"topico": "pinretro",
+		"label": "RETRÔ"
+
+	},
+	{
+		"topico": "pintoys",
+		"label": "BRINQUEDOS"
+
+	},
+	{
+		"topico": "pineletrodomesticos",
+		"label": "ELETRÔNICOS"
+
+	},
+	{
+		"topico": "pingames",
+		"label": "GAMES"
+
+	},
+	{
+		"topico": "pingamerelated",
+		"label": "GAME RELATED"
+
+	}
+]
