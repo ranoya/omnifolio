@@ -1,0 +1,6 @@
+# ignora configurações de ftp
+sftp-config.json
+
+# configurações do sublime
+*.sublime-project
+*.sublime-workspace
