@@ -1,0 +1,163 @@
+<?php
+session_start();
+if ($_GET['theme']) { $_SESSION['theme'] = $_GET['theme']; }
+if ($_GET['bgcolor']) { $_SESSION['bgcolor'] = $_GET['bgcolor']; }
+if ($_GET['forecolor']) { $_SESSION['forecolor'] = $_GET['forecolor']; }
+
+if ($_GET['theme'] == "default" || $_GET['theme'] == "none") { 
+	$_SESSION['theme'] = NULL;
+	$_SESSION['bgcolor'] = NULL;
+	$_SESSION['forecolor'] = NULL;
+}
+
+$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+$_SESSION['interfacelastpage'] = $actual_link;
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sobre o autor | Reflexões sobre o design de interfaces digitais</title>
+    <meta name="generator" content="artesanal" />
+    <meta name="description"
+        content="Sobre o autor. Capítulo da versão digital do livro Reflexões sobre o design de interfaces digitais, do Prof. Guilherme Ranoya">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+
+    <meta property="og:url"
+        content="<?php $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; echo $actual_link; ?>">
+    <meta property="og:title" content="Sobre o autor | Reflexões sobre o design de interfaces digitais">
+    <meta property="og:description"
+        content="Sobre o autor. Capítulo da versão digital do livro Reflexões sobre o design de interfaces digitais, do Prof. Guilherme Ranoya">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/BookInterface600.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/BookInterface600.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/BookInterface600.jpg" />
+    <link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/BookInterface16.png">
+    <link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/BookInterface57.png" />
+    <link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/BookInterface57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/BookInterface72.png" />
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://www.ranoya.com/Assets/coverimages/BookInterface114.png" />
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="https://www.ranoya.com/Assets/coverimages/BookInterface144.png" />
+
+    <script src="https://www.ranoya.com/sumarion/sumarion.js"></script>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color"
+        content="<?php if ($_SESSION['bgcolor']) { echo $_SESSION['bgcolor']; } else { echo "#FFFFFF"; } ?>">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color"
+        content="<?php if ($_SESSION['bgcolor']) { echo $_SESSION['bgcolor']; } else { echo "#FFFFFF"; } ?>">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style"
+        content="<?php if ($_SESSION['bgcolor']) { echo $_SESSION['bgcolor']; } else { echo "#FFFFFF"; } ?>">
+
+    <script src="../enhance.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../form.css">
+    <link rel="stylesheet" type="text/css" href="../<?php 
+
+			if ($_SESSION['theme']) {
+	
+				echo $_SESSION['theme'];
+			} else {
+	
+				echo "default";
+			}
+
+			?>theme.css">
+
+</head>
+
+<body>
+
+    <div class="bigwhitesapce"></div>
+
+    <div id="chapter">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div id="bookendnav"></div>
+
+
+
+
+    <div id="meta">
+        <div id="levy1993-106">
+            <div
+                style="background-image:url(https://books.google.com.br/books/content?id=BqB9h-W8AeUC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71TIV3E7f6S5PjplWX_Zem-VDLYmsGrzQ7vafTOu87kSuWbS2TT2RqxSKcjZcbQLt84El5kfF0FyrTXQghgRyRSJdjF64Tay2WWY0CX4qh2Zr0g5Glyft54WPb0xgTDQVKnSTNv); background-size: cover; width: 78px; height: 78px; margin-right: 30px; border: 1px solid #cccccc; float: left;">
+            </div>
+            As tecnologias da inteligência<br>
+            Pierre Lévy, 1993, Editora 34.<br>
+            Citação da página 106.<br>
+            <a href="https://amzn.to/33uiWN6" target="_blank">Amazon.com.br</a>
+        </div>
+
+        <div id="projetao">
+            <div
+                style="background-image:url(https://www.ranoya.com/projetaosite/img/projetaoFavicon72.png); background-size: cover; width: 78px; height: 78px; margin-right: 30px; border: 1px solid transparent; float: left;">
+            </div>
+            Projetão, metodologia de inovação<br>
+            Instituto de Ensino para Inovação (IEI), 2019<br>
+            <a href="https://www.projetao.com.br" target="_blank">www.projetao.com.br</a>
+        </div>
+
+        <div id="scolari">
+            <div
+                style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Carlos_Alberto_Scolari_en_Wikimania_2015_19.JPG/220px-Carlos_Alberto_Scolari_en_Wikimania_2015_19.JPG); background-size: cover; width: 80px; height: 80px; margin-right: 30px; float: left;">
+            </div>
+            Carlos Alberto Scolari<br>
+            Argentina, 1963<br>
+            Professor da Universidade Pompeu Fabra, Barcelona<br>
+            Autor de <a href="https://amzn.to/2NN9rlq" target="_blank">Las leyes de la interfaz</a>, <a
+                href="https://amzn.to/2KbpiJF" target="_blank">Ecología de los medios</a> e <a
+                href="https://amzn.to/32pm0bE" target="_blank">Narrativas Transmedia</a>
+        </div>
+
+        <div id="levy">
+            <div
+                style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pierre_L%C3%A9vy_no_Fronteiras_do_Pensamento_Porto_Alegre_%2828111268875%29.jpg/800px-Pierre_L%C3%A9vy_no_Fronteiras_do_Pensamento_Porto_Alegre_%2828111268875%29.jpg); background-size: cover; width: 80px; height: 80px; margin-right: 30px; float: left;">
+            </div>
+            Pierre Lévy<br>
+            Tunísia, 1956<br>
+            Professor da Universidade de Paris 8<br>
+            Autor de <a href="https://amzn.to/2JY6Zax" target="_blank">As tecnologias da inteligência</a>, <a
+                href="https://amzn.to/2rlYv6L" target="_blank">O que é o virtual?</a> e <a
+                href="https://amzn.to/2Cg6ZhZ" target="_blank">A inteligência coletiva</a>, e outros.
+        </div>
+    </div>
+    <div id="metacompensate"></div>
+
+    <div id="posicao"></div>
+    <div id="posicaocompensate"></div>
+
+</body>
+
+</html>

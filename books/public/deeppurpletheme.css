@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:200,200i,300,400,400i,700|Montserrat:300,300i,400,600,600i,900,900i');
+
+:root {
+
+	--text-color: #FFFFFF;
+	--bg-color: #40124d;
+	--outside-color: #40124d;
+	--text-link: #d703dd;
+	--sumarionicon-hover: #b303b6;
+	--sumarionicon-inverse: white;
+
+	--detail-link: #d703dd;
+	--card-link: #e1a5f1;
+	--card-link-hover: #77238f;
+	--ultra-detail-link: #8a469c;
+	--yearlinemark: #573361;
+	--linemark: #9050a1;
+
+	--autor-bg: #b303b6;
+	--autor-fill: #390547;
+	--autor-line: #390547;
+
+	--fcolor-shades1: #a01590;
+	--fcolor-shades2: #910f81;
+	--fcolor-shades3: #7a0b6d;
+
+	--formgrid-background: white;
+	--formgrid-foreground: #b303b6;
+	--formgrid-highlight: #40124d99;
+	--formgrid-passivecolor: #40124d88;
+	--formgrid-largura: 100%;
+	--formgrid-fontsizecampos: 22px;
+	--formgrid-fontsizelabel: 14px;
+	--formgrid-font-family: Montserrat,
+		Helvetica,
+		Arial,
+		sans-serif;
+
+}
+
+p {
+
+	font-family: 'Fira Mono', monospace;
+
+}
+
+#chapter .symbol::after {
+	content: "❖";
+}
+
+/*
+
+ESTRUTURA
+
+*/
+
+#sumarionblock {
+
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+#sumarionconteudo {}
+
+#sumarionconteudo h2.capitulo {
+
+	color: var(--text-color, #40124D);
+
+}
+
+#sumarionconteudo a.topico {
+	color: var(--text-link, #ac229d);
+	background-color: transparent;
+}
+
+#sumarionconteudo a.topico:hover {
+	background-color: var(--text-link, #ac229d);
+	color: var(--bg-color, #FFFFFF);
+
+}
+
+#sumarionconteudo p.topico {
+	background-color: var(--text-color, #40124D);
+	color: var(--bg-color, #FFFFFF);
+
+}
+
+.estapagina {
+	background-color: var(--text-color, #40124D);
+	color: var(--bg-color, #FFFFFF);
+
+}
+
+svg path {
+	fill: var(--text-link, #ac229d);
+}
+
+html {
+
+	color: var(--text-color, #40124D);
+	background-color: var(--outside-color, #40124D);
+
+}
+
+body {
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+#meta {
+
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+#posicao {
+
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+
+/* 
+
+
+7ipografia 
+
+*/
+
+.legenda {
+	color: var(--text-link, #ac229d);
+}
+
+.legenda a {
+
+	background-color: transparent;
+	color: var(--text-color, #40124D);
+
+}
+
+.legenda a:hover {
+
+	background-color: var(--text-color, #40124D);
+	color: var(--text-link, #ac229d);
+
+}
+
+h1 {
+
+
+	font-weight: 600;
+	font-size: min(5vh, 52px);
+	margin-bottom: min(5.3vh, 57px);
+
+}
+
+p {}
+
+p a {
+
+	color: var(--text-link, #ac229d);
+	border-color: transparent;
+
+}
+
+p a:hover {
+
+	color: var(--text-link, #ac229d);
+	border-color: color: var(--text-link, #ac229d);
+}
+
+.citacao {
+
+	color: var(--text-link, #ac229d);
+	border-color: transparent;
+
+}
+
+.citacao:hover {
+
+	background-color: var(--text-link, #ac229d);
+	color: var(--bg-color, #FFFFFF);
+
+
+}
+
+.highlight {
+
+	color: var(--bg-color, #FFFFFF);
+	background-color: #40124D;
+
+}
+
+#meta div a {
+	color: var(--text-link, #ac229d);
+}
+
+#meta div a:hover {
+	background-color: var(--text-link, #ac229d);
+	color: var(--bg-color, #FFFFFF);
+}

@@ -1,0 +1,66 @@
+[{
+		"capitulo": "ENSAIOS SOBRE O<br>DESIGN DE INTERFACES DIGITAIS",
+		"topico": "",
+		"url": ""
+	},
+	{
+        "capitulo": "PREFÁCIO",
+        "topico": "Sobre o autor",
+        "url": "https://www.ranoya.com/books/public/interfaces/autor.php"
+    },
+	{
+		"capitulo": "PREFÁCIO",
+		"topico": "Um livro para o século XXI",
+		"url": "https://www.ranoya.com/books/public/interfaces/livrosecxxi.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "O que são interfaces",
+		"url": "https://www.ranoya.com/books/public/interfaces/interfaces.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "A sutil arte de projetar",
+		"url": "https://www.ranoya.com/books/public/interfaces/arteprojetar.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "Interfaces minimalistas, equivocos conceituais",
+		"url": "https://www.ranoya.com/books/public/interfaces/minimalismo.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "Documentos são interfaces",
+		"url": "https://www.ranoya.com/books/public/interfaces/documentos.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "Familiaridade, interfaces e experiências",
+		"url": "https://www.ranoya.com/books/public/interfaces/familiaridade.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "Interfaces em modo texto",
+		"url": "https://www.ranoya.com/books/public/interfaces/interfacetexto.php"
+	},
+	{
+		"capitulo": "CONCEITOS",
+		"topico": "Mais considerações sobre as interfaces antigas",
+		"url": "https://www.ranoya.com/books/public/interfaces/transformacaointerfaces.php"
+	},
+	{
+		"capitulo": "PATTERNS",
+		"topico": "De onde vem o Drop Down menu",
+		"url": "https://www.ranoya.com/books/public/interfaces/dropdown.php"
+	},
+	{
+		"capitulo": "PATTERNS",
+		"topico": "Uma religião chamada Command Palette",
+		"url": "https://www.ranoya.com/books/public/interfaces/commandpalette.php"
+	},
+	{
+		"capitulo": "CASOS",
+		"topico": "Pormenores do design de informação nos meios interativos",
+		"url": "https://www.ranoya.com/books/public/interfaces/informacao.php"
+	}
+]

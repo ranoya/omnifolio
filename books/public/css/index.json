@@ -1,0 +1,314 @@
+[{
+		"capitulo": "O TECIDO DAS<br>TECNOLOGIAS<br>CRIATIVAS",
+		"topico": "",
+		"url": ""
+	},
+	{
+		"capitulo": "PREFÁCIO",
+		"topico": "Introdução",
+		"url": "https://www.ranoya.com/books/public/tecnologiascriativas/introducao.php"
+	}, {
+		"capitulo": "PREFÁCIO",
+		"topico": "Sobre o autor",
+		"url": "https://www.ranoya.com/books/public/tecnologiascriativas/autor.php"
+	}, {
+		"capitulo": "PREFÁCIO",
+		"topico": "O livro no século XXI",
+		"url": "https://www.ranoya.com/books/public/tecnologiascriativas/livrosecxxi.php"
+	}, {
+		"capitulo": "EXPRESSÃO + COMPUTAÇÃO",
+		"topico": "Tecnologias criativas",
+		"url": "https://www.ranoya.com/books/public/tecnologiascriativas/tecnologiascriativas.php"
+	},
+	{
+		"capitulo": "EXPRESSÃO + COMPUTAÇÃO",
+		"preview": true,
+		"topico": "Sistemas emergentes",
+		"url": "https://www.ranoya.com/books/public/tecnologiascriativas/emergencias.php"
+	},
+	{
+		"capitulo": "LINGUAGENS",
+		"topico": "O código CSS",
+		"url": "https://www.ranoya.com/books/public/css/index.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Sintaxe",
+		"url": "https://www.ranoya.com/books/public/css/sintaxecss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Aplicação e seletores",
+		"url": "https://www.ranoya.com/books/public/css/seletorescss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Registro de cores",
+		"url": "https://www.ranoya.com/books/public/css/corescss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Unidades / Medidas",
+		"url": "https://www.ranoya.com/books/public/css/unidadescss.php"
+	},
+	{
+		"capitulo": "ASPECTOS BÁSICOS",
+		"topico": "Box Model",
+		"url": "https://www.ranoya.com/books/public/css/boxmodel.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "bottom",
+		"url": "https://www.ranoya.com/books/public/css/css-bottom.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "clear",
+		"url": "https://www.ranoya.com/books/public/css/css-clear.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "display",
+		"url": "https://www.ranoya.com/books/public/css/css-display.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "float",
+		"url": "https://www.ranoya.com/books/public/css/css-float.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "left",
+		"url": "https://www.ranoya.com/books/public/css/css-left.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "position",
+		"url": "https://www.ranoya.com/books/public/css/css-position.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "right",
+		"url": "https://www.ranoya.com/books/public/css/css-right.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "top",
+		"url": "https://www.ranoya.com/books/public/css/css-top.php"
+	},
+	{
+		"capitulo": "POSICIONAMENTO",
+		"topico": "z-index",
+		"url": "https://www.ranoya.com/books/public/css/css-z-index.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border",
+		"url": "https://www.ranoya.com/books/public/css/css-border.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom",
+		"url": "https://www.ranoya.com/books/public/css/css-border-bottom.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom-color",
+		"url": "https://www.ranoya.com/books/public/css/css-border-bottom-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom-style",
+		"url": "https://www.ranoya.com/books/public/css/css-border-bottom-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-bottom-width",
+		"url": "https://www.ranoya.com/books/public/css/css-border-bottom-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-color",
+		"url": "https://www.ranoya.com/books/public/css/css-border-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left",
+		"url": "https://www.ranoya.com/books/public/css/css-border-left.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left-color",
+		"url": "https://www.ranoya.com/books/public/css/css-border-left-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left-style",
+		"url": "https://www.ranoya.com/books/public/css/css-border-left-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-left-width",
+		"url": "https://www.ranoya.com/books/public/css/css-border-left-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right",
+		"url": "https://www.ranoya.com/books/public/css/css-border-right.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right-color",
+		"url": "https://www.ranoya.com/books/public/css/css-border-right-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right-style",
+		"url": "https://www.ranoya.com/books/public/css/css-border-right-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-right-width",
+		"url": "https://www.ranoya.com/books/public/css/css-border-right-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-style",
+		"url": "https://www.ranoya.com/books/public/css/css-border-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top",
+		"url": "https://www.ranoya.com/books/public/css/css-border-top.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top-color",
+		"url": "https://www.ranoya.com/books/public/css/css-border-top-color.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top-style",
+		"url": "https://www.ranoya.com/books/public/css/css-border-top-style.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-top-width",
+		"url": "https://www.ranoya.com/books/public/css/css-border-top-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "border-width",
+		"url": "https://www.ranoya.com/books/public/css/css-border-width.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "display",
+		"url": "https://www.ranoya.com/books/public/css/css-display.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "height",
+		"url": "https://www.ranoya.com/books/public/css/css-height.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin",
+		"url": "https://www.ranoya.com/books/public/css/css-margin.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-bottom",
+		"url": "https://www.ranoya.com/books/public/css/css-margin-bottom.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-left",
+		"url": "https://www.ranoya.com/books/public/css/css-margin-left.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-right",
+		"url": "https://www.ranoya.com/books/public/css/css-margin-right.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "margin-top",
+		"url": "https://www.ranoya.com/books/public/css/css-margin-top.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding",
+		"url": "https://www.ranoya.com/books/public/css/css-padding.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-bottom",
+		"url": "https://www.ranoya.com/books/public/css/css-padding-bottom.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-left",
+		"url": "https://www.ranoya.com/books/public/css/css-padding-left.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-right",
+		"url": "https://www.ranoya.com/books/public/css/css-padding-right.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "padding-top",
+		"url": "https://www.ranoya.com/books/public/css/css-padding-top.php"
+	},
+	{
+		"capitulo": "DIMENSIONAMENTO",
+		"topico": "width",
+		"url": "https://www.ranoya.com/books/public/css/css-width.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "diretriz @import",
+		"url": "https://www.ranoya.com/books/public/css/css-import.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "diretriz @font-face",
+		"url": "https://www.ranoya.com/books/public/css/css-font-face.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "diretriz @media",
+		"url": "https://www.ranoya.com/books/public/css/css-media.php"
+	},
+	{
+		"capitulo": "ASPECTOS AVANÇADOS",
+		"topico": "funções do CSS",
+		"url": "https://www.ranoya.com/books/public/css/funcoescss.php"
+	},
+	{
+		"capitulo": "+ LINGUAGENS",
+		"topico": "O código HTML",
+		"url": "https://www.ranoya.com/books/public/html/index.php"
+	},
+	{
+		"capitulo": "+ LINGUAGENS",
+		"topico": "O código SVG",
+		"url": "https://www.ranoya.com/books/public/svg/index.php"
+	},
+	{
+		"capitulo": "+ LINGUAGENS",
+		"topico": "O código Javascript",
+		"url": "https://www.ranoya.com/books/public/javascript/index.php"
+	},
+	{
+		"capitulo": "+ LINGUAGENS",
+		"topico": "O código Processing",
+		"url": "https://www.ranoya.com/books/public/processing/index.php"
+	},
+	{
+		"capitulo": "+ LINGUAGENS",
+		"topico": "O código P5",
+		"url": "https://www.ranoya.com/books/public/p5/index.php"
+	}
+]

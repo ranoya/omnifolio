@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:200,200i,400,400i,700|Montserrat:300,300i,400,600,600i,900,900i');
+
+:root {
+
+	--text-color: #FFFFFF;
+	--bg-color: #FF9900;
+	--outside-color: #FF9900;
+	--text-link: #444444;
+	--sumarionicon-hover: #FFFFFF;
+	--sumarionicon-inverse: #616161;
+	/* #FF9900;  #AA4F25;*/
+
+	--detail-link: #444444;
+	--card-link: white;
+	--card-link-hover: #a16a17;
+	--ultra-detail-link: #cf8008;
+	--yearlinemark: #db8b12;
+	--linemark: #af813b;
+
+	--autor-bg: #FF9900;
+	--autor-fill: #444444;
+	--autor-line: #444444;
+
+	--fcolor-shades3: #55504c;
+	--fcolor-shades2: #645950;
+	--fcolor-shades1: #8d7866;
+
+	--formgrid-background: white;
+	--formgrid-foreground: #FF9900;
+	--formgrid-highlight: #44444499;
+	--formgrid-passivecolor: #44444488;
+	--formgrid-largura: 100%;
+	--formgrid-fontsizecampos: 22px;
+	--formgrid-fontsizelabel: 14px;
+	--formgrid-font-family: Montserrat,
+		Helvetica,
+		Arial,
+		sans-serif;
+
+}
+
+#chapter .symbol::after {
+	content: "❖";
+}
+
+/*
+
+ESTRUTURA
+
+*/
+
+#sumarionblock {
+
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+#sumarionconteudo {}
+
+#sumarionconteudo h2.capitulo {
+
+	color: var(--text-color, #40124D);
+
+}
+
+#sumarionconteudo a.topico {
+	color: var(--text-link, #ac229d);
+	background-color: transparent;
+}
+
+#sumarionconteudo a.topico:hover {
+	background-color: var(--text-link, #ac229d);
+	color: var(--bg-color, #FFFFFF);
+
+}
+
+#sumarionconteudo p.topico {
+	background-color: var(--text-color, #40124D);
+	color: var(--bg-color, #FFFFFF);
+
+}
+
+.estapagina {
+	background-color: var(--text-color, #40124D);
+	color: var(--bg-color, #FFFFFF);
+
+}
+
+svg path {
+	fill: var(--text-link, #ac229d);
+}
+
+html {
+
+	color: var(--text-color, #40124D);
+	background-color: var(--outside-color, #40124D);
+
+}
+
+body {
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+#meta {
+
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+#posicao {
+
+	background-color: var(--bg-color, #FFFFFF);
+
+}
+
+
+/* 
+
+7ipografia 
+
+*/
+
+
+.legenda a {
+
+	background-color: transparent;
+	color: var(--text-color, #40124D);
+
+}
+
+.legenda a:hover {
+
+	background-color: var(--text-color, #40124D);
+	color: var(--bg-color, #a59b04);
+
+}
+
+h1 {
+
+
+	font-weight: 600;
+	font-size: min(5vh, 52px);
+	margin-bottom: min(5.3vh, 57px);
+
+}
+
+p {}
+
+p a {
+
+	color: var(--text-link, #ac229d);
+	border-color: transparent;
+
+}
+
+p a:hover {
+
+	color: var(--text-link, #ac229d);
+	border-color: color: var(--text-link, #ac229d);
+}
+
+.citacao {
+
+	color: var(--text-link, #ac229d);
+	border-color: transparent;
+
+}
+
+.citacao:hover {
+
+	background-color: var(--text-link, #ac229d);
+	color: var(--bg-color, #FFFFFF);
+
+
+}
+
+.highlight {
+
+	color: var(--bg-color, #FFFFFF);
+	background-color: #40124D;
+
+}
+
+#meta div a {
+	color: var(--text-link, #ac229d);
+}
+
+#meta div a:hover {
+	background-color: var(--text-link, #ac229d);
+	color: var(--bg-color, #FFFFFF);
+}

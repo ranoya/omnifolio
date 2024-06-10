@@ -1,0 +1,359 @@
+[{
+        "capitulo": "O TECIDO DAS<br>TECNOLOGIAS<br>CRIATIVAS",
+        "topico": "",
+        "url": ""
+    },
+    {
+        "capitulo": "PREFÁCIO",
+        "topico": "Introdução",
+        "url": "https://www.ranoya.com/books/public/tecnologiascriativas/introducao.php"
+    }, {
+        "capitulo": "PREFÁCIO",
+        "topico": "Sobre o autor",
+        "url": "https://www.ranoya.com/books/public/tecnologiascriativas/autor.php"
+    }, {
+        "capitulo": "PREFÁCIO",
+        "topico": "O livro no século XXI",
+        "url": "https://www.ranoya.com/books/public/tecnologiascriativas/livrosecxxi.php"
+    }, {
+        "capitulo": "EXPRESSÃO + COMPUTAÇÃO",
+        "topico": "Tecnologias criativas",
+        "url": "https://www.ranoya.com/books/public/tecnologiascriativas/tecnologiascriativas.php"
+    },
+    {
+        "capitulo": "EXPRESSÃO + COMPUTAÇÃO",
+        "preview": true,
+        "topico": "Sistemas emergentes",
+        "url": "https://www.ranoya.com/books/public/tecnologiascriativas/emergencias.php"
+    },
+    {
+        "capitulo": "LINGUAGENS",
+        "topico": "O código HTML",
+        "url": "https://www.ranoya.com/books/public/html/index.php"
+    },
+    {
+        "capitulo": "ESTRUTURA",
+        "topico": "Sintaxe",
+        "url": "https://www.ranoya.com/books/public/html/sintaxe.php"
+    },
+    {
+        "capitulo": "ESTRUTURA",
+        "topico": "Propriedades gerais",
+        "url": "https://www.ranoya.com/books/public/html/propriedadesgerais.php"
+    },
+    {
+        "capitulo": "ESTRUTURA",
+        "topico": "Organização",
+        "url": "https://www.ranoya.com/books/public/html/estruturabase.php"
+    },
+    {
+        "capitulo": "ESTRUTURA",
+        "topico": "html",
+        "url": "https://www.ranoya.com/books/public/html/tag-html.php"
+    },
+    {
+        "capitulo": "ESTRUTURA",
+        "topico": "head",
+        "url": "https://www.ranoya.com/books/public/html/tag-head.php"
+    },
+    {
+        "capitulo": "ESTRUTURA",
+        "topico": "body",
+        "url": "https://www.ranoya.com/books/public/html/tag-body.php"
+    },
+    {
+        "capitulo": "HEAD",
+        "topico": "link",
+        "url": "https://www.ranoya.com/books/public/html/tag-link.php"
+    },
+    {
+        "capitulo": "HEAD",
+        "topico": "meta",
+        "url": "https://www.ranoya.com/books/public/html/tag-meta.php"
+    },
+    {
+        "capitulo": "HEAD",
+        "topico": "script",
+        "url": "https://www.ranoya.com/books/public/html/tag-script.php"
+    },
+    {
+        "capitulo": "HEAD",
+        "topico": "style",
+        "url": "https://www.ranoya.com/books/public/html/tag-style.php"
+    },
+    {
+        "capitulo": "HEAD",
+        "topico": "title",
+        "url": "https://www.ranoya.com/books/public/html/tag-title.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "a",
+        "url": "https://www.ranoya.com/books/public/html/tag-a.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "b",
+        "url": "https://www.ranoya.com/books/public/html/tag-b.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "br",
+        "url": "https://www.ranoya.com/books/public/html/tag-br.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "em",
+        "url": "https://www.ranoya.com/books/public/html/tag-em.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "i",
+        "url": "https://www.ranoya.com/books/public/html/tag-i.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "img",
+        "url": "https://www.ranoya.com/books/public/html/tag-img.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "span",
+        "url": "https://www.ranoya.com/books/public/html/tag-span.php"
+    },
+    {
+        "capitulo": "INLINE / CONTEÚDO",
+        "topico": "strong",
+        "url": "https://www.ranoya.com/books/public/html/tag-strong.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "body",
+        "url": "https://www.ranoya.com/books/public/html/tag-body.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "canvas",
+        "url": "https://www.ranoya.com/books/public/html/tag-canvas.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "div",
+        "url": "https://www.ranoya.com/books/public/html/tag-div.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "h1-h6",
+        "url": "https://www.ranoya.com/books/public/html/tag-h.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "head",
+        "url": "https://www.ranoya.com/books/public/html/tag-head.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "html",
+        "url": "https://www.ranoya.com/books/public/html/tag-html.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "p",
+        "url": "https://www.ranoya.com/books/public/html/tag-p.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "svg",
+        "url": "https://www.ranoya.com/books/public/html/tag-svg.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "table",
+        "url": "https://www.ranoya.com/books/public/html/tag-table.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "td",
+        "url": "https://www.ranoya.com/books/public/html/tag-td.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "th",
+        "url": "https://www.ranoya.com/books/public/html/tag-th.php"
+    },
+    {
+        "capitulo": "BLOCK",
+        "topico": "tr",
+        "url": "https://www.ranoya.com/books/public/html/tag-tr.php"
+    },
+    {
+        "capitulo": "FORMULÁRIOS",
+        "topico": "form",
+        "url": "https://www.ranoya.com/books/public/html/tag-form.php"
+    },
+    {
+        "capitulo": "FORMULÁRIOS",
+        "topico": "input",
+        "url": "https://www.ranoya.com/books/public/html/tag-input.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "a",
+        "url": "tag-a.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "b",
+        "url": "tag-b.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "body",
+        "url": "tag-body.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "br",
+        "url": "tag-br.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "canvas",
+        "url": "tag-canvas.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "div",
+        "url": "tag-div.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "em",
+        "url": "tag-em.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "form",
+        "url": "tag-form.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "h1-h6",
+        "url": "tag-h.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "head",
+        "url": "tag-head.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "html",
+        "url": "tag-html.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "i",
+        "url": "tag-i.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "img",
+        "url": "tag-img.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "input",
+        "url": "tag-input.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "link",
+        "url": "tag-link.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "meta",
+        "url": "tag-meta.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "p",
+        "url": "tag-p.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "script",
+        "url": "tag-script.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "span",
+        "url": "tag-span.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "strong",
+        "url": "tag-strong.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "style",
+        "url": "tag-style.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "svg",
+        "url": "tag-svg.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "table",
+        "url": "tag-table.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "td",
+        "url": "tag-td.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "th",
+        "url": "tag-th.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "title",
+        "url": "tag-title.php"
+    },
+    {
+        "capitulo": "TODAS AS TAGS",
+        "topico": "tr",
+        "url": "tag-tr.php"
+    },
+    {
+        "capitulo": "+ LINGUAGENS",
+        "topico": "O código CSS",
+        "url": "https://www.ranoya.com/books/public/css/index.php"
+    },
+    {
+        "capitulo": "+ LINGUAGENS",
+        "topico": "O código SVG",
+        "url": "https://www.ranoya.com/books/public/svg/index.php"
+    },
+    {
+        "capitulo": "+ LINGUAGENS",
+        "topico": "O código Javascript",
+        "url": "https://www.ranoya.com/books/public/javascript/index.php"
+    },
+    {
+        "capitulo": "+ LINGUAGENS",
+        "topico": "O código Processing",
+        "url": "https://www.ranoya.com/books/public/processing/index.php"
+    },
+    {
+        "capitulo": "+ LINGUAGENS",
+        "topico": "O código P5",
+        "url": "https://www.ranoya.com/books/public/p5/index.php"
+    }
+]
