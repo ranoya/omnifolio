@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Série Autômatos</title>
+    <meta name="generator" content="artesanal" />
+    <meta name="description" content="Organização de composições generativas criadas por Guilherme Ranoya">
+    <meta name="author" content="Prof. Dr. Guilherme Ranoya">
+    <meta name="keywords" content="arte generativa, computação criativa, código criativo">
+    <meta property="og:url" content="https://www.ranoya.com/arte/SerieAutomatos">
+    <meta property="og:title" content="Série Autômatos">
+    <meta property="og:description" content="Organização de composições generativas criadas por Guilherme Ranoya">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ranoya.com">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://www.ranoya.com/Assets/coverimages/portfolio600.jpg" />
+    <meta property="og:image:secure_url" content="https://www.ranoya.com/Assets/coverimages/portfolio600.jpg">
+    <link rel="image_src" type="image/jpg" href="https://www.ranoya.com/Assets/coverimages/portfolio600.jpg" />
+
+    <link rel="icon" type="image/png" href="https://www.ranoya.com/Assets/coverimages/portfolio16.png">
+    <link rel="shortcut icon" href="https://www.ranoya.com/Assets/coverimages/portfolio57.png" />
+    <link rel="apple-touch-icon" href="https://www.ranoya.com/Assets/coverimages/portfolio57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.ranoya.com/Assets/coverimages/portfolio72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.ranoya.com/Assets/coverimages/portfolio114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.ranoya.com/Assets/coverimages/portfolio144.png" />
+
+    <link REL="stylesheet" type="text/css" href="../mostra.css">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#FFFFFF">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+    <meta name="pinterest" content="nopin" />
+    <meta name="pinterest" content="nohover">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="../interface.js"></script>
+
+</head>
+
+
+
+<body>
+    <a name="automata" class="indice">Autômatos</a>
+    <nav id="indices"></nav>
+    <div id="series">
+        <p class="decoracao">ART/ANC/ODE</p>
+        <br>
+        <p class="torto">Séries</p>
+        <br><br>
+        <a href="../SerieComportamentais">Comportamentais</a><br>
+        <a href="../SerieAutomatos">Autômatos</a><br>
+        <a href="../SeriePerformaticos">Performáticos</a><br>
+    </div>
+    <div id="profilephoto"></div>
+    <div id="profilename">GUILHERME RANOYA</div>
+    <div id="barcolor"></div>
+    <div id="barcolor2"></div>
+    <div id="botaonavegacao">
+        <a id="navplus" href="javascript:menu(250);">
+            <hr id="hamup">
+            </hr>
+            <hr id="hammed">
+            </hr>
+            <hr id="hambot">
+            </hr>
+        </a>
+    </div>
+    <div id="mobileadvise"><b>Aviso</b><br>O conteúdo deste documento pode ser muito pesado para um dispositivo mobile
+    </div>
+    <span class="bigwhitespace"></span>
+
+    <span class="bloco">
+        <h1>Série<br>Autômatos</h1>
+        <p class="decoracao">ART/ANC/ODE</p>
+
+        <span class="smallwhitespace"></span>
+
+        <p class="masterdescricaoleft">A série Autômatos é um conjunto de composições de arte generativa
+            exclusivamente
+            visuais, criadas para dar vida à materiais multimidiáticos. Estas peças, em sua grande maioria, foram
+            utilizadas em contextos e formatos muito diferentes uns dos outros, com identidades e
+            características gráficas muito variadas, e desta maneira, precisariam ser muito flexíveis para se encaixarem
+            adequadamente ao contexto.</p>
+
+        <p class="masterdescricaoright">Autômatos são o algoritmos generativos por excelência; são completamente
+            independentes, e não interagem com nada além de si mesmos. Optou-se, como em todas as demais séries, pelo
+            uso do alto contraste (preto e
+            branco) para que
+            pudessem ser aplicadas sobre a matiz própria do material em que seriam inseridos, independente de quais
+            fossem as combinações cromáticas utilizadas nele.</p>
+
+    </span>
+
+
+    <a name="ipathwaves" class="indice">Pathwaves</a>
+    <div id="dpathwaves" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import pathw from "../Pecas/pathwaves.js";
+
+          let waves = pathw({
+          p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+          'el': 'dpathwaves'
+          });
+
+        </script>
+
+    <span class="bloco">
+        <h2><b>Pathwaves</b><br>2021</h2>
+        <p>Movimentos circulares com mudança nas direções criando caminhos com seus próprios rítmos e fluidez. Inspirado
+            pela beleza das ondas de areia causadas pelos movimentos subterrâneos dos Sandworms no filme Duna, de Denis
+            Villeneuve, e nos padrões deixados na areia, que, em um ciclo, se fazem, se destroem, e se refazem, através
+            da atuação do vento ou das pessoas que por ali caminham.</p>
+
+    </span>
+
+
+    <a name="imeandos" class="indice">Meandros</a>
+    <div id="dmeandros" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import meand from "../Pecas/meandros.js";
+
+          let river = meand({
+          p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+          'el': 'dmeandros'
+          });
+
+        </script>
+
+    <span class="bloco">
+        <h2><b>Meandros</b><br>2022</h2>
+        <p>Elaborada pensando nos meandros e trajetos do Rio Capibaribe, a esta peça foi desenvolvida para dialogar com
+            a peça anterior, tantando manter um pouco da textura e rítmo entre as linhas já presente em Pathwaves.
+            Enquanto a primeira foi aproveitada para dar identidade a um projeto, a segunda marcava alguns dos
+            resultados deste projeto, explicando um pouco da necessidade das duas se relacionarem graficamente.</p>
+
+    </span>
+
+
+    <a name="iink" class="indice">Ink</a>
+    <div id="dink" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import iin from "../Pecas/ink.js";
+
+          let rink = iin({
+          p5,
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+          'el': 'dink'
+          });
+
+        </script>
+
+    <span class="bloco">
+        <h2><b>Ink</b><br>2022</h2>
+        <p>Peça elaborada para compor graficamente com um novo website, foi criada com um raciocínio gestual. como um traço feito por um pincel ao longo de uma folha.</p>
+
+    </span>
+
+
+
+    <a name="imorphos" class="indice">Morphos</a>
+    <div id="dmorphos" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import morphosis from "../Pecas/morphos.js";
+
+          let mor = morphosis({
+          p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+          'el': 'dmorphos'
+          });
+
+        </script>
+
+    <span class="bloco">
+        <h2><b>Morphos</b><br>2020</h2>
+        <p>Esta não é uma ideia original. Circulam pela internet dezenas de imagens semelhantes, com este tipo de
+            transformação. Mas Morphos foi construído do zero, sem acesso à nenhum código prévio, e representa um
+            desafio lógico bastante complexo. O resultado da solução empregada aqui é bastante imperfeito, ainda que não
+            pareça, à primeira vista.</p>
+
+    </span>
+
+
+    <a name="viena" class="indice">Viena</a>
+    <div id="dviena" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import hoffmann from "../Pecas/viena.js";
+
+        let moser = hoffmann({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'dviena'
+        });
+
+    </script>
+
+    <span class="bloco">
+        <h2><b>Viena</b><br>2017</h2>
+        <p>Peça criada, inicialmente, para reproduzir com código o desenho de uma tatuagem. Após o desenho ter sido
+            gerado por código, sua parametrização permitiu variações que se assemelhavam às texturas gráficas utilizadas
+            por Koloman Moser e Josef Hoffmann, artistas do movimento de Secessão Vienense, do início do século XX. A
+            peça cria padrões diferentes cada vez que é carregada.</p>
+    </span>
+
+    <a name="igiros" class="indice">Giroscópio</a>
+    <div id="dgiros" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import giroscope from "../Pecas/giroscopio.js";
+
+        let playgiro = giroscope({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'dgiros'
+        });
+
+    </script>
+
+    <span class="bloco">
+        <h2><b>Giroscópio</b><br>2019</h2>
+        <p>Matrial utilizado para ilustrar a página dedicada à pesquisa realizada pelo autor na Universidade Federal de
+            Pernambuco. Uma rede, construída com os mesmos processos de brinquedos para desenhos de espirais. O formato
+            segue sempre a mesma fórmula, mas as dimensões e progressões variam toda vez que é carregado.</p>
+    </span>
+
+
+
+
+
+    <a name="bludus" class="indice">Ludus</a>
+    <div id="dludus" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import lundum from "../Pecas/ludus.js";
+
+        let playlun = lundum({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'dludus'
+        });
+
+    </script>
+
+    <span class="bloco">
+        <h2><b>Ludus</b><br>2019</h2>
+        <p>Peça criada para ilustrar um artigo científico sobre ludicidade. Aplica efeitos de gravidade sobre os
+            elementos criados aleatoriamente, produzindo uma atmosfera lúdica e divertida.</p>
+    </span>
+
+
+
+    <a name="isinais" class="indice">Sinais</a>
+    <div id="dsinais" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import sinais from "../Pecas/sinais.js";
+
+        let playsinais = sinais({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'dsinais'
+        });
+
+    </script>
+
+    <span class="bloco" style="margin-top: 10px;">
+        <h2><b>Sinais</b><br>2019</h2>
+        <p>Peça criada para ilustrar uma página do website pessoal contendo um artigo sobre complexidade, criando um
+            tecer com linhas, como uma trama, e ao mesmo tempo, como um ruído.</p>
+    </span>
+
+
+    <a name="n1980" class="indice">1980</a>
+    <div id="d1980" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import lines1980 from "../Pecas/1980.js";
+
+        let play1980 = lines1980({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'd1980'
+        });
+
+    </script>
+
+
+    <span class="bloco">
+        <h2><b>1980</b><br>2018</h2>
+        <p>Uma ode aos desenhos criados com computação gráfica na década de 80 usando um MSX com linguagem BASIC,
+            explorando os efeitos de moiré causados pelas diferenças entre os pixels desenhados em cada linha da
+            progressão visual.</p>
+    </span>
+
+
+
+    <a name="ndirecoes" class="indice">Direções</a>
+    <div id="ddirecoes" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import direcoes from "../Pecas/direcoes.js";
+
+        let playdir = direcoes({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'ddirecoes'
+        });
+
+    </script>
+
+    <span class="bloco">
+        <h2><b>Direções</b><br>2021</h2>
+        <p>Peça criada para ilustrar uma página do website pessoal, criando movimentos opostos intercalados para
+            produzir um
+            equilíbrio dinâmico. Ainda que através de linhas oblíquas em movimento, a impressão resultante permanece de
+            solidez e
+            estabilidade.</p>
+    </span>
+
+
+
+
+
+    <a name="nturbulence" class="indice">Turbulence</a>
+    <div id="dturbulence" style="width: 100%; height: 600px;"></div>
+
+    <script type="module">
+        import turbule from "../Pecas/turbulence.js";
+
+        let turbo = turbule({
+        p5,
+          'bgcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-invert'),
+          'fcolor': getComputedStyle(document.documentElement)
+          .getPropertyValue('--cor-base'),
+        'el': 'dturbulence'
+        });
+
+    </script>
+
+    <span class="bloco">
+        <h2><b>Turbulence</b><br>2018</h2>
+        <p>Peça criada para ilustrar parte do material de uma disciplina, referente à relação semântica, da
+            decodificação de mensagens à sua interpretação frente a emoções e a produção de sentido e juízos de valor. A
+            turbulência, uma construção que vai girando com um eixo instável, e construíndo algo em cima daquilo que lhe
+            precede, é uma metafora abstrata para este processo da formação da significação.</p>
+    </span>
+
+
+
+
+
+
+    <span class="bloco rodape">
+
+        <svg width="719" height="719" viewBox="0 0 719 719" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="width: 30px; height: 30px; float: left; margin-bottom: 20px; vertical-align: top; margin-right: 10px;">
+            <g id="ranoyalogo">
+                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M719 0H0V719H719V0ZM230.686 183.844H337.371L230.686 535.31H124L230.686 183.844ZM383.351 183.844H381.782L275.097 535.31H381.782L435.91 356.992L490.037 535.31H596.723L490.037 183.844H488.468H383.351Z" />
+            </g>
+        </svg>
+
+        <h6>COPYRIGHT &copy; 2020, GUILHERME RANOYA</h6>
+
+
+
+    </span>
+
+</body>
+
+</html>
