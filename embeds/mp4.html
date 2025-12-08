@@ -53,6 +53,13 @@
 
     <script>
       document.getElementById("arquivo").src = $_GET["vid"];
+      let fit = "cover";
+      if ($_GET["fit"]) {
+        fit = $_GET["fit"];
+      }
+      document.getElementById(
+        "player"
+      ).style = `height: 100dvh; object-fit: ${fit}`;
     </script>
   </body>
 </html>
