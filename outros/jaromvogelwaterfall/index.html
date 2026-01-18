@@ -62,7 +62,7 @@
       .allow-motion-icon {
         height: 40px;
         width: 40px;
-        background-image: url("./gyroscope.png");
+        background-image: url("https://omnifolio.vercel.app/outros/jaromvogelwaterfall/gyroscope.png");
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -166,7 +166,7 @@
           clip_shape.holes.push(clip_hole);
           var clip_plane = new THREE.ShapeBufferGeometry(clip_shape);
           var clip_texture = new THREE.TextureLoader().load(
-            "waterfall_mask_2.png",
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/waterfall_mask_2.png",
           );
           var clip_material = new THREE.MeshBasicMaterial({
             alphaMap: clip_texture,
@@ -182,9 +182,16 @@
 
           var group = new THREE.Group();
 
-          addLayer("layer_1_1.png", -4, 1.4, 1, THREE.NormalBlending, false);
           addLayer(
-            "layer_2_spritesheet_resized.png",
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_1_1.png",
+            -4,
+            1.4,
+            1,
+            THREE.NormalBlending,
+            false,
+          );
+          addLayer(
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_2_spritesheet_resized.png",
             -3,
             1.32,
             1,
@@ -192,7 +199,7 @@
             true,
           );
           addLayer(
-            "layer_3_spritesheet_resized.png",
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_3_spritesheet_resized.png",
             -2,
             1.24,
             1,
@@ -200,7 +207,7 @@
             true,
           );
           addLayer(
-            "layer_4_1.png",
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_4_1.png",
             -1,
             1.16,
             0.2,
@@ -208,15 +215,29 @@
             false,
           );
           addLayer(
-            "layer_5_spritesheet_resized.png",
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_5_spritesheet_resized.png",
             0,
             1.08,
             1,
             THREE.NormalBlending,
             true,
           );
-          addLayer("layer_6_1.png", 1, 1, 1, THREE.NormalBlending, false);
-          addLayer("layer_8_1.png", 2, 0.92, 1, THREE.NormalBlending, false);
+          addLayer(
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_6_1.png",
+            1,
+            1,
+            1,
+            THREE.NormalBlending,
+            false,
+          );
+          addLayer(
+            "https://omnifolio.vercel.app/outros/jaromvogelwaterfall/layer_8_1.png",
+            2,
+            0.92,
+            1,
+            THREE.NormalBlending,
+            false,
+          );
 
           var backdrop_geometry = new THREE.PlaneGeometry(26, 14.943 * 2.6);
           var backdrop_material = new THREE.MeshBasicMaterial({
