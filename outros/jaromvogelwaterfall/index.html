@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Waterfall</title>
+
+    <style>
+      @font-face {
+        font-family: "Pier Sans";
+        src: url("/fonts/pier-regular.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+      }
+      body,
+      html {
+        font-family: "Pier Sans", sans-serif;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+      .loading-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: white;
+        color: #999;
+        font: Pier Sans;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.25s ease all;
+        transition-delay: 0.15s;
+      }
+      .allow-motion-button {
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+        width: 225px;
+        height: 50px;
+        border-radius: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        padding: 0 5px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        transition: 0.15s ease all;
+        font-family: sans-serif;
+      }
+      .allow-motion-button.visible {
+        visibility: visible;
+        opacity: 1;
+      }
+      .allow-motion-icon {
+        height: 40px;
+        width: 40px;
+        background-image: url("./gyroscope.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .allow-motion-text {
+        color: #1fad70;
+        padding-left: 5px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        .loading-mask {
+          background: #292933;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="loading-mask"
+      id="loading"
+      style="opacity: 0; visibility: hidden"
+    >
+      Loading...
+    </div>
+    <div class="allow-motion-button" onclick="enableMotion()">
+      <div class="allow-motion-icon"></div>
+      <div class="allow-motion-text">Enable Motion Controls</div>
+      <div>
+        <script src="three.js"></script>
+        <script src="orbitcontrols.js"></script>
+        <script src="tween.js"></script>
+        <script src="quaternion/quaternion.min.js"></script>
+        <script>
+          var layer_count = 7;
+          var load_counter = 0;
+
+          var scene = new THREE.Scene();
+          var camera = new THREE.PerspectiveCamera(
+            36.5,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            2000,
+          );
+
+          camera.position.z = 21.5;
+
+          var q = {
+            x: null,
+            y: null,
+            z: null,
+            w: null,
+          };
+          var initial_angles = {
+            alpha: null,
+            beta: null,
+            gamma: null,
+          };
+
+          var renderer = new THREE.WebGLRenderer({
+            alpha: true,
+            antialias: true,
+          });
+          renderer.setPixelRatio(2);
+          renderer.setSize(window.innerWidth, window.innerHeight);
+          // renderer.setClearColor( 0xffffff, 1);
+          document.body.appendChild(renderer.domElement);
+
+          var controls = new THREE.OrbitControls(camera, renderer.domElement);
+          controls.enablePan = false;
+          controls.enableZoom = false;
+          controls.enableDamping = true;
+          controls.minPolarAngle = Math.PI / 2 - 0.4;
+          controls.maxPolarAngle = Math.PI / 2 + 0.4;
+          controls.minAzimuthAngle = -Math.PI / 8;
+          controls.maxAzimuthAngle = Math.PI / 8;
+          controls.dampingFactor = 0.05;
+          controls.rotateSpeed = 0.02;
+
+          controls.saveState();
+
+          // save current camera and controls to reset on mouseup / touchend
+          var camera_position = camera.position.clone();
+
+          var counter = 1;
+          var current_frame = 1;
+
+          // Clipping
+          // var clip_plane = new THREE.PlaneGeometry (20, 14.943 * 2);
+          var clip_shape = new THREE.Shape();
+          clip_shape.moveTo(-20, -20);
+          clip_shape.lineTo(20, -20);
+          clip_shape.lineTo(20, 20);
+          clip_shape.lineTo(-20, 20);
+          clip_shape.lineTo(-20, -20);
+          var clip_hole = new THREE.Shape();
+          clip_hole.moveTo(-4.25, -6.4);
+          clip_hole.lineTo(4.25, -6.4);
+          clip_hole.lineTo(4.25, 6.4);
+          clip_hole.lineTo(-4.25, 6.4);
+          clip_hole.lineTo(-4.25, -6, 4);
+          clip_shape.holes.push(clip_hole);
+          var clip_plane = new THREE.ShapeBufferGeometry(clip_shape);
+          var clip_texture = new THREE.TextureLoader().load(
+            "waterfall_mask_2.png",
+          );
+          var clip_material = new THREE.MeshBasicMaterial({
+            alphaMap: clip_texture,
+            colorWrite: false,
+            transparent: true,
+          });
+          var clip_layer = new THREE.Mesh(clip_plane, clip_material);
+          clip_layer.renderOrder = 1;
+          clip_layer.position.z = 2.1;
+          scene.add(clip_layer);
+
+          var animated_layers = [];
+
+          var group = new THREE.Group();
+
+          addLayer("layer_1_1.png", -4, 1.4, 1, THREE.NormalBlending, false);
+          addLayer(
+            "layer_2_spritesheet_resized.png",
+            -3,
+            1.32,
+            1,
+            THREE.NormalBlending,
+            true,
+          );
+          addLayer(
+            "layer_3_spritesheet_resized.png",
+            -2,
+            1.24,
+            1,
+            THREE.NormalBlending,
+            true,
+          );
+          addLayer(
+            "layer_4_1.png",
+            -1,
+            1.16,
+            0.2,
+            THREE.AdditiveBlending,
+            false,
+          );
+          addLayer(
+            "layer_5_spritesheet_resized.png",
+            0,
+            1.08,
+            1,
+            THREE.NormalBlending,
+            true,
+          );
+          addLayer("layer_6_1.png", 1, 1, 1, THREE.NormalBlending, false);
+          addLayer("layer_8_1.png", 2, 0.92, 1, THREE.NormalBlending, false);
+
+          var backdrop_geometry = new THREE.PlaneGeometry(26, 14.943 * 2.6);
+          var backdrop_material = new THREE.MeshBasicMaterial({
+            color: 0x292933,
+            clippingPlanes: [clip_layer],
+            transparent: true,
+          });
+          var backdrop_layer = new THREE.Mesh(
+            backdrop_geometry,
+            backdrop_material,
+          );
+          backdrop_layer.position.z = -5;
+          backdrop_layer.renderOrder = 2;
+          group.add(backdrop_layer);
+
+          scene.add(group);
+          controls.update();
+
+          function animate() {
+            requestAnimationFrame(animate);
+            TWEEN.update();
+            controls.update();
+
+            var new_frame = Math.ceil(counter / 15);
+            if (new_frame !== current_frame) {
+              var offset = (new_frame - 1) / 5;
+
+              // change position for animated layers
+              animated_layers.forEach(function (layer, index) {
+                layer.material.map.offset.x = offset;
+              });
+
+              current_frame += 1;
+              if (current_frame > 5) {
+                current_frame = 1;
+              }
+            }
+
+            counter += 1;
+
+            if (counter > 75) {
+              counter = 1;
+            }
+
+            renderer.render(scene, camera);
+          }
+          animate();
+
+          function addLayer(
+            layer_name,
+            position,
+            scale,
+            opacity,
+            blendMode,
+            animation,
+          ) {
+            var geometry = new THREE.PlaneGeometry(10, 14.943);
+            var texture = new THREE.TextureLoader().load(
+              layer_name,
+              function () {
+                load_counter += 1;
+                if (load_counter >= layer_count) {
+                  var loading_mask = document.getElementById("loading");
+                  loading_mask.style.opacity = 0;
+                  loading_mask.style.visibility = "hidden";
+                }
+              },
+            );
+            texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+            var material = new THREE.MeshBasicMaterial({
+              map: texture,
+              transparent: true,
+              opacity: opacity,
+              clippingPlanes: [clip_layer],
+              blending: blendMode,
+            });
+            material.map.minFilter = THREE.LinearFilter;
+            var layer = new THREE.Mesh(geometry, material);
+            if (animation === true) {
+              layer.material.map.wrapS = THREE.RepeatWrapping;
+              layer.material.map.repeat.set(0.2, 1);
+            }
+            layer.position.z = position;
+            layer.scale.x = scale;
+            layer.scale.y = scale;
+            layer.renderOrder = 2;
+            if (animation) {
+              animated_layers.push(layer);
+            }
+            group.add(layer);
+          }
+
+          var rad = Math.PI / 180;
+
+          var motion_button = document.querySelector(".allow-motion-button");
+
+          // window.addEventListener("deviceorientation", function(event) {
+
+          // 	motion_button.classList.remove('visible');
+
+          // 	if (initial_angles.alpha === null) {
+          // 		initial_angles.alpha = event.alpha;
+          // 		initial_angles.beta = event.beta;
+          // 		initial_angles.gamma = event.gamma;
+          // 	}
+          // 	q = Quaternion.fromEuler(
+          // 		(event.alpha - initial_angles.alpha) * rad,
+          // 		(event.beta - initial_angles.beta) * rad,
+          // 		(event.gamma - initial_angles.gamma) * rad,
+          // 		'ZXY');
+
+          // 	scene.quaternion.x = q.x / 1;
+          // 	scene.quaternion.y = q.y / 1;
+          // 	//scene.quaternion.z = q.z;
+          // 	scene.quaternion.w = q.w;
+
+          // 	if (window.orientation === 90) {
+          // 		scene.quaternion.x = -q.y / 1.5;
+          // 		scene.quaternion.y = q.x / 1.5;
+          // 	} else if (window.orientation === -90) {
+          // 		scene.quaternion.x = q.y / 1.5;
+          // 		scene.quaternion.y = -q.x / 1.5;
+          // 	} else if (window.orientation === 180) {
+          // 		scene.quaternion.x = -q.x / 1.5;
+          // 		scene.quaternion.y = -q.y / 1.5;
+          // 	}
+
+          // }, true);
+
+          // Control rotation based on rotation rate
+          var alpha = 0;
+          var beta = 0;
+          var total_x = 0;
+          var total_y = 0;
+          var max_offset = 2000;
+
+          window.addEventListener("devicemotion", function (e) {
+            motion_button.classList.remove("visible");
+
+            alpha = e.rotationRate.alpha;
+            beta = e.rotationRate.beta;
+
+            total_x += beta;
+            total_y += alpha;
+
+            if (Math.abs(total_x) > max_offset) {
+              total_x = max_offset * Math.sign(total_x);
+            }
+            if (Math.abs(total_y) > max_offset) {
+              total_y = max_offset * Math.sign(total_y);
+            }
+
+            var x_offset = -total_x / 3000;
+            var y_offset = total_y / 3000;
+
+            scene.rotation.x = x_offset;
+            scene.rotation.y = y_offset;
+
+            if (window.orientation === 90) {
+              scene.rotation.x = x_offset;
+              scene.rotation.y = y_offset;
+            } else if (window.orientation === -90) {
+              scene.rotation.x = -x_offset;
+              scene.rotation.y = -y_offset;
+            } else if (window.orientation === 180) {
+              scene.rotation.x = -y_offset;
+              scene.rotation.y = x_offset;
+            } else if (window.orientation === 0) {
+              scene.rotation.x = y_offset;
+              scene.rotation.y = -x_offset;
+            }
+          });
+          // end rotation rate control
+
+          function snapBack() {
+            controls.enableDamping = false;
+            TWEEN.removeAll();
+            var tween = new TWEEN.Tween(camera.position)
+              .to(camera_position, 200)
+              .easing(TWEEN.Easing.Back.Out)
+              .start();
+          }
+
+          window.addEventListener("mousedown", function (event) {
+            controls.enableDamping = true;
+          });
+          window.addEventListener("touchstart", function (event) {
+            controls.enableDamping = true;
+          });
+
+          window.addEventListener("mouseup", function (event) {
+            snapBack();
+          });
+
+          window.addEventListener("touchend", function (event) {
+            snapBack();
+          });
+
+          window.addEventListener("orientationchange", function (event) {
+            initial_angles.alpha = null;
+            initial_angles.beta = null;
+            initial_angles.gamma = null;
+
+            total_x = 0;
+            total_y = 0;
+
+            setTimeout(function () {
+              resizeCanvas();
+            }, 150);
+          });
+
+          window.addEventListener("resize", function () {
+            // resizeCanvas(); // weird zoom in bug on mobile safari?
+          });
+
+          function resizeCanvas() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+          }
+
+          if (
+            window.DeviceOrientationEvent &&
+            DeviceOrientationEvent.requestPermission
+          ) {
+            motion_button.classList.add("visible");
+          }
+
+          function enableMotion() {
+            DeviceOrientationEvent.requestPermission();
+            motion_button.classList.remove("visible");
+          }
+        </script>
+      </div>
+    </div>
+    <canvas
+      width="3484"
+      height="1758"
+      style="width: 1742px; height: 879px"
+    ></canvas>
+  </body>
+</html>
