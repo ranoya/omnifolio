@@ -5,19 +5,13 @@
     <title>Waterfall</title>
 
     <style>
-      @font-face {
-        font-family: "Pier Sans";
-        src: url("/fonts/pier-regular.otf") format("opentype");
-        font-weight: normal;
-        font-style: normal;
-      }
-
       body {
         margin: 0;
       }
       body,
       html {
-        font-family: "Pier Sans", sans-serif;
+        overflow: hidden;
+        background-color: white;
       }
       canvas {
         width: 100%;
@@ -79,7 +73,6 @@
       }
 
       @media (prefers-color-scheme: dark) {
-        body,
         .loading-mask {
           background: #292933;
         }
@@ -96,12 +89,12 @@
     </div>
     <div class="allow-motion-button" onclick="enableMotion()">
       <div class="allow-motion-icon"></div>
-      <div class="allow-motion-text">Enable Motion Controls</div>
+      <div class="allow-motion-text"></div>
       <div>
-        <script src="three.js"></script>
-        <script src="orbitcontrols.js"></script>
-        <script src="tween.js"></script>
-        <script src="quaternion/quaternion.min.js"></script>
+        <script src="https://omnifolio.vercel.app/outros/jaromvogel/three.js"></script>
+        <script src="https://omnifolio.vercel.app/outros/jaromvogel/orbitcontrols.js"></script>
+        <script src="https://omnifolio.vercel.app/outros/jaromvogel/tween.js"></script>
+        <script src="https://omnifolio.vercel.app/outros/jaromvogel/quaternion/quaternion.min.js"></script>
         <script>
           var layer_count = 7;
           var load_counter = 0;
