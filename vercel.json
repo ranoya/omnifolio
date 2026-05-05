@@ -1,4 +1,62 @@
 {
+  "images": {
+    "remotePatterns": [
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/omnifiles/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/portfolio/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/slides/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/fractais/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/r2/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/outros/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/editoriais/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/Art/**",
+        "dangerouslyAllowSVG": true
+      },
+      {
+        "protocol": "https",
+        "hostname": "**",
+        "pathname": "/Diagramas/**",
+        "dangerouslyAllowSVG": true
+      }
+    ]
+  },
   "headers": [
     {
       "source": "/api/(.*)",
