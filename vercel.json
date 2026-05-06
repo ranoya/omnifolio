@@ -4,56 +4,47 @@
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/omnifiles/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/omnifiles/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/portfolio/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/portfolio/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/slides/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/slides/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/fractais/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/fractais/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/r2/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/r2/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/outros/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/outros/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/editoriais/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/editoriais/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/Art/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/Art/**"
       },
       {
         "protocol": "https",
         "hostname": "**",
-        "pathname": "/Diagramas/**",
-        "dangerouslyAllowSVG": true
+        "pathname": "/Diagramas/**"
       }
     ]
   },
