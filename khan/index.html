@@ -378,8 +378,7 @@
               let newomniarray = select(
                 losdados,
                 multipatterncheck_exclude,
-                "PINBOARDCOMPATIBLE " +
-                  document.getElementById("masterfilter").value,
+                document.getElementById("masterfilter").value,
               );
               funcprocessa(newomniarray);
             };
